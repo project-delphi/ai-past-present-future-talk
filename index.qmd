@@ -1,8 +1,8 @@
 ---
 title: "The Architecture of Intelligence"
 subtitle: "Past, Present & Future of AI"
-author: "Ravi Kalia"
-date: ""
+author: "Ravi Kalia, PhD"
+date: "August 4, 2026"
 format:
   revealjs:
     slide-number: true
@@ -11,221 +11,609 @@ format:
     theme: dark
 ---
 
-## What is Intelligence?
+## Welcome
 
-> *"Intelligence is the ability to adapt to change."*
-> — Stephen Hawking
-
-- Not a single thing — a cluster of capacities
-- Perceiving, predicting, acting, learning
-- Shared (partially) by animals, humans, machines
+- Universidad El Bosque — PhD Inauguration
+- A lecture for doctoral candidates, not a product demo
+- Fewer ideas, held longer, is the goal tonight
+- The mandate: you will spend years interrogating definitions others take for granted
 
 ---
 
-## The Senses Come First
+## Roadmap
 
-- All cognition begins with **sensors**
-- Eyes, ears, skin, proprioception — transducers of the world
-- No sensation → no learning → no intelligence
-- Machines: pixels, waveforms, tokens — the same idea
+- **I.** Philosophical foundations — what is an "I"?
+- **II.** Other minds — mammals, primates, the octopus
+- **III.** Consciousness — predicting the world
+- **IV.** Human intelligence, memory & skill
+- *— coffee —*
+- **V.** Defining knowledge & AI · **VI.** How machines learn
+- **VII.** Generative AI · **VIII.** Five tribes · **IX.** State of the art
+- **X.** What we want from AGI · **XI.** The future
 
 ---
 
-## The Brain as a Prediction Machine
+## The "I" in Intelligence
 
-- The brain does not passively record the world
-- It **predicts** what is about to happen — and updates when wrong
-- *Predictive processing* (Karl Friston, Andy Clark)
-- Perception = prior belief + sensory evidence
+- Before building intelligence, we must define the subject that has it
+- Intelligence is not one faculty — it is a bundle of capacities
+- Some of that bundle is shared with animals; some, so far, is not
+- Tonight's question: which parts, and why?
+
+---
+
+## Theory of Mind
+
+- The capacity to attribute beliefs, intents, desires, and knowledge — to oneself and to others
+- For AI, this is the threshold of genuine social agency
+- A system that models *your* beliefs, not just its own objective
+- Most current systems have none of this — they model text, not minds
+
+---
+
+## Sentience vs. Sapience
+
+- **Sentience** — the capacity to feel, perceive, experience subjectively (qualia)
+- **Sapience** — wisdom; the capacity to act with judgment
+- Current AI mimics sapience while showing no evidence of sentience
+- This asymmetry is the "hard problem," as it appears in engineering
+
+---
+
+## Self-Awareness
+
+- The capacity for introspection — recognizing oneself as distinct from the world and from other agents
+- Rodin's *The Thinker*: a mind aware of its own thinking
+- Self-awareness is not the same as intelligence, and not the same as consciousness
+- It may, however, be a prerequisite for both
+
+---
+
+## An Illustrative Ladder of Agency
+
+> A teaching device, not an established taxonomy
+
+1. Thermostat — homeostatic feedback
+2. Bacterium — chemotaxis, reactive gradients
+3. Dog — social bonding, emotional attunement
+4. Cat — spatial mapping, goal-directed autonomy
+5. Octopus — distributed cognition, tool use
+6. Dolphin — mirror self-recognition, communication
+7. Human — meta-cognition, cumulative culture
+
+---
+
+## Where Do Today's Systems Sit?
+
+- The ladder orders *behavioral complexity* — not necessarily *cognitive depth*
+- Is a language model above the dog, or beside it — on a different axis entirely?
+- To answer honestly, we need real comparative cognition, not analogy
+- Which is where we go next
+
+---
+
+## Why Look at Other Minds First
+
+- We are about to spend an hour on human intelligence — and then on machines
+- But humans are one data point, not the whole design space of "mind"
+- Other animals show us which properties of intelligence are universal, and which are accidents of our particular biology
+- Three cases tonight: mammals, primates, and — deliberately last — the octopus
+
+---
+
+## Mammalian Intelligence: A Shared Toolkit
+
+- Mammals share a common cognitive substrate: play, social bonding, emotional memory
+- The limbic system gives mammals fast, embodied affect — fear, attachment, grief
+- Play behavior is near-universal across mammals — a low-stakes way to rehearse high-stakes skills
+- Intelligence here is deeply social before it is deeply abstract
+
+---
+
+## Dogs: Co-Evolved Social Cognition
+
+- ~30,000 years of co-evolution with humans reshaped canine cognition itself
+- Dogs read human pointing and gaze better than chimpanzees do — a specialized, learned adaptation
+- Joint attention: dog and human can share a focus on a third thing
+- Intelligence honed for a *relationship*, not for solitary problem-solving
+
+---
+
+## Cats & Elephants: Autonomy and Memory
+
+- Cats: solitary hunters — spatial mapping and goal-directed autonomy, minimal need for social cognition
+- Elephants: mirror self-recognition, grief behavior at death sites, matriarchal knowledge transfer
+- Elephant matriarchs store decades of drought and route knowledge — memory as literal survival infrastructure
+- Two very different mammalian strategies: independence vs. accumulated social memory
+
+---
+
+## Cetaceans: Names, Culture & Mirror Self-Recognition
+
+- Dolphins pass the mirror self-recognition test — a marker rare outside primates
+- Signature whistles function as individual names, used to call specific others
+- Orca pods maintain distinct hunting cultures, transmitted across generations
+- Large brains evolved independently in water — intelligence is not a terrestrial monopoly
+
+---
+
+## Primate Intelligence: Our Closest Mirror
+
+- Primates share the most recent common ancestry with humans of any clade we'll discuss
+- Chimpanzees and bonobos diverged from the human line roughly 6–7 million years ago
+- Where mammalian cognition is a shared toolkit, primate cognition is closer to a rough draft of our own
+- The differences are as instructive as the similarities
+
+---
+
+## Chimpanzees: Tools, Tactics & Deception
+
+- Termite fishing and nut cracking: regional tool traditions, taught by observation
+- Tactical deception — concealing knowledge of food from dominant rivals
+- Coalition politics: alliances, reconciliation, and grudges within troop hierarchies
+- Ayumu (Kyoto) outperforms humans on rapid numerical working-memory tasks
+
+---
+
+## Do Chimpanzees Have a Theory of Mind?
+
+> Premack & Woodruff, 1978: *"Does the chimpanzee have a theory of mind?"*
+
+- Evidence for tracking what others have and have not seen — a partial theory of mind
+- Evidence against a full, human-like recursive model of others' beliefs
+- Forty years on, the question is still open — and still generative
+- The uncertainty itself is the lesson: theory of mind is graded, not binary
+
+---
+
+## Primate Culture — and Its Limit
+
+- Distinct tool traditions across chimp populations, passed by imitation — genuine culture
+- What's missing: the *ratchet effect* (Tomasello) — each generation improving on the last
+- Human culture accumulates indefinitely; primate culture largely does not
+- Cumulative culture, not raw intelligence, may be humanity's sharpest edge
+
+---
+
+## The Octopus: Intelligence, Reinvented
+
+- Cephalopods and vertebrates last shared a common ancestor ~500–600 million years ago
+- Whatever intelligence an octopus has, it evolved **completely independently** of ours
+- No shared design lineage — a true natural experiment in alternative cognitive architecture
+- If intelligence looks similar anyway, that tells us something about convergence
+
+---
+
+## A Brain Distributed Across Eight Arms
+
+- Roughly two-thirds of an octopus's neurons live in its arms, not its central brain
+- Each arm can taste, sense, and problem-solve with a degree of autonomy
+- No rigid skeleton — arms squeeze through any gap wider than its beak
+- Cognition here is distributed, not centralized — a different answer to "where is the mind?"
+
+---
+
+## Camouflage, Tool Use, Problem-Solving
+
+- Chromatophores produce near-instant camouflage — despite octopuses being colorblind
+- Skin photoreception may let the body "see" color the eyes cannot
+- Veined octopuses carry coconut-shell halves as portable shelter — genuine tool use
+- Lab octopuses unscrew jars, escape tanks, and solve mazes for a single reward
+
+---
+
+## No Culture, No Teachers, No Memory Passed On
+
+- Most octopus species live only 1–2 years and die shortly after reproducing
+- No parental care, no observation of elders, no cultural transmission at all
+- Every individual reinvents its intelligence from a blank slate, in one lifetime
+- Contrast with primate culture (previous section) — the octopus is its exact opposite case
+
+---
+
+## The Octopus as a Natural Experiment
+
+- Proof that intelligence doesn't require a centralized brain
+- Proof that intelligence doesn't require a long lifespan
+- Proof that intelligence doesn't require culture or teaching at all
+- What's left, once you remove all three? Something worth asking of artificial systems too
+
+---
+
+## What Comparative Cognition Teaches Us
+
+- Mammals: intelligence as social bonding and embodied affect
+- Primates: intelligence as culture, politics, and a *partial* theory of mind
+- Octopus: intelligence stripped of brain centralization, longevity, and teaching
+- No single architecture is *the* architecture of intelligence — ours is one solution among several
+
+---
+
+## Consciousness at the Sense/Model Boundary
+
+- Consciousness, in this framing, emerges where sensing meets internal updating
+- Not a separate module — a property of how prediction and sensation interact
+- This reframes the question from "what is consciousness" to "what is this loop doing"
+- The next two slides give that loop a name
+
+---
+
+## Emotions as Valence Markers
+
+- Emotions and feelings convert raw sensory data into prioritized internal states
+- Valence: is this good or bad for me, right now?
+- Emotion is not a distraction from cognition — it is a compression of relevance
+- Machines with reward signals have a crude analogue; they lack the felt quality
+
+---
+
+## Friston: Consciousness as Hierarchical Prediction
+
+- The brain does not passively record the world — it **predicts** it
+- Karl Friston's Free Energy Principle: minimize surprise, the gap between prediction and sensation
+- Consciousness, in this view, is the ongoing active inference required to anticipate the future
 
 $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \cdot P(\text{world})$$
 
 ---
 
-## Probability Is the Language of Uncertainty
+## Discussion: Is Prediction All There Is?
 
-- The world is noisy — certainty is the exception
-- Intelligence requires reasoning under uncertainty
-- Bayes' theorem: update beliefs with evidence
-- Every modern ML model is, at heart, a probability estimator
+> If a system minimizes prediction error well enough, is anything *experiential* happening —
+> or is competent prediction all there is?
 
----
-
-## Attention: The Bottleneck That Makes Us Smart
-
-- The senses deliver far more than cognition can process
-- **Focus** = selective amplification of relevant signals
-- Spotlight attention, executive control, salience
-- This bottleneck forces compression — and compression forces abstraction
+- No consensus answer exists — this is a live research question
+- Hold this question through the rest of the lecture
+- It will resurface when we reach generative models
 
 ---
 
-## The Self as Agent
+## Human Intelligence: The One Example We Have
 
-- Consciousness is not just sensing — it is **acting**
-- To be an agent: have a model of *self*, *world*, and *goal*
-- The self is a kind of useful fiction — a stable reference point for planning
-- Decision-making requires a model of what *I* can do
-
----
-
-## Utilities: Goals Defined in the Environment
-
-- Agents need something to optimise
-- **Utility functions** encode what matters
-- Hunger, pain, reward — biology's utility signals
-- AI: loss functions, reward shaping, RLHF
-- The choice of utility is *everything* — it defines the behaviour
+- If we are going to build intelligence, we should be precise about the one example already in hand
+- This section gives us a vocabulary that Part VI (how machines learn) will echo and contrast
+- Two threads: the *properties* of human cognition, and the *mechanisms* — memory and skill acquisition
 
 ---
 
-## Philosophical Roots
+## Properties of Human Intelligence
 
-- Descartes: mind vs. body — is thinking mechanical?
-- Turing (1950): *Can machines think?*
-- The Chinese Room (Searle) vs. Functionalism
-- Today the question is less philosophical — and more empirical
-
----
-
-## The First AI: Symbols and Rules (1950s–1980s)
-
-- Intelligence = explicit logic + symbol manipulation
-- Expert systems: encode human knowledge as rules
-- *MYCIN*, *DENDRAL* — impressive but brittle
-- The world is too messy for hand-written rules
-- First AI winter: unmet promises → funding collapse
+- **Generalization & transfer** — a skill learned in one domain, applied to another
+- **Sample efficiency** — a concept learned from one or two examples, not millions
+- **Compositionality** — recombining known pieces into novel structures
+- **Abstraction** — discarding surface detail to grasp underlying structure
+- **Causal reasoning, metacognition, social & embodied grounding**
 
 ---
 
-## Learning from Examples: Machine Learning (1990s)
+## The Capability Map: Super- vs. Sub-Human
 
-- Instead of rules: learn patterns from **data**
-- SVMs, decision trees, random forests
-- Features still hand-engineered by humans
-- Worked well — at small scale, structured data
-
----
-
-## Seeing the World: Image Recognition
-
-- Raw pixels are unstructured — how do machines see?
-- **Convolutional Neural Networks** (LeCun et al., 1989)
-- Local filters → edges → shapes → objects
-- ImageNet 2012: AlexNet halves the error rate — the field changes overnight
-- CNNs = learned feature hierarchy — sensors + prediction in silicon
+- Today's AI is superhuman on recall and breadth
+- Today's AI is strikingly subhuman on sample efficiency and causal reasoning
+- The gap list *is* the research agenda — not a footnote to it
+- Keep this map; §IX names the same gap from the machine side
 
 ---
 
-## Hearing the World: Speech Recognition
+## Memory I: Working & Episodic
 
-- Waveforms → phonemes → words → meaning
-- Hidden Markov Models → acoustic-language pipelines
-- Deep RNNs and LSTMs learn temporal dependencies
-- 2016: DNNs reach human parity on Switchboard
-- Speech is sequence — and sequences need memory
-
----
-
-## The Transformer: Attention Is All You Need (2017)
-
-- Vaswani et al. discard recurrence entirely
-- **Self-attention**: every token attends to every other token
-- Parallelisable → scalable → transformative
-- The attention mechanism mirrors cognitive focus — globally, all at once
-- Foundation for everything that follows
+- **Working memory** — small, fast, fleeting; the active scratchpad
+  - AI parallel: the context window
+- **Episodic memory** — specific events, time-stamped and personal
+  - AI parallel: retrieval-augmented systems — largely missing from a bare model
 
 ---
 
-## Scale Changes Everything
+## Memory II: Semantic & Procedural
 
-- More data + more compute + same architecture = qualitatively new behaviour
-- GPT-2, GPT-3: emergent few-shot learning
-- Language models begin to reason, translate, summarise — without task-specific training
-- *Scaling laws* (Kaplan et al.): loss is a power law in compute
-
----
-
-## Generative AI: From Recognition to Creation
-
-- Classification asks: *what is this?*
-- Generation asks: *what comes next?*
-- **Diffusion models**: learn to reverse noise → generate images
-- **LLMs**: predict the next token → produce language, code, reasoning
-- Generation reveals what has been learned
+- **Semantic memory** — facts and concepts, abstracted from original context
+  - AI parallel: knowledge baked into model weights
+- **Procedural memory** — skills enacted without conscious recall (riding a bike)
+  - AI parallel: learned policies, fine-tuned behaviors
 
 ---
 
-## The Five Tribes of AI
+## The AI Parallel: Weights Without Episodes
 
-| Tribe | Core Idea | Example |
-|-------|-----------|---------|
-| Symbolists | Logic & rules | Expert systems |
-| Connectionists | Neural networks | Deep learning |
-| Evolutionists | Genetic algorithms | Neural architecture search |
-| Bayesians | Probabilistic inference | Gaussian processes |
-| Analogisers | Similarity & cases | SVMs, k-NN |
-
-*Most modern systems are hybrids.*
+- A frontier model has vast semantic memory frozen in its weights
+- It has almost no persistent episodic memory — it forgets each conversation
+- Closing that gap — continual learning without catastrophic forgetting — is one of the field's hardest open problems
+- Notice: this is a *memory* problem before it is a *model* problem
 
 ---
 
-## What Are We Missing?
+## Skill Acquisition: The Dreyfus Stages
 
-- **Causal reasoning** — correlation ≠ causation
-- **Continual learning** — models forget; humans don't
-- **Physical grounding** — language without bodies
-- **Common sense** — robust to distribution shift
-- **Alignment** — whose utility function?
-
----
-
-## The Return of the Agent
-
-- From passive models to **agentic systems**
-- Tool use, memory, planning, multi-step reasoning
-- LLMs + environments = something closer to the cognitive architecture we started with
-- Sensors → prediction → focus → self → utilities — the loop closes
+- Novice → advanced beginner → competent → proficient → expert
+- Early stages lean on explicit rules; expertise becomes fluid, intuitive
+- In effect: a System 2 → System 1 migration over time
+- The expert doesn't compute the answer — they *see* it
 
 ---
 
-## What We Want From AGI
+## Deliberate Practice
 
-- Solves hard scientific problems (protein folding → cancer → climate)
-- Operates safely under human oversight
-- Learns continuously without catastrophic forgetting
-- Has values we can inspect and correct
-- Augments human intelligence — does not replace human agency
-
----
-
-## The Future: Embodied AI & Robotics
-
-- Language models are disembodied — no skin in the game
-- Embodiment grounds meaning in action and consequence
-- Robotics + foundation models = agents that act in the physical world
-- The full loop: sense → predict → act → learn
+- Skill grows fastest through effortful, feedback-rich repetition at the edge of ability
+- Mere exposure is not enough — the practice must be deliberate
+- Bridge to AI: Chollet's definition (§V) measures intelligence as the *efficiency* of this acquisition
+- Humans set the benchmark; the open question is what closes the efficiency gap for machines
 
 ---
 
-## What Does It Mean to Do AI Research Now?
+## ☕ Coffee Break
 
-- The field moves in months, not years
-- Empirical science of emergence
-- Engineering, mathematics, philosophy, ethics — all required
-- You are entering at the most consequential moment
+*15 minutes — please join us in the foyer*
 
 ---
 
-## Closing
+## Knowledge as Compression
 
-*The architecture of intelligence — whether biological or artificial — is the same story:*
+- Knowledge is data compression and abstraction — deriving meaning from noise
+- Historically acquired through four channels, each a compression scheme on a different timescale:
+  - **Genetic adaptability** — evolutionary encoding of survival strategies
+  - **Lived experience** — direct interaction with the environment
+  - **Culture** — accumulation and transmission of collective wisdom
+  - **Computers** — modern synthesis and processing of data at scale
 
-**sensors → prediction → uncertainty → attention → agency → goals**
+---
 
-The question is no longer whether machines can think.
+## The Moving Target of AI Definitions
 
-The question is: *what should they think about, and for whom?*
+- Transitioning from the nature of knowledge to the mechanisms of artificial intelligence
+- The definition of AI is not fixed — it has moved for seventy years
+- We will walk the spectrum, definition by definition
+- Each one is defensible; none is complete alone
+
+---
+
+## The Coffee-Maker View & the AI Effect
+
+- **Functionalist test**: if a machine performs what once required a human, is it "intelligent"?
+- This exposes the **AI Effect** — once we understand the mechanism, we stop calling it AI
+- Chess, then OCR, then translation — each was "AI" until it worked
+- What we call AI may just mean: *not yet understood*
+
+---
+
+## The Turing Test
+
+- Intelligence as imitation: if a human cannot distinguish machine from human through text, the machine passes
+- Says nothing about internal states — only about behavioral indistinguishability
+- Widely cited, rarely used as an actual engineering target today
+- Useful as a floor, not a ceiling
+
+---
+
+## Russell & Norvig: Rational Agency
+
+- Intelligence as rational agency — acting to achieve the best outcome
+- Or, under uncertainty, the best *expected* outcome
+- This is the textbook definition — agent, environment, performance measure
+- It says nothing about *how* the agent decides — only that it decides well
+
+---
+
+## Sutton: The Bitter Lesson
+
+- Intelligence emerges from general methods that scale with computation — search and learning
+- Not from hand-crafted human heuristics
+- Seventy years of AI history keep re-teaching this lesson
+- The uncomfortable implication: cleverness loses to scale, repeatedly
+
+---
+
+## Chollet: Intelligence as Adaptation
+
+- Intelligence is the *efficiency* with which a system acquires new skills at tasks it was not prepared for
+- Adaptation, not static performance
+- This is the direct machine analogue of deliberate practice (§IV)
+- A system that memorizes well but adapts poorly is not, by this definition, intelligent
+
+---
+
+## The LLM Caveat
+
+- LLMs are squarely within the field of AI — the defensible claim is that they are not AGI
+- As next-token predictors, they lack persistent episodic memory, robust causal models, reliable deliberate reasoning
+- They are powerful statistical reflections of human data
+- A strength to harness and a limit to respect — not a dismissal
+
+---
+
+## Supervised Learning
+
+- Learning a mapping from inputs to labeled outputs
+- The model is told the right answer and adjusts to reduce error
+- Bottlenecked by the cost of labels; prone to learning the dataset's biases, not the concept
+- Human parallel: a student drilled with answer keys
+
+---
+
+## Unsupervised & Self-Supervised Learning
+
+- Finding structure in unlabeled data — clustering, dimensionality reduction
+- **Self-supervised learning**: the data supplies its own labels (predict the masked word, the next frame)
+- The engine behind modern foundation models — the internet becomes supervision, without human annotation
+- Human parallel: an infant learning regularities by observation, no answer key required
+
+---
+
+## Reinforcement Learning
+
+- Learning from reward and consequence through interaction
+- Underpins game-playing agents *and* the preference-tuning of today's chat models
+- The agent, not a labeler, generates its own training signal through action
+- Closest of the three to how animals actually learn from their environment
+
+---
+
+## Generative AI: What It Is
+
+- A generative model learns the distribution of its training data well enough to produce new samples
+- Text, images, audio, code
+- The leap of recent years: self-supervised pre-training at scale + the transformer architecture
+- An extraordinarily capable model of form and correlation — System 1 at planetary scale
+
+---
+
+## Generative AI: What It Is Not
+
+- Not a guarantee of truth, causal understanding, or grounding
+- Fluency is not knowledge
+- It compresses a vast slice of human culture and lets us query it fluidly
+- That is genuinely new — and it is not the same thing as a mind
+
+---
+
+## Bridge: Compression, Mechanized
+
+- This is the same compression-and-prediction story from §V, now mechanized
+- Which is exactly why "knowledge as compression" was worth establishing first
+- Recall Friston (§III): prediction under uncertainty, now running in silicon
+- The architecture repeats — biological, then artificial
+
+---
+
+## Symbolists
+
+- Roots: logic and philosophy
+- Core idea: learning as the inverse of deduction
+- Example: expert systems, theorem provers
+- Strength: interpretable, precise; weakness: brittle outside their rules
+
+---
+
+## Connectionists
+
+- Roots: neuroscience
+- Core idea: intelligence from connections between neurons
+- Example: deep learning — the foundation of everything in Parts VII–VIII
+- Strength: scales with data and compute; weakness: opaque, data-hungry
+
+---
+
+## Evolutionaries
+
+- Roots: biology
+- Core idea: genetic algorithms that evolve solutions through selection
+- Example: neural architecture search
+- Strength: no gradient required; weakness: sample-inefficient, slow
+
+---
+
+## Bayesians
+
+- Roots: statistics and probability
+- Core idea: learning as probabilistic inference
+- Example: Gaussian processes, Bayesian networks
+- Strength: principled uncertainty; weakness: computationally demanding at scale
+
+---
+
+## Analogizers
+
+- Roots: psychology and similarity
+- Core idea: reasoning by matching new cases to old
+- Example: SVMs, kernel methods, k-nearest neighbors
+- The frontier borrows from all five tribes — which synthesis will you advance?
+
+---
+
+## Brittle AI & the Reasoning Gap
+
+- Current AI is narrow and often brittle outside its training distribution
+- The frontier problem is not scale — it is the reasoning gap
+- Impressive performance can mask an absence of underlying understanding
+- The next two slides name the gap precisely
+
+---
+
+## System 1 vs. System 2
+
+- After Kahneman: fast, intuitive judgment vs. slow, deliberate reasoning
+- LLMs excel at System 1; remain unreliable at System 2
+- Recent "reasoning" models narrow this gap with inference-time deliberation
+- An open, fast-moving front — not a solved problem
+
+---
+
+## World Models & Grounding
+
+- Humans run a mental simulation of physical reality — gravity, object permanence, causality
+- Today's systems largely lack this internal simulation
+- Grounding: grasping *why* things happen, not merely that they co-occur
+- Correlation to causation is the unfinished bridge
+
+---
+
+## From "Missing Pieces" to a Target
+
+- Section IX framed the gaps negatively — what's absent
+- Now we state the target positively — what we'd actually require
+- What would it take before calling a system generally intelligent?
+
+---
+
+## Generality, Sample Efficiency, Reasoning
+
+- **Generality across domains** — competence transferring to tasks never trained for
+- **Sample-efficient learning** — acquiring skills from few examples, approaching human efficiency
+- **Robust reasoning & planning** — reliable System 2: multi-step logic, causal inference, recovery from error
+
+---
+
+## Memory, Grounding, Aligned Autonomy
+
+- **Persistent memory & continual learning** — accumulating knowledge without catastrophic forgetting
+- **Grounded world models** — internal causal simulation, ideally shaped by embodiment
+- **Autonomy with alignment** — pursuing open-ended goals while remaining controllable
+- The last property is not a capability but a constraint — and the one with the highest stakes
+
+---
+
+## The Mirror: AGI Goals Read Back
+
+- Notice: this list is Part IV's properties, read back as a specification
+- We want from AGI, roughly, the human properties we catalogued — minus our limitations, plus our values
+- Whether that bundle is even coherent, or desirable, is itself a thesis question
+- You are not implementing a spec — you are still debating what belongs in it
+
+---
+
+## Embodied AI & Moravec's Paradox
+
+- Intelligence may require a body — sensorimotor feedback is a form of learning text alone cannot reproduce
+- **Moravec's Paradox**: high-level reasoning is computationally cheap; low-level sensorimotor skill is staggeringly expensive
+- Crossing a crowded room is harder for a machine than playing grandmaster chess
+- The octopus (§II) already showed us embodied, decentralized cognition in nature
+
+---
+
+## Foundation Models Meet Robotics
+
+- Fusing model "brains" with capable "bodies"
+- Surgery, deep-sea exploration, autonomous logistics
+- The full loop closes: sense → predict → act → learn
+- This is where the next decade of engineering effort concentrates
+
+---
+
+## Key Takeaways
+
+- Intelligence is a bundle of properties, not a single scalar — and ours is one solution among several evolved independently
+- Prediction under uncertainty is the common architecture, from octopus to cortex to transformer
+- Memory and cumulative culture, more than raw computation, may be what most separates human cognition from every other case we examined
+- The open gaps — causal reasoning, continual learning, grounding, alignment — are the research agenda, not footnotes to it
+
+---
+
+## Closing Remarks
+
+*The PhD program at Universidad El Bosque is not about mastering today's tools — it is about interrogating the definitions themselves.*
+
+You are the architects of the world models that will define the coming decade. The questions left open tonight — what consciousness is, how memory should persist, what closes the reasoning gap, what we should and should not want from AGI — are not gaps in this lecture.
+
+**They are your thesis directions.**
 
 ---
 
