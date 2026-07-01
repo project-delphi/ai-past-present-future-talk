@@ -19,11 +19,10 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render slides
-        run: quarto render index.qmd --output index.html
+        run: quarto render index.qmd --output-dir public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          include_files: index.html
+          publish_dir: public
