@@ -1,5 +1,6 @@
 ---
-title: "AI: Past, Present & Future"
+title: "The Architecture of Intelligence"
+subtitle: "Past, Present & Future of AI"
 author: "Ravi Kalia"
 date: ""
 format:
@@ -7,51 +8,227 @@ format:
     slide-number: true
     embed-resources: true
     chalkboard: false
+    theme: dark
 ---
 
-## The Beginning: Symbolic AI (1950s–1980s)
+## What is Intelligence?
 
-- Turing's question: "Can machines think?"
-- Logic-based systems and expert systems
-- The first AI winters
+> *"Intelligence is the ability to adapt to change."*
+> — Stephen Hawking
 
-## The Rise of Machine Learning (1990s–2000s)
+- Not a single thing — a cluster of capacities
+- Perceiving, predicting, acting, learning
+- Shared (partially) by animals, humans, machines
 
-- Shift from rules to learning from data
+---
+
+## The Senses Come First
+
+- All cognition begins with **sensors**
+- Eyes, ears, skin, proprioception — transducers of the world
+- No sensation → no learning → no intelligence
+- Machines: pixels, waveforms, tokens — the same idea
+
+---
+
+## The Brain as a Prediction Machine
+
+- The brain does not passively record the world
+- It **predicts** what is about to happen — and updates when wrong
+- *Predictive processing* (Karl Friston, Andy Clark)
+- Perception = prior belief + sensory evidence
+
+$$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \cdot P(\text{world})$$
+
+---
+
+## Probability Is the Language of Uncertainty
+
+- The world is noisy — certainty is the exception
+- Intelligence requires reasoning under uncertainty
+- Bayes' theorem: update beliefs with evidence
+- Every modern ML model is, at heart, a probability estimator
+
+---
+
+## Attention: The Bottleneck That Makes Us Smart
+
+- The senses deliver far more than cognition can process
+- **Focus** = selective amplification of relevant signals
+- Spotlight attention, executive control, salience
+- This bottleneck forces compression — and compression forces abstraction
+
+---
+
+## The Self as Agent
+
+- Consciousness is not just sensing — it is **acting**
+- To be an agent: have a model of *self*, *world*, and *goal*
+- The self is a kind of useful fiction — a stable reference point for planning
+- Decision-making requires a model of what *I* can do
+
+---
+
+## Utilities: Goals Defined in the Environment
+
+- Agents need something to optimise
+- **Utility functions** encode what matters
+- Hunger, pain, reward — biology's utility signals
+- AI: loss functions, reward shaping, RLHF
+- The choice of utility is *everything* — it defines the behaviour
+
+---
+
+## Philosophical Roots
+
+- Descartes: mind vs. body — is thinking mechanical?
+- Turing (1950): *Can machines think?*
+- The Chinese Room (Searle) vs. Functionalism
+- Today the question is less philosophical — and more empirical
+
+---
+
+## The First AI: Symbols and Rules (1950s–1980s)
+
+- Intelligence = explicit logic + symbol manipulation
+- Expert systems: encode human knowledge as rules
+- *MYCIN*, *DENDRAL* — impressive but brittle
+- The world is too messy for hand-written rules
+- First AI winter: unmet promises → funding collapse
+
+---
+
+## Learning from Examples: Machine Learning (1990s)
+
+- Instead of rules: learn patterns from **data**
 - SVMs, decision trees, random forests
-- The power of probabilistic models
+- Features still hand-engineered by humans
+- Worked well — at small scale, structured data
 
-## Deep Learning Changes Everything (2010s)
+---
 
-- ImageNet and the CNN breakthrough (2012)
-- GPU-accelerated training
-- Speech, vision, games: superhuman performance
+## Seeing the World: Image Recognition
 
-## The Transformer Era (2017–2022)
+- Raw pixels are unstructured — how do machines see?
+- **Convolutional Neural Networks** (LeCun et al., 1989)
+- Local filters → edges → shapes → objects
+- ImageNet 2012: AlexNet halves the error rate — the field changes overnight
+- CNNs = learned feature hierarchy — sensors + prediction in silicon
 
-- "Attention Is All You Need"
-- BERT, GPT, and the rise of pre-training
-- Scale as a research strategy
+---
 
-## Large Language Models & Foundation Models (2022–Present)
+## Hearing the World: Speech Recognition
 
-- ChatGPT and the public reckoning
-- Multimodal models: text, image, code, audio
-- Agents, tool use, and reasoning
+- Waveforms → phonemes → words → meaning
+- Hidden Markov Models → acoustic-language pipelines
+- Deep RNNs and LSTMs learn temporal dependencies
+- 2016: DNNs reach human parity on Switchboard
+- Speech is sequence — and sequences need memory
 
-## Where Are We Now?
+---
 
-- Models that write, reason, plan, and generate
-- AI as infrastructure — not just a research topic
-- Open vs. closed: a shifting landscape
+## The Transformer: Attention Is All You Need (2017)
 
-## What Comes Next?
+- Vaswani et al. discard recurrence entirely
+- **Self-attention**: every token attends to every other token
+- Parallelisable → scalable → transformative
+- The attention mechanism mirrors cognitive focus — globally, all at once
+- Foundation for everything that follows
 
-- Scientific discovery at scale
-- AI that learns continuously
-- Alignment, interpretability, governance
-- What does it mean to do AI research today?
+---
+
+## Scale Changes Everything
+
+- More data + more compute + same architecture = qualitatively new behaviour
+- GPT-2, GPT-3: emergent few-shot learning
+- Language models begin to reason, translate, summarise — without task-specific training
+- *Scaling laws* (Kaplan et al.): loss is a power law in compute
+
+---
+
+## Generative AI: From Recognition to Creation
+
+- Classification asks: *what is this?*
+- Generation asks: *what comes next?*
+- **Diffusion models**: learn to reverse noise → generate images
+- **LLMs**: predict the next token → produce language, code, reasoning
+- Generation reveals what has been learned
+
+---
+
+## The Five Tribes of AI
+
+| Tribe | Core Idea | Example |
+|-------|-----------|---------|
+| Symbolists | Logic & rules | Expert systems |
+| Connectionists | Neural networks | Deep learning |
+| Evolutionists | Genetic algorithms | Neural architecture search |
+| Bayesians | Probabilistic inference | Gaussian processes |
+| Analogisers | Similarity & cases | SVMs, k-NN |
+
+*Most modern systems are hybrids.*
+
+---
+
+## What Are We Missing?
+
+- **Causal reasoning** — correlation ≠ causation
+- **Continual learning** — models forget; humans don't
+- **Physical grounding** — language without bodies
+- **Common sense** — robust to distribution shift
+- **Alignment** — whose utility function?
+
+---
+
+## The Return of the Agent
+
+- From passive models to **agentic systems**
+- Tool use, memory, planning, multi-step reasoning
+- LLMs + environments = something closer to the cognitive architecture we started with
+- Sensors → prediction → focus → self → utilities — the loop closes
+
+---
+
+## What We Want From AGI
+
+- Solves hard scientific problems (protein folding → cancer → climate)
+- Operates safely under human oversight
+- Learns continuously without catastrophic forgetting
+- Has values we can inspect and correct
+- Augments human intelligence — does not replace human agency
+
+---
+
+## The Future: Embodied AI & Robotics
+
+- Language models are disembodied — no skin in the game
+- Embodiment grounds meaning in action and consequence
+- Robotics + foundation models = agents that act in the physical world
+- The full loop: sense → predict → act → learn
+
+---
+
+## What Does It Mean to Do AI Research Now?
+
+- The field moves in months, not years
+- Empirical science of emergence
+- Engineering, mathematics, philosophy, ethics — all required
+- You are entering at the most consequential moment
+
+---
+
+## Closing
+
+*The architecture of intelligence — whether biological or artificial — is the same story:*
+
+**sensors → prediction → uncertainty → attention → agency → goals**
+
+The question is no longer whether machines can think.
+
+The question is: *what should they think about, and for whom?*
+
+---
 
 ## Discussion
 
-*What question about AI keeps you up at night?*
+*What is the most important open problem in AI — and how will you spend the next five years on it?*
