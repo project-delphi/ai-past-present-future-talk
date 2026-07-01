@@ -1,0 +1,57 @@
+---
+title: "AI: Past, Present & Future"
+author: "Ravi Kalia"
+date: ""
+format:
+  revealjs:
+    slide-number: true
+    embed-resources: true
+    chalkboard: false
+---
+
+## The Beginning: Symbolic AI (1950s–1980s)
+
+- Turing's question: "Can machines think?"
+- Logic-based systems and expert systems
+- The first AI winters
+
+## The Rise of Machine Learning (1990s–2000s)
+
+- Shift from rules to learning from data
+- SVMs, decision trees, random forests
+- The power of probabilistic models
+
+## Deep Learning Changes Everything (2010s)
+
+- ImageNet and the CNN breakthrough (2012)
+- GPU-accelerated training
+- Speech, vision, games: superhuman performance
+
+## The Transformer Era (2017–2022)
+
+- "Attention Is All You Need"
+- BERT, GPT, and the rise of pre-training
+- Scale as a research strategy
+
+## Large Language Models & Foundation Models (2022–Present)
+
+- ChatGPT and the public reckoning
+- Multimodal models: text, image, code, audio
+- Agents, tool use, and reasoning
+
+## Where Are We Now?
+
+- Models that write, reason, plan, and generate
+- AI as infrastructure — not just a research topic
+- Open vs. closed: a shifting landscape
+
+## What Comes Next?
+
+- Scientific discovery at scale
+- AI that learns continuously
+- Alignment, interpretability, governance
+- What does it mean to do AI research today?
+
+## Discussion
+
+*What question about AI keeps you up at night?*
