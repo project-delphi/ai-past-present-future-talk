@@ -13,7 +13,7 @@ format:
 
 ## Welcome
 
-- A PhD inauguration lecture — for doctoral candidates, not a product demo
+- An inauguration lecture — for doctoral candidates
 - Fewer ideas, held longer, is the goal tonight
 - The mandate: you will spend years interrogating definitions others take for granted
 
@@ -32,11 +32,16 @@ format:
 
 ---
 
+## I. Philosophical Foundations
+
+*What is an "I"?*
+
+---
+
 ## The "I" in Intelligence
 
 - Before building intelligence, we must define the subject that has it
-- Intelligence is not one faculty — it is a bundle of capacities
-- Some of that bundle is shared with animals; some, so far, is not
+- Human intelligence is a bundle of capacities, not a single number
 - Tonight's question: which parts, and why?
 
 ---
@@ -56,6 +61,7 @@ format:
 - **Sapience** — wisdom; the capacity to act with judgment
 - Current AI mimics sapience while showing no evidence of sentience
 - This asymmetry is the "hard problem," as it appears in engineering
+- This is the hard problem of consciousness, as it appears in philosophy
 
 ---
 
@@ -74,11 +80,10 @@ format:
 
 1. Thermostat — homeostatic feedback
 2. Bacterium — chemotaxis, reactive gradients
-3. Dog — social bonding, emotional attunement
-4. Cat — spatial mapping, goal-directed autonomy
-5. Octopus — distributed cognition, tool use
-6. Dolphin — mirror self-recognition, communication
-7. Human — meta-cognition, cumulative culture
+3. Dog — social bonding, emotional attunement, spatial mapping, goal-directed autonomy
+4. Octopus — distributed cognition, tool use
+5. Dolphin — mirror self-recognition, communication
+6. Human — meta-cognition, cumulative culture
 
 ---
 
@@ -91,39 +96,9 @@ format:
 
 ---
 
-## Why Look at Other Minds First
+## II. Other Minds
 
-- We are about to spend an hour on human intelligence — and then on machines
-- But humans are one data point, not the whole design space of "mind"
-- Other animals show us which properties of intelligence are universal, and which are accidents of our particular biology
-- Four cases tonight: mammals, primates, and two convergently evolved aquatic minds — the octopus and the dolphin, deliberately last
-
----
-
-## Mammalian Intelligence: A Shared Toolkit
-
-- Mammals share a common cognitive substrate: play, social bonding, emotional memory
-- The limbic system gives mammals fast, embodied affect — fear, attachment, grief
-- Play behavior is near-universal across mammals — a low-stakes way to rehearse high-stakes skills
-- Intelligence here is deeply social before it is deeply abstract
-
----
-
-## Dogs: Co-Evolved Social Cognition
-
-- ~30,000 years of co-evolution with humans reshaped canine cognition itself
-- Dogs read human pointing and gaze better than chimpanzees do — a specialized, learned adaptation
-- Joint attention: dog and human can share a focus on a third thing
-- Intelligence honed for a *relationship*, not for solitary problem-solving
-
----
-
-## Cats & Elephants: Autonomy and Memory
-
-- Cats: solitary hunters — spatial mapping and goal-directed autonomy, minimal need for social cognition
-- Elephants: mirror self-recognition, grief behavior at death sites, matriarchal knowledge transfer
-- Elephant matriarchs store decades of drought and route knowledge — memory as literal survival infrastructure
-- Two very different mammalian strategies: independence vs. accumulated social memory
+*Mammals, primates, octopus & dolphin*
 
 ---
 
@@ -136,34 +111,6 @@ format:
 
 ---
 
-## Chimpanzees: Tools, Tactics & Deception
-
-- Termite fishing and nut cracking: regional tool traditions, taught by observation
-- Tactical deception — concealing knowledge of food from dominant rivals
-- Coalition politics: alliances, reconciliation, and grudges within troop hierarchies
-- Ayumu (Kyoto) outperforms humans on rapid numerical working-memory tasks
-
----
-
-## Do Chimpanzees Have a Theory of Mind?
-
-> Premack & Woodruff, 1978: *"Does the chimpanzee have a theory of mind?"*
-
-- Evidence for tracking what others have and have not seen — a partial theory of mind
-- Evidence against a full, human-like recursive model of others' beliefs
-- Forty years on, the question is still open — and still generative
-- The uncertainty itself is the lesson: theory of mind is graded, not binary
-
----
-
-## Primate Culture — and Its Limit
-
-- Distinct tool traditions across chimp populations, passed by imitation — genuine culture
-- What's missing: the *ratchet effect* (Tomasello) — each generation improving on the last
-- Human culture accumulates indefinitely; primate culture largely does not
-- Cumulative culture, not raw intelligence, may be humanity's sharpest edge
-
----
 
 ## The Octopus: Intelligence, Reinvented
 
@@ -171,42 +118,6 @@ format:
 - Whatever intelligence an octopus has, it evolved **completely independently** of ours
 - No shared design lineage — a true natural experiment in alternative cognitive architecture
 - If intelligence looks similar anyway, that tells us something about convergence
-
----
-
-## A Brain Distributed Across Eight Arms
-
-- Roughly two-thirds of an octopus's neurons live in its arms, not its central brain
-- Each arm can taste, sense, and problem-solve with a degree of autonomy
-- No rigid skeleton — arms squeeze through any gap wider than its beak
-- Cognition here is distributed, not centralized — a different answer to "where is the mind?"
-
----
-
-## Camouflage, Tool Use, Problem-Solving
-
-- Chromatophores produce near-instant camouflage — despite octopuses being colorblind
-- Skin photoreception may let the body "see" color the eyes cannot
-- Veined octopuses carry coconut-shell halves as portable shelter — genuine tool use
-- Lab octopuses unscrew jars, escape tanks, and solve mazes for a single reward
-
----
-
-## No Culture, No Teachers, No Memory Passed On
-
-- Most octopus species live only 1–2 years and die shortly after reproducing
-- No parental care, no observation of elders, no cultural transmission at all
-- Every individual reinvents its intelligence from a blank slate, in one lifetime
-- Contrast with primate culture (previous section) — the octopus is its exact opposite case
-
----
-
-## The Octopus as a Natural Experiment
-
-- Proof that intelligence doesn't require a centralized brain
-- Proof that intelligence doesn't require a long lifespan
-- Proof that intelligence doesn't require culture or teaching at all
-- What's left, once you remove all three? Something worth asking of artificial systems too
 
 ---
 
@@ -219,55 +130,6 @@ format:
 
 ---
 
-## Dolphin Brain & Encephalization
-
-- Bottlenose dolphins have the second-highest encephalization quotient of any animal, after humans
-- Spindle neurons (von Economo neurons) — linked to rapid social and emotional processing — are shared with great apes, elephants, and cetaceans, but not most mammals
-- Convergent evolution again: this neuron type arose independently in each lineage
-- A large brain evolved to navigate an unusually complex social world, not primarily physical tool use
-
----
-
-## Communication: Signature Whistles as Names
-
-- Each dolphin develops a unique signature whistle in its first year of life, functioning as a name
-- Dolphins address specific individuals by copying that whistle back to them
-- Vocal learning of this kind — inventing and copying arbitrary labels — is rare outside humans
-- Distinct vocal "dialects" appear between pods, a marker of social, not genetic, transmission
-
----
-
-## Tool Use & Culture: Sponging in Shark Bay
-
-- Bottlenose dolphins in Shark Bay, Australia, carry marine sponges on their snouts to protect against abrasion while foraging on the seafloor
-- "Sponging" is passed almost exclusively from mother to daughter — a genuine cultural tradition, not an instinct
-- Different pods maintain different foraging techniques with no genetic basis — culture, in the same sense used for chimpanzees (§II)
-- Unlike the octopus, dolphin skill *is* taught, and it *does* accumulate across generations within a lineage
-
----
-
-## Mirror Self-Recognition & Cooperation
-
-- Dolphins pass the mirror self-recognition test — a marker otherwise confined mostly to great apes, elephants, and magpies
-- Wild dolphins in Laguna, Brazil cooperatively herd mullet toward human fishers, reading human cues to time their signal
-- Multi-level male alliances — allies who ally with other alliances — a nesting of social structure rarely documented outside humans
-- Complexity here is social and relational, not tool-mediated
-
----
-
-## Octopus vs. Dolphin: Two Paths to Ocean Intelligence
-
-| | Octopus | Dolphin |
-|---|---|---|
-| Nervous system | Distributed, arm-heavy | Centralized, large brain |
-| Lifespan | 1–2 years | Decades |
-| Culture | None — no teaching at all | Yes — matrilineal tool traditions |
-| Social structure | Largely solitary | Multi-level alliances |
-
-- Both evolved sophisticated cognition in water, by entirely different routes
-- The ocean did not converge on one architecture for intelligence — it found at least two
-
----
 
 ## What Comparative Cognition Teaches Us
 
@@ -276,6 +138,12 @@ format:
 - Octopus: intelligence stripped of brain centralization, longevity, and teaching
 - Dolphin: intelligence built on the opposite bet — centralization, longevity, and taught culture
 - No single architecture is *the* architecture of intelligence — ours is one solution among several
+
+---
+
+## III. Consciousness
+
+*Predicting the world*
 
 ---
 
@@ -307,6 +175,18 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## Learning Paradigms & Human Intelligence
+
+- **Supervised** — external labels for every example; rare in real biological learning
+- **Unsupervised** — finds structure with no labels; maps to spontaneous perceptual categorization
+- **Density** — modeling p(x); candidate description of what the brain does (predictive coding, Bayesian brain)
+- **Self-Supervised** — data labels itself (predict masked/next input); closest analog to how infants build world models
+- **Reinforcement** — sparse, delayed reward; strong link to dopamine reward-prediction-error signals
+
+**Unifying view:** self-supervised prediction builds the world model → RL fine-tunes behavior on top → supervised learning is the least biologically realistic of the four
+
+---
+
 ## Discussion: Is Prediction All There Is?
 
 > If a system minimizes prediction error well enough, is anything *experiential* happening —
@@ -318,17 +198,23 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## IV. Human Intelligence, Memory & Skill
+
+*The one example we have*
+
+---
+
 ## Human Intelligence: The One Example We Have
 
 - If we are going to build intelligence, we should be precise about the one example already in hand
 - This section gives us a vocabulary that Part VI (how machines learn) will echo and contrast
-- Three threads: cognitive *properties*, computer science's own *formalizations* of them, and the *mechanisms* — memory and skill acquisition
 
 ---
 
 ## Properties of Human Intelligence
 
 - **Generalization & transfer** — a skill learned in one domain, applied to another
+- **Short and long term memory** — storing and retrieving information over time
 - **Sample efficiency** — a concept learned from one or two examples, not millions
 - **Compositionality** — recombining known pieces into novel structures
 - **Abstraction** — discarding surface detail to grasp underlying structure
@@ -336,105 +222,6 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## How Computer Scientists Frame Intelligence
-
-- Cognitive scientists describe *properties*; computer scientists want *mechanisms* and *measurements*
-- The CS tradition asks: what computation, exactly, produces this behavior?
-- Four framings worth knowing, spanning 1950s symbolic AI to 2000s formal theory
-- Each tries to turn "intelligence" into something you could, in principle, build or measure
-
----
-
-## Newell & Simon: The Physical Symbol System Hypothesis
-
-- Newell & Simon (1976): a physical symbol system has the necessary and sufficient means for general intelligent action
-- Thinking = manipulating symbolic representations, not any particular substrate
-- This licensed the founding bet of classical AI: if cognition is symbol manipulation, a computer can do it
-- Still contested — connectionists (§VIII) built an entire tribe on doubting it
-
----
-
-## Cognitive Architectures: SOAR & ACT-R
-
-- Attempts to build *one* computational architecture spanning all of cognition, not just a single task
-- **SOAR** (Newell): problem spaces and production rules, with learning as compiled experience ("chunking")
-- **ACT-R** (Anderson): separate declarative and procedural memory modules, tuned to match human reaction-time data
-- Largely abandoned by industry — but the modularity these systems assumed still shapes how we talk about memory (§IV)
-
----
-
-## Marr's Three Levels of Analysis
-
-- David Marr (1982): any information-processing system can be analyzed at three levels
-- **Computational** — what problem is being solved, and why?
-- **Algorithmic** — what representation and procedure solves it?
-- **Implementational** — how is that realized physically, in neurons or in silicon?
-- A frontier model and a human sit at all three levels — and differ most at the algorithmic one
-
----
-
-## Legg & Hutter: A Formal, Universal Definition
-
-- Legg & Hutter (2007) surveyed dozens of prior definitions, then proposed a formal one
-- Intelligence = an agent's ability to achieve goals across a *wide range* of environments
-- Formalized as AIXI: environments weighted by simplicity (Kolmogorov complexity), performance weighted by reward
-- Uncomputable in practice — but it makes "general" mathematically precise, and anticipates Chollet's efficiency framing (§V)
-
----
-
-## The Capability Map: Super- vs. Sub-Human
-
-- Today's AI is superhuman on recall and breadth
-- Today's AI is strikingly subhuman on sample efficiency and causal reasoning
-- The gap list *is* the research agenda — not a footnote to it
-- Keep this map; §IX names the same gap from the machine side
-
----
-
-## Memory I: Working & Episodic
-
-- **Working memory** — small, fast, fleeting; the active scratchpad
-  - AI parallel: the context window
-- **Episodic memory** — specific events, time-stamped and personal
-  - AI parallel: retrieval-augmented systems — largely missing from a bare model
-
----
-
-## Memory II: Semantic & Procedural
-
-- **Semantic memory** — facts and concepts, abstracted from original context
-  - AI parallel: knowledge baked into model weights
-- **Procedural memory** — skills enacted without conscious recall (riding a bike)
-  - AI parallel: learned policies, fine-tuned behaviors
-
----
-
-## The AI Parallel: Weights Without Episodes
-
-- A frontier model has vast semantic memory frozen in its weights
-- It has almost no persistent episodic memory — it forgets each conversation
-- Closing that gap — continual learning without catastrophic forgetting — is one of the field's hardest open problems
-- Notice: this is a *memory* problem before it is a *model* problem
-
----
-
-## Skill Acquisition: The Dreyfus Stages
-
-- Novice → advanced beginner → competent → proficient → expert
-- Early stages lean on explicit rules; expertise becomes fluid, intuitive
-- In effect: a System 2 → System 1 migration over time
-- The expert doesn't compute the answer — they *see* it
-
----
-
-## Deliberate Practice
-
-- Skill grows fastest through effortful, feedback-rich repetition at the edge of ability
-- Mere exposure is not enough — the practice must be deliberate
-- Bridge to AI: Chollet's definition (§V) measures intelligence as the *efficiency* of this acquisition
-- Humans set the benchmark; the open question is what closes the efficiency gap for machines
-
----
 
 ## ☕ Coffee Break
 
@@ -442,13 +229,33 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## V. Defining Knowledge & AI
+
+*A moving target*
+
+---
+
+## One Definition of Knowledge
+
+
+- **Data** — raw, particular, uncompressed
+- **Compression** — finding redundancy in data
+- **Abstraction** — the reusable structure compression produces
+- **Prediction** — the test: does it work on unseen data?
+- **Knowledge** — an abstraction that keeps passing that test
+
+
+---
+
 ## Knowledge as Compression
 
 - Knowledge is data compression and abstraction — deriving meaning from noise
-- Historically acquired through four channels, each a compression scheme on a different timescale:
+- 
+- Historically acquired through three channels, each a compression scheme on a different timescale:
   - **Genetic adaptability** — evolutionary encoding of survival strategies
   - **Lived experience** — direct interaction with the environment
   - **Culture** — accumulation and transmission of collective wisdom
+- Now a fourth channel:
   - **Computers** — modern synthesis and processing of data at scale
 
 ---
@@ -456,9 +263,8 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 ## The Moving Target of AI Definitions
 
 - Transitioning from the nature of knowledge to the mechanisms of artificial intelligence
-- The definition of AI is not fixed — it has moved for seventy years
-- We will walk the spectrum, definition by definition
-- Each one is defensible; none is complete alone
+- The definition of AI is not agreed upon
+- Let's look at some definitions
 
 ---
 
@@ -516,6 +322,12 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## VI. How Machines Learn
+
+*Supervised, unsupervised, reinforced*
+
+---
+
 ## Supervised Learning
 
 - Learning a mapping from inputs to labeled outputs
@@ -540,6 +352,12 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Underpins game-playing agents *and* the preference-tuning of today's chat models
 - The agent, not a labeler, generates its own training signal through action
 - Closest of the three to how animals actually learn from their environment
+
+---
+
+## VII. Generative AI
+
+*From recognition to creation*
 
 ---
 
@@ -570,6 +388,12 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## VIII. Five Tribes
+
+*One master algorithm?*
+
+---
+
 ## Symbolists: Logic as the Master Algorithm
 
 - Roots: logic and philosophy — Boole, and Newell & Simon's symbol system hypothesis (§IV)
@@ -594,6 +418,8 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Weakness: cannot handle noisy perceptual input gracefully — pixels aren't symbols
 - Modern echo: neuro-symbolic AI, program synthesis, formal verification of learned systems
 - The tribe most concerned with *guarantees* — increasingly relevant as AI enters high-stakes domains
+- Decision Trees and Random Forests are examples of Symbolists
+- <span style="color:#e76f51;">**Email Routing System**</span>
 
 ---
 
@@ -613,6 +439,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Convolutional networks, then recurrent networks and LSTMs, then transformers (§VII)
 - Master algorithm: gradient descent — adjust every weight a little, in the direction that reduces error
 - The one tribe whose core method is basically unchanged for 40 years; only scale changed
+- <span style="color:#e76f51;">**GENERATING GENE THERAPY BIOLOGICAL VIRUSES**</span>
 
 ---
 
@@ -649,6 +476,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Weakness: sample-inefficient — evaluating a whole population is expensive, convergence is slow
 - Niche but persistent use: neural architecture search, robot morphology design
 - The tribe most comfortable with *not knowing* how a solution was derived
+- - <span style="color:#e76f51;">** DENOVO ITRs EVADING IMMUNE RESPONSE**</span>
 
 ---
 
@@ -676,6 +504,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Weakness: exact inference is often computationally intractable at scale
 - Modern echo: Bayesian deep learning, variational inference, uncertainty quantification in safety-critical systems
 - The tribe most honest about what it doesn't know — valuable as the stakes in §X's alignment problem rise
+- <span style="color:#e76f51;">** ESTIMATING DEATH PENSIONS FOR SOLDIERS**</span>
 
 ---
 
@@ -703,6 +532,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Weakness: doesn't scale as gracefully as connectionist methods to raw data at internet scale
 - Legacy use: recommendation systems, metric learning, few-shot learning via embeddings
 - "Learn from a handful of examples" is humanity's edge (§IV) — this tribe took it most seriously
+- <span style="color:#e76f51;">** DETECTING OUTLIER STOCK PAIRS**</span>
 
 ---
 
@@ -712,6 +542,12 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - A large language model: connectionist backbone, Bayesian-flavored uncertainty estimates, symbolic tool use bolted on, reward-driven tuning borrowed from evolutionary/RL search
 - Domingos' provocation: is there a single "master algorithm" that unifies all five?
 - Which synthesis will your own doctoral work advance?
+
+---
+
+## IX. State of the Art
+
+*The reasoning gap*
 
 ---
 
@@ -739,6 +575,12 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Today's systems largely lack this internal simulation
 - Grounding: grasping *why* things happen, not merely that they co-occur
 - Correlation to causation is the unfinished bridge
+
+---
+
+## X. What We Want From AGI
+
+*Naming the target*
 
 ---
 
@@ -776,12 +618,17 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## XI. The Future
+
+*Embodied, aligned, autonomous*
+
+---
+
 ## Embodied AI & Moravec's Paradox
 
 - Intelligence may require a body — sensorimotor feedback is a form of learning text alone cannot reproduce
 - **Moravec's Paradox**: high-level reasoning is computationally cheap; low-level sensorimotor skill is staggeringly expensive
 - Crossing a crowded room is harder for a machine than playing grandmaster chess
-- The octopus (§II) already showed us embodied, decentralized cognition in nature
 
 ---
 
@@ -810,6 +657,51 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 You are the architects of the world models that will define the coming decade. The questions left open tonight — what consciousness is, how memory should persist, what closes the reasoning gap, what we should and should not want from AGI — are not gaps in this lecture.
 
 **They are your thesis directions.**
+
+---
+
+## Key References I
+
+*Foundations & cognition*
+
+- Turing, A. (1950). Computing Machinery and Intelligence. *Mind*.
+- Russell, S. & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach* (4th ed.)
+- Kahneman, D. (2011). *Thinking, Fast and Slow*.
+- Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*.
+
+---
+
+## Key References II
+
+*Neural roots*
+
+- Newell, A. & Simon, H. (1976). Computer science as empirical inquiry: symbols and search. *CACM*.
+- McCulloch, W. & Pitts, W. (1943). A logical calculus of ideas immanent in nervous activity.
+- Rosenblatt, F. (1958). The perceptron. *Psychological Review*.
+- Minsky, M. & Papert, S. (1969). *Perceptrons*.
+
+---
+
+## Key References III
+
+*Learning at scale*
+
+- Rumelhart, D., Hinton, G. & Williams, R. (1986). Learning representations by back-propagating errors. *Nature*.
+- Hinton, G., Bengio, Y. & LeCun, Y. — 2018 ACM A.M. Turing Award, for deep neural networks
+- Dean, J. et al. (2012). Large scale distributed deep networks. *NeurIPS*.
+- Ng, A. — Google Brain co-founder; scaled AI education (Coursera, deeplearning.ai)
+
+---
+
+## Key References IV
+
+*Defining intelligence*
+
+- Holland, J. (1975). *Adaptation in Natural and Artificial Systems*.
+- Sutton, R. (2019). *The Bitter Lesson*.
+- Chollet, F. (2019). On the measure of intelligence. *arXiv:1911.01547*.
+- Domingos, P. (2015). *The Master Algorithm*.
+- Moravec, H. (1988). *Mind Children*.
 
 ---
 
