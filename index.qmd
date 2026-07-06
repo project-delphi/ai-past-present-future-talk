@@ -147,7 +147,7 @@ format:
 - Primates — culture, politics, partial theory of mind
 - Octopus — intelligence minus centralization
 - Dolphin — intelligence on the opposite bet
-- **No single architecture is *the* architecture**
+- No single architecture is *the* architecture
 
 ---
 
@@ -182,7 +182,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 - Octopus, cortex, transformer — all minimize prediction error
 - Prediction under uncertainty is the shared engine
-- **This is where animal minds meet AI**
+- This is where animal minds meet AI
 - Open question to hold: is prediction *all* there is?
 
 ---
@@ -248,7 +248,6 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Self-supervised prediction builds the world model
 - Reinforcement fine-tunes on top
 - The same recipe in cortex and in models
-- **The ML task list was written first in biology**
 
 ---
 
