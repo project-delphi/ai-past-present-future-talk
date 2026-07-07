@@ -25,6 +25,27 @@ header-includes: |
     font-style: italic;
     opacity: 0.9;
   }
+  .reveal .slides section.section-divider {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .reveal .slides section.section-divider h2 {
+    color: #f0a868;
+    font-size: 2.4em;
+    border-bottom: none;
+    text-shadow: 0 2px 24px rgba(240, 168, 104, 0.35);
+  }
+  .reveal .slides section.section-divider.present h2 {
+    animation: divider-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes divider-in {
+    from { opacity: 0; transform: translateY(28px) scale(0.96); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
   </style>
 ---
 
@@ -58,17 +79,7 @@ header-includes: |
 
 ---
 
-## I. Minds: Consciousness & Animals
-
----
-
-## The "I" in Intelligence
-
-- Define the subject before building it
-- Human intelligence: a bundle of capacities, not a number
-- Tonight: which capacities, and why
-
----
+## I. Minds: Consciousness & Animals {.section-divider}
 
 ## Theory of Mind
 
@@ -168,14 +179,6 @@ header-includes: |
 
 ---
 
-## Consciousness at the Sense/Model Boundary
-
-- Emerges where sensing meets internal updating
-- Not a module — a property of the loop
-- Reframe: not "what is it" but "what is the loop doing"
-
----
-
 ## Emotion → Feeling → Sentiment
 
 - **Emotion** — raw input; a valence signal: good or bad, now?
@@ -195,23 +198,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## Bridge: The Common Currency
-
-- Octopus, cortex, transformer — all minimize prediction error
-- Prediction under uncertainty is the shared engine
-- This is where animal minds meet AI
-- Open question to hold: is prediction *all* there is?
-
----
-
-## II. Human Intelligence as Machine Learning
-
----
-
-## The One Example We Have
-
-- To build intelligence, be precise about the one we have
-- This section pairs each human capacity with an ML task
+## II. Human Intelligence as Machine Learning {.section-divider}
 
 ---
 
@@ -268,7 +255,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## III. "AI": An Ambiguous Term
+## III. "AI": An Ambiguous Term {.section-divider}
 
 ---
 
@@ -368,7 +355,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## IV. Generative AI & LLMs
+## IV. Generative AI & LLMs {.section-divider}
 
 ---
 
@@ -407,7 +394,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## V. The Five Tribes
+## V. The Five Tribes {.section-divider}
 
 ---
 
@@ -479,7 +466,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## VI. State of the Art
+## VI. State of the Art {.section-divider}
 
 ---
 
@@ -509,7 +496,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## VII. What We Want from AGI
+## VII. What We Want from AGI {.section-divider}
 
 ---
 
@@ -547,7 +534,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
-## VIII. The Future
+## VIII. The Future {.section-divider}
 
 ---
 
