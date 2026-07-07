@@ -9,6 +9,23 @@ format:
     embed-resources: true
     chalkboard: false
     theme: dark
+    title-slide-attributes:
+      data-background-image: "https://i0.wp.com/www.delaneyturner.com/wp-content/uploads/2018/04/IMG_2789.jpg"
+      data-background-size: "contain"
+      data-background-position: "center 78%"
+      data-background-opacity: "0.55"
+header-includes: |
+  <style>
+  #title-slide::after {
+    content: "Piedras del Tunjo, 12,000 years ago";
+    position: absolute;
+    bottom: 0.6em;
+    right: 0.8em;
+    font-size: 0.4em;
+    font-style: italic;
+    opacity: 0.9;
+  }
+  </style>
 ---
 
 ## Welcome
@@ -399,6 +416,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Roots: logic — Newell & Simon's symbol system hypothesis
 - Learning = inverse deduction; rules, trees, expert systems
 - Precise and auditable — but brittle
+- Optimization: combinatorial search over rule/hypothesis space
 - Modern echo: neuro-symbolic AI, formal verification
 - EXAMPLE: Routing Email Complaints
 
@@ -408,7 +426,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 - Roots: McCulloch–Pitts (1943), Rosenblatt's perceptron (1958)
 - Backpropagation (1986) → CNNs → transformers
-- Master algorithm: gradient descent
+- Optimization: stochastic gradient descent via backpropagation
 - Scales with data and compute — and dominates today
 - EXAMPLE: Making DNA viral capsids 
 
@@ -425,6 +443,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Roots: Darwin, formalized by Holland (1975)
 - Evolve a population — mutation, crossover, selection
 - No gradient, no labels — only a fitness score
+- Optimization: genetic algorithms / evolutionary search
 - Niche but creative: architecture search, robot morphology
 - EXAMPLE: Avoiding immune response for gene envelope
 
@@ -435,6 +454,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Roots: Bayes (1763), Laplace
 - Learning = updating a distribution over hypotheses
 - Prior + likelihood → posterior
+- Optimization: probabilistic inference (MCMC, variational inference)
 - Calibrated uncertainty, at a computational cost
 - EXAMPLE: Soldier Death Benefit Pensions
 
@@ -444,7 +464,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 - Roots: psychology — reasoning from prior cases
 - k-nearest neighbors, SVMs, the kernel trick
-- Master algorithm: similarity and distance
+- Optimization: constrained optimization to maximize margin (SVMs)
 - Legacy: recommendation, few-shot via embeddings
 - EXAMPLE: Locating outperforming stock pairs
 
