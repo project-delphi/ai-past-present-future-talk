@@ -146,17 +146,9 @@ header-includes: |
 
 ## Messi: Football Intelligence
 
-- Diagnosed with growth-hormone deficiency as a child
-- Physical limits may have driven *compensatory* perception and decision-making
-- Reads play patterns before they fully unfold
-- Escapes tackles by cognition and a low center of gravity — not speed
-
----
-
-## Pattern Recognition Over Computation
-
-- Cited for anticipation, spatial awareness, decisions under pressure
-- Like chess intuition — pattern recognition, not raw calculation
+- Growth-hormone deficiency as a child — physical limits may have driven *compensatory* perception
+- Reads play patterns before they unfold — anticipation over speed
+- Like chess intuition: pattern recognition, not raw calculation
 - A human specialization of the same predictive engine
 - *Caveat: the hormone–cognition link is a popular theory, not proven*
 
@@ -569,7 +561,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ## Key Takeaways
 
-- "AI" is an unambiguous term — today it means LLMs
+- "AI" is an ambiguous term — today it means LLMs
 - Minds run on prediction — octopus to cortex to transformer
 - Human intelligence is the ML task list, written first in biology
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
