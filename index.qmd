@@ -556,6 +556,17 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 
 ---
 
+## AI Ethics — Beyond My Expertise
+
+- Real political stakes, honestly outside my depth:
+- **Cheap dopamine** — engineered attention capture
+- **Economic effects** — labour, wealth concentration
+- **Children** — growing up AI-saturated
+- **Distribution** — who reaps the fruits of the technology
+- A prior, held lightly: fewer regulations tend to serve better
+
+---
+
 ## Key Takeaways
 
 - "AI" is an unambiguous term — today it means LLMs
