@@ -245,6 +245,7 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Powers game-players and chat-model tuning
 - The agent generates its own training signal
 - Human parallel: a child learning by trial, reward, and consequence
+
 ---
 
 ## The Unifying View
