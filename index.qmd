@@ -67,6 +67,7 @@ Open warmly. This is a rite of passage, not a survey course — set the expectat
 - **Jonathan Florez Giraldo**
 - **Alex Kuznetsov**
 - **Andrei Alain González Galeano**
+- **Pedro Domingos** — for *The Master Algorithm* and the five tribes
 
 *With gratitude for their contributions.*
 
