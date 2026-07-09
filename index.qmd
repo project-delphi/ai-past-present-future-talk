@@ -55,6 +55,25 @@ header-includes: |
 - Fewer ideas, held longer
 - Your work: interrogate the definitions others accept
 
+::: {.notes}
+Open warmly. This is a rite of passage, not a survey course — set the expectation that we'll go deep on a few ideas rather than skim many. The one line to land: a doctorate is about questioning the definitions everyone else takes for granted. Everything tonight is an example of that move.
+:::
+
+---
+
+## Acknowledgements
+
+- **Leonardo Donando**
+- **Jonathan Florez Giraldo**
+- **Alex Kuznetsov**
+- **Andrei Alain González Galeano**
+
+*With gratitude for their contributions.*
+
+::: {.notes}
+Thank these four by name and say a warm sentence about what each contributed before moving on. Keep it brief and heartfelt — a moment of gratitude, not a list to rush through. Double-check the name spellings and pronunciations ahead of time.
+:::
+
 ---
 
 ## The Spine — Three Threads
@@ -62,6 +81,10 @@ header-includes: |
 - **Minds run on prediction** — animal, human, machine alike
 - **"AI" is an Ambiguous Term** — today, a marketing label for LLMs
 - **Human intelligence is Sample Efficient Novel Problem Solving** — written first in our biology
+
+::: {.notes}
+These three threads recur all evening — flag them now so people can track them. Prediction is the mechanism, "AI" being ambiguous is the caution, and sample-efficient novel problem solving is the yardstick. Tell the audience: whenever I say "intelligence," hold me to that last definition. Point back here each time a thread resurfaces.
+:::
 
 ---
 
@@ -77,6 +100,10 @@ header-includes: |
 - VII What we want from AGI
 - VIII The future
 
+::: {.notes}
+Roadmap slide — keep it brief, roughly 20 seconds. Note the coffee break sits between III and IV so people can pace themselves. Sections I–III build the conceptual frame; IV–VIII are the payoff. Don't read every line aloud; just orient them.
+:::
+
 ---
 
 ## I. Minds: Consciousness & Animals {.section-divider}
@@ -87,6 +114,10 @@ header-includes: |
 - The threshold of genuine social agency
 - Most systems model text, not minds
 
+::: {.notes}
+Theory of mind is the classic developmental milestone — the Sally–Anne false-belief test, passed by most children around age four. The punchline is the third bullet: an LLM models the statistics of text about beliefs, not the beliefs themselves. Whether that distinction survives scale is genuinely open — resist claiming it's settled.
+:::
+
 ---
 
 ## Sentience vs. Sapience
@@ -96,6 +127,10 @@ header-includes: |
 - Today's AI mimics sapience, shows no sentience
 - That asymmetry is the hard problem
 
+::: {.notes}
+Define the two words carefully — audiences conflate them. Sentience is feeling (qualia), sapience is wise judgement. Chalmers' "hard problem" is why there's subjective experience at all. The asymmetry to stress: our machines are climbing the sapience axis while showing zero evidence on the sentience axis, and we have no test to settle it either way.
+:::
+
 ---
 
 ## Self-Awareness
@@ -104,6 +139,10 @@ header-includes: |
 - Rodin's *Thinker*: a mind watching itself think
 - Not the same as intelligence, nor consciousness
 - Perhaps a prerequisite for both
+
+::: {.notes}
+Use the Rodin image as the hook — a mind watching itself think. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
+:::
 
 ---
 
@@ -117,6 +156,10 @@ header-includes: |
 4. Dolphin — self-recognition, communication
 5. Human — metacognition, culture
 
+::: {.notes}
+Big caveat first, and say it out loud: this is a teaching device, not a real taxonomy — a ladder implies a single axis, and that's exactly the assumption I'll attack two slides from now. Walk up it quickly. The point of building it is to knock it down: intelligence isn't linear, and "higher" is doing a lot of unearned work here.
+:::
+
 ---
 
 ## Where Do Today's Systems Sit?
@@ -124,6 +167,10 @@ header-includes: |
 - The ladder orders behaviour, not depth
 - Is an LLM above the dog — or on another axis?
 - Analogy is not enough; we need comparative cognition
+
+::: {.notes}
+This is where the ladder breaks. Pose the question and let it hang: is an LLM "above" a dog, or is it simply on a different axis entirely? The honest answer is the latter — it's superhuman at some things and below an insect at others. That non-comparability is the whole reason the next few slides turn to animals: real natural experiments beat our analogies.
+:::
 
 ---
 
@@ -133,6 +180,10 @@ header-includes: |
 - Primate cognition: a rough draft of ours
 - The differences are as instructive as the likenesses
 
+::: {.notes}
+Chimps and bonobos share a common ancestor with us roughly 6–7 million years ago. They give us tool use, coalition politics, and partial theory of mind — a rough draft of our cognition. But lean on the last bullet: what they lack (cumulative culture, language) tells us as much about what makes us us as what they share.
+:::
+
 ---
 
 ## Octopus: Intelligence Reinvented
@@ -141,6 +192,10 @@ header-includes: |
 - Evolved **completely independently** of ours
 - A true natural experiment in cognition
 - Similar solutions → convergence is real
+
+::: {.notes}
+This is the star witness. ~550 million years of separate evolution, and yet the octopus independently arrived at tool use, problem solving, and even play. Most of its neurons are in its arms — cognition is distributed, not centralized. The lesson for AI: intelligence is convergent and substrate-independent. Nature built it twice, on totally different architectures, so there's no reason to think our neural nets are the only route.
+:::
 
 ---
 
@@ -152,6 +207,10 @@ header-includes: |
 - A human specialization of the same predictive engine
 - *Caveat: the hormone–cognition link is a popular theory, not proven*
 
+::: {.notes}
+A crowd-pleaser — use it to make prediction concrete and human. Messi doesn't run faster; he predicts the play a beat before everyone else, the same way a chess master sees patterns rather than calculating every branch. That's the predictive engine from the spine, specialized. Read the caveat aloud — the growth-hormone-to-genius story is a nice narrative, not established science, and being honest about that models the intellectual care I'm asking of them.
+:::
+
 ---
 
 ## Dolphin: The Other Aquatic Mind
@@ -159,6 +218,10 @@ header-includes: |
 - Same ocean, opposite bet to the octopus
 - Centralized brain, long-lived, deeply social
 - A separate route to a large brain
+
+::: {.notes}
+The contrast with the octopus is the point: same ocean, opposite strategy. The octopus went distributed, short-lived, solitary; the dolphin went centralized, long-lived, intensely social — and passes the mirror self-recognition test. Two routes to a big brain in the same environment. Nature keeps refusing to give us one architecture.
+:::
 
 ---
 
@@ -169,6 +232,10 @@ header-includes: |
 - Dolphin — intelligence on the opposite bet
 - No single architecture is *the* architecture
 
+::: {.notes}
+Section I payoff — say the last line slowly and let it land. This is the thesis of the whole animals detour: there is no single architecture of intelligence. That directly indicts the transformer triumphalism we'll meet after coffee. Bridge forward: if biology has many solutions, maybe our current AI is just one narrow bet among many.
+:::
+
 ---
 
 ## Emotion → Feeling → Sentiment
@@ -177,6 +244,10 @@ header-includes: |
 - **Feeling** — the conscious experience of that input
 - **Sentiment** — a compressed label from expressed feelings
 - Machine analogues: reward signals, then sentiment analysis
+
+::: {.notes}
+Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is the conscious experience of it, sentiment is the compressed label we express and others read. The machine mapping is the memorable bit: a reward signal is an emotion analogue with no feeling attached, and "sentiment analysis" reads the label without any of the experience underneath. Fluency without qualia, again.
+:::
 
 ---
 
@@ -187,6 +258,10 @@ header-includes: |
 - Consciousness as ongoing active inference
 
 $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \cdot P(\text{world})$$
+
+::: {.notes}
+This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out after coffee.
+:::
 
 ---
 
@@ -202,6 +277,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Compositionality & abstraction
 - Causal reasoning, metacognition, grounding
 
+::: {.notes}
+This list is doing double duty — tell the audience to remember it, because in Section VII I read the exact same list back as the AGI wish-list. Sample efficiency is the one to underline: a child learns "giraffe" from one picture; a model needs thousands. Every item here is a capability our biology already has and our machines mostly don't.
+:::
+
 ---
 
 ## Supervised Learning
@@ -210,6 +289,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Told the answer; adjust to cut error
 - Bottleneck: the cost of labels
 - Human parallel: a student with an answer key
+
+::: {.notes}
+The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
+:::
 
 ---
 
@@ -220,6 +303,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - The internet becomes supervision, unannotated
 - Human parallel: an infant learning by observation
 
+::: {.notes}
+This is the one that unlocked the LLM era, so give it weight. The trick: hide part of the data and make the model predict it — no human labels needed, the data supervises itself. Suddenly the entire internet becomes training signal. Tie it straight back to Friston: predicting the masked word is the same move as the brain predicting its next sensory input. Same principle, silicon substrate.
+:::
+
 ---
 
 ## Unsupervised Learning
@@ -228,6 +315,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Clustering, dimensionality reduction, density estimation
 - Reveals hidden groupings and manifolds
 - Human parallel: noticing categories no one named
+
+::: {.notes}
+Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. Don't dwell; the modern action is in self-supervised and RL.
+:::
 
 ---
 
@@ -238,6 +329,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - The agent generates its own training signal
 - Human parallel: a child learning by trial, reward, and consequence
 
+::: {.notes}
+No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
+:::
+
 ---
 
 ## The Unifying View
@@ -245,6 +340,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Self-supervised prediction builds the world model
 - Reinforcement fine-tunes on top
 - The same recipe in cortex and in models
+
+::: {.notes}
+Section II landing. Compress the whole section to one sentence: self-supervised prediction builds the world model, reinforcement fine-tunes it on top — and that two-stage recipe is how you train a frontier LLM and, plausibly, how the cortex works too. This is the boldest claim of the section, so state it as a claim, not a fact. It sets up Section III's question: if this is all "just" prediction, what do we even mean by "AI"?
+:::
 
 ---
 
@@ -257,6 +356,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - First: what is knowledge?
 - Then: why "AI" resists definition
 
+::: {.notes}
+Signposting slide — 15 seconds. The move of Section III: before we can argue about "AI," we need a working account of knowledge, so I build that first, then show why "AI" keeps slipping out of every definition. Tell them the destination up front so the knowledge detour doesn't feel like a tangent.
+:::
+
 ---
 
 ## One Definition of Knowledge
@@ -266,6 +369,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - **Abstraction** — the reusable structure it yields
 - **Prediction** — the test on unseen data
 - **Knowledge** — abstraction that keeps passing
+
+::: {.notes}
+Walk the pipeline slowly, it's the backbone of the section: raw data, compress out the redundancy, the reusable structure that survives is abstraction, the test is prediction on unseen data, and knowledge is abstraction that keeps passing that test. The key idea, and it echoes Friston: to know something is to compress it well enough to predict. Knowledge is compression that predicts.
+:::
 
 ---
 
@@ -277,6 +384,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - **Culture** — collective wisdom, transmitted
 - **Computers** — synthesis at scale
 
+::: {.notes}
+Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
+:::
+
 ---
 
 ## The Moving Target
@@ -284,6 +395,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - No agreed definition of "AI"
 - Each era relabels its frontier
 - Let's weigh the candidates
+
+::: {.notes}
+Set up the next run of slides: each era relabels its own frontier as "AI," so there's no stable target. Preview that I'll walk through several candidate definitions — Turing, Russell & Norvig, Sutton, Chollet — and weigh each. Frame it as a jury, not a lecture: none is fully right, but each catches something.
+:::
 
 ---
 
@@ -295,6 +410,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Make coffee in any kitchen in the world
 - "AI" often means: *not yet understood*
 
+::: {.notes}
+This is the "AI effect" and the emotional centre of the section. The pattern: chess, OCR, translation were all "AI" right up until they worked — then we saw the mechanism and demoted them to "just software." "Make coffee in any unfamiliar kitchen" (Wozniak's test) is the vivid version of a task still on the far side of that line. Land the punchline: "AI" too often just labels whatever we don't yet understand — a moving goalpost, not a category. This directly teases the thesis slide.
+:::
+
 ---
 
 ## The Turing Test
@@ -304,6 +423,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Cited often, engineered against rarely
 - A floor, not a ceiling
 
+::: {.notes}
+Turing sidestepped "can machines think?" by replacing it with a behavioural test: if you can't tell it from a human in text, it passes. Two honest criticisms: it says nothing about internal states (the Chinese Room objection), and it's cited constantly but almost never actually engineered toward. The verdict to voice: a useful floor for the conversation, never a ceiling — and arguably modern chatbots pass it while being nobody's idea of AGI.
+:::
+
 ---
 
 ## Russell & Norvig: Rational Agency
@@ -311,6 +434,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Act to achieve the best expected outcome
 - The textbook definition — agent, environment, measure
 - Says nothing about *how* — only that it decides well
+
+::: {.notes}
+The definition most working engineers actually use — it's the frame of the Russell & Norvig textbook nearly everyone in AI trained on. An agent perceives an environment and acts to maximize an expected performance measure. Its strength is that it's operational and buildable; its silence is deliberate — it says nothing about consciousness or "how," only that the agent decides well. Contrast with Turing: behaviour-plus-goals rather than behaviour-mimics-human.
+:::
 
 ---
 
@@ -321,6 +448,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Seventy years keep re-teaching it
 - Cleverness loses to scale
 
+::: {.notes}
+Sutton's essay is short and worth having them read. The claim: across 70 years, general methods that ride compute — search and learning — have repeatedly beaten hand-crafted human knowledge, and researchers hate this because it makes their cleverness look wasted. It explains the whole LLM era in one sentence. But foreshadow the pushback: Chollet, next slide, thinks scale alone measures the wrong thing. Present it as provocative, not gospel.
+:::
+
 ---
 
 ## Chollet: Intelligence as Adaptation
@@ -329,6 +460,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Adaptation, not static performance
 - The machine echo of human skill acquisition
 - Memorize well, adapt poorly → not intelligent
+
+::: {.notes}
+Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, score poorly on it. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
+:::
 
 ---
 
@@ -339,12 +474,20 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - LLMs are squarely AI — and squarely *not* AGI
 - A strength to harness, a limit to respect
 
+::: {.notes}
+The thesis of the first half — deliver it slowly, it's the hinge before coffee. "AI" is a moving marketing label, not a fixed concept, and right now it points at exactly one thing: LLMs. Hold both halves of the last claim in tension: LLMs are squarely AI and squarely not AGI. That's not a hedge, it's the honest position — and it's the stance the whole back half of the talk builds on. Then send them to coffee.
+:::
+
 ---
 
 
 ## ☕ Coffee Break
 
 *15 minutes — please join us in the foyer*
+
+::: {.notes}
+Housekeeping: state the exact return time out loud and point to the foyer. Good moment to take a sip of water and check the clock — if you're running long, the tribes section (V) has the most slides you can compress. Restart after the break by re-anchoring the three spine threads before diving into generative AI.
+:::
 
 ---
 
@@ -359,6 +502,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Self-supervised pre-training + the transformer
 - System 1 at planetary scale
 
+::: {.notes}
+Welcome them back from coffee, re-anchor quickly. Generative AI learns a probability distribution over data and samples new points from it — text, image, audio, code, all the same trick. Two ingredients did it: self-supervised pre-training plus the transformer. The phrase to plant, because it pays off two slides later: this is "System 1 at planetary scale" — fast, fluent, intuitive pattern-completion, with no deliberate reasoning behind it yet.
+:::
+
 ---
 
 ## What It Is Not
@@ -367,6 +514,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Fluency is not knowledge
 - It compresses culture and lets us query it
 - New and powerful — not a mind
+
+::: {.notes}
+The deliberate counterweight to the hype slide before it — keep the tone measured, not dismissive. No guarantee of truth, cause, or grounding; fluency is not knowledge (this is where hallucination lives). The generous framing: it compresses human culture and lets us query it in natural language, which is genuinely new and genuinely powerful. But hold the line — powerful tool, not a mind. Both halves are true at once.
+:::
 
 ---
 
@@ -377,6 +528,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Unreliable deliberate reasoning
 - A statistical reflection of us
 
+::: {.notes}
+The most precise technical description in the deck — slow down and be exact, some of the audience are specialists. Strip it to the mechanism: an LLM predicts the next token over human text, nothing more. From that fall the real limits — no persistent memory across sessions, weak causal models, unreliable multi-step reasoning. Close on the resonant line: it's a statistical reflection of us, our text mirrored back. That framing sets up the entire "state of the art" gaps section.
+:::
+
 ---
 
 ## Bridge: Compression, Mechanized
@@ -384,6 +539,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - The knowledge-as-compression story, now in silicon
 - Friston's prediction, running on GPUs
 - Biological first, artificial second — same architecture
+
+::: {.notes}
+Short bridge slide — its whole job is to snap the two halves of the talk together. Everything before coffee (knowledge as compression, Friston's prediction) is now literally running on GPUs. The line to land: biology got here first, silicon second, but it's the same underlying architecture — prediction to reduce surprise. Then pivot into the five tribes: this is only one lineage of AI, and there are four others worth knowing.
+:::
 
 ---
 
@@ -400,6 +559,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Modern echo: neuro-symbolic AI, formal verification
 - EXAMPLE: Routing Email Complaints
 
+::: {.notes}
+Framing for the whole section — this is Pedro Domingos' "five tribes" from The Master Algorithm. The symbolists came first: intelligence is the manipulation of symbols by explicit rules, and learning is inverse deduction — inferring the rules from examples. Their systems are precise and auditable, which is exactly why they're brittle when reality doesn't fit the rules. The email example: a rule tree that routes complaints by keywords — transparent, but it shatters on a phrasing nobody wrote a rule for. Modern echo: neuro-symbolic AI and formal verification.
+:::
+
 ---
 
 ## Connectionists — The Brain as Inspiration
@@ -408,13 +571,21 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Backpropagation (1986) → CNNs → transformers
 - Optimization: stochastic gradient descent via backpropagation
 - Scales with data and compute — and dominates today
-- EXAMPLE: Making DNA viral capsids 
+- EXAMPLE: Making DNA viral capsids
+
+::: {.notes}
+The tribe that won — for now. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
+:::
 
 ---
 
 ## Connectionists
 
 - Two inspiring contributors from Peru or Ecuador!
+
+::: {.notes}
+Personal / local-connection slide — a nod to the host country and its researchers. Fill in the two names and their contributions before the talk, and say a warm sentence about each; this is a moment to connect with the room, not to teach. Keep it short and generous, then move back to the tribes.
+:::
 
 ---
 
@@ -427,6 +598,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Niche but creative: architecture search, robot morphology
 - EXAMPLE: Avoiding immune response for gene envelope
 
+::: {.notes}
+Darwin as algorithm, formalized by Holland in 1975. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
+:::
+
 ---
 
 ## Bayesians — Belief as Probability
@@ -438,6 +613,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Calibrated uncertainty, at a computational cost
 - EXAMPLE: Soldier Death Benefit Pensions
 
+::: {.notes}
+The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: learning is updating a probability distribution over hypotheses — prior plus likelihood gives posterior. Inference is the hard part (MCMC, variational methods), and the payoff is calibrated uncertainty: the model tells you how sure it is, at real computational cost. The pension example is the point of the tribe — actuarial estimates of survivor benefits where being honestly uncertain matters more than a single confident guess, and a wrong point estimate has human consequences. Note LLMs borrow this for uncertainty estimates.
+:::
+
 ---
 
 ## Analogizers — Reasoning by Similarity
@@ -448,6 +627,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Legacy: recommendation, few-shot via embeddings
 - EXAMPLE: Locating outperforming stock pairs
 
+::: {.notes}
+The fifth tribe: reason by similarity to past cases rather than by rules or models. Roots in psychology; the workhorses are k-nearest neighbours and SVMs, whose kernel trick measures similarity in high-dimensional space. The legacy is everywhere — recommendation systems ("people like you"), and few-shot learning via embeddings, which is how modern LLMs retrieve. The stock example: pairs trading, finding two stocks that historically move together and betting on the gap when they diverge — pure reasoning from analogous past behaviour. Set up the synthesis slide next: today's systems quietly use all five.
+:::
+
 ---
 
 ## The Frontier Borrows From All Five
@@ -456,6 +639,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - LLMs: connectionist core, Bayesian uncertainty, symbolic tools, RL tuning
 - Domingos' provocation: one master algorithm?
 - Which synthesis will *your* work advance?
+
+::: {.notes}
+Section V landing, and the first direct address to the doctoral candidates. No real production system is a single tribe — a modern LLM is a connectionist core with Bayesian uncertainty, symbolic tool use bolted on, and RL for tuning. Domingos' provocation: is there one "master algorithm" that unifies all five? I don't claim there is. End on the question aimed straight at the room — which synthesis will your thesis push forward? Let it sit before the section break.
+:::
 
 ---
 
@@ -469,6 +656,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - The frontier problem is reasoning, not scale
 - Performance can mask absent understanding
 
+::: {.notes}
+Set the honest tone for Section VI — this is the reality check after the tribes. Today's systems are narrow and brittle the moment you step outside the training distribution. The reframe that matters: the frontier problem is reasoning, not scale — more parameters won't close this gap. And the warning to the researchers in the room: benchmark performance can mask a total absence of understanding, so measure carefully and distrust a single headline number.
+:::
+
 ---
 
 ## System 1 vs. System 2
@@ -478,6 +669,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - "Reasoning" models narrow the gap at inference time
 - Open and fast-moving
 
+::: {.notes}
+Kahneman's framing, borrowed and made concrete — this is the payoff of the "System 1 at planetary scale" line I planted in Section IV. System 1 is fast, automatic, intuitive; System 2 is slow, effortful, deliberate. LLMs are astonishing System 1 and stumble at System 2. The current move — chain-of-thought and "reasoning" models that spend more compute at inference time — is an attempt to bolt on System 2. Flag it as genuinely open and moving fast: whatever I say here may be dated by the time you watch the recording.
+:::
+
 ---
 
 ## World Models & Grounding
@@ -486,6 +681,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Today's systems largely lack this
 - Grounding: *why*, not merely co-occurrence
 - Correlation → causation: the unfinished bridge
+
+::: {.notes}
+The deepest gap, and it circles back to Section I. Humans run an internal physics engine — we intuit gravity, object permanence, and cause before we can speak. Today's systems mostly lack this; they have correlation without a causal model of why. Pearl's ladder of causation is the reference if anyone asks. The closing line is the section's thesis: correlation to causation is the unfinished bridge — and it's precisely the kind of open problem a thesis could take on.
+:::
 
 ---
 
@@ -499,6 +698,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Now state what we'd require
 - What must hold before "generally intelligent"?
 
+::: {.notes}
+Short pivot slide. Section VI catalogued what's missing; now I flip from diagnosis to specification — what would actually have to be true before we'd call a system generally intelligent? Frame it as writing a requirements document for AGI, and note the deliberate mirror coming: this spec will turn out to be the human-intelligence list from Section II, read back. Keep it to a sentence or two.
+:::
+
 ---
 
 ## Generality, Efficiency, Reasoning
@@ -506,6 +709,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - **Generality** — competence transfers to the untrained
 - **Sample efficiency** — human-like, from few examples
 - **Robust reasoning** — multi-step, causal, self-correcting
+
+::: {.notes}
+First three requirements. Generality means competence transfers to tasks it was never trained on — the opposite of the brittleness in Section VI. Sample efficiency is the spine's yardstick again: human-like learning from a handful of examples, not millions. Robust reasoning is multi-step, causal, and self-correcting — the System 2 the models still lack. Point out each one is a direct answer to a gap named earlier; this isn't a wish-list from nowhere.
+:::
 
 ---
 
@@ -516,6 +723,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - **Autonomy with alignment** — open-ended yet controllable
 - The last is a constraint — and the highest-stakes one
 
+::: {.notes}
+The remaining three, and slow down on the last. Persistent memory means no catastrophic forgetting — the missing piece from "The LLM, Precisely." Grounded world models means causal, ideally embodied understanding, which sets up Section VIII. Then the crucial asymmetry: alignment isn't another capability, it's a constraint on all the others — we want open-ended autonomy that stays controllable. It's the only item where getting it wrong is catastrophic rather than merely disappointing, which is why it carries the most weight.
+:::
+
 ---
 
 ## The Mirror
@@ -524,6 +735,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - We want the human bundle — minus our limits, plus our values
 - Whether that bundle is coherent is itself a thesis
 - You debate the spec, not just implement it
+
+::: {.notes}
+Section VII payoff, and the intellectual climax of the talk — deliver it deliberately. Reveal the mirror: this AGI spec is just the human-intelligence properties from Section II read back to us. We want the human bundle minus our limits, plus our values. Then the twist that makes it a research programme: whether that bundle is even internally coherent — whether you can maximize all of it at once — is itself a thesis-worthy question. The charge to the room: your job is to debate the specification, not merely implement someone else's.
+:::
 
 ---
 
@@ -537,6 +752,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Moravec: reasoning is cheap, sensorimotor skill is dear
 - Crossing a room is harder than grandmaster chess
 
+::: {.notes}
+Open the future section with the counterintuitive one. Moravec's paradox: the things evolution spent hundreds of millions of years on — walking, grasping, perceiving — are the hard ones for machines, while chess, which we find hard, is comparatively easy. A toddler's sensorimotor skill outstrips any robot; grandmaster chess fell decades ago. The provocation: real intelligence may require a body, because so much of our cognition is built on sensorimotor grounding. This teases the robotics slide next.
+:::
+
 ---
 
 ## Foundation Models Meet Robotics
@@ -545,6 +764,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Surgery, deep-sea exploration, autonomous logistics
 - The loop closes: sense → predict → act → learn
 - Where the next decade concentrates
+
+::: {.notes}
+This is where I place my bet on the next decade. Put the foundation-model "brain" into a capable "body" — surgery, deep-sea and space exploration, autonomous logistics. The unifying idea is the closed loop: sense, predict, act, learn — which is Friston's active inference and the RL loop from Section II, now running in the physical world. Tell the candidates plainly: this is where I'd concentrate, the convergence of foundation models and robotics. But hold it lightly — a bet, not a prophecy.
+:::
 
 ---
 
@@ -557,6 +780,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - **Distribution** — who reaps the fruits of the technology
 - A prior, held lightly: fewer regulations tend to serve better
 
+::: {.notes}
+Handle with humility — say out loud that this is outside my expertise, because it is, and the honesty matters more than coverage. Name the stakes without pretending to resolve them: engineered attention capture ("cheap dopamine"), labour disruption and wealth concentration, children growing up AI-saturated, and who actually captures the benefits. The regulation line is a personal prior, explicitly held lightly — flag it as a view to argue with, not a conclusion, and invite disagreement in the discussion. Don't linger or preach.
+:::
+
 ---
 
 ## Key Takeaways
@@ -565,6 +792,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 - Minds run on prediction — octopus to cortex to transformer
 - Human intelligence is the ML task list, written first in biology
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
+
+::: {.notes}
+The recap — tie the three spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide before the personal close.
+:::
 
 ---
 
@@ -575,6 +806,10 @@ $$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \c
 You are the architects of the world models that will define the coming decade. The questions left open tonight — what consciousness is, how memory should persist, what closes the reasoning gap, what we should and should not want from AGI — are not gaps in this lecture.
 
 **They are your thesis directions.**
+
+::: {.notes}
+The emotional close — slow right down, make eye contact, let the last line breathe before you say it. The message: a PhD isn't about mastering today's tools, which will be obsolete, but about interrogating the definitions themselves — the callback to the very first slide. Reframe every open question from tonight (consciousness, memory, the reasoning gap, what we should want from AGI) not as gaps in the lecture but as their thesis directions. Pause fully after the bold line, then move to references and discussion.
+:::
 
 ---
 
@@ -626,3 +861,7 @@ You are the architects of the world models that will define the coming decade. T
 ## Discussion
 
 *What is the most important open problem in AI — and how will you spend the next five years on it?*
+
+::: {.notes}
+Open the floor and then wait — count to ten in silence if you have to; the first question is always the slowest. This prompt is deliberately personal and forward-looking to pull answers from the candidates rather than abstract debate. Have two or three seed questions ready in case the room is quiet, and be willing to say "I don't know" — modelling intellectual honesty is the whole point of the evening. Thank the audience and the hosts before closing.
+:::
