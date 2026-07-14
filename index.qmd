@@ -79,9 +79,13 @@ Thank these four by name and say a warm sentence about what each contributed bef
 
 ## The Spine — Three Threads
 
+- **Intelligence is Solving Problems** by learning
 - **Minds run on prediction** — animal, human, machine alike
 - **"AI" is an Ambiguous Term** — today, a marketing label for LLMs
 - **Human intelligence is Sample Efficient Novel Problem Solving** — written first in our biology
+
+- Good prediction indicates learning
+
 
 ::: {.notes}
 These three threads recur all evening — flag them now so people can track them. Prediction is the mechanism, "AI" being ambiguous is the caution, and sample-efficient novel problem solving is the yardstick. Tell the audience: whenever I say "intelligence," hold me to that last definition. Point back here each time a thread resurfaces.
@@ -214,23 +218,11 @@ A crowd-pleaser — use it to make prediction concrete and human. Messi doesn't 
 
 ---
 
-## Dolphin: The Other Aquatic Mind
-
-- Same ocean, opposite bet to the octopus
-- Centralized brain, long-lived, deeply social
-- A separate route to a large brain
-
-::: {.notes}
-The contrast with the octopus is the point: same ocean, opposite strategy. The octopus went distributed, short-lived, solitary; the dolphin went centralized, long-lived, intensely social — and passes the mirror self-recognition test. Two routes to a big brain in the same environment. Nature keeps refusing to give us one architecture.
-:::
-
----
 
 ## What Comparative Cognition Teaches
 
 - Primates — culture, politics, partial theory of mind
 - Octopus — intelligence minus centralization
-- Dolphin — intelligence on the opposite bet
 - No single architecture is *the* architecture
 
 ::: {.notes}
@@ -272,9 +264,9 @@ This closes Section I and is the keystone for the whole talk. Friston's Free Ene
 
 ## Properties of Human Intelligence
 
-- Generalization & transfer
-- Memory — short- and long-term
+- short-term and long-term Memory
 - Sample efficiency — learn from a few examples
+- Generalization & transfer
 - Compositionality & abstraction
 - Causal reasoning, metacognition, grounding
 
@@ -344,7 +336,7 @@ No fixed dataset — the agent acts, gets reward or penalty, and generates its o
 
 ::: {.notes}
 Section II landing. Compress the whole section to one sentence: self-supervised prediction builds the world model, reinforcement fine-tunes it on top — and that two-stage recipe is how you train a frontier LLM and, plausibly, how the cortex works too. This is the boldest claim of the section, so state it as a claim, not a fact. It sets up Section III's question: if this is all "just" prediction, what do we even mean by "AI"?
-:::
+::: 
 
 ---
 
@@ -391,7 +383,7 @@ Four substrates that all run the same compression algorithm on different timesca
 
 ---
 
-## The Moving Target
+## What is AI? 
 
 - No agreed definition of "AI"
 - Each era relabels its frontier
@@ -399,6 +391,19 @@ Four substrates that all run the same compression algorithm on different timesca
 
 ::: {.notes}
 Set up the next run of slides: each era relabels its own frontier as "AI," so there's no stable target. Preview that I'll walk through several candidate definitions — Turing, Russell & Norvig, Sutton, Chollet — and weigh each. Frame it as a jury, not a lecture: none is fully right, but each catches something.
+:::
+
+---
+
+## Four Terms, Kept Straight
+
+- **ML** — algorithms that improve at a task with more data
+- **ANI** — narrow: superhuman at one task, useless outside it
+- **AGI** — general: human-level breadth, *novel* problems included
+- **ASI** — beyond: exceeds the best humans at essentially everything
+
+::: {.notes}
+Pause here and pin the vocabulary down — the rest of the talk depends on these four not blurring together. ML is the method: systems that improve from data rather than hand-coded rules; it powers everything on this slide. ANI is what we actually have — chess engines, translators, LLMs: superhuman in a lane, helpless outside it. AGI is the aspiration — human-level breadth, and stress the word *novel*: problems it wasn't trained for. ASI is the speculation beyond that; mention it once, don't let the talk drift into sci-fi. The trap to name out loud: "AI" in headlines slides between all four. When someone says AI, ask which one they mean — that's the ambiguity thread again.
 :::
 
 ---
@@ -437,20 +442,7 @@ Turing sidestepped "can machines think?" by replacing it with a behavioural test
 - Says nothing about *how* — only that it decides well
 
 ::: {.notes}
-The definition most working engineers actually use — it's the frame of the Russell & Norvig textbook nearly everyone in AI trained on. An agent perceives an environment and acts to maximize an expected performance measure. Its strength is that it's operational and buildable; its silence is deliberate — it says nothing about consciousness or "how," only that the agent decides well. Contrast with Turing: behaviour-plus-goals rather than behaviour-mimics-human.
-:::
-
----
-
-## Sutton: The Bitter Lesson
-
-- General methods that scale beat hand-crafted rules
-- Search and learning, plus compute
-- Seventy years keep re-teaching it
-- Cleverness loses to scale
-
-::: {.notes}
-Sutton's essay is short and worth having them read. The claim: across 70 years, general methods that ride compute — search and learning — have repeatedly beaten hand-crafted human knowledge, and researchers hate this because it makes their cleverness look wasted. It explains the whole LLM era in one sentence. But foreshadow the pushback: Chollet, next slide, thinks scale alone measures the wrong thing. Present it as provocative, not gospel.
+The definition most working engineers actually use — it's the frame of the Russell & Norvig textbook nearly everyone in AI trained on. An agent perceives an environment and acts to maximize an expected performance measure. Its strength is that it's operational and buildable; its silence is deliberate — it says nothing about consciousness or "how," only that the agent decides well. Contrast with Turing: behaviour-plus-goals rather than behavior-mimics-human.
 :::
 
 ---
@@ -465,21 +457,6 @@ Sutton's essay is short and worth having them read. The claim: across 70 years, 
 ::: {.notes}
 Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, score poorly on it. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
 :::
-
----
-
-## The Thesis
-
-- "AI" is a moving marketing label, not a fixed concept
-- Today it points at one thing: **LLMs**
-- LLMs are squarely AI — and squarely *not* AGI
-- A strength to harness, a limit to respect
-
-::: {.notes}
-The thesis of the first half — deliver it slowly, it's the hinge before coffee. "AI" is a moving marketing label, not a fixed concept, and right now it points at exactly one thing: LLMs. Hold both halves of the last claim in tension: LLMs are squarely AI and squarely not AGI. That's not a hedge, it's the honest position — and it's the stance the whole back half of the talk builds on. Then send them to coffee.
-:::
-
----
 
 
 ## ☕ Coffee Break
@@ -533,19 +510,6 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 The most precise technical description in the deck — slow down and be exact, some of the audience are specialists. Strip it to the mechanism: an LLM predicts the next token over human text, nothing more. From that fall the real limits — no persistent memory across sessions, weak causal models, unreliable multi-step reasoning. Close on the resonant line: it's a statistical reflection of us, our text mirrored back. That framing sets up the entire "state of the art" gaps section.
 :::
 
----
-
-## Bridge: Compression, Mechanized
-
-- The knowledge-as-compression story, now in silicon
-- Friston's prediction, running on GPUs
-- Biological first, artificial second — same architecture
-
-::: {.notes}
-Short bridge slide — its whole job is to snap the two halves of the talk together. Everything before coffee (knowledge as compression, Friston's prediction) is now literally running on GPUs. The line to land: biology got here first, silicon second, but it's the same underlying architecture — prediction to reduce surprise. Then pivot into the five tribes: this is only one lineage of AI, and there are four others worth knowing.
-:::
-
----
 
 ## V. The Five Tribes {.section-divider}
 
@@ -693,18 +657,6 @@ The deepest gap, and it circles back to Section I. Humans run an internal physic
 
 ---
 
-## From Gaps to a Target
-
-- The last section named what's absent
-- Now state what we'd require
-- What must hold before "generally intelligent"?
-
-::: {.notes}
-Short pivot slide. Section VI catalogued what's missing; now I flip from diagnosis to specification — what would actually have to be true before we'd call a system generally intelligent? Frame it as writing a requirements document for AGI, and note the deliberate mirror coming: this spec will turn out to be the human-intelligence list from Section II, read back. Keep it to a sentence or two.
-:::
-
----
-
 ## Generality, Efficiency, Reasoning
 
 - **Generality** — competence transfers to the untrained
@@ -791,7 +743,7 @@ Handle with humility — say out loud that this is outside my expertise, because
 
 - "AI" is an ambiguous term — today it means LLMs
 - Minds run on prediction — octopus to cortex to transformer
-- Human intelligence is the ML task list, written first in biology
+- Human intelligence is the ML task list, written first in our biology
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
 
 ::: {.notes}
