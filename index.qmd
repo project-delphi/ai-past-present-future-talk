@@ -113,18 +113,6 @@ Roadmap slide — keep it brief, roughly 20 seconds. Note the coffee break sits 
 
 ## I. Minds: Consciousness & Animals {.section-divider}
 
-## Theory of Mind
-
-- Modelling beliefs, intents, desires — in self and others
-- The threshold of genuine social agency
-- Most systems model text, not minds
-
-::: {.notes}
-Theory of mind is the classic developmental milestone — the Sally–Anne false-belief test, passed by most children around age four. The punchline is the third bullet: an LLM models the statistics of text about beliefs, not the beliefs themselves. Whether that distinction survives scale is genuinely open — resist claiming it's settled.
-:::
-
----
-
 ## Sentience vs. Sapience
 
 - **Sentience** — to feel, to experience (qualia)
@@ -163,18 +151,6 @@ Use the Rodin image as the hook — a mind watching itself think. Keep the key d
 
 ::: {.notes}
 Big caveat first, and say it out loud: this is a teaching device, not a real taxonomy — a ladder implies a single axis, and that's exactly the assumption I'll attack two slides from now. Walk up it quickly. The point of building it is to knock it down: intelligence isn't linear, and "higher" is doing a lot of unearned work here.
-:::
-
----
-
-## Where Do Today's Systems Sit?
-
-- The ladder orders behaviour, not depth
-- Is an LLM above the dog — or on another axis?
-- Analogy is not enough; we need comparative cognition
-
-::: {.notes}
-This is where the ladder breaks. Pose the question and let it hang: is an LLM "above" a dog, or is it simply on a different axis entirely? The honest answer is the latter — it's superhuman at some things and below an insect at others. That non-comparability is the whole reason the next few slides turn to animals: real natural experiments beat our analogies.
 :::
 
 ---
@@ -473,7 +449,7 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 
 ---
 
-## What Generative AI Is
+## What Gen AI Is
 
 - Learns a distribution; produces new samples
 - Text, image, audio, code
@@ -486,7 +462,7 @@ Welcome them back from coffee, re-anchor quickly. Generative AI learns a probabi
 
 ---
 
-## What It Is Not
+## What Gen AI Is Not
 
 - No guarantee of truth, cause, or grounding
 - Fluency is not knowledge
@@ -754,7 +730,7 @@ The recap — tie the three spine threads together one last time so they leave w
 
 ## Closing Remarks
 
-*This PhD program is not about mastering today's tools — it is about interrogating the definitions themselves.*
+*This PhD program is not about mastering today's tools — it is about building the future.*
 
 You are the architects of the world models that will define the coming decade. The questions left open tonight — what consciousness is, how memory should persist, what closes the reasoning gap, what we should and should not want from AGI — are not gaps in this lecture.
 
