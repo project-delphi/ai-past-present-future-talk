@@ -47,17 +47,12 @@ header-includes: |
     to   { opacity: 1; transform: translateY(0) scale(1); }
   }
   </style>
+
 ---
 
-## Welcome
+## Objective
 
-- An inauguration lecture — for doctoral candidates
-- Fewer ideas, held longer
-- Your work: interrogate the definitions others accept
-
-::: {.notes}
-Open warmly. This is a rite of passage, not a survey course — set the expectation that we'll go deep on a few ideas rather than skim many. The one line to land: a doctorate is about questioning the definitions everyone else takes for granted. Everything tonight is an example of that move.
-:::
+- Survey different definitions of AI, linking them with biology and academic tribes working on AI.
 
 ---
 
@@ -66,6 +61,7 @@ Open warmly. This is a rite of passage, not a survey course — set the expectat
 - **Leonardo Donando**
 - **Jonathan Florez Giraldo**
 - **Alex Kuznetsov**
+- **Delany Adom**
 - **Andrei Alain González Galeano**
 - **Pedro Domingos** — for *The Master Algorithm* and the five tribes
 
@@ -77,7 +73,7 @@ Thank these four by name and say a warm sentence about what each contributed bef
 
 ---
 
-## The Spine — Three Threads
+## Four Threads
 
 - **Intelligence is Solving Problems** by learning
 - **Minds run on prediction** — animal, human, machine alike
@@ -146,10 +142,19 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 
 ## Self-Awareness
 
+:::: {.columns}
+::: {.column width="58%"}
 - Introspection — the self as distinct from the world
 - Rodin's *Thinker*: a mind watching itself think
 - Not the same as intelligence, nor consciousness
 - Perhaps a prerequisite for both
+:::
+::: {.column width="42%"}
+![](images/mirror-baby.jpg){width="82%" style="border-radius:10px;"}
+
+<span style="font-size:0.34em;opacity:.6;">Mirror self-recognition · roseoftimothywoods, CC BY 2.0</span>
+:::
+::::
 
 ::: {.notes}
 Use the Rodin image as the hook — a mind watching itself think. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
@@ -184,7 +189,7 @@ Big caveat first, and say it out loud: this is a teaching device, not a real tax
 ::: {.column width="44%"}
 ![](images/bonobo.jpg){width="100%" style="border-radius:10px;"}
 
-<span style="font-size:0.4em;opacity:.6;">Bonobo · Wikimedia Commons</span>
+<span style="font-size:0.34em;opacity:.6;">Bonobo · natataek, CC BY-SA 3.0</span>
 :::
 ::::
 
@@ -253,7 +258,7 @@ This is the star witness. ~550 million years of separate evolution, and yet the 
 ::: {.column width="32%"}
 ![](images/messi.jpg){width="100%" style="border-radius:10px;"}
 
-<span style="font-size:0.4em;opacity:.6;">L. Messi · Wikimedia Commons</span>
+<span style="font-size:0.34em;opacity:.6;">L. Messi · Bryan Berlin, CC BY-SA 4.0</span>
 :::
 ::::
 
@@ -535,7 +540,7 @@ Set up the next run of slides: each era relabels its own frontier as "AI," so th
 
 ---
 
-## Four Terms, Kept Straight
+## Four Acronyms
 
 - **ML** — algorithms that improve at a task with more data
 - **ANI** — narrow: superhuman at one task, useless outside it
@@ -564,10 +569,19 @@ This is the "AI effect" and the emotional centre of the section. The pattern: ch
 
 ## The Turing Test
 
+:::: {.columns}
+::: {.column width="60%"}
 - Imitation: indistinguishable in text → passes
 - Says nothing about internal states
 - Cited often, engineered against rarely
 - A floor, not a ceiling
+:::
+::: {.column width="40%"}
+![](images/turing.jpg){width="78%" style="border-radius:10px;"}
+
+<span style="font-size:0.34em;opacity:.6;">Alan Turing · Elliott & Fry, public domain</span>
+:::
+::::
 
 ::: {.notes}
 Turing sidestepped "can machines think?" by replacing it with a behavioural test: if you can't tell it from a human in text, it passes. Two honest criticisms: it says nothing about internal states (the Chinese Room objection), and it's cited constantly but almost never actually engineered toward. The verdict to voice: a useful floor for the conversation, never a ceiling — and arguably modern chatbots pass it while being nobody's idea of AGI.
@@ -615,10 +629,19 @@ The definition most working engineers actually use — it's the frame of the Rus
 
 ## Chollet: Intelligence as Adaptation
 
+:::: {.columns}
+::: {.column width="60%"}
 - Efficiency at acquiring *new* skills
 - Adaptation, not static performance
 - The machine echo of human skill acquisition
 - Memorize well, adapt poorly → not intelligent
+:::
+::: {.column width="40%"}
+![](images/chollet.jpg){width="80%" style="border-radius:10px;"}
+
+<span style="font-size:0.34em;opacity:.6;">F. Chollet · Ramosset, CC BY-SA 4.0</span>
+:::
+::::
 
 ::: {.notes}
 Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, score poorly on it. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
@@ -641,13 +664,25 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 
 ## What Gen AI Is
 
-- Learns a distribution; produces new samples
+:::: {.columns}
+::: {.column width="56%"}
+- Simulation from a partially learned distribution; produces new samples
 - Text, image, audio, code
 - Self-supervised pre-training + the transformer
 - System 1 at planetary scale
+:::
+::: {.column width="44%"}
+<figure style="margin:0; text-align:center;">
+  <img src="images/generative-flow.gif" style="width:100%;background:#fff;border-radius:8px;padding:5px;box-sizing:border-box;display:block;"/>
+  <figcaption style="font-size:0.3em;opacity:.65;margin:0.2em 0 0 0;line-height:1.3;">Samples transported from noise (left) into a learned distribution (right)<br/>DarkMoonDragon, CC BY-SA 4.0</figcaption>
+</figure>
+:::
+::::
 
 ::: {.notes}
 Welcome them back from coffee, re-anchor quickly. Generative AI learns a probability distribution over data and samples new points from it — text, image, audio, code, all the same trick. Two ingredients did it: self-supervised pre-training plus the transformer. The phrase to plant, because it pays off two slides later: this is "System 1 at planetary scale" — fast, fluent, intuitive pattern-completion, with no deliberate reasoning behind it yet.
+
+Let the animation run while you talk — it is the word "simulation" made visible: a cloud of noise on the left being transported into the shape of a learned distribution on the right. That is the whole trick, in one picture. Don't over-explain the maths (it's flow matching); just say "this is what sampling from a learned distribution looks like."
 :::
 
 ---
@@ -667,13 +702,25 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 
 ## The LLM, Precisely
 
+:::: {.columns}
+::: {.column width="58%"}
 - A next-token predictor over human text
 - No persistent memory, weak causal models
 - Unreliable deliberate reasoning
 - A statistical reflection of us
+:::
+::: {.column width="42%"}
+<figure style="margin:0; text-align:center;">
+  <img src="images/transformer.png" style="height:360px;background:#fff;border-radius:8px;padding:6px;box-sizing:border-box;display:block;margin:0 auto;"/>
+  <figcaption style="font-size:0.3em;opacity:.65;margin:0.2em 0 0 0;line-height:1.3;">The transformer (Vaswani et al., 2017)<br/>Yuening Jia, CC BY-SA 3.0</figcaption>
+</figure>
+:::
+::::
 
 ::: {.notes}
 The most precise technical description in the deck — slow down and be exact, some of the audience are specialists. Strip it to the mechanism: an LLM predicts the next token over human text, nothing more. From that fall the real limits — no persistent memory across sessions, weak causal models, unreliable multi-step reasoning. Close on the resonant line: it's a statistical reflection of us, our text mirrored back. That framing sets up the entire "state of the art" gaps section.
+
+Don't walk the diagram box by box — it's there as an icon, not a lesson. One honest caveat if a specialist asks: this is the original *encoder–decoder* transformer, whereas today's LLMs use the decoder half only (the right-hand stack, with masked attention). Point at the right-hand column and say "that's the part an LLM is" — the concession buys you credibility on a slide that promises precision.
 :::
 
 
@@ -683,12 +730,22 @@ The most precise technical description in the deck — slow down and be exact, s
 
 ## Symbolists — Logic as Master Algorithm
 
+:::: {.columns}
+::: {.column width="70%" style="font-size:0.74em;"}
 - Roots: logic — Newell & Simon's symbol system hypothesis
 - Learning = inverse deduction; rules, trees, expert systems
 - Precise and auditable — but brittle
 - Optimization: combinatorial search over rule/hypothesis space
 - Modern echo: neuro-symbolic AI, formal verification
 - EXAMPLE: Routing Email Complaints
+:::
+::: {.column width="30%"}
+<figure style="margin:0; text-align:center;">
+  <img src="images/tenenbaum.jpg" style="width:112px;border-radius:8px;display:block;margin:0 auto;"/>
+  <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Josh Tenenbaum · fair use</figcaption>
+</figure>
+:::
+::::
 
 ::: {.notes}
 Framing for the whole section — this is Pedro Domingos' "five tribes" from The Master Algorithm. The symbolists came first: intelligence is the manipulation of symbols by explicit rules, and learning is inverse deduction — inferring the rules from examples. Their systems are precise and auditable, which is exactly why they're brittle when reality doesn't fit the rules. The email example: a rule tree that routes complaints by keywords — transparent, but it shatters on a phrasing nobody wrote a rule for. Modern echo: neuro-symbolic AI and formal verification.
@@ -707,20 +764,24 @@ Framing for the whole section — this is Pedro Domingos' "five tribes" from The
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
-<div style="display:flex; flex-direction:column; gap:0.35em; align-items:center;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:0.25em 0.5em; justify-items:center;">
   <figure style="margin:0; text-align:center;">
-    <img src="images/hinton.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
-    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Hinton</figcaption>
+    <img src="images/hinton.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Hinton</figcaption>
   </figure>
   <figure style="margin:0; text-align:center;">
-    <img src="images/lecun.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
-    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">LeCun</figcaption>
+    <img src="images/lecun.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">LeCun</figcaption>
   </figure>
   <figure style="margin:0; text-align:center;">
-    <img src="images/bengio.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
-    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Bengio</figcaption>
+    <img src="images/bengio.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Bengio</figcaption>
   </figure>
-  <div style="font-size:0.36em;opacity:.6;">2018 Turing Award · Wikimedia</div>
+  <figure style="margin:0; text-align:center;">
+    <img src="images/schmidhuber.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Schmidhuber</figcaption>
+  </figure>
+  <div style="grid-column:1/-1; font-size:0.3em; opacity:.55; line-height:1.25; text-align:center;">Wikimedia Commons — Cmichel67, J. Barande,<br/>Xuthoria (CC BY-SA); ITU/R. Farrell (CC BY 2.0)</div>
 </div>
 :::
 ::::
@@ -731,24 +792,51 @@ The tribe that won — for now. Inspiration is the brain: McCulloch–Pitts neur
 
 ---
 
-## Connectionists
+## Connectionists: The Bolivarian Nations
 
-- Two inspiring contributors from Peru or Ecuador!
+:::: {.columns}
+::: {.column width="54%"}
+- Two inspiring contributors from the Bolivarian nations!
+:::
+::: {.column width="46%"}
+![](images/bolivarian-nations-map.svg){style="height:370px;"}
+
+<span style="font-size:0.32em;opacity:.55;">Boundaries: Natural Earth · public domain</span>
+:::
+::::
 
 ::: {.notes}
 Personal / local-connection slide — a nod to the host country and its researchers. Fill in the two names and their contributions before the talk, and say a warm sentence about each; this is a moment to connect with the room, not to teach. Keep it short and generous, then move back to the tribes.
+
+The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador, Peru, Bolivia — the republics Bolívar liberated. Deliberately not "Gran Colombia," which was a different and shorter-lived thing (Colombia, Venezuela, Ecuador and Panama, 1819–1831). If someone raises it, that distinction is worth conceding cheerfully rather than defending.
 :::
 
 ---
 
 ## Evolutionaries — Selection as Algorithm
 
+:::: {.columns}
+::: {.column width="66%" style="font-size:0.74em;"}
 - Roots: Darwin, formalized by Holland (1975)
 - Evolve a population — mutation, crossover, selection
 - No gradient, no labels — only a fitness score
 - Optimization: genetic algorithms / evolutionary search
 - Niche but creative: architecture search, robot morphology
 - EXAMPLE: Avoiding immune response for gene envelope
+:::
+::: {.column width="34%"}
+<div style="display:flex;flex-direction:column;align-items:center;gap:0.5em;">
+  <figure style="margin:0;text-align:center;">
+    <img src="images/holland.jpg" style="width:104px;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland · fair use</figcaption>
+  </figure>
+  <figure style="margin:0;text-align:center;">
+    <img src="images/simulated-annealing.gif" style="width:100%;border-radius:6px;display:block;"/>
+    <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Simulated annealing — escaping local optima<br/>Kingpin13, CC0</figcaption>
+  </figure>
+</div>
+:::
+::::
 
 ::: {.notes}
 Darwin as algorithm, formalized by Holland in 1975. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
@@ -758,12 +846,21 @@ Darwin as algorithm, formalized by Holland in 1975. You keep a population of can
 
 ## Bayesians — Belief as Probability
 
+:::: {.columns}
+::: {.column width="68%" style="font-size:0.78em;"}
 - Roots: Bayes (1763), Laplace
 - Learning = updating a distribution over hypotheses
 - Prior + likelihood → posterior
 - Optimization: probabilistic inference (MCMC, variational inference)
 - Calibrated uncertainty, at a computational cost
 - EXAMPLE: Soldier Death Benefit Pensions
+:::
+::: {.column width="32%"}
+![](images/bayes.gif){width="88%" style="border-radius:8px;"}
+
+<span style="font-size:0.34em;opacity:.6;">Thomas Bayes · public domain (attribution disputed)</span>
+:::
+::::
 
 ::: {.notes}
 The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: learning is updating a probability distribution over hypotheses — prior plus likelihood gives posterior. Inference is the hard part (MCMC, variational methods), and the payoff is calibrated uncertainty: the model tells you how sure it is, at real computational cost. The pension example is the point of the tribe — actuarial estimates of survivor benefits where being honestly uncertain matters more than a single confident guess, and a wrong point estimate has human consequences. Note LLMs borrow this for uncertainty estimates.
@@ -773,11 +870,21 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 
 ## Analogizers — Reasoning by Similarity
 
+:::: {.columns}
+::: {.column width="68%" style="font-size:0.8em;"}
 - Roots: psychology — reasoning from prior cases
 - k-nearest neighbors, SVMs, the kernel trick
 - Optimization: constrained optimization to maximize margin (SVMs)
 - Legacy: recommendation, few-shot via embeddings
 - EXAMPLE: Locating outperforming stock pairs
+:::
+::: {.column width="32%"}
+<figure style="margin:0; text-align:center;">
+  <img src="images/vapnik.png" style="width:118px;border-radius:8px;display:block;margin:0 auto;"/>
+  <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Vladimir Vapnik — co-inventor of the SVM<br/>Columbia University · fair use</figcaption>
+</figure>
+:::
+::::
 
 ::: {.notes}
 The fifth tribe: reason by similarity to past cases rather than by rules or models. Roots in psychology; the workhorses are k-nearest neighbours and SVMs, whose kernel trick measures similarity in high-dimensional space. The legacy is everywhere — recommendation systems ("people like you"), and few-shot learning via embeddings, which is how modern LLMs retrieve. The stock example: pairs trading, finding two stocks that historically move together and betting on the gap when they diverge — pure reasoning from analogous past behaviour. Set up the synthesis slide next: today's systems quietly use all five.
@@ -816,10 +923,19 @@ Set the honest tone for Section VI — this is the reality check after the tribe
 
 ## System 1 vs. System 2
 
+:::: {.columns}
+::: {.column width="62%"}
 - After Kahneman: fast intuition vs. slow reasoning
 - LLMs excel at System 1, stumble at System 2
 - "Reasoning" models narrow the gap at inference time
 - Open and fast-moving
+:::
+::: {.column width="38%"}
+![](images/kahneman.jpg){width="80%" style="border-radius:10px;"}
+
+<span style="font-size:0.34em;opacity:.6;">D. Kahneman · nrkbeta, CC BY-SA 2.0</span>
+:::
+::::
 
 ::: {.notes}
 Kahneman's framing, borrowed and made concrete — this is the payoff of the "System 1 at planetary scale" line I planted in Section IV. System 1 is fast, automatic, intuitive; System 2 is slow, effortful, deliberate. LLMs are astonishing System 1 and stumble at System 2. The current move — chain-of-thought and "reasoning" models that spend more compute at inference time — is an attempt to bolt on System 2. Flag it as genuinely open and moving fast: whatever I say here may be dated by the time you watch the recording.
@@ -913,9 +1029,8 @@ This is where I place my bet on the next decade. Put the foundation-model "brain
 
 ## AI Ethics — Beyond My Expertise
 
-- Real political stakes, honestly outside my depth:
-- **Cheap dopamine** — engineered attention capture
-- **Economic effects** — labour, wealth concentration
+- **Cheap Dopamine** — engineered attention capture
+- **Economic Effects** — labour, wealth concentration
 - **Children** — growing up AI-saturated
 - **Distribution** — who reaps the fruits of the technology
 - A prior, held lightly: fewer regulations tend to serve better
