@@ -115,10 +115,28 @@ Roadmap slide — keep it brief, roughly 20 seconds. Note the coffee break sits 
 
 ## Sentience vs. Sapience
 
+:::: {.columns}
+::: {.column width="56%"}
 - **Sentience** — to feel, to experience (qualia)
 - **Sapience** — to judge, to act with wisdom
 - Today's AI mimics sapience, shows no sentience
 - That asymmetry is the hard problem
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 260 230" width="100%" style="max-width:340px" font-family="sans-serif">
+  <line x1="42" y1="200" x2="244" y2="200" stroke="#8b919a" stroke-width="1.5"/>
+  <line x1="42" y1="200" x2="42" y2="18" stroke="#8b919a" stroke-width="1.5"/>
+  <text x="145" y="223" fill="#b9bdc6" font-size="11" text-anchor="middle">Sapience — judgement →</text>
+  <text x="16" y="110" fill="#b9bdc6" font-size="11" text-anchor="middle" transform="rotate(-90 16 110)">Sentience — feeling →</text>
+  <circle cx="205" cy="46" r="7" fill="#f0a868"/>
+  <text x="197" y="40" fill="#e6e6e9" font-size="11" text-anchor="end">Human</text>
+  <circle cx="82" cy="66" r="7" fill="#63b3a6"/>
+  <text x="94" y="62" fill="#e6e6e9" font-size="11">Animal</text>
+  <circle cx="208" cy="186" r="7" fill="#e06c75"/>
+  <text x="200" y="178" fill="#e6e6e9" font-size="11" text-anchor="end">Today's AI</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 Define the two words carefully — audiences conflate them. Sentience is feeling (qualia), sapience is wise judgement. Chalmers' "hard problem" is why there's subjective experience at all. The asymmetry to stress: our machines are climbing the sapience axis while showing zero evidence on the sentience axis, and we have no test to settle it either way.
@@ -157,9 +175,18 @@ Big caveat first, and say it out loud: this is a teaching device, not a real tax
 
 ## Primate: Our Closest Mirror
 
+:::: {.columns}
+::: {.column width="56%"}
 - Shared ancestry — chimps, bonobos ~6–7 Mya
 - Primate cognition: a rough draft of ours
 - The differences are as instructive as the likenesses
+:::
+::: {.column width="44%"}
+![](images/bonobo.jpg){width="100%" style="border-radius:10px;"}
+
+<span style="font-size:0.4em;opacity:.6;">Bonobo · Wikimedia Commons</span>
+:::
+::::
 
 ::: {.notes}
 Chimps and bonobos share a common ancestor with us roughly 6–7 million years ago. They give us tool use, coalition politics, and partial theory of mind — a rough draft of our cognition. But lean on the last bullet: what they lack (cumulative culture, language) tells us as much about what makes us us as what they share.
@@ -169,10 +196,43 @@ Chimps and bonobos share a common ancestor with us roughly 6–7 million years a
 
 ## Octopus: Intelligence Reinvented
 
+:::: {.columns}
+::: {.column width="56%"}
 - Last common ancestor ~550 Mya
 - Evolved **completely independently** of ours
 - A true natural experiment in cognition
 - Similar solutions → convergence is real
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 260 200" width="100%" style="max-width:330px" font-family="sans-serif">
+  <text x="130" y="16" fill="#b9bdc6" font-size="10" text-anchor="middle">~500M neurons</text>
+  <!-- arms: hub to 8 ganglia -->
+  <g stroke="#f0a868" stroke-width="1.5" opacity="0.7">
+    <line x1="130" y1="60" x2="219" y2="92"/>
+    <line x1="130" y1="60" x2="203" y2="121"/>
+    <line x1="130" y1="60" x2="177" y2="142"/>
+    <line x1="130" y1="60" x2="146" y2="153"/>
+    <line x1="130" y1="60" x2="114" y2="153"/>
+    <line x1="130" y1="60" x2="83" y2="142"/>
+    <line x1="130" y1="60" x2="57" y2="121"/>
+    <line x1="130" y1="60" x2="41" y2="92"/>
+  </g>
+  <!-- ring linking adjacent ganglia -->
+  <polyline points="219,92 203,121 177,142 146,153 114,153 83,142 57,121 41,92" fill="none" stroke="#63b3a6" stroke-width="1" opacity="0.5" stroke-dasharray="3 3"/>
+  <!-- central brain -->
+  <circle cx="130" cy="60" r="19" fill="#2b2f36" stroke="#f0a868" stroke-width="2"/>
+  <text x="130" y="63" fill="#f0a868" font-size="9" text-anchor="middle">brain</text>
+  <!-- arm ganglia -->
+  <g fill="#63b3a6">
+    <circle cx="219" cy="92" r="6"/><circle cx="203" cy="121" r="6"/>
+    <circle cx="177" cy="142" r="6"/><circle cx="146" cy="153" r="6"/>
+    <circle cx="114" cy="153" r="6"/><circle cx="83" cy="142" r="6"/>
+    <circle cx="57" cy="121" r="6"/><circle cx="41" cy="92" r="6"/>
+  </g>
+  <text x="130" y="185" fill="#e6e6e9" font-size="10" text-anchor="middle">~2/3 of neurons live in the arms</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 This is the star witness. ~550 million years of separate evolution, and yet the octopus independently arrived at tool use, problem solving, and even play. Most of its neurons are in its arms — cognition is distributed, not centralized. The lesson for AI: intelligence is convergent and substrate-independent. Nature built it twice, on totally different architectures, so there's no reason to think our neural nets are the only route.
@@ -182,11 +242,20 @@ This is the star witness. ~550 million years of separate evolution, and yet the 
 
 ## Messi: Football Intelligence
 
+:::: {.columns}
+::: {.column width="68%" style="font-size:0.82em;"}
 - Growth-hormone deficiency as a child — physical limits may have driven *compensatory* perception
 - Reads play patterns before they unfold — anticipation over speed
 - Like chess intuition: pattern recognition, not raw calculation
 - A human specialization of the same predictive engine
 - *Caveat: the hormone–cognition link is a popular theory, not proven*
+:::
+::: {.column width="32%"}
+![](images/messi.jpg){width="100%" style="border-radius:10px;"}
+
+<span style="font-size:0.4em;opacity:.6;">L. Messi · Wikimedia Commons</span>
+:::
+::::
 
 ::: {.notes}
 A crowd-pleaser — use it to make prediction concrete and human. Messi doesn't run faster; he predicts the play a beat before everyone else, the same way a chess master sees patterns rather than calculating every branch. That's the predictive engine from the spine, specialized. Read the caveat aloud — the growth-hormone-to-genius story is a nice narrative, not established science, and being honest about that models the intellectual care I'm asking of them.
@@ -254,10 +323,38 @@ This list is doing double duty — tell the audience to remember it, because in 
 
 ## Supervised Learning
 
+:::: {.columns}
+::: {.column width="56%"}
 - Map inputs → labeled outputs
 - Told the answer; adjust to cut error
 - Bottleneck: the cost of labels
 - Human parallel: a student with an answer key
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 260 200" width="100%" style="max-width:340px" font-family="sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
+    </marker>
+  </defs>
+  <rect x="14" y="40" width="58" height="34" rx="6" fill="#2b2f36" stroke="#b9bdc6"/>
+  <text x="43" y="61" fill="#e6e6e9" font-size="11" text-anchor="middle">input x</text>
+  <rect x="100" y="40" width="60" height="34" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+  <text x="130" y="61" fill="#f0a868" font-size="11" text-anchor="middle">model</text>
+  <rect x="188" y="40" width="58" height="34" rx="6" fill="#2b2f36" stroke="#b9bdc6"/>
+  <text x="217" y="61" fill="#e6e6e9" font-size="11" text-anchor="middle">ŷ</text>
+  <line x1="72" y1="57" x2="98" y2="57" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="160" y1="57" x2="186" y2="57" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="188" y="120" width="58" height="34" rx="6" fill="#2b2f36" stroke="#63b3a6"/>
+  <text x="217" y="141" fill="#63b3a6" font-size="11" text-anchor="middle">label y</text>
+  <line x1="217" y1="120" x2="217" y2="76" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="235" y="100" fill="#b9bdc6" font-size="9">error</text>
+  <path d="M188,137 C120,137 120,80 132,76" fill="none" stroke="#e06c75" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <text x="120" y="120" fill="#b9bdc6" font-size="9" text-anchor="middle">adjust</text>
+  <text x="130" y="185" fill="#b9bdc6" font-size="9" text-anchor="middle">the answer key supervises</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
@@ -267,10 +364,34 @@ The most intuitive paradigm, so move briskly. Every training example comes with 
 
 ## Self-Supervised Learning
 
+:::: {.columns}
+::: {.column width="56%"}
 - Data supplies its own labels — predict the masked word
 - The engine behind foundation models
 - The internet becomes supervision, unannotated
 - Human parallel: an infant learning by observation
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 260 200" width="100%" style="max-width:340px" font-family="sans-serif">
+  <defs>
+    <marker id="ar2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
+    </marker>
+  </defs>
+  <text x="14" y="41" fill="#e6e6e9" font-size="11" text-anchor="start">the cat sat on the</text>
+  <rect x="113" y="24" width="30" height="24" rx="4" fill="#2b2f36" stroke="#f0a868" stroke-dasharray="3 2"/>
+  <text x="128" y="41" fill="#f0a868" font-size="13" text-anchor="middle">?</text>
+  <text x="252" y="41" fill="#b9bdc6" font-size="9" text-anchor="end">hide a token</text>
+  <line x1="128" y1="52" x2="129" y2="98" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar2)"/>
+  <rect x="95" y="102" width="70" height="34" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+  <text x="130" y="123" fill="#f0a868" font-size="11" text-anchor="middle">model</text>
+  <line x1="130" y1="136" x2="130" y2="158" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar2)"/>
+  <rect x="108" y="160" width="44" height="26" rx="5" fill="#2b2f36" stroke="#63b3a6"/>
+  <text x="130" y="177" fill="#63b3a6" font-size="12" text-anchor="middle">"mat"</text>
+  <text x="235" y="176" fill="#b9bdc6" font-size="9" text-anchor="end">it is the label</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 This is the one that unlocked the LLM era, so give it weight. The trick: hide part of the data and make the model predict it — no human labels needed, the data supervises itself. Suddenly the entire internet becomes training signal. Tie it straight back to Friston: predicting the masked word is the same move as the brain predicting its next sensory input. Same principle, silicon substrate.
@@ -280,10 +401,31 @@ This is the one that unlocked the LLM era, so give it weight. The trick: hide pa
 
 ## Unsupervised Learning
 
+:::: {.columns}
+::: {.column width="56%"}
 - No labels — find structure in the data itself
 - Clustering, dimensionality reduction, density estimation
 - Reveals hidden groupings and manifolds
 - Human parallel: noticing categories no one named
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 240 200" width="100%" style="max-width:320px" font-family="sans-serif">
+  <ellipse cx="62" cy="60" rx="42" ry="34" fill="#f0a868" opacity="0.08" stroke="#f0a868" stroke-dasharray="4 3"/>
+  <ellipse cx="170" cy="70" rx="40" ry="32" fill="#63b3a6" opacity="0.08" stroke="#63b3a6" stroke-dasharray="4 3"/>
+  <ellipse cx="110" cy="150" rx="46" ry="32" fill="#7aa0e0" opacity="0.08" stroke="#7aa0e0" stroke-dasharray="4 3"/>
+  <g fill="#f0a868">
+    <circle cx="48" cy="52" r="4"/><circle cx="70" cy="46" r="4"/><circle cx="60" cy="66" r="4"/><circle cx="78" cy="70" r="4"/><circle cx="52" cy="74" r="4"/><circle cx="66" cy="58" r="4"/>
+  </g>
+  <g fill="#63b3a6">
+    <circle cx="158" cy="62" r="4"/><circle cx="178" cy="58" r="4"/><circle cx="170" cy="76" r="4"/><circle cx="186" cy="74" r="4"/><circle cx="162" cy="82" r="4"/><circle cx="182" cy="66" r="4"/>
+  </g>
+  <g fill="#7aa0e0">
+    <circle cx="96" cy="144" r="4"/><circle cx="116" cy="140" r="4"/><circle cx="108" cy="158" r="4"/><circle cx="126" cy="156" r="4"/><circle cx="100" cy="162" r="4"/><circle cx="120" cy="148" r="4"/>
+  </g>
+  <text x="120" y="192" fill="#b9bdc6" font-size="10" text-anchor="middle">clusters emerge — no labels given</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. Don't dwell; the modern action is in self-supervised and RL.
@@ -293,10 +435,32 @@ Keep this short — it's the setup for the "unifying view" two slides on. No lab
 
 ## Reinforcement Learning
 
+:::: {.columns}
+::: {.column width="56%"}
 - Learn from reward and consequence
 - Powers game-players and chat-model tuning
 - The agent generates its own training signal
 - Human parallel: a child learning by trial, reward, and consequence
+:::
+::: {.column width="44%"}
+<svg viewBox="0 0 300 200" width="100%" style="max-width:340px" font-family="sans-serif">
+  <defs>
+    <marker id="ar3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
+    </marker>
+  </defs>
+  <rect x="90" y="24" width="120" height="38" rx="8" fill="#2b2f36" stroke="#f0a868" stroke-width="2"/>
+  <text x="150" y="48" fill="#f0a868" font-size="12" text-anchor="middle">Agent</text>
+  <rect x="90" y="138" width="120" height="38" rx="8" fill="#2b2f36" stroke="#b9bdc6"/>
+  <text x="150" y="162" fill="#e6e6e9" font-size="12" text-anchor="middle">Environment</text>
+  <path d="M206,62 C246,80 246,120 206,138" fill="none" stroke="#9aa0aa" stroke-width="1.6" marker-end="url(#ar3)"/>
+  <text x="268" y="103" fill="#b9bdc6" font-size="10" text-anchor="middle">action</text>
+  <path d="M94,138 C54,120 54,80 94,62" fill="none" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#ar3)"/>
+  <text x="28" y="98" fill="#63b3a6" font-size="10" text-anchor="middle">state</text>
+  <text x="28" y="111" fill="#63b3a6" font-size="10" text-anchor="middle">+ reward</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
@@ -413,9 +577,35 @@ Turing sidestepped "can machines think?" by replacing it with a behavioural test
 
 ## Russell & Norvig: Rational Agency
 
+:::: {.columns}
+::: {.column width="54%"}
 - Act to achieve the best expected outcome
 - The textbook definition — agent, environment, measure
 - Says nothing about *how* — only that it decides well
+:::
+::: {.column width="46%"}
+<svg viewBox="0 0 270 200" width="100%" style="max-width:350px" font-family="sans-serif">
+  <defs>
+    <marker id="ar4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
+    </marker>
+  </defs>
+  <rect x="18" y="70" width="86" height="40" rx="8" fill="#2b2f36" stroke="#f0a868" stroke-width="2"/>
+  <text x="61" y="95" fill="#f0a868" font-size="12" text-anchor="middle">Agent</text>
+  <rect x="166" y="70" width="90" height="40" rx="8" fill="#2b2f36" stroke="#b9bdc6"/>
+  <text x="211" y="95" fill="#e6e6e9" font-size="11" text-anchor="middle">Environment</text>
+  <path d="M104,82 C135,72 138,72 164,80" fill="none" stroke="#9aa0aa" stroke-width="1.6" marker-end="url(#ar4)"/>
+  <text x="134" y="66" fill="#b9bdc6" font-size="10" text-anchor="middle">action</text>
+  <path d="M166,100 C138,110 135,110 106,100" fill="none" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#ar4)"/>
+  <text x="134" y="124" fill="#63b3a6" font-size="10" text-anchor="middle">percepts</text>
+  <rect x="5" y="150" width="112" height="34" rx="8" fill="#2b2f36" stroke="#e0b062" stroke-dasharray="4 3"/>
+  <text x="61" y="166" fill="#e0b062" font-size="8" text-anchor="middle">utility /</text>
+  <text x="61" y="177" fill="#e0b062" font-size="8" text-anchor="middle">performance measure</text>
+  <line x1="61" y1="150" x2="61" y2="112" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar4)"/>
+  <text x="128" y="170" fill="#b9bdc6" font-size="9">what it maximizes</text>
+</svg>
+:::
+::::
 
 ::: {.notes}
 The definition most working engineers actually use — it's the frame of the Russell & Norvig textbook nearly everyone in AI trained on. An agent perceives an environment and acts to maximize an expected performance measure. Its strength is that it's operational and buildable; its silence is deliberate — it says nothing about consciousness or "how," only that the agent decides well. Contrast with Turing: behaviour-plus-goals rather than behavior-mimics-human.
@@ -508,11 +698,32 @@ Framing for the whole section — this is Pedro Domingos' "five tribes" from The
 
 ## Connectionists — The Brain as Inspiration
 
+:::: {.columns}
+::: {.column width="66%"}
 - Roots: McCulloch–Pitts (1943), Rosenblatt's perceptron (1958)
 - Backpropagation (1986) → CNNs → transformers
 - Optimization: stochastic gradient descent via backpropagation
 - Scales with data and compute — and dominates today
 - EXAMPLE: Making DNA viral capsids
+:::
+::: {.column width="34%"}
+<div style="display:flex; flex-direction:column; gap:0.35em; align-items:center;">
+  <figure style="margin:0; text-align:center;">
+    <img src="images/hinton.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Hinton</figcaption>
+  </figure>
+  <figure style="margin:0; text-align:center;">
+    <img src="images/lecun.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">LeCun</figcaption>
+  </figure>
+  <figure style="margin:0; text-align:center;">
+    <img src="images/bengio.jpg" style="width:88px;height:88px;object-fit:cover;border-radius:8px;display:block;"/>
+    <figcaption style="font-size:0.4em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Bengio</figcaption>
+  </figure>
+  <div style="font-size:0.36em;opacity:.6;">2018 Turing Award · Wikimedia</div>
+</div>
+:::
+::::
 
 ::: {.notes}
 The tribe that won — for now. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
