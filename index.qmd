@@ -189,7 +189,7 @@ Big caveat first, and say it out loud: this is a teaching device, not a real tax
 
 ---
 
-## Primate: Our Closest Mirror
+## Primate: Our Closest Relative
 
 :::: {.columns}
 ::: {.column width="56%"}
@@ -283,10 +283,17 @@ A crowd-pleaser — use it to make prediction concrete and human. Let the clip l
 
 ## Emotion → Feeling → Sentiment
 
+:::: {.columns}
+::: {.column width="55%"}
 - **Emotion** — raw input; a valence signal: good or bad, now?
 - **Feeling** — the conscious experience of that input
 - **Sentiment** — a compressed label from expressed feelings
 - Machine analogues: reward signals, then sentiment analysis
+:::
+::: {.column width="45%"}
+<img src="images/emotion-inside-out.gif" style="width:100%;border-radius:10px;display:block;margin-top:0.5em;"/>
+:::
+::::
 
 ::: {.notes}
 Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is the conscious experience of it, sentiment is the compressed label we express and others read. The machine mapping is the memorable bit: a reward signal is an emotion analogue with no feeling attached, and "sentiment analysis" reads the label without any of the experience underneath. Fluency without qualia, again.
@@ -349,13 +356,13 @@ If someone asks why "free energy" rather than just Bayes: free energy is the qua
 
 ---
 
-## Properties of Human Intelligence
+## Human Intelligence Properties
 
-- short-term and long-term Memory
-- Sample efficiency — learn from a few examples
-- Generalization & transfer
-- Compositionality & abstraction
-- Causal reasoning, metacognition, grounding
+- Short-Term and Long-Term Memory
+- Sample Efficiency — learn from a few examples
+- Generalization & Transfer
+- Compositionality & Abstraction
+- Causal Reasoning, Metacognition, Grounding
 
 ::: {.notes}
 This list is doing double duty — tell the audience to remember it, because in Section VII I read the exact same list back as the AGI wish-list. Sample efficiency is the one to underline: a child learns "giraffe" from one picture; a model needs thousands. Every item here is a capability our biology already has and our machines mostly don't.
@@ -514,7 +521,7 @@ No fixed dataset — the agent acts, gets reward or penalty, and generates its o
 
 - Self-supervised prediction builds the world model
 - Reinforcement fine-tunes on top
-- The same recipe in cortex and in models
+- The same recipe in human brain and in models
 
 ::: {.notes}
 Section II landing. Compress the whole section to one sentence: self-supervised prediction builds the world model, reinforcement fine-tunes it on top — and that two-stage recipe is how you train a frontier LLM and, plausibly, how the cortex works too. This is the boldest claim of the section, so state it as a claim, not a fact. It sets up Section III's question: if this is all "just" prediction, what do we even mean by "AI"?
@@ -874,7 +881,7 @@ The tribe that won — for now. Point at the neuron loop for one beat before you
 
 ---
 
-## Connectionists: The Bolivarian Contrbution
+## Connectionists: Bolivarian Contrbution
 
 :::: {.columns}
 ::: {.column width="54%"}
@@ -893,7 +900,7 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
 
 ---
 
-## Evolutionaries — Selection as Algorithm
+## Evolutionaries — Selection Algorithm
 
 :::: {.columns}
 ::: {.column style="width:66%; font-size:0.74em;"}
@@ -958,7 +965,7 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 
 ---
 
-## Analogizers — Reasoning by Similarity
+## Analogizers — Similarity
 
 :::: {.columns}
 ::: {.column style="width:66%; font-size:0.8em;"}
@@ -1097,8 +1104,8 @@ The unification, and the bridge out of this section. An experiment is literally 
 ## Generality, Efficiency, Reasoning
 
 - **Generality** — competence transfers to the untrained
-- **Sample efficiency** — human-like, from few examples
-- **Robust reasoning** — multi-step, causal, self-correcting
+- **Sample Efficiency** — human-like, from few examples
+- **Robust Reasoning** — multi-step, causal, self-correcting
 
 ::: {.notes}
 First three requirements. Generality means competence transfers to tasks it was never trained on — the opposite of the brittleness in Section VI. Sample efficiency is the spine's yardstick again: human-like learning from a handful of examples, not millions. Robust reasoning is multi-step, causal, and self-correcting — the System 2 the models still lack. Point out each one is a direct answer to a gap named earlier; this isn't a wish-list from nowhere.
@@ -1108,9 +1115,9 @@ First three requirements. Generality means competence transfers to tasks it was 
 
 ## Memory, Grounding, Aligned Autonomy
 
-- **Persistent memory** — no catastrophic forgetting
-- **Grounded world models** — causal, ideally embodied
-- **Autonomy with alignment** — open-ended yet controllable
+- **Persistent Memory** — no catastrophic forgetting
+- **Grounded World Models** — causal, ideally embodied
+- **Autonomy + Alignment** — open-ended yet controllable
 - The last is a constraint — and the highest-stakes one
 
 ::: {.notes}
@@ -1276,6 +1283,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Attention animation — BertViz, via comet.com
 - Diffusion denoising animation — via Towards Data Science
 - Decision tree animation — via Medium
+- *Inside Out* emotions clip — © Disney/Pixar, via Medium; used under fair dealing for education
 - Biological neuron animation — via Telefónica Tech
 - Evolved walker animation — via kottke.org
 - SVM margin animation — via Medium
