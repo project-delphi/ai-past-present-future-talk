@@ -54,6 +54,10 @@ header-includes: |
 
 - Survey definitions of AI, linking them with biology and academic tribes working on AI over past, present and future.
 
+<img src="images/ai-timeline.jpg" style="width:74%;max-width:760px;border-radius:10px;display:block;margin:0.7em auto 0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.3em;">Seventy-five years of moving the goalposts — most of these names recur tonight</div>
+
 ---
 
 ## Acknowledgements
@@ -151,16 +155,21 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 :::
 ::: {.column width="48%"}
 <div style="text-align:center; line-height:1;">
-<img src="images/thinker.gif" style="height:194px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/>
-<img src="images/mirror-baby.jpg" style="height:194px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
+<img src="images/thinker.gif" style="height:150px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/>
+<img src="images/mirror-bear.gif" style="height:150px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
 </div>
 
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">A mind watching itself think · a mind meeting itself</div>
+<div style="text-align:center; line-height:1; margin-top:0.45em;">
+<img src="images/mirror-baby-anim.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;"/>
+<img src="images/mirror-girl.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
+</div>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">A mind watching itself think — and three meeting themselves: bear, infant, child pass the mirror test</div>
 :::
 ::::
 
 ::: {.notes}
-Use the Rodin image as the hook — a mind watching itself think. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
+Use the Rodin as the hook — a mind watching itself think — then point down to the mirror clips for the flip side: a mind meeting itself. The mirror test is the real experiment here: a bear, a human infant, and an older child, and only some of them work out that the reflection is *them*. Self-recognition is not automatic, it develops, and it is not uniquely human — which is exactly the uncomfortable, useful point. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
 :::
 
 ---
@@ -579,14 +588,23 @@ Pause here and pin the vocabulary down — the rest of the talk depends on these
 
 ## Make Coffee
 
+:::: {.columns}
+::: {.column width="58%"}
 - Functionalist test: a machine does what a human did — intelligent?
 - Once we see the mechanism, we stop calling it AI
 - Chess, OCR, translation — "AI" until it worked
 - Make coffee in any kitchen in the world
 - "AI" often means: *not yet understood*
+:::
+::: {.column width="42%"}
+<img src="images/coffee-robot.gif" style="width:100%;max-width:340px;border-radius:10px;display:block;margin:0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Coffee, yes — but in a rig built for it, not <em>any</em> kitchen</div>
+:::
+::::
 
 ::: {.notes}
-This is the "AI effect" and the emotional centre of the section. The pattern: chess, OCR, translation were all "AI" right up until they worked — then we saw the mechanism and demoted them to "just software." "Make coffee in any unfamiliar kitchen" (Wozniak's test) is the vivid version of a task still on the far side of that line. Land the punchline: "AI" too often just labels whatever we don't yet understand — a moving goalpost, not a category. This directly teases the thesis slide.
+This is the "AI effect" and the emotional centre of the section. The pattern: chess, OCR, translation were all "AI" right up until they worked — then we saw the mechanism and demoted them to "just software." "Make coffee in any unfamiliar kitchen" (Wozniak's test) is the vivid version of a task still on the far side of that line. Use the clip against itself: yes, that arm makes coffee — but look where. It is a fixed barista rig built around the machine, every cup and spout in a known spot. That is the easy half of Wozniak's test. The hard half — walking into a stranger's kitchen and finding the beans — is exactly what no robot can do, and the gap between the two is the whole point. Land the punchline: "AI" too often just labels whatever we don't yet understand — a moving goalpost, not a category. This directly teases the thesis slide.
 :::
 
 ---
@@ -953,7 +971,7 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 ::: {.column width="34%"}
 <div style="display:flex; flex-direction:column; align-items:center; gap:0.45em;">
 <div style="text-align:center; line-height:1;">
-<img src="images/vapnik.png" style="width:100px;border-radius:8px;display:inline-block;vertical-align:middle;"/>
+<img src="images/vapnik.jpg" style="width:100px;border-radius:8px;display:inline-block;vertical-align:middle;"/>
 <img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
 </div>
 <div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
@@ -1122,13 +1140,22 @@ Open the future section with the counterintuitive one. Moravec's paradox: the th
 
 ## Foundation Models Meet Robotics
 
+:::: {.columns}
+::: {.column width="58%"}
 - Model "brains" in capable "bodies"
 - Surgery, deep-sea exploration, autonomous logistics
 - The loop closes: sense → predict → act → learn
 - Where the next decade concentrates
+:::
+::: {.column width="42%"}
+<img src="images/humanoid-robot.gif" style="width:100%;max-width:340px;border-radius:10px;display:block;margin:0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.2;text-align:center;margin-top:0.3em;">Unitree G1 — a body waiting for a better brain</div>
+:::
+::::
 
 ::: {.notes}
-This is where I place my bet on the next decade. Put the foundation-model "brain" into a capable "body" — surgery, deep-sea and space exploration, autonomous logistics. The unifying idea is the closed loop: sense, predict, act, learn — which is Friston's active inference and the RL loop from Section II, now running in the physical world. Tell the candidates plainly: this is where I'd concentrate, the convergence of foundation models and robotics. But hold it lightly — a bet, not a prophecy.
+This is where I place my bet on the next decade. Let the robot loop — it is a Unitree G1, a genuinely capable body you can buy today, and it is the point of the whole slide: the hardware has arrived, the brain has not. Sensorimotor competence is nearly solved; what it lacks is the grounded, causal world-model from Section VI. That gap is the bet. Put the foundation-model "brain" into a capable "body" — surgery, deep-sea and space exploration, autonomous logistics. The unifying idea is the closed loop: sense, predict, act, learn — which is Friston's active inference and the RL loop from Section II, now running in the physical world. Tell the candidates plainly: this is where I'd concentrate, the convergence of foundation models and robotics. But hold it lightly — a bet, not a prophecy.
 :::
 
 ---
@@ -1226,7 +1253,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Bonobo — natataek, CC BY-SA 3.0
 - Octopus — Diego Delso, CC BY-SA 4.0
 - L. Messi goal clip (Getafe, 2007) — broadcast footage, rights holder unidentified
-- Mirror self-recognition — roseoftimothywoods, CC BY 2.0
+- Mirror self-recognition (bear, infant, child animations) — via Medium
 - G. Hinton — Cmichel67, CC BY-SA 4.0
 - Y. LeCun — J. Barande, CC BY-SA 2.0
 - Y. Bengio — Xuthoria, CC BY-SA 4.0
@@ -1253,6 +1280,9 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Evolved walker animation — via kottke.org
 - SVM margin animation — via Medium
 - ANI/AGI/ASI illustration — via Medium
+- AI history timeline — via LinkedIn
+- Unitree G1 robot animation — via roboticgizmos.com
+- Coffee-making robot animation — via Mothership
 :::
 ::::
 
