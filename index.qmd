@@ -52,7 +52,7 @@ header-includes: |
 
 ## Objective
 
-- Survey different definitions of AI, linking them with biology and academic tribes working on AI.
+- Survey definitions of AI, linking them with biology and academic tribes working on AI over past, present and future.
 
 ---
 
@@ -68,23 +68,23 @@ header-includes: |
 *With gratitude for their contributions.*
 
 ::: {.notes}
-Thank these four by name and say a warm sentence about what each contributed before moving on. Keep it brief and heartfelt — a moment of gratitude, not a list to rush through. Double-check the name spellings and pronunciations ahead of time.
+Thank these five by name and say a warm sentence about what each contributed before moving on. Keep it brief and heartfelt — a moment of gratitude, not a list to rush through. Double-check the name spellings and pronunciations ahead of time.
 :::
 
 ---
 
 ## Four Threads
 
-- **Intelligence is Solving Problems** by learning
+- **Intelligence is Task Solving** by learning
 - **Minds run on prediction** — animal, human, machine alike
 - **"AI" is an Ambiguous Term** — today, a marketing label for LLMs
-- **Human intelligence is Sample Efficient Novel Problem Solving** — written first in our biology
+- **Human intelligence is Sample Efficient Novel Task Solving** — written first in our biology
 
 - Good prediction indicates learning
 
 
 ::: {.notes}
-These three threads recur all evening — flag them now so people can track them. Prediction is the mechanism, "AI" being ambiguous is the caution, and sample-efficient novel problem solving is the yardstick. Tell the audience: whenever I say "intelligence," hold me to that last definition. Point back here each time a thread resurfaces.
+These four threads recur all evening — flag them now so people can track them. Problem-solving by learning is the frame, prediction is the mechanism, "AI" being ambiguous is the caution, and sample-efficient novel problem solving is the yardstick. Tell the audience: whenever I say "intelligence," hold me to that last definition. Point back here each time a thread resurfaces.
 :::
 
 ---
@@ -143,16 +143,19 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 ## Self-Awareness
 
 :::: {.columns}
-::: {.column width="58%"}
+::: {.column width="52%"}
 - Introspection — the self as distinct from the world
 - Rodin's *Thinker*: a mind watching itself think
 - Not the same as intelligence, nor consciousness
 - Perhaps a prerequisite for both
 :::
-::: {.column width="42%"}
-![](images/mirror-baby.jpg){width="82%" style="border-radius:10px;"}
+::: {.column width="48%"}
+<div style="text-align:center; line-height:1;">
+<img src="images/thinker.gif" style="height:194px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/>
+<img src="images/mirror-baby.jpg" style="height:194px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
+</div>
 
-<span style="font-size:0.34em;opacity:.6;">Mirror self-recognition · roseoftimothywoods, CC BY 2.0</span>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">A mind watching itself think · a mind meeting itself</div>
 :::
 ::::
 
@@ -164,7 +167,6 @@ Use the Rodin image as the hook — a mind watching itself think. Keep the key d
 
 ## A Ladder of Agency
 
-> A teaching device, not a taxonomy
 
 1. Thermostat / bacterium — reactive feedback
 2. Dog — bonding, mapping, goals
@@ -173,7 +175,7 @@ Use the Rodin image as the hook — a mind watching itself think. Keep the key d
 5. Human — metacognition, culture
 
 ::: {.notes}
-Big caveat first, and say it out loud: this is a teaching device, not a real taxonomy — a ladder implies a single axis, and that's exactly the assumption I'll attack two slides from now. Walk up it quickly. The point of building it is to knock it down: intelligence isn't linear, and "higher" is doing a lot of unearned work here.
+Big caveat first, and say it out loud: this is a teaching device, not a real taxonomy — a ladder implies a single axis, and that's exactly the assumption the animals are about to demolish. Walk up it quickly. The point of building it is to knock it down: intelligence isn't linear, and "higher" is doing a lot of unearned work here.
 :::
 
 ---
@@ -189,7 +191,7 @@ Big caveat first, and say it out loud: this is a teaching device, not a real tax
 ::: {.column width="44%"}
 ![](images/bonobo.jpg){width="100%" style="border-radius:10px;"}
 
-<span style="font-size:0.34em;opacity:.6;">Bonobo · natataek, CC BY-SA 3.0</span>
+<span style="font-size:0.34em;opacity:.55;">Bonobo</span>
 :::
 ::::
 
@@ -209,6 +211,8 @@ Chimps and bonobos share a common ancestor with us roughly 6–7 million years a
 - Similar solutions → convergence is real
 :::
 ::: {.column width="44%"}
+<img src="images/octopus.jpg" style="width:44%;border-radius:10px;display:block;margin:0 auto 0.3em auto;"/>
+
 <svg viewBox="0 0 260 200" width="100%" style="max-width:330px" font-family="sans-serif">
   <text x="130" y="16" fill="#b9bdc6" font-size="10" text-anchor="middle">~500M neurons</text>
   <!-- arms: hub to 8 ganglia -->
@@ -248,35 +252,22 @@ This is the star witness. ~550 million years of separate evolution, and yet the 
 ## Messi: Football Intelligence
 
 :::: {.columns}
-::: {.column width="68%" style="font-size:0.82em;"}
+::: {.column style="width:60%; font-size:0.76em;"}
 - Growth-hormone deficiency as a child — physical limits may have driven *compensatory* perception
 - Reads play patterns before they unfold — anticipation over speed
 - Like chess intuition: pattern recognition, not raw calculation
 - A human specialization of the same predictive engine
 - *Caveat: the hormone–cognition link is a popular theory, not proven*
 :::
-::: {.column width="32%"}
-![](images/messi.jpg){width="100%" style="border-radius:10px;"}
+::: {.column width="40%"}
+<img src="images/messi.gif" style="width:100%;border-radius:10px;display:block;"/>
 
-<span style="font-size:0.34em;opacity:.6;">L. Messi · Bryan Berlin, CC BY-SA 4.0</span>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Getafe, 2007 — the pattern, read early</div>
 :::
 ::::
 
 ::: {.notes}
-A crowd-pleaser — use it to make prediction concrete and human. Messi doesn't run faster; he predicts the play a beat before everyone else, the same way a chess master sees patterns rather than calculating every branch. That's the predictive engine from the spine, specialized. Read the caveat aloud — the growth-hormone-to-genius story is a nice narrative, not established science, and being honest about that models the intellectual care I'm asking of them.
-:::
-
----
-
-
-## What Comparative Cognition Teaches
-
-- Primates — culture, politics, partial theory of mind
-- Octopus — intelligence minus centralization
-- No single architecture is *the* architecture
-
-::: {.notes}
-Section I payoff — say the last line slowly and let it land. This is the thesis of the whole animals detour: there is no single architecture of intelligence. That directly indicts the transformer triumphalism we'll meet after coffee. Bridge forward: if biology has many solutions, maybe our current AI is just one narrow bet among many.
+A crowd-pleaser — use it to make prediction concrete and human. Let the clip loop and talk over it: Getafe, 2007, the goal everyone calls his best. Watch what he is actually doing — he is not outrunning them, he is arriving where the defenders are about to be. Every one of them is reacting to the present; he is playing the next half-second. That is prediction, wearing a shirt. Same move as a chess master seeing patterns rather than calculating every branch. That's the predictive engine from the spine, specialized. Read the caveat aloud — the growth-hormone-to-genius story is a nice narrative, not established science, and being honest about that models the intellectual care I'm asking of them.
 :::
 
 ---
@@ -296,14 +287,51 @@ Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is th
 
 ## Friston: Prediction Under Uncertainty
 
+:::: {.columns}
+::: {.column style="width:46%; font-size:0.9em;"}
 - The brain predicts the world, not just records it
 - Free Energy Principle: minimize surprise
 - Consciousness as ongoing active inference
+:::
+::: {.column width="54%"}
+<img src="images/friston.jpg" style="width:82px;border-radius:6px;display:block;margin:0 auto 0.35em auto;"/>
 
-$$P(\text{world} \mid \text{sense}) \propto P(\text{sense} \mid \text{world}) \cdot P(\text{world})$$
+<svg viewBox="0 0 280 178" width="100%" style="max-width:355px" font-family="sans-serif">
+<defs>
+<marker id="bay" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
+</marker>
+</defs>
+<text x="51" y="16" fill="#7aa0e0" font-size="9.5" text-anchor="middle">prior</text>
+<rect x="8" y="22" width="86" height="58" rx="6" fill="#2b2f36" stroke="#7aa0e0"/>
+<path d="M14,72 C30,72 28,48 51,48 C74,48 72,72 88,72" fill="none" stroke="#7aa0e0" stroke-width="1.6"/>
+<line x1="96" y1="51" x2="122" y2="51" stroke="#9aa0aa" stroke-width="1.4" marker-end="url(#bay)"/>
+<text x="140" y="16" fill="#63b3a6" font-size="9" text-anchor="middle">likelihood</text>
+<circle cx="140" cy="51" r="14" fill="#2b2f36" stroke="#63b3a6"/>
+<text x="140" y="56" fill="#63b3a6" font-size="13" text-anchor="middle">×</text>
+<line x1="140" y1="94" x2="140" y2="68" stroke="#63b3a6" stroke-width="1.4" marker-end="url(#bay)"/>
+<text x="140" y="106" fill="#b9bdc6" font-size="8.5" text-anchor="middle">sense data</text>
+<line x1="156" y1="51" x2="184" y2="51" stroke="#9aa0aa" stroke-width="1.4" marker-end="url(#bay)"/>
+<text x="231" y="16" fill="#f0a868" font-size="9.5" text-anchor="middle">posterior</text>
+<rect x="188" y="22" width="86" height="58" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<path d="M194,72 L212,72 C222,72 224,36 231,36 C238,36 240,72 250,72 L268,72" fill="none" stroke="#f0a868" stroke-width="1.6"/>
+<path d="M231,80 L231,142 L51,142 L51,84" fill="none" stroke="#9aa0aa" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#bay)"/>
+<text x="141" y="156" fill="#b9bdc6" font-size="8.5" text-anchor="middle">becomes the next prior · t → t+1</text>
+<text x="141" y="170" fill="#8b919a" font-size="8" text-anchor="middle">belief sharpens as evidence accumulates</text>
+</svg>
+:::
+::::
+
+:::: {style="font-size:0.6em; margin-top:0.1em;"}
+$$\underset{\color{#f0a868}{\textbf{posterior}}}{\color{#f0a868}{P(\text{world} \mid \text{sense})}} \;\;\propto\;\; \underset{\color{#63b3a6}{\textbf{likelihood}}}{\color{#63b3a6}{P(\text{sense} \mid \text{world})}} \;\;\cdot\;\; \underset{\color{#7aa0e0}{\textbf{prior}}}{\color{#7aa0e0}{P(\text{world})}}$$
+::::
 
 ::: {.notes}
 This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out after coffee.
+
+Walk the loop once, left to right, and let the colours do the work — they match the equation underneath. Start with a prior: a broad, uncommitted belief about the world. Multiply by the likelihood, which is what the senses say. Out comes a posterior: the same belief, sharper. Then the move that matters, the dashed arrow: that posterior *becomes the next prior*, and the loop runs again. Note the two curves are the same claim drawn twice — the prior is a fat bump, the posterior a narrow spike. Perception isn't a snapshot; it's this loop, running continuously, all the way down.
+
+If someone asks why "free energy" rather than just Bayes: free energy is the quantity you minimise to make this loop tractable when the exact posterior is out of reach. Say that, then stop — the maths past that point is a lecture of its own.
 :::
 
 ---
@@ -473,7 +501,7 @@ No fixed dataset — the agent acts, gets reward or penalty, and generates its o
 
 ---
 
-## The Unifying View
+## Unifying View
 
 - Self-supervised prediction builds the world model
 - Reinforcement fine-tunes on top
@@ -481,7 +509,7 @@ No fixed dataset — the agent acts, gets reward or penalty, and generates its o
 
 ::: {.notes}
 Section II landing. Compress the whole section to one sentence: self-supervised prediction builds the world model, reinforcement fine-tunes it on top — and that two-stage recipe is how you train a frontier LLM and, plausibly, how the cortex works too. This is the boldest claim of the section, so state it as a claim, not a fact. It sets up Section III's question: if this is all "just" prediction, what do we even mean by "AI"?
-::: 
+:::
 
 ---
 
@@ -489,71 +517,67 @@ Section II landing. Compress the whole section to one sentence: self-supervised 
 
 ---
 
-## From Knowledge to "AI"
 
-- First: what is knowledge?
-- Then: why "AI" resists definition
+## Beginning: Dartmouth, 1956
 
-::: {.notes}
-Signposting slide — 15 seconds. The move of Section III: before we can argue about "AI," we need a working account of knowledge, so I build that first, then show why "AI" keeps slipping out of every definition. Tell them the destination up front so the knowledge detour doesn't feel like a tangent.
+:::: {.columns}
+::: {.column width="62%"}
+
+- McCarthy chose "artificial intelligence"
+- The conjecture: intelligence can be *"so precisely described that a machine can be made to simulate it"*
+- They thought a summer and 10 assistants would do it.
 :::
-
----
-
-## One Definition of Knowledge
-
-- **Data** — raw, uncompressed
-- **Compression** — redundancy found
-- **Abstraction** — the reusable structure it yields
-- **Prediction** — the test on unseen data
-- **Knowledge** — abstraction that keeps passing
-
-::: {.notes}
-Walk the pipeline slowly, it's the backbone of the section: raw data, compress out the redundancy, the reusable structure that survives is abstraction, the test is prediction on unseen data, and knowledge is abstraction that keeps passing that test. The key idea, and it echoes Friston: to know something is to compress it well enough to predict. Knowledge is compression that predicts.
+::: {.column width="38%"}
+<div style="display:flex; flex-direction:column; gap:0.3em; align-items:center;">
+<div style="display:flex; gap:0.5em; justify-content:center;">
+<figure style="margin:0; text-align:center;">
+<img src="images/mccarthy.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">McCarthy</figcaption>
+</figure>
+<figure style="margin:0; text-align:center;">
+<img src="images/minsky.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">Minsky</figcaption>
+</figure>
+<figure style="margin:0; text-align:center;">
+<img src="images/shannon.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">Shannon</figcaption>
+</figure>
+</div>
+<div style="font-size:0.3em; opacity:.5; line-height:1.3; text-align:center;">with Nathaniel Rochester — the four<br/>who signed the 1955 proposal</div>
+</div>
 :::
-
----
-
-## Knowledge as Compression
-
-- Deriving signal from noise
-- **Genes** — survival encoded by evolution
-- **Experience** — direct interaction
-- **Culture** — collective wisdom, transmitted
-- **Computers** — synthesis at scale
+::::
 
 ::: {.notes}
-Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
-:::
+The origin story, and it is evidence for the whole section — so tell it as evidence, not trivia. Summer 1956, Dartmouth College: a six-week workshop proposed the year before by McCarthy, Minsky, Rochester and Shannon. It is conventionally the founding moment of the field.
 
----
+The detail that matters is the second bullet, and it is the reason this slide exists: McCarthy picked the words "artificial intelligence" because they were *neutral* — he wanted to avoid being annexed by cybernetics and its analog-feedback framing, and he wanted to avoid a fight with Norbert Wiener, who was formidable. So the name of our entire discipline was a political choice made to dodge a rival school and an difficult colleague, before there was any science to name. That is the ambiguity thread with a birth certificate: "AI" was a label first and a field second.
 
-## What is AI? 
-
-- No agreed definition of "AI"
-- Each era relabels its frontier
-- Let's weigh the candidates
-
-::: {.notes}
-Set up the next run of slides: each era relabels its own frontier as "AI," so there's no stable target. Preview that I'll walk through several candidate definitions — Turing, Russell & Norvig, Sutton, Chollet — and weigh each. Frame it as a jury, not a lecture: none is fully right, but each catches something.
+Land the last bullet lightly — about twenty people passed through, daily attendance ran three to eight, and only Solomonoff, Minsky and McCarthy stayed the whole summer. The founding event of the field was a loosely-attended summer workshop, not a moment of revelation.
 :::
 
 ---
 
 ## Four Acronyms
 
+:::: {style="font-size:0.86em;"}
 - **ML** — algorithms that improve at a task with more data
 - **ANI** — narrow: superhuman at one task, useless outside it
-- **AGI** — general: human-level breadth, *novel* problems included
+- **AGI** — general: human-level breadth, *novel* tasks included
 - **ASI** — beyond: exceeds the best humans at essentially everything
+::::
+
+<img src="images/ani-agi-asi.jpg" style="width:66%;max-width:640px;border-radius:10px;display:block;margin:0.5em auto 0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.25em;">ANI is here · AGI is the aspiration · ASI is the artwork</div>
 
 ::: {.notes}
-Pause here and pin the vocabulary down — the rest of the talk depends on these four not blurring together. ML is the method: systems that improve from data rather than hand-coded rules; it powers everything on this slide. ANI is what we actually have — chess engines, translators, LLMs: superhuman in a lane, helpless outside it. AGI is the aspiration — human-level breadth, and stress the word *novel*: problems it wasn't trained for. ASI is the speculation beyond that; mention it once, don't let the talk drift into sci-fi. The trap to name out loud: "AI" in headlines slides between all four. When someone says AI, ask which one they mean — that's the ambiguity thread again.
+Pause here and pin the vocabulary down — the rest of the talk depends on these four not blurring together. ML is the method: systems that improve from data rather than hand-coded rules; it powers everything on this slide. ANI is what we actually have — chess engines, translators, LLMs: superhuman in a lane, helpless outside it. AGI is the aspiration — human-level breadth, and stress the word *novel*: problems it wasn't trained for. ASI is the speculation beyond that; mention it once, don't let the talk drift into sci-fi. Use the picture against itself for that — notice that ANI gets a robot arm playing chess (a real thing that exists), AGI gets a humanoid juggling tasks (a hope), and ASI gets a glowing cosmic figure rising over the Earth (a painting). The artwork escalates exactly as the evidence evaporates. That is the whole slide's caution in one image, and it lets you make the point with a smile rather than a lecture. The trap to name out loud: "AI" in headlines slides between all four. When someone says AI, ask which one they mean — that's the ambiguity thread again.
 :::
 
 ---
 
-## Make Coffee in Any Kitchen
+## Make Coffee
 
 - Functionalist test: a machine does what a human did — intelligent?
 - Once we see the mechanism, we stop calling it AI
@@ -567,7 +591,7 @@ This is the "AI effect" and the emotional centre of the section. The pattern: ch
 
 ---
 
-## The Turing Test
+## Turing Test
 
 :::: {.columns}
 ::: {.column width="60%"}
@@ -578,8 +602,6 @@ This is the "AI effect" and the emotional centre of the section. The pattern: ch
 :::
 ::: {.column width="40%"}
 ![](images/turing.jpg){width="78%" style="border-radius:10px;"}
-
-<span style="font-size:0.34em;opacity:.6;">Alan Turing · Elliott & Fry, public domain</span>
 :::
 ::::
 
@@ -589,7 +611,7 @@ Turing sidestepped "can machines think?" by replacing it with a behavioural test
 
 ---
 
-## Russell & Norvig: Rational Agency
+## Russell & Norvig: Agents
 
 :::: {.columns}
 ::: {.column width="54%"}
@@ -638,8 +660,6 @@ The definition most working engineers actually use — it's the frame of the Rus
 :::
 ::: {.column width="40%"}
 ![](images/chollet.jpg){width="80%" style="border-radius:10px;"}
-
-<span style="font-size:0.34em;opacity:.6;">F. Chollet · Ramosset, CC BY-SA 4.0</span>
 :::
 ::::
 
@@ -647,13 +667,44 @@ The definition most working engineers actually use — it's the frame of the Rus
 Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, score poorly on it. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
 :::
 
+---
+
+## One Definition of Knowledge
+
+- **Data** — raw, uncompressed
+- **Compression** — redundancy found
+- **Abstraction** — the reusable structure it yields
+- **Prediction** — the test on unseen data
+- **Knowledge** — abstraction that keeps passing
+
+Process **data** to generate **knowledge**
+
+::: {.notes}
+Walk the pipeline slowly, it's the backbone of the section: raw data, compress out the redundancy, the reusable structure that survives is abstraction, the test is prediction on unseen data, and knowledge is abstraction that keeps passing that test. The key idea, and it echoes Friston: to know something is to compress it well enough to predict. Knowledge is compression that predicts.
+:::
+
+---
+
+## Knowledge as Compression
+
+- Deriving signal from noise
+- **Genes** — survival encoded by evolution
+- **Experience** — direct interaction
+- **Culture** — collective wisdom, transmitted
+- **Computers** — synthesis at scale
+
+::: {.notes}
+Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
+:::
+
+---
 
 ## ☕ Coffee Break
 
 *15 minutes — please join us in the foyer*
 
 ::: {.notes}
-Housekeeping: state the exact return time out loud and point to the foyer. Good moment to take a sip of water and check the clock — if you're running long, the tribes section (V) has the most slides you can compress. Restart after the break by re-anchoring the three spine threads before diving into generative AI.
+Housekeeping: state the exact return time out loud and point to the foyer. Good moment to take a sip of water and check the clock — if you're running long, the tribes section (V) is the most compressible — Section VI is load-bearing, so don't cut there. Restart after the break by re-anchoring the four spine threads before diving into generative AI.
 :::
 
 ---
@@ -673,8 +724,8 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 :::
 ::: {.column width="44%"}
 <figure style="margin:0; text-align:center;">
-  <img src="images/generative-flow.gif" style="width:100%;background:#fff;border-radius:8px;padding:5px;box-sizing:border-box;display:block;"/>
-  <figcaption style="font-size:0.3em;opacity:.65;margin:0.2em 0 0 0;line-height:1.3;">Samples transported from noise (left) into a learned distribution (right)<br/>DarkMoonDragon, CC BY-SA 4.0</figcaption>
+  <img src="images/denoising.gif" style="width:100%;max-width:400px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+  <figcaption style="font-size:0.3em;opacity:.55;margin:0.2em 0 0 0;line-height:1.3;">Noise → sample: a diffusion model inventing characters</figcaption>
 </figure>
 :::
 ::::
@@ -682,7 +733,9 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 ::: {.notes}
 Welcome them back from coffee, re-anchor quickly. Generative AI learns a probability distribution over data and samples new points from it — text, image, audio, code, all the same trick. Two ingredients did it: self-supervised pre-training plus the transformer. The phrase to plant, because it pays off two slides later: this is "System 1 at planetary scale" — fast, fluent, intuitive pattern-completion, with no deliberate reasoning behind it yet.
 
-Let the animation run while you talk — it is the word "simulation" made visible: a cloud of noise on the left being transported into the shape of a learned distribution on the right. That is the whole trick, in one picture. Don't over-explain the maths (it's flow matching); just say "this is what sampling from a learned distribution looks like."
+Let it loop while you talk — it is the first bullet happening in front of them. The counter runs from 1% to 99% denoised: the model starts from pure noise and walks it, step by step, into a sample. That is what "simulation from a learned distribution" means, and no equation lands it as fast.
+
+The detail worth pausing on: these are not real Chinese characters. The model learned the *distribution* of characters — strokes, radicals, balance, the way they sit in a square — and drew new ones from it. They look right to anyone who doesn't read Chinese, and wrong to anyone who does. That is generative AI in one image: fluent in the form, indifferent to the meaning. It also pre-loads "What Gen AI Is Not," two slides on — fluency is not knowledge.
 :::
 
 ---
@@ -700,7 +753,7 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 
 ---
 
-## The LLM, Precisely
+## The LLM
 
 :::: {.columns}
 ::: {.column width="58%"}
@@ -711,8 +764,8 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 :::
 ::: {.column width="42%"}
 <figure style="margin:0; text-align:center;">
-  <img src="images/transformer.png" style="height:360px;background:#fff;border-radius:8px;padding:6px;box-sizing:border-box;display:block;margin:0 auto;"/>
-  <figcaption style="font-size:0.3em;opacity:.65;margin:0.2em 0 0 0;line-height:1.3;">The transformer (Vaswani et al., 2017)<br/>Yuening Jia, CC BY-SA 3.0</figcaption>
+  <img src="images/attention.gif" style="width:100%;max-width:370px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+  <figcaption style="font-size:0.3em;opacity:.55;margin:0.2em 0 0 0;line-height:1.3;">Attention, layer by layer — every token weighing every other</figcaption>
 </figure>
 :::
 ::::
@@ -720,7 +773,9 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 ::: {.notes}
 The most precise technical description in the deck — slow down and be exact, some of the audience are specialists. Strip it to the mechanism: an LLM predicts the next token over human text, nothing more. From that fall the real limits — no persistent memory across sessions, weak causal models, unreliable multi-step reasoning. Close on the resonant line: it's a statistical reflection of us, our text mirrored back. That framing sets up the entire "state of the art" gaps section.
 
-Don't walk the diagram box by box — it's there as an icon, not a lesson. One honest caveat if a specialist asks: this is the original *encoder–decoder* transformer, whereas today's LLMs use the decoder half only (the right-hand stack, with masked attention). Point at the right-hand column and say "that's the part an LLM is" — the concession buys you credibility on a slide that promises precision.
+Let the animation loop while you talk — it is attention itself, every token weighing every other, layer by layer. Point at the crossing lines and say: that is the entire mechanism. No memory, no plan, no model of the world — weighted lookups over the context window, stacked a few dozen times. Everything the machine knows, it knows by re-reading its own input.
+
+One caveat, and concede it fast if a specialist raises it: this is BertViz, so the tokens are BERT's — [CLS] and [SEP] — and BERT is a *masked* model, not a next-token predictor. The attention mechanism is identical; only the masking differs. If that trade bothers you, the alternative is an architecture diagram, which is more precise and much less alive.
 :::
 
 
@@ -728,10 +783,10 @@ Don't walk the diagram box by box — it's there as an icon, not a lesson. One h
 
 ---
 
-## Symbolists — Logic as Master Algorithm
+## Symbolists — Logic and Deduction
 
 :::: {.columns}
-::: {.column width="70%" style="font-size:0.74em;"}
+::: {.column style="width:52%; font-size:0.74em;"}
 - Roots: logic — Newell & Simon's symbol system hypothesis
 - Learning = inverse deduction; rules, trees, expert systems
 - Precise and auditable — but brittle
@@ -739,21 +794,26 @@ Don't walk the diagram box by box — it's there as an icon, not a lesson. One h
 - Modern echo: neuro-symbolic AI, formal verification
 - EXAMPLE: Routing Email Complaints
 :::
-::: {.column width="30%"}
-<figure style="margin:0; text-align:center;">
-  <img src="images/tenenbaum.jpg" style="width:112px;border-radius:8px;display:block;margin:0 auto;"/>
-  <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Josh Tenenbaum · fair use</figcaption>
-</figure>
+::: {.column width="48%"}
+<img src="images/decision-tree.gif" style="width:100%;max-width:420px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.25em;">Every answer comes with its own audit trail</div>
+
+<img src="images/tenenbaum.jpg" style="width:124px;border-radius:8px;display:block;margin:0.5em auto 0 auto;"/>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.2;text-align:center;">Josh Tenenbaum</div>
 :::
 ::::
 
 ::: {.notes}
 Framing for the whole section — this is Pedro Domingos' "five tribes" from The Master Algorithm. The symbolists came first: intelligence is the manipulation of symbols by explicit rules, and learning is inverse deduction — inferring the rules from examples. Their systems are precise and auditable, which is exactly why they're brittle when reality doesn't fit the rules. The email example: a rule tree that routes complaints by keywords — transparent, but it shatters on a phrasing nobody wrote a rule for. Modern echo: neuro-symbolic AI and formal verification.
+
+Let the tree animation loop and use it for the third bullet — it is the tribe's whole case in one picture. A record walks the tree, and at every node you can see exactly which rule fired and why: home owner, marital status, income, verdict. That is what "auditable" means, and not one neural network in this deck can show you that. Then turn it over in the same breath: the rigidity *is* the brittleness. The tree has no answer for a record it was never given a branch for — it cannot hedge, it cannot guess, it just falls off the end.
 :::
 
 ---
 
-## Connectionists — The Brain as Inspiration
+## Connectionists — Brain Inspired
 
 :::: {.columns}
 ::: {.column width="66%"}
@@ -764,6 +824,10 @@ Framing for the whole section — this is Pedro Domingos' "five tribes" from The
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
+<img src="images/neuron.gif" style="width:100%;background:#fff;border-radius:8px;display:block;margin:0 auto 0.15em auto;"/>
+
+<div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Dendrites in, axon out — the unit they copied</div>
+
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.25em 0.5em; justify-items:center;">
   <figure style="margin:0; text-align:center;">
     <img src="images/hinton.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
@@ -781,18 +845,18 @@ Framing for the whole section — this is Pedro Domingos' "five tribes" from The
     <img src="images/schmidhuber.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
     <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Schmidhuber</figcaption>
   </figure>
-  <div style="grid-column:1/-1; font-size:0.3em; opacity:.55; line-height:1.25; text-align:center;">Wikimedia Commons — Cmichel67, J. Barande,<br/>Xuthoria (CC BY-SA); ITU/R. Farrell (CC BY 2.0)</div>
+
 </div>
 :::
 ::::
 
 ::: {.notes}
-The tribe that won — for now. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
+The tribe that won — for now. Point at the neuron loop for one beat before you start: dendrites collect, the soma sums, the axon fires — that is the whole biological unit, and the 1943 model is a shameless cartoon of exactly it. Everything since is that cartoon, stacked. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
 :::
 
 ---
 
-## Connectionists: The Bolivarian Nations
+## Connectionists: The Bolivarian Contrbution
 
 :::: {.columns}
 ::: {.column width="54%"}
@@ -800,8 +864,6 @@ The tribe that won — for now. Inspiration is the brain: McCulloch–Pitts neur
 :::
 ::: {.column width="46%"}
 ![](images/bolivarian-nations-map.svg){style="height:370px;"}
-
-<span style="font-size:0.32em;opacity:.55;">Boundaries: Natural Earth · public domain</span>
 :::
 ::::
 
@@ -816,7 +878,7 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
 ## Evolutionaries — Selection as Algorithm
 
 :::: {.columns}
-::: {.column width="66%" style="font-size:0.74em;"}
+::: {.column style="width:66%; font-size:0.74em;"}
 - Roots: Darwin, formalized by Holland (1975)
 - Evolve a population — mutation, crossover, selection
 - No gradient, no labels — only a fitness score
@@ -828,18 +890,22 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
 <div style="display:flex;flex-direction:column;align-items:center;gap:0.5em;">
   <figure style="margin:0;text-align:center;">
     <img src="images/holland.jpg" style="width:104px;border-radius:8px;display:block;"/>
-    <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland · fair use</figcaption>
+    <figcaption style="font-size:0.32em;opacity:.55;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland</figcaption>
+  </figure>
+  <figure style="margin:0;text-align:center;">
+    <img src="images/genetic-walker.gif" style="width:100%;background:#fff;border-radius:6px;display:block;"/>
+    <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">An evolved gait — most of the population falls over</figcaption>
   </figure>
   <figure style="margin:0;text-align:center;">
     <img src="images/simulated-annealing.gif" style="width:100%;border-radius:6px;display:block;"/>
-    <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Simulated annealing — escaping local optima<br/>Kingpin13, CC0</figcaption>
+    <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Simulated annealing — escaping local optima</figcaption>
   </figure>
 </div>
 :::
 ::::
 
 ::: {.notes}
-Darwin as algorithm, formalized by Holland in 1975. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
+Darwin as algorithm, formalized by Holland in 1975. Use the walker: every one of those figures is a candidate gait, and almost all of them fall over. Nobody told any of them what walking is — there is no label, no gradient, only a score for how far you got before you hit the ground. Keep the winners, mutate, repeat. That is the whole tribe in one loop, and it is also why it is slow. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
 :::
 
 ---
@@ -847,7 +913,7 @@ Darwin as algorithm, formalized by Holland in 1975. You keep a population of can
 ## Bayesians — Belief as Probability
 
 :::: {.columns}
-::: {.column width="68%" style="font-size:0.78em;"}
+::: {.column style="width:74%; font-size:0.68em;"}
 - Roots: Bayes (1763), Laplace
 - Learning = updating a distribution over hypotheses
 - Prior + likelihood → posterior
@@ -855,11 +921,17 @@ Darwin as algorithm, formalized by Holland in 1975. You keep a population of can
 - Calibrated uncertainty, at a computational cost
 - EXAMPLE: Soldier Death Benefit Pensions
 :::
-::: {.column width="32%"}
-![](images/bayes.gif){width="88%" style="border-radius:8px;"}
-
-<span style="font-size:0.34em;opacity:.6;">Thomas Bayes · public domain (attribution disputed)</span>
+::: {.column width="26%"}
+![](images/bayes.gif){width="76%" style="border-radius:8px;"}
 :::
+::::
+
+:::: {style="font-size:0.5em; margin-top:0.15em;"}
+$$\underset{\color{#f0a868}{\text{posterior}}}{\color{#f0a868}{P(H \mid D)}} \;=\; \frac{\underset{\color{#63b3a6}{\text{likelihood}}}{\color{#63b3a6}{P(D \mid H)}}\;\cdot\;\underset{\color{#7aa0e0}{\text{prior}}}{\color{#7aa0e0}{P(H)}}}{\underset{\color{#9aa0aa}{\text{evidence}}}{\color{#9aa0aa}{P(D)}}}$$
+::::
+
+:::: {style="font-size:0.46em; margin-top:-0.3em;"}
+$$\underset{\color{#e06c75}{\text{predictive}}}{\color{#e06c75}{P(x^{*} \mid D)}} \;=\; \int \color{#63b3a6}{P(x^{*} \mid H)}\; \color{#f0a868}{P(H \mid D)}\; dH \qquad \text{— average over every hypothesis, don't pick one}$$
 ::::
 
 ::: {.notes}
@@ -871,23 +943,32 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 ## Analogizers — Reasoning by Similarity
 
 :::: {.columns}
-::: {.column width="68%" style="font-size:0.8em;"}
+::: {.column style="width:66%; font-size:0.8em;"}
 - Roots: psychology — reasoning from prior cases
 - k-nearest neighbors, SVMs, the kernel trick
 - Optimization: constrained optimization to maximize margin (SVMs)
 - Legacy: recommendation, few-shot via embeddings
 - EXAMPLE: Locating outperforming stock pairs
 :::
-::: {.column width="32%"}
-<figure style="margin:0; text-align:center;">
-  <img src="images/vapnik.png" style="width:118px;border-radius:8px;display:block;margin:0 auto;"/>
-  <figcaption style="font-size:0.32em;opacity:.65;margin:0.15em 0 0 0;line-height:1.2;">Vladimir Vapnik — co-inventor of the SVM<br/>Columbia University · fair use</figcaption>
-</figure>
+::: {.column width="34%"}
+<div style="display:flex; flex-direction:column; align-items:center; gap:0.45em;">
+<div style="text-align:center; line-height:1;">
+<img src="images/vapnik.png" style="width:100px;border-radius:8px;display:inline-block;vertical-align:middle;"/>
+<img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
+</div>
+<div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
+<img src="images/svm-margin.gif" style="width:100%;max-width:288px;background:#fff;border-radius:8px;display:block;"/>
+<div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The margin, widened until it cannot be</div>
+</div>
 :::
 ::::
 
 ::: {.notes}
 The fifth tribe: reason by similarity to past cases rather than by rules or models. Roots in psychology; the workhorses are k-nearest neighbours and SVMs, whose kernel trick measures similarity in high-dimensional space. The legacy is everywhere — recommendation systems ("people like you"), and few-shot learning via embeddings, which is how modern LLMs retrieve. The stock example: pairs trading, finding two stocks that historically move together and betting on the gap when they diverge — pure reasoning from analogous past behaviour. Set up the synthesis slide next: today's systems quietly use all five.
+
+The flag is a callback to Dartmouth, and worth thirty seconds. Vapnik and Chervonenkis built statistical learning theory — VC dimension, the margin, eventually the SVM — in Moscow through the 1960s and 70s, at an institute for control sciences, under the disciplinary banner of *cybernetics*. That is the very word McCarthy picked "artificial intelligence" to avoid. So the same intellectual territory got two names on two sides of the Iron Curtain, and the Western half spent decades not reading the Eastern half: VC theory only really landed here after Vapnik came to Bell Labs around 1990. The point for the ambiguity thread: the name a field carries is an accident of politics, and it determines who reads you.
+
+The animation is the tribe's actual idea: two classes, and infinitely many lines that separate them — the SVM picks the one that sits as far from both as possible. Widen the margin until it jams. Say that the margin is not a detail, it is the whole theory: Vapnik's claim was that the widest gap is the one that generalises, and he had the proof, not just the intuition.
 :::
 
 ---
@@ -932,8 +1013,6 @@ Set the honest tone for Section VI — this is the reality check after the tribe
 :::
 ::: {.column width="38%"}
 ![](images/kahneman.jpg){width="80%" style="border-radius:10px;"}
-
-<span style="font-size:0.34em;opacity:.6;">D. Kahneman · nrkbeta, CC BY-SA 2.0</span>
 :::
 ::::
 
@@ -943,15 +1022,52 @@ Kahneman's framing, borrowed and made concrete — this is the payoff of the "Sy
 
 ---
 
-## World Models & Grounding
+## Reality Gets a Vote
 
-- Humans simulate physics — gravity, permanence, cause
-- Today's systems largely lack this
-- Grounding: *why*, not merely co-occurrence
-- Correlation → causation: the unfinished bridge
+- Knowledge is what survives a test
+- Code and maths moved fastest — they can be **checked**
+- Fluency with no verifier → hallucination
+- Essays, strategy, taste, most real tasks: no oracle
 
 ::: {.notes}
-The deepest gap, and it circles back to Section I. Humans run an internal physics engine — we intuit gravity, object permanence, and cause before we can speak. Today's systems mostly lack this; they have correlation without a causal model of why. Pearl's ladder of causation is the reference if anyone asks. The closing line is the section's thesis: correlation to causation is the unfinished bridge — and it's precisely the kind of open problem a thesis could take on.
+Define your sense of "grounding" out loud, because the word is overloaded. Philosophers use it for how symbols get their meaning — Harnad, the Chinese Room; that's Section I's question and I'm not asking it here. I mean the engineering sense: does anything check the answer? Note that this is the same move as Section III — name the ambiguity, pick a definition, hold to it. The line to land is the second bullet: a model trained only on text has never once been told it was wrong by the world.
+:::
+
+---
+
+## Pearl's Ladder
+
+:::: {.columns}
+::: {.column width="62%"}
+- **See** — P(y | x)
+- **Do** — P(y | do(x))
+- **Imagine** — what if I had?
+- LLMs just see, no doing or imagining without a verifier!
+- Can't watch your way to cause
+:::
+::: {.column width="38%"}
+![](images/pearl.jpg){width="76%" style="border-radius:10px;"}
+:::
+::::
+
+::: {.notes}
+Pearl's *Book of Why* in one slide — don't derive anything. Three rungs: seeing is association, which is where all of statistics and machine learning lives; doing is intervention; imagining is counterfactual. Say the do-operator aloud once so it's not just notation. The punchline is the last bullet: everything we have praised tonight sits on rung one.
+
+The photo is Pearl at NeurIPS, standing at his own poster — the notation behind his shoulder is the graphical-model machinery this slide is compressing. Worth one sentence if the room is warm.
+:::
+
+
+---
+
+## The Experiment Is the Intervention
+
+- do(x) is what an experiment *is*
+- Science: institutionalised rung two
+- **Verifying and causing are one move**
+- To do experiments and find cause, need a body
+
+::: {.notes}
+The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
 :::
 
 ---
@@ -985,18 +1101,7 @@ The remaining three, and slow down on the last. Persistent memory means no catas
 
 ---
 
-## The Mirror
 
-- This list is the human-intelligence properties, read back
-- We want the human bundle — minus our limits, plus our values
-- Whether that bundle is coherent is itself a thesis
-- You debate the spec, not just implement it
-
-::: {.notes}
-Section VII payoff, and the intellectual climax of the talk — deliver it deliberately. Reveal the mirror: this AGI spec is just the human-intelligence properties from Section II read back to us. We want the human bundle minus our limits, plus our values. Then the twist that makes it a research programme: whether that bundle is even internally coherent — whether you can maximize all of it at once — is itself a thesis-worthy question. The charge to the room: your job is to debate the specification, not merely implement someone else's.
-:::
-
----
 
 ## VIII. The Future {.section-divider}
 
@@ -1013,6 +1118,7 @@ Open the future section with the counterintuitive one. Moravec's paradox: the th
 :::
 
 ---
+
 
 ## Foundation Models Meet Robotics
 
@@ -1049,7 +1155,7 @@ Handle with humility — say out loud that this is outside my expertise, because
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
 
 ::: {.notes}
-The recap — tie the three spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide before the personal close.
+The recap — tie the spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide before the personal close.
 :::
 
 ---
@@ -1110,6 +1216,53 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Chollet, F. (2019). On the measure of intelligence. *arXiv:1911.01547*.
 - Domingos, P. (2015). *The Master Algorithm*.
 - Moravec, H. (1988). *Mind Children*.
+
+---
+
+## Image Credits
+
+:::: {.columns}
+::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
+- Bonobo — natataek, CC BY-SA 3.0
+- Octopus — Diego Delso, CC BY-SA 4.0
+- L. Messi goal clip (Getafe, 2007) — broadcast footage, rights holder unidentified
+- Mirror self-recognition — roseoftimothywoods, CC BY 2.0
+- G. Hinton — Cmichel67, CC BY-SA 4.0
+- Y. LeCun — J. Barande, CC BY-SA 2.0
+- Y. Bengio — Xuthoria, CC BY-SA 4.0
+- J. Schmidhuber — ITU/R. Farrell, CC BY 2.0
+- D. Kahneman — nrkbeta, CC BY-SA 2.0
+- J. Pearl — Better Than Bacon, CC BY 2.0
+- J. McCarthy — null0, CC BY-SA 2.0
+:::
+::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
+- M. Minsky — OLPC, CC BY 3.0
+- C. Shannon — Tekniska museet, CC BY 2.0
+- F. Chollet — Ramosset, CC BY-SA 4.0
+- A. Turing — Elliott & Fry, public domain
+- T. Bayes — public domain (attribution disputed)
+- Soviet flag — public domain
+- Simulated annealing — Kingpin13, CC0
+- Map boundaries — Natural Earth, public domain
+- J. Holland, V. Vapnik, J. Tenenbaum, K. Friston — no free licence identified; used under fair dealing for education
+- Rodin's *The Thinker* animation — via Giphy, unattributed
+- Attention animation — BertViz, via comet.com
+- Diffusion denoising animation — via Towards Data Science
+- Decision tree animation — via Medium
+- Biological neuron animation — via Telefónica Tech
+- Evolved walker animation — via kottke.org
+- SVM margin animation — via Medium
+- ANI/AGI/ASI illustration — via Medium
+:::
+::::
+
+::: {style="font-size:0.4em; opacity:0.6; margin-top:0.6em;"}
+Photographs from Wikimedia Commons unless noted. Titled slide image: Piedras del Tunjo.
+:::
+
+::: {.notes}
+Back-matter — don't present this, just let it exist. It's here so the CC BY and CC BY-SA images are properly attributed without cluttering the slides they appear on, which is the normal convention for a talk. The last line is the honest one: three portraits have no freely-licensed photograph in existence, and they're used under an educational rationale. If that ever becomes a problem, those three are the ones to pull.
+:::
 
 ---
 
