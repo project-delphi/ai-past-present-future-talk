@@ -155,13 +155,13 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 :::
 ::: {.column width="48%"}
 <div style="text-align:center; line-height:1;">
-<img src="images/thinker.gif" style="height:150px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/>
-<img src="images/mirror-bear.gif" style="height:150px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
+<a href="https://en.wikipedia.org/wiki/The_Thinker" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/thinker.gif" style="height:150px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/></a>
+<a href="https://en.wikipedia.org/wiki/Mirror_test" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/mirror-bear.gif" style="height:150px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/></a>
 </div>
 
 <div style="text-align:center; line-height:1; margin-top:0.45em;">
-<img src="images/mirror-baby-anim.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;"/>
-<img src="images/mirror-girl.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/>
+<a href="https://en.wikipedia.org/wiki/Mirror_test" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/mirror-baby-anim.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;"/></a>
+<a href="https://en.wikipedia.org/wiki/Mirror_test" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/mirror-girl.gif" style="height:96px;border-radius:6px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/></a>
 </div>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">A mind watching itself think — and three meeting themselves: bear, infant, child pass the mirror test</div>
@@ -198,7 +198,7 @@ Big caveat first, and say it out loud: this is a teaching device, not a real tax
 - The differences are as instructive as the likenesses
 :::
 ::: {.column width="44%"}
-![](images/bonobo.jpg){width="100%" style="border-radius:10px;"}
+[![](images/bonobo.jpg){width="100%" style="border-radius:10px;"}](https://en.wikipedia.org/wiki/Bonobo){target="_blank" rel="noopener"}
 
 <span style="font-size:0.34em;opacity:.55;">Bonobo</span>
 :::
@@ -220,7 +220,7 @@ Chimps and bonobos share a common ancestor with us roughly 6–7 million years a
 - Similar solutions → convergence is real
 :::
 ::: {.column width="44%"}
-<img src="images/octopus.jpg" style="width:44%;border-radius:10px;display:block;margin:0 auto 0.3em auto;"/>
+<a href="https://en.wikipedia.org/wiki/Cephalopod_intelligence" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/octopus.jpg" style="width:44%;border-radius:10px;display:block;margin:0 auto 0.3em auto;"/></a>
 
 <svg viewBox="0 0 260 200" width="100%" style="max-width:330px" font-family="sans-serif">
   <text x="130" y="16" fill="#b9bdc6" font-size="10" text-anchor="middle">~500M neurons</text>
@@ -269,7 +269,7 @@ This is the star witness. ~550 million years of separate evolution, and yet the 
 - *Caveat: the hormone–cognition link is a popular theory, not proven*
 :::
 ::: {.column width="40%"}
-<img src="images/messi.gif" style="width:100%;border-radius:10px;display:block;"/>
+<a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/messi.gif" style="width:100%;border-radius:10px;display:block;"/></a>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Getafe, 2007 — the pattern, read early</div>
 :::
@@ -291,7 +291,7 @@ A crowd-pleaser — use it to make prediction concrete and human. Let the clip l
 - Machine analogues: reward signals, then sentiment analysis
 :::
 ::: {.column width="45%"}
-<img src="images/emotion-inside-out.gif" style="width:100%;border-radius:10px;display:block;margin-top:0.5em;"/>
+<a href="https://en.wikipedia.org/wiki/Inside_Out_(2015_film)" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/emotion-inside-out.gif" style="width:100%;border-radius:10px;display:block;margin-top:0.5em;"/></a>
 :::
 ::::
 
@@ -310,7 +310,7 @@ Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is th
 - Consciousness as ongoing active inference
 :::
 ::: {.column width="54%"}
-<img src="images/friston.jpg" style="width:82px;border-radius:6px;display:block;margin:0 auto 0.35em auto;"/>
+<a href="https://en.wikipedia.org/wiki/Karl_J._Friston" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/friston.jpg" style="width:82px;border-radius:6px;display:block;margin:0 auto 0.35em auto;"/></a>
 
 <svg viewBox="0 0 280 178" width="100%" style="max-width:355px" font-family="sans-serif">
 <defs>
@@ -547,15 +547,15 @@ Section II landing. Compress the whole section to one sentence: self-supervised 
 <div style="display:flex; flex-direction:column; gap:0.3em; align-items:center;">
 <div style="display:flex; gap:0.5em; justify-content:center;">
 <figure style="margin:0; text-align:center;">
-<img src="images/mccarthy.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<a href="https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/mccarthy.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/></a>
 <figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">McCarthy</figcaption>
 </figure>
 <figure style="margin:0; text-align:center;">
-<img src="images/minsky.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<a href="https://en.wikipedia.org/wiki/Marvin_Minsky" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/minsky.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/></a>
 <figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">Minsky</figcaption>
 </figure>
 <figure style="margin:0; text-align:center;">
-<img src="images/shannon.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/>
+<a href="https://en.wikipedia.org/wiki/Claude_Shannon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/shannon.jpg" style="width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;"/></a>
 <figcaption style="font-size:0.32em;opacity:.75;margin:0.1em 0 0 0;line-height:1;">Shannon</figcaption>
 </figure>
 </div>
@@ -583,7 +583,7 @@ Land the last bullet lightly — about twenty people passed through, daily atten
 - **ASI** — beyond: exceeds the best humans at essentially everything
 ::::
 
-<img src="images/ani-agi-asi.jpg" style="width:66%;max-width:640px;border-radius:10px;display:block;margin:0.5em auto 0 auto;"/>
+<a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ani-agi-asi.jpg" style="width:66%;max-width:640px;border-radius:10px;display:block;margin:0.5em auto 0 auto;"/></a>
 
 <div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.25em;">ANI is here · AGI is the aspiration · ASI is the artwork</div>
 
@@ -626,7 +626,7 @@ This is the "AI effect" and the emotional centre of the section. The pattern: ch
 - A floor, not a ceiling
 :::
 ::: {.column width="40%"}
-![](images/turing.jpg){width="78%" style="border-radius:10px;"}
+[![](images/turing.jpg){width="78%" style="border-radius:10px;"}](https://en.wikipedia.org/wiki/Alan_Turing){target="_blank" rel="noopener"}
 :::
 ::::
 
@@ -684,7 +684,7 @@ The definition most working engineers actually use — it's the frame of the Rus
 - Memorize well, adapt poorly → not intelligent
 :::
 ::: {.column width="40%"}
-![](images/chollet.jpg){width="80%" style="border-radius:10px;"}
+[![](images/chollet.jpg){width="80%" style="border-radius:10px;"}](https://fchollet.com/){target="_blank" rel="noopener"}
 :::
 ::::
 
@@ -749,7 +749,7 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 :::
 ::: {.column width="44%"}
 <figure style="margin:0; text-align:center;">
-  <img src="images/denoising.gif" style="width:100%;max-width:400px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+  <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/denoising.gif" style="width:100%;max-width:400px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/></a>
   <figcaption style="font-size:0.3em;opacity:.55;margin:0.2em 0 0 0;line-height:1.3;">Noise → sample: a diffusion model inventing characters</figcaption>
 </figure>
 :::
@@ -789,7 +789,7 @@ The deliberate counterweight to the hype slide before it — keep the tone measu
 :::
 ::: {.column width="42%"}
 <figure style="margin:0; text-align:center;">
-  <img src="images/attention.gif" style="width:100%;max-width:370px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+  <a href="https://en.wikipedia.org/wiki/Attention_(machine_learning)" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/attention.gif" style="width:100%;max-width:370px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/></a>
   <figcaption style="font-size:0.3em;opacity:.55;margin:0.2em 0 0 0;line-height:1.3;">Attention, layer by layer — every token weighing every other</figcaption>
 </figure>
 :::
@@ -820,11 +820,11 @@ One caveat, and concede it fast if a specialist raises it: this is BertViz, so t
 - EXAMPLE: Routing Email Complaints
 :::
 ::: {.column width="48%"}
-<img src="images/decision-tree.gif" style="width:100%;max-width:420px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/>
+<a href="https://en.wikipedia.org/wiki/Decision_tree_learning" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/decision-tree.gif" style="width:100%;max-width:420px;background:#fff;border-radius:8px;display:block;margin:0 auto;"/></a>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.25em;">Every answer comes with its own audit trail</div>
 
-<img src="images/tenenbaum.jpg" style="width:124px;border-radius:8px;display:block;margin:0.5em auto 0 auto;"/>
+<a href="https://web.mit.edu/cocosci/josh.html" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/tenenbaum.jpg" style="width:124px;border-radius:8px;display:block;margin:0.5em auto 0 auto;"/></a>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.2;text-align:center;">Josh Tenenbaum</div>
 :::
@@ -849,25 +849,25 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
-<img src="images/neuron.gif" style="width:100%;background:#fff;border-radius:8px;display:block;margin:0 auto 0.15em auto;"/>
+<a href="https://en.wikipedia.org/wiki/Neuron" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/neuron.gif" style="width:100%;background:#fff;border-radius:8px;display:block;margin:0 auto 0.15em auto;"/></a>
 
 <div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Dendrites in, axon out — the unit they copied</div>
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.25em 0.5em; justify-items:center;">
   <figure style="margin:0; text-align:center;">
-    <img src="images/hinton.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <a href="https://www.cs.toronto.edu/~hinton/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/hinton.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Hinton</figcaption>
   </figure>
   <figure style="margin:0; text-align:center;">
-    <img src="images/lecun.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <a href="http://yann.lecun.com/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/lecun.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">LeCun</figcaption>
   </figure>
   <figure style="margin:0; text-align:center;">
-    <img src="images/bengio.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <a href="https://yoshuabengio.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bengio.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Bengio</figcaption>
   </figure>
   <figure style="margin:0; text-align:center;">
-    <img src="images/schmidhuber.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/>
+    <a href="https://people.idsia.ch/~juergen/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/schmidhuber.jpg" style="width:76px;height:76px;object-fit:cover;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.36em;opacity:.85;margin:0.1em 0 0 0;line-height:1;">Schmidhuber</figcaption>
   </figure>
 
@@ -914,15 +914,15 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
 ::: {.column width="34%"}
 <div style="display:flex;flex-direction:column;align-items:center;gap:0.5em;">
   <figure style="margin:0;text-align:center;">
-    <img src="images/holland.jpg" style="width:104px;border-radius:8px;display:block;"/>
+    <a href="https://en.wikipedia.org/wiki/John_Henry_Holland" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/holland.jpg" style="width:104px;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.32em;opacity:.55;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland</figcaption>
   </figure>
   <figure style="margin:0;text-align:center;">
-    <img src="images/genetic-walker.gif" style="width:100%;background:#fff;border-radius:6px;display:block;"/>
+    <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/genetic-walker.gif" style="width:100%;background:#fff;border-radius:6px;display:block;"/></a>
     <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">An evolved gait — most of the population falls over</figcaption>
   </figure>
   <figure style="margin:0;text-align:center;">
-    <img src="images/simulated-annealing.gif" style="width:100%;border-radius:6px;display:block;"/>
+    <a href="https://en.wikipedia.org/wiki/Simulated_annealing" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/simulated-annealing.gif" style="width:100%;border-radius:6px;display:block;"/></a>
     <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Simulated annealing — escaping local optima</figcaption>
   </figure>
 </div>
@@ -947,7 +947,7 @@ Darwin as algorithm, formalized by Holland in 1975. Use the walker: every one of
 - EXAMPLE: Soldier Death Benefit Pensions
 :::
 ::: {.column width="26%"}
-![](images/bayes.gif){width="76%" style="border-radius:8px;"}
+[![](images/bayes.gif){width="76%" style="border-radius:8px;"}](https://en.wikipedia.org/wiki/Bayes%27_theorem){target="_blank" rel="noopener"}
 :::
 ::::
 
@@ -978,11 +978,11 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 ::: {.column width="34%"}
 <div style="display:flex; flex-direction:column; align-items:center; gap:0.45em;">
 <div style="text-align:center; line-height:1;">
-<img src="images/vapnik.jpg" style="width:100px;border-radius:8px;display:inline-block;vertical-align:middle;"/>
+<a href="https://en.wikipedia.org/wiki/Vladimir_Vapnik" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/vapnik.jpg" style="width:100px;border-radius:8px;display:inline-block;vertical-align:middle;"/></a>
 <img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
 </div>
 <div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
-<img src="images/svm-margin.gif" style="width:100%;max-width:288px;background:#fff;border-radius:8px;display:block;"/>
+<a href="https://en.wikipedia.org/wiki/Support_vector_machine" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/svm-margin.gif" style="width:100%;max-width:288px;background:#fff;border-radius:8px;display:block;"/></a>
 <div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The margin, widened until it cannot be</div>
 </div>
 :::
@@ -1020,9 +1020,15 @@ Section V landing, and the first direct address to the doctoral candidates. No r
 - Narrow, brittle outside the training distribution
 - The frontier problem is reasoning, not scale
 - Performance can mask absent understanding
+- The \$1M ARC Prize still stands — no system has claimed it
+
+<div style="display:flex;justify-content:center;align-items:center;gap:1.2em;margin-top:0.5em;">
+  <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:319px;border-radius:10px;"/></a>
+  <a href="https://arcprize.org/leaderboard" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-leaderboard.png" style="height:319px;border-radius:8px;"/></a>
+</div>
 
 ::: {.notes}
-Set the honest tone for Section VI — this is the reality check after the tribes. Today's systems are narrow and brittle the moment you step outside the training distribution. The reframe that matters: the frontier problem is reasoning, not scale — more parameters won't close this gap. And the warning to the researchers in the room: benchmark performance can mask a total absence of understanding, so measure carefully and distrust a single headline number.
+Set the honest tone for Section VI — this is the reality check after the tribes. Today's systems are narrow and brittle the moment you step outside the training distribution. The reframe that matters: the frontier problem is reasoning, not scale — more parameters won't close this gap. And the warning to the researchers in the room: benchmark performance can mask a total absence of understanding, so measure carefully and distrust a single headline number. The animation is an ARC-AGI puzzle being solved — gesture at it when you name the reasoning gap: a child infers the rule from two or three examples, and this family of tasks is precisely where frontier models still fall over. Then point at the leaderboard: on ARC-AGI-3 the best frontier systems sit under 8%, and only by spending thousands of dollars per run — the score axis tops out at 20% and the cost axis is logarithmic. That one chart is the whole slide in numbers. And the last bullet is the stakes made concrete — the \$1M ARC Prize for a system that cracks these tasks efficiently is still unclaimed; the gap isn't rhetorical, it's a standing bounty nobody has collected.
 :::
 
 ---
@@ -1037,7 +1043,7 @@ Set the honest tone for Section VI — this is the reality check after the tribe
 - Open and fast-moving
 :::
 ::: {.column width="38%"}
-![](images/kahneman.jpg){width="80%" style="border-radius:10px;"}
+[![](images/kahneman.jpg){width="80%" style="border-radius:10px;"}](https://en.wikipedia.org/wiki/Daniel_Kahneman){target="_blank" rel="noopener"}
 :::
 ::::
 
@@ -1071,7 +1077,7 @@ Define your sense of "grounding" out loud, because the word is overloaded. Philo
 - Can't watch your way to cause
 :::
 ::: {.column width="38%"}
-![](images/pearl.jpg){width="76%" style="border-radius:10px;"}
+[![](images/pearl.jpg){width="76%" style="border-radius:10px;"}](http://bayes.cs.ucla.edu/jp_home.html){target="_blank" rel="noopener"}
 :::
 ::::
 
@@ -1155,7 +1161,7 @@ Open the future section with the counterintuitive one. Moravec's paradox: the th
 - Where the next decade concentrates
 :::
 ::: {.column width="42%"}
-<img src="images/humanoid-robot.gif" style="width:100%;max-width:340px;border-radius:10px;display:block;margin:0 auto;"/>
+<a href="https://www.unitree.com/g1" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/humanoid-robot.gif" style="width:100%;max-width:340px;border-radius:10px;display:block;margin:0 auto;"/></a>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.2;text-align:center;margin-top:0.3em;">Unitree G1 — a body waiting for a better brain</div>
 :::
@@ -1268,14 +1274,14 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - D. Kahneman — nrkbeta, CC BY-SA 2.0
 - J. Pearl — Better Than Bacon, CC BY 2.0
 - J. McCarthy — null0, CC BY-SA 2.0
-:::
-::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
 - M. Minsky — OLPC, CC BY 3.0
 - C. Shannon — Tekniska museet, CC BY 2.0
 - F. Chollet — Ramosset, CC BY-SA 4.0
 - A. Turing — Elliott & Fry, public domain
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
+:::
+::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
 - Simulated annealing — Kingpin13, CC0
 - Map boundaries — Natural Earth, public domain
 - J. Holland, V. Vapnik, J. Tenenbaum, K. Friston — no free licence identified; used under fair dealing for education
@@ -1291,6 +1297,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - AI history timeline — via LinkedIn
 - Unitree G1 robot animation — via roboticgizmos.com
 - Coffee-making robot animation — via Mothership
+- ARC-AGI task animation & ARC-AGI-3 leaderboard — © ARC Prize Foundation, via arcprize.org
 :::
 ::::
 
