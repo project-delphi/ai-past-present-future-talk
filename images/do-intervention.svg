@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#9ab4dd"/>
+    </marker>
+    <marker id="aho" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#f0a868"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Panel A: Observe ============ -->
+  <g>
+    <text x="150" y="24" text-anchor="middle" fill="#9aa0aa" font-size="17" font-style="italic">Observe · P(wet | sprinkler)</text>
+
+    <!-- edges -->
+    <g stroke="#9ab4dd" stroke-width="2.4" fill="none" marker-end="url(#ah)">
+      <line x1="126" y1="70" x2="82"  y2="118"/>
+      <line x1="174" y1="70" x2="218" y2="118"/>
+      <line x1="82"  y1="160" x2="122" y2="212"/>
+      <line x1="218" y1="160" x2="178" y2="212"/>
+      <line x1="150" y1="256" x2="150" y2="308"/>
+    </g>
+
+    <!-- nodes -->
+    <g font-size="15" fill="#fff" text-anchor="middle">
+      <ellipse cx="150" cy="52"  rx="46" ry="21" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="57">Season</text>
+      <ellipse cx="62"  cy="140" rx="46" ry="21" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="62" y="145">Sprinkler</text>
+      <ellipse cx="238" cy="140" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="238" y="145">Rain</text>
+      <ellipse cx="150" cy="236" rx="54" ry="23" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="241">Grass wet</text>
+      <ellipse cx="150" cy="332" rx="58" ry="23" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="337">Grass slippery</text>
+    </g>
+  </g>
+
+  <!-- divider -->
+  <line x1="340" y1="12" x2="340" y2="388" stroke="#3a3f47" stroke-width="1.5" stroke-dasharray="4 5"/>
+
+  <!-- ============ Panel B: Intervene ============ -->
+  <g transform="translate(340,0)">
+    <text x="150" y="24" text-anchor="middle" fill="#f0a868" font-size="17" font-style="italic">Intervene · P(wet | do(sprinkler))</text>
+
+    <!-- severed edge Season -> Sprinkler -->
+    <g stroke="#e06c75" stroke-width="2.2" opacity="0.6" stroke-dasharray="5 4">
+      <line x1="126" y1="70" x2="104" y2="94"/>
+      <line x1="88"  y1="110" x2="70" y2="128"/>
+    </g>
+    <text x="96" y="106" text-anchor="middle" fill="#e06c75" font-size="17" font-weight="bold">✕</text>
+
+    <!-- remaining edges -->
+    <g stroke="#9ab4dd" stroke-width="2.4" fill="none" marker-end="url(#ah)">
+      <line x1="174" y1="70" x2="218" y2="118"/>
+      <line x1="218" y1="160" x2="178" y2="212"/>
+      <line x1="150" y1="256" x2="150" y2="308"/>
+    </g>
+    <!-- forced edge Sprinkler -> wet -->
+    <g stroke="#f0a868" stroke-width="2.6" fill="none" marker-end="url(#aho)">
+      <line x1="82" y1="160" x2="122" y2="212"/>
+    </g>
+
+    <!-- nodes -->
+    <g font-size="15" fill="#fff" text-anchor="middle">
+      <ellipse cx="150" cy="52"  rx="46" ry="21" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="57">Season</text>
+      <ellipse cx="238" cy="140" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="238" y="145">Rain</text>
+      <ellipse cx="150" cy="236" rx="54" ry="23" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="241">Grass wet</text>
+      <ellipse cx="150" cy="332" rx="58" ry="23" fill="#3f6aa0" stroke="#7aa0e0"/>
+      <text x="150" y="337">Grass slippery</text>
+    </g>
+    <!-- intervened node, forced ON -->
+    <g font-size="15" text-anchor="middle">
+      <ellipse cx="62" cy="140" rx="48" ry="22" fill="#f0a868" stroke="#f6c89a" stroke-width="2"/>
+      <text x="62" y="137" fill="#1a1a1a" font-weight="bold">Sprinkler</text>
+      <text x="62" y="153" fill="#1a1a1a" font-size="12">set = on</text>
+    </g>
+  </g>
+</svg>

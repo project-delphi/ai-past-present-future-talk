@@ -95,6 +95,7 @@ These four threads recur all evening — flag them now so people can track them.
 
 ## Outline
 
+:::: {style="font-size:0.92em;"}
 - I Minds: consciousness & animals
 - II Human intelligence as machine learning
 - III "AI": an ambiguous term
@@ -104,6 +105,7 @@ These four threads recur all evening — flag them now so people can track them.
 - VI State of the art
 - VII What we want from AGI
 - VIII The future
+::::
 
 ::: {.notes}
 Roadmap slide — keep it brief, roughly 20 seconds. Note the coffee break sits between III and IV so people can pace themselves. Sections I–III build the conceptual frame; IV–VIII are the payoff. Don't read every line aloud; just orient them.
@@ -583,7 +585,7 @@ Land the last bullet lightly — about twenty people passed through, daily atten
 - **ASI** — beyond: exceeds the best humans at essentially everything
 ::::
 
-<a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ani-agi-asi.jpg" style="width:66%;max-width:640px;border-radius:10px;display:block;margin:0.5em auto 0 auto;"/></a>
+<a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ani-agi-asi.jpg" style="width:auto;max-width:60%;max-height:260px;border-radius:10px;display:block;margin:0.4em auto 0 auto;"/></a>
 
 <div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.25em;">ANI is here · AGI is the aspiration · ASI is the artwork</div>
 
@@ -1023,8 +1025,8 @@ Section V landing, and the first direct address to the doctoral candidates. No r
 - The \$1M ARC Prize still stands — no system has claimed it
 
 <div style="display:flex;justify-content:center;align-items:center;gap:1.2em;margin-top:0.5em;">
-  <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:319px;border-radius:10px;"/></a>
-  <a href="https://arcprize.org/leaderboard" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-leaderboard.png" style="height:319px;border-radius:8px;"/></a>
+  <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:212px;border-radius:10px;"/></a>
+  <a href="https://arcprize.org/leaderboard" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-leaderboard.png" style="height:212px;border-radius:8px;"/></a>
 </div>
 
 ::: {.notes}
@@ -1092,13 +1094,15 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 
 ## The Experiment Is the Intervention
 
-- do(x) is what an experiment *is*
-- Science: institutionalised rung two
+- **do(x)** — reach in, *set* x by hand, cutting its usual causes
+- That severed graph is what an experiment *is* — randomise, don't just watch
 - **Verifying and causing are one move**
-- To do experiments and find cause, need a body
+- To do experiments and find cause, you need a body
+
+<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/do-intervention.svg" style="width:auto;max-width:98%;max-height:232px;display:block;margin:0.3em auto 0 auto;"/></a>
 
 ::: {.notes}
-The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
+The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler on cuts the arrow from Season, so nothing upstream explains it away, and what reaches the wet grass is pure cause. That severed edge is the whole idea of the do-operator. So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
 :::
 
 ---
@@ -1262,7 +1266,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 ## Image Credits
 
 :::: {.columns}
-::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
+::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.32;"}
 - Bonobo — natataek, CC BY-SA 3.0
 - Octopus — Diego Delso, CC BY-SA 4.0
 - L. Messi goal clip (Getafe, 2007) — broadcast footage, rights holder unidentified
@@ -1281,7 +1285,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
 :::
-::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.5;"}
+::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.32;"}
 - Simulated annealing — Kingpin13, CC0
 - Map boundaries — Natural Earth, public domain
 - J. Holland, V. Vapnik, J. Tenenbaum, K. Friston — no free licence identified; used under fair dealing for education
