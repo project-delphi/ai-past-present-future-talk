@@ -34,10 +34,13 @@ header-includes: |
     text-align: center;
   }
   .reveal .slides section.section-divider h2 {
-    color: #f0a868;
-    font-size: 2.4em;
+    color: #f0a868 !important;
+    font-size: 1.4em;
     border-bottom: none;
     text-shadow: 0 2px 24px rgba(240, 168, 104, 0.35);
+  }
+  .reveal .slides section:not(.section-divider) h2 {
+    font-size: 1.5em;
   }
   .reveal .slides section.section-divider.present h2 {
     animation: divider-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -569,7 +572,7 @@ Section II landing. Compress the whole section to one sentence: self-supervised 
 ::: {.notes}
 The origin story, and it is evidence for the whole section — so tell it as evidence, not trivia. Summer 1956, Dartmouth College: a six-week workshop proposed the year before by McCarthy, Minsky, Rochester and Shannon. It is conventionally the founding moment of the field.
 
-The detail that matters is the second bullet, and it is the reason this slide exists: McCarthy picked the words "artificial intelligence" because they were *neutral* — he wanted to avoid being annexed by cybernetics and its analog-feedback framing, and he wanted to avoid a fight with Norbert Wiener, who was formidable. So the name of our entire discipline was a political choice made to dodge a rival school and an difficult colleague, before there was any science to name. That is the ambiguity thread with a birth certificate: "AI" was a label first and a field second.
+The detail that matters is the second bullet, and it is the reason this slide exists: McCarthy picked the words "artificial intelligence" because they were *neutral* — he wanted to avoid being annexed by cybernetics and its analog-feedback framing, and he wanted to avoid a fight with Norbert Wiener, who was formidable. So the name of our entire discipline was a political choice made to dodge a rival school and a difficult colleague, before there was any science to name. That is the ambiguity thread with a birth certificate: "AI" was a label first and a field second.
 
 Land the last bullet lightly — about twenty people passed through, daily attendance ran three to eight, and only Solomonoff, Minsky and McCarthy stayed the whole summer. The founding event of the field was a loosely-attended summer workshop, not a moment of revelation.
 :::
@@ -762,7 +765,7 @@ Welcome them back from coffee, re-anchor quickly. Generative AI learns a probabi
 
 Let it loop while you talk — it is the first bullet happening in front of them. The counter runs from 1% to 99% denoised: the model starts from pure noise and walks it, step by step, into a sample. That is what "simulation from a learned distribution" means, and no equation lands it as fast.
 
-The detail worth pausing on: these are not real Chinese characters. The model learned the *distribution* of characters — strokes, radicals, balance, the way they sit in a square — and drew new ones from it. They look right to anyone who doesn't read Chinese, and wrong to anyone who does. That is generative AI in one image: fluent in the form, indifferent to the meaning. It also pre-loads "What Gen AI Is Not," two slides on — fluency is not knowledge.
+The detail worth pausing on: these are not real Chinese characters. The model learned the *distribution* of characters — strokes, radicals, balance, the way they sit in a square — and drew new ones from it. They look right to anyone who doesn't read Chinese, and wrong to anyone who does. That is generative AI in one image: fluent in the form, indifferent to the meaning. It also pre-loads "What Gen AI Is Not," the next slide — fluency is not knowledge.
 :::
 
 ---
@@ -883,7 +886,7 @@ The tribe that won — for now. Point at the neuron loop for one beat before you
 
 ---
 
-## Connectionists: Bolivarian Contrbution
+## Connectionists: Bolivarian Contribution
 
 :::: {.columns}
 ::: {.column width="54%"}
@@ -1131,7 +1134,7 @@ First three requirements. Generality means competence transfers to tasks it was 
 - The last is a constraint — and the highest-stakes one
 
 ::: {.notes}
-The remaining three, and slow down on the last. Persistent memory means no catastrophic forgetting — the missing piece from "The LLM, Precisely." Grounded world models means causal, ideally embodied understanding, which sets up Section VIII. Then the crucial asymmetry: alignment isn't another capability, it's a constraint on all the others — we want open-ended autonomy that stays controllable. It's the only item where getting it wrong is catastrophic rather than merely disappointing, which is why it carries the most weight.
+The remaining three, and slow down on the last. Persistent memory means no catastrophic forgetting — the missing piece from "The LLM." Grounded world models means causal, ideally embodied understanding, which sets up Section VIII. Then the crucial asymmetry: alignment isn't another capability, it's a constraint on all the others — we want open-ended autonomy that stays controllable. It's the only item where getting it wrong is catastrophic rather than merely disappointing, which is why it carries the most weight.
 :::
 
 ---
