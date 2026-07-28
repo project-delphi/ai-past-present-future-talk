@@ -1064,13 +1064,20 @@ Kahneman's framing, borrowed and made concrete — this is the payoff of the "Sy
 
 ## Reality Gets a Vote
 
+:::: {.columns}
+::: {.column width="62%"}
 - Knowledge is what survives a test
 - Code and maths moved fastest — they can be **checked**
 - Fluency with no verifier → hallucination
 - Essays, strategy, taste, most real tasks: no oracle
+:::
+::: {.column width="38%"}
+<img src="images/tyson-plan.png" style="width:80%; border-radius:10px;">
+:::
+::::
 
 ::: {.notes}
-Define your sense of "grounding" out loud, because the word is overloaded. Philosophers use it for how symbols get their meaning — Harnad, the Chinese Room; that's Section I's question and I'm not asking it here. I mean the engineering sense: does anything check the answer? Note that this is the same move as Section III — name the ambiguity, pick a definition, hold to it. The line to land is the second bullet: a model trained only on text has never once been told it was wrong by the world.
+Define your sense of "grounding" out loud, because the word is overloaded. Philosophers use it for how symbols get their meaning — Harnad, the Chinese Room; that's Section I's question and I'm not asking it here. I mean the engineering sense: does anything check the answer? Note that this is the same move as Section III — name the ambiguity, pick a definition, hold to it. The line to land is the second bullet: a model trained only on text has never once been told it was wrong by the world. Tyson is the joke that buys you the point — let the room read it, then say it: a plan that has never met a punch is fluency, and the punch is the verifier. Use it once and move on; don't milk it.
 :::
 
 ---
@@ -1309,6 +1316,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Unitree G1 robot animation — via roboticgizmos.com
 - Coffee-making robot animation — via Mothership
 - ARC-AGI task animation & ARC-AGI-3 leaderboard — © ARC Prize Foundation, via arcprize.org
+- M. Tyson quote poster — rights holder unidentified; used under fair dealing for education
 :::
 ::::
 
