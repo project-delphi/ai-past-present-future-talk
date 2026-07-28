@@ -1072,7 +1072,7 @@ Kahneman's framing, borrowed and made concrete — this is the payoff of the "Sy
 - Essays, strategy, taste, most real tasks: no oracle
 :::
 ::: {.column width="38%"}
-<img src="images/tyson-plan.png" style="width:80%; border-radius:10px;">
+<img src="images/tyson-plan.jpg" alt="Mike Tyson standing over a floored opponent, captioned &quot;Everyone has a plan 'till they get punched in the mouth.&quot;" style="width:80%;border-radius:10px;display:block;margin:0 auto;"/>
 :::
 ::::
 
