@@ -2,7 +2,7 @@
 title: "The Architecture of Intelligence"
 subtitle: "Past, Present & Future of AI"
 author: "Ravi Kalia, PhD"
-date: "August 4, 2026"
+date: "August 3, 2026"
 format:
   revealjs:
     slide-number: true
@@ -717,10 +717,14 @@ Walk the pipeline slowly, it's the backbone of the section: raw data, compress o
 
 ## Knowledge as Compression
 
-- Deriving signal from noise
+Three traditional sources of knowledge:
+
 - **Genes** — survival encoded by evolution
 - **Experience** — direct interaction
 - **Culture** — collective wisdom, transmitted
+
+A fourth new source, over the last 50 years:
+
 - **Computers** — synthesis at scale
 
 ::: {.notes}
@@ -750,7 +754,7 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 - Simulation from a partially learned distribution; produces new samples
 - Text, image, audio, code
 - Self-supervised pre-training + the transformer
-- System 1 at planetary scale
+- Planetary scale recursive classification simulation
 :::
 ::: {.column width="44%"}
 <figure style="margin:0; text-align:center;">
