@@ -125,7 +125,7 @@ claude --worktree   # or: claude -w
 
 One step up, the Agent view creates a worktree automatically for each session you dispatch. Fan out four pieces of work and you get four working directories without asking for any of them; each session edits real files on a real branch, and none of them can see the others' edits.
 
-The same guarantee is available to subagents. Spawning one with `isolation: "worktree"` gives that subagent its own copy of the repo to work in, and the worktree is cleaned up automatically if it finishes without changing anything — so speculative work leaves no debris.
+The same guarantee is available to subagents. Spawning one with `isolation: "worktree"` gives that subagent its own working directory to edit in — a worktree, not a copy — and it is cleaned up automatically if it finishes without changing anything — so speculative work leaves no debris.
 
 At the fully automatic end is `/batch`, which takes one large task, splits it into many subagents, isolates each in its own worktree, and has each open its own pull request:
 
