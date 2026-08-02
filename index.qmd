@@ -154,13 +154,13 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 :::: {.columns}
 ::: {.column width="52%"}
 - Introspection — the self as distinct from the world
-- Rodin's *Thinker*: a mind watching itself think
+- A thinker and a sculpted head: a mind watching itself think
 - Not the same as intelligence, nor consciousness
 - Perhaps a prerequisite for both
 :::
 ::: {.column width="48%"}
 <div style="text-align:center; line-height:1;">
-<a href="https://en.wikipedia.org/wiki/The_Thinker" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/thinker.gif" style="height:150px;background:#fff;border-radius:8px;display:inline-block;vertical-align:middle;"/></a>
+<img src="images/thinker-photo.jpg" alt="A person seated at a desk behind an openwork bronze sculpture of a head." style="height:150px;border-radius:8px;display:inline-block;vertical-align:middle;"/>
 <a href="https://en.wikipedia.org/wiki/Mirror_test" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/mirror-bear.gif" style="height:150px;border-radius:8px;display:inline-block;vertical-align:middle;margin-left:0.5em;"/></a>
 </div>
 
@@ -174,7 +174,7 @@ Define the two words carefully — audiences conflate them. Sentience is feeling
 ::::
 
 ::: {.notes}
-Use the Rodin as the hook — a mind watching itself think — then point down to the mirror clips for the flip side: a mind meeting itself. The mirror test is the real experiment here: a bear, a human infant, and an older child, and only some of them work out that the reflection is *them*. Self-recognition is not automatic, it develops, and it is not uniquely human — which is exactly the uncomfortable, useful point. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
+Use the photograph as the hook — a thinker, and the sculpted head sitting between them and us, a mind watching itself think — then point down to the mirror clips for the flip side: a mind meeting itself. The mirror test is the real experiment here: a bear, a human infant, and an older child, and only some of them work out that the reflection is *them*. Self-recognition is not automatic, it develops, and it is not uniquely human — which is exactly the uncomfortable, useful point. Keep the key distinction crisp: self-awareness, intelligence, and consciousness are three separable things, and we tend to bundle them. "Perhaps a prerequisite" is deliberately hedged — flag it as an open question, not a claim.
 :::
 
 ---
@@ -1303,7 +1303,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Simulated annealing — Kingpin13, CC0
 - Map boundaries — Natural Earth, public domain
 - J. Holland, V. Vapnik, J. Tenenbaum, K. Friston — no free licence identified; used under fair dealing for education
-- Rodin's *The Thinker* animation — via Giphy, unattributed
+- Portrait with sculpture — personal photograph, used with permission
 - Attention animation — BertViz, via comet.com
 - Diffusion denoising animation — via Towards Data Science
 - Decision tree animation — via Medium
