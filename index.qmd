@@ -364,12 +364,12 @@ If someone asks why "free energy" rather than just Bayes: free energy is the qua
 ## Why Intelligence Evolved
 
 :::: {.columns}
-::: {.column style="width:56%; font-size:0.78em;"}
-- **An unstable niche** — climate, terrain, food, social order shifting faster than genomes
-- Two bets: **cheap, brittle instinct**, or a **costly inference engine** — big brain, long childhood
-- We took the expensive one: **work it out within a lifetime**, with no precedent to copy
-- **Tools are the evidence** — an unseen cause modelled, means split from ends, a need planned for before it arrives
-- Three locked-together capacities: **world-modelling, transmission, practice**
+::: {.column style="width:56%; font-size:0.8em;"}
+- **An unstable niche** — the world kept moving
+- Two bets: **brittle instinct** or **costly inference**
+- We paid to **learn within a lifetime**
+- **Tools are the evidence** of that inference
+- Three capacities: **world-modelling, transmission, practice**
 :::
 ::: {.column width="44%"}
 <a href="https://en.wikipedia.org/wiki/Early_human_migrations" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/early-human-migration.svg" alt="World map with coloured arrows tracing early human dispersal out of Africa across Eurasia, Australia and the Americas, labelled in thousands of years ago." style="width:100%;border-radius:10px;display:block;"/></a>
