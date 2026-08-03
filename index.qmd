@@ -387,7 +387,7 @@ This slide answers the question Section II otherwise skips: why did *this* kind 
 
 Point at the map for what that bet cost us: the same animal ends up in the Arctic and the Kalahari with no specialised instinct for either, paying for a big brain and a childhood far longer than any other ape's. Then the handaxe — this is the slide's best moment, so slow down. Making one means modelling a cause you cannot see, separating means from ends, planning for a need that hasn't arrived, and carrying a technique onto unfamiliar material. Those are exactly the operations a novel problem demands, which is why a worked lump of flint counts as evidence of a mind. Say plainly that this is the standard adaptive account, not a settled one — same hedge as the Messi story.
 
-Close by naming the three capacities and telling them to hold onto the names: world-modelling, transmission, practice. The next four slides are their machine analogues, and I'll call back to this list at the Unifying View.
+Close by naming the three capacities and telling them to hold onto the names: world-modelling, transmission, practice. Self-supervised, supervised and reinforcement learning are their machine analogues a few slides from here, and I'll call back to this list at the Unifying View.
 :::
 
 ---
