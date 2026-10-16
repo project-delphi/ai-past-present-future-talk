@@ -725,7 +725,7 @@ The definition most working engineers actually use — it's the frame of the Rus
 ::::
 
 ::: {.notes}
-Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, score poorly on it. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
+Chollet is the counterweight to Sutton, and the definition closest to my own spine. Intelligence isn't static performance — it's skill-acquisition efficiency: how fast you turn a little experience into competence on genuinely new problems. This is where his ARC benchmark comes from, and why LLMs, which memorize spectacularly, took years and enormous compute budgets to crack it — the point was never whether they could, but at what cost in experience. Connect it explicitly back to "sample-efficient novel problem solving" from the opening. Memorize well but adapt poorly, and you're not intelligent.
 :::
 
 ---
@@ -1058,9 +1058,10 @@ Section V landing, and the first direct address to the doctoral candidates. No r
 ## Brittle AI & the Reasoning Gap
 
 - Narrow, brittle outside the training distribution
-- The frontier problem is reasoning, not scale
+- The frontier problem is sample-efficient reasoning, not scale
 - Performance can mask absent understanding
-- The \$1M ARC Prize still stands — no system has claimed it
+- ARC-AGI-3 **saturated** in a year — at thousands of dollars in compute
+- The compute-capped ARC Prize is still unclaimed
 
 <div style="display:flex;justify-content:center;align-items:center;gap:1.2em;margin-top:0.5em;">
   <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:212px;border-radius:10px;"/></a>
@@ -1068,7 +1069,7 @@ Section V landing, and the first direct address to the doctoral candidates. No r
 </div>
 
 ::: {.notes}
-Set the honest tone for Section VI — this is the reality check after the tribes. Today's systems are narrow and brittle the moment you step outside the training distribution. The reframe that matters: the frontier problem is reasoning, not scale — more parameters won't close this gap. And the warning to the researchers in the room: benchmark performance can mask a total absence of understanding, so measure carefully and distrust a single headline number. The animation is an ARC-AGI puzzle being solved — gesture at it when you name the reasoning gap: a child infers the rule from two or three examples, and this family of tasks is precisely where frontier models still fall over. Then point at the leaderboard: on ARC-AGI-3 the best frontier systems sit under 8%, and only by spending thousands of dollars per run — the score axis tops out at 20% and the cost axis is logarithmic. That one chart is the whole slide in numbers. And the last bullet is the stakes made concrete — the \$1M ARC Prize for a system that cracks these tasks efficiently is still unclaimed; the gap isn't rhetorical, it's a standing bounty nobody has collected.
+Set the honest tone for Section VI — this is the reality check after the tribes. Today's systems are narrow and brittle the moment you step outside the training distribution. The reframe that matters: the frontier problem is reasoning, not scale — more parameters won't close this gap. And the warning to the researchers in the room: benchmark performance can mask a total absence of understanding, so measure carefully and distrust a single headline number. The animation is an ARC-AGI puzzle being solved — gesture at it when you name the reasoning gap: a child infers the rule from two or three examples, for free, and that sample-efficiency is the thing being measured. Then point at the leaderboard, and be honest about what it now shows: ARC-AGI-3 launched billed by the ARC Prize Foundation as "the world's only unbeaten benchmark" and the frontier systems have since pushed it to the ceiling — the top entries sit at or near 100%. The two things to make the room see are the axes: the score axis had to be redrawn from 20% to 100% in under a year, and the cost axis is logarithmic — those top scores cost thousands of dollars in compute, and the cheap end of the chart is still flat on zero. So the reframe survives the saturation: the benchmark fell to scale and spend, not to sample-efficient reasoning, which is exactly Chollet's distinction from Section III. Say plainly that a benchmark saturating is not the same as the problem being solved — this is the "performance masks understanding" bullet made concrete, and a warning that any benchmark you build will be chased down fast. The last bullet is the stakes: the ARC Prize is for an open-source solution under a hard compute cap, and that is what remains unclaimed — the standing bounty is for efficiency, not for a frontier model with an unlimited budget.
 :::
 
 ---
