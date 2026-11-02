@@ -106,7 +106,6 @@ These four threads recur all evening — flag them now so people can track them.
 - I Minds: consciousness & animals
 - II Human intelligence as machine learning
 - III "AI": an ambiguous term
-- *— coffee —*
 - IV Generative AI & LLMs
 - V The five tribes
 - VI State of the art
@@ -115,7 +114,7 @@ These four threads recur all evening — flag them now so people can track them.
 ::::
 
 ::: {.notes}
-Roadmap slide — keep it brief, roughly 20 seconds. Note the coffee break sits between III and IV so people can pace themselves. Sections I–III build the conceptual frame; IV–VIII are the payoff. Don't read every line aloud; just orient them.
+Roadmap slide — keep it brief, roughly 20 seconds. Sections I–III build the conceptual frame; IV–VIII are the payoff. Don't read every line aloud; just orient them.
 :::
 
 ---
@@ -290,26 +289,6 @@ A crowd-pleaser — use it to make prediction concrete and human. Let the clip l
 
 ---
 
-## Emotion → Feeling → Sentiment
-
-:::: {.columns}
-::: {.column width="55%"}
-- **Emotion** — raw input; a valence signal: good or bad, now?
-- **Feeling** — the conscious experience of that input
-- **Sentiment** — a compressed label from expressed feelings
-- Machine analogues: reward signals, then sentiment analysis
-:::
-::: {.column width="45%"}
-<a href="https://en.wikipedia.org/wiki/Inside_Out_(2015_film)" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/emotion-inside-out.gif" style="width:100%;border-radius:10px;display:block;margin-top:0.5em;"/></a>
-:::
-::::
-
-::: {.notes}
-Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is the conscious experience of it, sentiment is the compressed label we express and others read. The machine mapping is the memorable bit: a reward signal is an emotion analogue with no feeling attached, and "sentiment analysis" reads the label without any of the experience underneath. Fluency without qualia, again.
-:::
-
----
-
 ## Northoff: Intrinsic Timescales as Priors
 
 :::: {.columns}
@@ -400,7 +379,7 @@ $$\underset{\color{#f0a868}{\textbf{posterior}}}{\color{#f0a868}{P(\text{world} 
 ::::
 
 ::: {.notes}
-This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out after coffee.
+This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out in Section IV, with the transformer.
 
 Walk the loop once, left to right, and let the colours do the work — they match the equation underneath. Start with a prior: a broad, uncommitted belief about the world. Multiply by the likelihood, which is what the senses say. Out comes a posterior: the same belief, sharper. Then the move that matters, the dashed arrow: that posterior *becomes the next prior*, and the loop runs again. Note the two curves are the same claim drawn twice — the prior is a fat bump, the posterior a narrow spike. Perception isn't a snapshot; it's this loop, running continuously, all the way down.
 
@@ -530,13 +509,13 @@ This list is doing double duty — tell the audience to remember it, because in 
 - Human parallel: a student with an answer key
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with three orange balls rolling downhill by gradient descent." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with orange balls rolling downhill by gradient descent, leaving trails; a white ring marks the global minimum, so a ball resting elsewhere is stuck in a local valley." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Error is measured against the labels — each ball is a model sliding down it</div>
 :::
 ::::
 
 ::: {.notes}
-The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
+The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. The white ring marks the true lowest point; any ball resting somewhere else is visibly stuck. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
 :::
 
 ---
@@ -588,13 +567,13 @@ This is the one that unlocked the LLM era, so give it weight. The trick: hide pa
 - Human parallel: noticing categories no one named
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: grey points are assigned to three coloured centroids by k-means, which settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: k-means assigns grey points to three coloured centroids, with thin spokes linking each point to its centroid; the centroids leave trails as they move and settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">k-means, step by step — assign, then move the centroids. No labels given</div>
 :::
 ::::
 
 ::: {.notes}
-Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. The 3D scene is real k-means on a synthetic cloud: grey points are unlabelled, each step assigns every point to its nearest centroid, then moves the centroids to the middle of their points, and it settles in a few rounds. It restarts from random centroids, so occasionally it settles differently — that is the algorithm, not a glitch. Don't dwell; the modern action is in self-supervised and RL.
+Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. The 3D scene is real k-means on a synthetic cloud: grey points are unlabelled, each step assigns every point to its nearest centroid — the thin spokes show who owns whom — then moves the centroids to the middle of their points, leaving a short trail, and it settles in a few rounds. It restarts from random centroids, so occasionally it settles differently — that is the algorithm, not a glitch. Don't dwell; the modern action is in self-supervised and RL.
 :::
 
 ---
@@ -609,13 +588,13 @@ Keep this short — it's the setup for the "unifying view" two slides on. No lab
 - Human parallel: a child learning by trial, reward, and consequence
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, and tiles rise towards the teal goal tile as value spreads back from the reward." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, leaving an orange trail; tiles rise as value spreads back from the teal goal tile, and white arrows showing the best move on each tile appear as the policy is learned." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">The agent acts, the grid returns state + reward — tiles rise toward the reward</div>
 :::
 ::::
 
 ::: {.notes}
-No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. The 3D grid is real Q-learning: the teal tile is the reward, the red tiles are penalties, and tile height is how valuable the agent currently thinks each square is. Watch the value spread backwards from the goal over the first ten or so seconds, then the path stabilises; it resets and relearns every forty seconds. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
+No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. The 3D grid is real Q-learning: the teal tile is the reward, the red tiles are penalties, and tile height is how valuable the agent currently thinks each square is. Watch the value spread backwards from the goal over the first ten or so seconds; the white arrows are the policy — on each tile, the move the agent now thinks is best — and they appear only once a tile has learned something, so you can watch the plan assemble itself backwards from the reward. The orange trail is the agent's recent wandering. Then the path stabilises; it resets and relearns every forty seconds. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
 :::
 
 ---
@@ -828,23 +807,13 @@ A fourth new source, over the last 50 years:
 - **Computers** — synthesis at scale
 :::
 ::: {.column width="42%"}
-<canvas class="viz3d" data-scene="roll" role="img" aria-label="Animated 3D point cloud: a rolled-up sheet of points unrolls into a flat strip, showing that three coordinates per point hide a two-dimensional structure." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="roll" role="img" aria-label="Animated 3D scene: points on a faint, colour-graded rolled-up sheet, seen from above; the sheet unrolls into a flat strip facing the viewer, showing that three coordinates per point hide a two-dimensional structure." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Compression is finding the structure — 3 numbers per point, 2 that matter</div>
 :::
 ::::
 
 ::: {.notes}
-The 3D scene is the idea in miniature: every point is stored with three coordinates, but they all lie on a rolled-up sheet, so two numbers are enough once you know the roll. Finding that sheet is compression, and it is what every learner does; say the roll is a stand-in for any hidden regularity. Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
-:::
-
----
-
-## ☕ Coffee Break
-
-*15 minutes — please join us in the foyer*
-
-::: {.notes}
-Housekeeping: state the exact return time out loud and point to the foyer. Good moment to take a sip of water and check the clock — if you're running long, the tribes section (V) is the most compressible — Section VI is load-bearing, so don't cut there. Restart after the break by re-anchoring the four spine threads before diving into generative AI.
+The 3D scene is the idea in miniature: every point is stored with three coordinates, but they all lie on a rolled-up sheet, so two numbers are enough once you know the roll. Watch it unroll: the camera swings round to face the flat sheet, and the colour — which only tracks how far along the roll a point sits — becomes a clean left-to-right gradient. Finding that sheet is compression, and it is what every learner does; say the roll is a stand-in for any hidden regularity. Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
 :::
 
 ---
@@ -871,7 +840,7 @@ Housekeeping: state the exact return time out loud and point to the foyer. Good 
 ::::
 
 ::: {.notes}
-Welcome them back from coffee, re-anchor quickly. Generative AI learns a probability distribution over data and samples new points from it — text, image, audio, code, all the same trick. Two ingredients did it: self-supervised pre-training plus the transformer. The phrase to plant, because it pays off two slides later: this is "System 1 at planetary scale" — fast, fluent, intuitive pattern-completion, with no deliberate reasoning behind it yet.
+This opens the payoff half — re-anchor the four spine threads in one breath, then go. Generative AI learns a probability distribution over data and samples new points from it — text, image, audio, code, all the same trick. Two ingredients did it: self-supervised pre-training plus the transformer. The phrase to plant, because it pays off in Section VI, on the System 1 vs. System 2 slide: this is "System 1 at planetary scale" — fast, fluent, intuitive pattern-completion, with no deliberate reasoning behind it yet.
 
 Let it loop while you talk — it is the first bullet happening in front of them. The counter runs from 1% to 99% denoised: the model starts from pure noise and walks it, step by step, into a sample. That is what "simulation from a learned distribution" means, and no equation lands it as fast.
 
@@ -964,7 +933,7 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
-<canvas class="viz3d" data-scene="network" role="img" aria-label="Animated 3D neural network: an orange pulse travels forward through four layers of connected units." style="width:100%;aspect-ratio:4/3;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="network" role="img" aria-label="Animated 3D neural network running a forward pass: each pulse feeds a new input through four layers, orange edges excite, blue edges inhibit, and the winning output unit flares." style="width:100%;aspect-ratio:4/3;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 
 <div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Signals flowing forward, layer by layer — the 1943 cartoon, stacked</div>
 
@@ -991,7 +960,7 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 ::::
 
 ::: {.notes}
-The tribe that won — for now. Point at the pulse for one beat before you start: each unit collects, sums, and fires forward — that is the whole biological neuron, and the 1943 model is a shameless cartoon of exactly it. Everything since is that cartoon, stacked into layers, which is what the 3D network is showing; the rotation is only there so you can see the depth. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
+The tribe that won — for now. Point at the pulse for one beat before you start: each unit collects, sums, and fires forward — that is the whole biological neuron, and the 1943 model is a shameless cartoon of exactly it. The animation is a real forward pass: every pulse is a fresh input pushed through fixed weights, orange edges excite, blue ones inhibit, and the output unit that wins flares. Different input, different winner — that is computation, not decoration. Everything since is that cartoon, stacked into layers, which is what the 3D network is showing; the rotation is only there so you can see the depth. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
 :::
 
 ---
@@ -1032,12 +1001,8 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
     <a href="https://en.wikipedia.org/wiki/John_Henry_Holland" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/holland.jpg" style="width:104px;border-radius:8px;display:block;"/></a>
     <figcaption style="font-size:0.32em;opacity:.55;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland</figcaption>
   </figure>
-  <figure style="margin:0;text-align:center;">
-    <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/genetic-walker.gif" style="width:100%;background:#fff;border-radius:6px;display:block;"/></a>
-    <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">An evolved gait — most of the population falls over</figcaption>
-  </figure>
-  <figure style="margin:0;text-align:center;">
-    <canvas class="viz3d" data-scene="landscape" role="img" aria-label="Animated 3D fitness landscape with a population of orange dots climbing towards its peaks over successive generations." style="width:88%;aspect-ratio:16/9;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+  <figure style="margin:0;text-align:center;width:100%;">
+    <canvas class="viz3d" data-scene="landscape" role="img" aria-label="Animated 3D fitness landscape with a population of orange dots climbing towards its peaks over successive generations; pale dots are elites carried over unchanged, and a white ring marks the best point found so far." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
     <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Selection on a fitness landscape — a population climbs, some get stuck</figcaption>
   </figure>
 </div>
@@ -1045,7 +1010,7 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
 ::::
 
 ::: {.notes}
-Darwin as algorithm, formalized by Holland in 1975. Use the walker: every one of those figures is a candidate gait, and almost all of them fall over. Nobody told any of them what walking is — there is no label, no gradient, only a score for how far you got before you hit the ground. Keep the winners, mutate, repeat. The 3D landscape below shows the same loop: height is fitness, each dot is a candidate, and every generation the better half breed and mutate. Point out that some dots settle on a lower peak and stay there — that is the local-optimum problem, and why evolutionary search keeps a diverse population. That is the whole tribe in one loop, and it is also why it is slow. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
+Darwin as algorithm, formalized by Holland in 1975. Use the 3D landscape: height is fitness, each dot is a candidate solution, and every generation the better half breed and mutate. Nobody told any of them where the peaks are — there is no label, no gradient, only a score for how high you happen to be standing. Keep the winners, mutate, repeat. The pale dots are the elites, carried into the next generation unchanged, and the white ring marks the best point found so far. Point out that some dots settle on a lower peak and stay there — that is the local-optimum problem, and why evolutionary search keeps a diverse population. That is the whole tribe in one loop, and it is also why it is slow. You keep a population of candidate solutions and apply mutation, crossover, and selection against a fitness score — no gradient, no labels, just "did it work better?" That makes it the tool of choice when the problem is non-differentiable or you can't even write down the objective: neural architecture search, evolving robot body shapes. The example ties back to the capsid: evolving a gene-therapy envelope that slips past the immune system, an objective too messy for gradients. Niche today, but genuinely creative.
 :::
 
 ---
@@ -1097,7 +1062,7 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 <img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
 </div>
 <div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
-<canvas class="viz3d" data-scene="kernel" role="img" aria-label="Animated 3D scene: tangled teal and orange points on a plane are lifted into three dimensions, where a flat blue plane separates them." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="kernel" role="img" aria-label="Animated 3D scene: tangled teal and orange points on a plane are lifted into three dimensions on thin stems, where a flat blue plane separates them." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The kernel trick — lift to a space where a flat plane separates them</div>
 </div>
 :::
@@ -1132,15 +1097,17 @@ Section V landing, and the first direct address to the doctoral candidates. No r
 
 ## Brittle AI & the Reasoning Gap
 
+::: {style="font-size:0.84em;"}
 - Narrow, brittle outside the training distribution
 - The frontier problem is sample-efficient reasoning, not scale
 - Performance can mask absent understanding
 - ARC-AGI-3 **saturated** in a year — at thousands of dollars in compute
 - The compute-capped ARC Prize is still unclaimed
+:::
 
-<div style="display:flex;justify-content:center;align-items:center;gap:1.2em;margin-top:0.5em;">
-  <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:212px;border-radius:10px;"/></a>
-  <a href="https://arcprize.org/leaderboard" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-leaderboard.png" style="height:212px;border-radius:8px;"/></a>
+<div style="display:flex;justify-content:center;align-items:center;gap:1.2em;margin-top:0.1em;">
+  <a href="https://arcprize.org/" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-ls20.gif" style="height:244px;border-radius:10px;"/></a>
+  <a href="https://arcprize.org/leaderboard" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/arc-leaderboard.png" style="height:244px;border-radius:8px;"/></a>
 </div>
 
 ::: {.notes}
@@ -1152,19 +1119,28 @@ Set the honest tone for Section VI — this is the reality check after the tribe
 ## System 1 vs. System 2
 
 :::: {.columns}
-::: {.column width="62%"}
-- After Kahneman: fast intuition vs. slow reasoning
-- LLMs excel at System 1, stumble at System 2
-- "Reasoning" models narrow the gap at inference time
-- Open and fast-moving
+::: {.column style="width:56%; font-size:0.86em;"}
+- After Kahneman: fast intuition, slow deliberation
+- **System 1** — crystallized knowledge: answers in one fast pass of **inference**
+- **System 2** — **learning**: slow, effortful, grows what isn't there yet
+- Practice turns System 2 into System 1
+- LLMs: a vast crystal, frozen after training — "reasoning" isn't yet learning
 :::
-::: {.column width="38%"}
-[![](images/kahneman.jpg){width="80%" style="border-radius:10px;"}](https://en.wikipedia.org/wiki/Daniel_Kahneman){target="_blank" rel="noopener"}
+::: {.column width="44%"}
+<div style="display:flex;flex-direction:column;align-items:center;gap:0.3em;">
+<a href="https://en.wikipedia.org/wiki/Daniel_Kahneman" target="_blank" rel="noopener" style="text-decoration:none;display:flex;align-items:center;gap:0.5em;"><img src="images/kahneman.jpg" style="height:92px;border-radius:8px;display:block;"/><span style="font-size:0.32em;opacity:.55;color:#e3e6ec;">Daniel Kahneman</span></a>
+<div style="width:100%;"><canvas class="viz3d" data-scene="crystal" role="img" aria-label="Animated 3D crystal lattice. Orange sparks shoot straight through it in a fraction of a second. A white spark arrives where the crystal does not reach and waits while new teal cells slowly grow out to meet it; once connected, it too passes through in a flash." style="width:100%;aspect-ratio:16/11;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;">Familiar questions flash through the crystal; a new one makes it grow</div>
+</div>
 :::
 ::::
 
 ::: {.notes}
-Kahneman's framing, borrowed and made concrete — this is the payoff of the "System 1 at planetary scale" line I planted in Section IV. System 1 is fast, automatic, intuitive; System 2 is slow, effortful, deliberate. LLMs are astonishing System 1 and stumble at System 2. The current move — chain-of-thought and "reasoning" models that spend more compute at inference time — is an attempt to bolt on System 2. Flag it as genuinely open and moving fast: whatever I say here may be dated by the time you watch the recording.
+Kahneman's two systems, given a deliberate twist — say out loud that it is a twist, because his System 2 is slow deliberate *reasoning*, and I am going to make it about *learning*. The word "crystallized" is borrowed from Cattell's crystallized versus fluid intelligence. This is also the payoff of the "System 1 at planetary scale" line from Section IV.
+
+Narrate the animation; it runs on a fifteen-second loop and restarts when you arrive on the slide. The orange sparks are System 1: a familiar question goes in one side and the answer comes out the other in a single pass — that is inference, and it is fast because the knowledge is already crystallized. Then the white spark arrives somewhere the crystal does not reach. Nothing to recall. Watch it wait while teal cells slowly grow out to meet it — that is System 2, learning: slow, effortful, and it changes the structure. And then the payoff: the same question now flashes through in orange. That is the fourth bullet — practice turns System 2 into System 1. Learning to drive is the example everyone has lived: effortful for weeks, then automatic.
+
+Land the last bullet carefully. An LLM's crystal was grown in one enormous System 2 phase called training, and then frozen. "Reasoning" models think longer at inference time, which is real progress, but the weights don't change — and in-context learning evaporates when the conversation ends. So the line to land: intelligence is not the size of your crystal, it is how fast you can grow it. That is the sample-efficiency thread again. Flag that this area is moving fast — continual learning is an active research front.
 :::
 
 ---
@@ -1215,15 +1191,24 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 
 ## The Experiment Is the Intervention
 
+::: {style="font-size:0.84em;"}
 - **do(x)** — reach in, *set* x by hand, cutting its usual causes
 - That severed graph is what an experiment *is* — randomise, don't just watch
 - **Verifying and causing are one move**
 - To do experiments and find cause, you need a body
+:::
 
-<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/do-intervention.svg" style="width:auto;max-width:98%;max-height:232px;display:block;margin:0.3em auto 0 auto;"/></a>
+<div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.25em;">
+<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><img src="images/do-intervention.svg" style="height:250px;width:auto;display:block;"/></a>
+<div style="flex:0 1 590px;min-width:0;height:250px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden. In the dry season the hose waters part of the lawn; in the rainy season rain wets all of it; people walking across sometimes slip on wet grass. First the hose follows the season and is only watched; then it is set on or off by hand in both seasons. A panel shows the chance of slipping: watching, hose on 33% versus off 32%; doing, hose on 39% versus off 23%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+</div>
 
 ::: {.notes}
-The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler on cuts the arrow from Season, so nothing upstream explains it away, and what reaches the wet grass is pure cause. That severed edge is the whole idea of the do-operator. So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
+The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler on cuts the arrow from Season, so nothing upstream explains it away, and what reaches the wet grass is pure cause. That severed edge is the whole idea of the do-operator.
+
+Then turn to the garden — the same graph with weather in it. It runs a 28-second loop that restarts when you land on the slide. First we only *watch*: in the dry season the gardener runs the hose and the patch around the sprinkler gets wet; in the rainy season it rains everywhere and the hose stays off. Some walkers slip on the wet grass. Point at the panel: watching, the hose looks harmless — about a third of people slip whether it is on or off, a one-point difference — because hose days are dry days and no-hose days are rainy ones. Season hides the hose's effect. Then the orange phase: we set the hose by hand, on and off, in *both* seasons. That is do(hose). Now the gap opens — 39% against 23%, sixteen points. If the room is watching the lawn rather than the panel, point at the one stretch where nobody falls: dry season, hose set off by hand. That is the hose's effect, isolated. Same garden, same seasons; only the question changed. The numbers come from one small probability table, so they are illustrative, not data — but that is exactly how confounding fools you in real data.
+
+So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
 :::
 
 ---
@@ -1262,19 +1247,6 @@ The remaining three, and slow down on the last. Persistent memory means no catas
 ## VIII. The Future {.section-divider}
 
 ---
-
-## Embodied AI & Moravec's Paradox
-
-- Intelligence may require a body
-- Moravec: reasoning is cheap, sensorimotor skill is dear
-- Crossing a room is harder than grandmaster chess
-
-::: {.notes}
-Open the future section with the counterintuitive one. Moravec's paradox: the things evolution spent hundreds of millions of years on — walking, grasping, perceiving — are the hard ones for machines, while chess, which we find hard, is comparatively easy. A toddler's sensorimotor skill outstrips any robot; grandmaster chess fell decades ago. The provocation: real intelligence may require a body, because so much of our cognition is built on sensorimotor grounding. This teases the robotics slide next.
-:::
-
----
-
 
 ## Foundation Models Meet Robotics
 
@@ -1320,21 +1292,7 @@ Handle with humility — say out loud that this is outside my expertise, because
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
 
 ::: {.notes}
-The recap — tie the spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide before the personal close.
-:::
-
----
-
-## Closing Remarks
-
-*This PhD program is not about mastering today's tools — it is about building the future.*
-
-You are the architects of the world models that will define the coming decade. The questions left open tonight — what consciousness is, how memory should persist, what closes the reasoning gap, what we should and should not want from AGI — are not gaps in this lecture.
-
-**They are your thesis directions.**
-
-::: {.notes}
-The emotional close — slow right down, make eye contact, let the last line breathe before you say it. The message: a PhD isn't about mastering today's tools, which will be obsolete, but about interrogating the definitions themselves — the callback to the very first slide. Reframe every open question from tonight (consciousness, memory, the reasoning gap, what we should want from AGI) not as gaps in the lecture but as their thesis directions. Pause fully after the bold line, then move to references and discussion.
+The recap — tie the spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide — let the fourth bullet be the closing line, then go straight to discussion.
 :::
 
 ---
@@ -1382,7 +1340,6 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Sutton, R. (2019). *The Bitter Lesson*.
 - Chollet, F. (2019). On the measure of intelligence. *arXiv:1911.01547*.
 - Domingos, P. (2015). *The Master Algorithm*.
-- Moravec, H. (1988). *Mind Children*.
 
 ---
 
@@ -1419,8 +1376,6 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Attention animation — BertViz, via comet.com
 - Diffusion denoising animation — via Towards Data Science
 - Decision tree animation — via Medium
-- *Inside Out* emotions clip — © Disney/Pixar, via Medium; used under fair dealing for education
-- Evolved walker animation — via kottke.org
 - ANI/AGI/ASI illustration — via Medium
 - AI history timeline — via LinkedIn
 - Unitree G1 robot animation — via roboticgizmos.com
