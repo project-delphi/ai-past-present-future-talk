@@ -379,7 +379,7 @@ $$\underset{\color{#f0a868}{\textbf{posterior}}}{\color{#f0a868}{P(\text{world} 
 ::::
 
 ::: {.notes}
-This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out after coffee.
+This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out in Section IV, with the transformer.
 
 Walk the loop once, left to right, and let the colours do the work — they match the equation underneath. Start with a prior: a broad, uncommitted belief about the world. Multiply by the likelihood, which is what the senses say. Out comes a posterior: the same belief, sharper. Then the move that matters, the dashed arrow: that posterior *becomes the next prior*, and the loop runs again. Note the two curves are the same claim drawn twice — the prior is a fat bump, the posterior a narrow spike. Perception isn't a snapshot; it's this loop, running continuously, all the way down.
 
@@ -509,7 +509,7 @@ This list is doing double duty — tell the audience to remember it, because in 
 - Human parallel: a student with an answer key
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with three orange balls rolling downhill by gradient descent." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with orange balls rolling downhill by gradient descent, leaving trails; a white ring marks the global minimum, so a ball resting elsewhere is stuck in a local valley." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Error is measured against the labels — each ball is a model sliding down it</div>
 :::
 ::::
@@ -567,7 +567,7 @@ This is the one that unlocked the LLM era, so give it weight. The trick: hide pa
 - Human parallel: noticing categories no one named
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: grey points are assigned to three coloured centroids by k-means, which settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: k-means assigns grey points to three coloured centroids, with thin spokes linking each point to its centroid; the centroids leave trails as they move and settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">k-means, step by step — assign, then move the centroids. No labels given</div>
 :::
 ::::
@@ -588,7 +588,7 @@ Keep this short — it's the setup for the "unifying view" two slides on. No lab
 - Human parallel: a child learning by trial, reward, and consequence
 :::
 ::: {.column width="44%"}
-<canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, and tiles rise towards the teal goal tile as value spreads back from the reward." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, leaving an orange trail; tiles rise as value spreads back from the teal goal tile, and white arrows showing the best move on each tile appear as the policy is learned." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">The agent acts, the grid returns state + reward — tiles rise toward the reward</div>
 :::
 ::::
@@ -933,7 +933,7 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
-<canvas class="viz3d" data-scene="network" role="img" aria-label="Animated 3D neural network: an orange pulse travels forward through four layers of connected units." style="width:100%;aspect-ratio:4/3;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="network" role="img" aria-label="Animated 3D neural network running a forward pass: each pulse feeds a new input through four layers, orange edges excite, blue edges inhibit, and the winning output unit flares." style="width:100%;aspect-ratio:4/3;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 
 <div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Signals flowing forward, layer by layer — the 1943 cartoon, stacked</div>
 
@@ -1200,7 +1200,7 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 
 <div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.25em;">
 <a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><img src="images/do-intervention.svg" style="height:250px;width:auto;display:block;"/></a>
-<div style="flex:0 0 590px;height:250px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden. In the dry season the hose waters part of the lawn; in the rainy season rain wets all of it; people walking across sometimes slip on wet grass. First the hose follows the season and is only watched; then it is set on or off by hand in both seasons. A panel shows the chance of slipping: watching, hose on 33% versus off 32%; doing, hose on 39% versus off 23%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+<div style="flex:0 1 590px;min-width:0;height:250px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden. In the dry season the hose waters part of the lawn; in the rainy season rain wets all of it; people walking across sometimes slip on wet grass. First the hose follows the season and is only watched; then it is set on or off by hand in both seasons. A panel shows the chance of slipping: watching, hose on 33% versus off 32%; doing, hose on 39% versus off 23%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
 </div>
 
 ::: {.notes}
