@@ -7,6 +7,7 @@ format:
   revealjs:
     slide-number: true
     embed-resources: true
+    include-after-body: lib/scripts.html
     chalkboard: false
     theme: dark
     title-slide-attributes:
@@ -306,6 +307,54 @@ Walk the chain: emotion is the raw valence signal (good/bad, now), feeling is th
 
 ---
 
+## Northoff: Intrinsic Timescales as Priors
+
+:::: {.columns}
+::: {.column style="width:46%; font-size:0.8em;"}
+- **Georg Northoff** (uOttawa): the brain has **intrinsic neural timescales**
+- Sensory cortex integrates **fast**; association cortex **slow**
+- Timescales **feed into each other** — a nested hierarchy
+- Slow scales act as **priors** for fast ones
+- Friston's loop, **built into the wiring**
+:::
+::: {.column width="54%"}
+<svg viewBox="0 0 280 200" width="100%" style="max-width:380px;border-radius:10px;background:#1c1c1c;display:block;margin:0 auto;" font-family="sans-serif" role="img" aria-label="Three stacked cortical layers with increasing intrinsic timescales: sensory cortex tens of milliseconds at the bottom, association cortex hundreds of milliseconds in the middle, prefrontal and default-mode regions seconds at the top. Teal arrows carry sensory evidence upward; blue arrows carry slow priors downward.">
+<defs>
+<marker id="nt-up" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#63b3a6"/></marker>
+<marker id="nt-dn" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7aa0e0"/></marker>
+</defs>
+<rect x="30" y="14" width="200" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="31" fill="#f0a868" font-size="11" text-anchor="middle">Prefrontal / default-mode</text>
+<text x="130" y="46" fill="#b9bdc6" font-size="9" text-anchor="middle">seconds · slow window</text>
+<rect x="60" y="76" width="140" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="93" fill="#f0a868" font-size="11" text-anchor="middle">Association cortex</text>
+<text x="130" y="108" fill="#b9bdc6" font-size="9" text-anchor="middle">~100s of ms</text>
+<rect x="90" y="138" width="80" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="155" fill="#f0a868" font-size="11" text-anchor="middle">Sensory cortex</text>
+<text x="130" y="170" fill="#b9bdc6" font-size="9" text-anchor="middle">~10s of ms</text>
+<line x1="112" y1="136" x2="112" y2="120" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
+<line x1="112" y1="74" x2="112" y2="58" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
+<line x1="148" y1="58" x2="148" y2="74" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
+<line x1="148" y1="120" x2="148" y2="136" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
+<text x="238" y="100" fill="#7aa0e0" font-size="9" text-anchor="start">priors ↓</text>
+<text x="238" y="112" fill="#63b3a6" font-size="9" text-anchor="start">evidence ↑</text>
+<text x="140" y="194" fill="#8b919a" font-size="8" text-anchor="middle">schematic — timescales are relative, not fixed values</text>
+</svg>
+:::
+::::
+
+::: {.notes}
+This sits just before Friston on purpose: it gives the audience a physical picture of what a "prior" might be in tissue, so the Bayes slide lands as a description of something the brain already does. Say the name correctly — Georg Northoff, Canada Research Chair in mind, brain imaging and neuroethics at the University of Ottawa.
+
+The core idea: every region has its own intrinsic timescale, meaning how long its activity stays correlated with itself — how long it holds on to its past. Sensory areas forget in tens of milliseconds, which suits rapidly changing input. Association and prefrontal areas hold on for seconds. Measure it with the autocorrelation window of the resting signal; Murray and colleagues showed the hierarchy in 2014, and Northoff's group has pushed it into a theory of how the brain handles time and input, the temporo-spatial theory of consciousness.
+
+Then make the Friston link, and hedge it: this is my reading, not a settled result. A slow region changes little while a fast region updates constantly, so the slow one is effectively a standing expectation that the fast one is read against — a prior. Evidence flows up, priors flow down, and each timescale feeds the next. Say plainly that the timescales are relative and vary with state and task; the diagram is a schematic, not a measurement.
+
+The one line: the brain doesn't just hold priors, it is built from them — different clocks, nested, each predicting the one beneath it.
+:::
+
+---
+
 ## Friston: Prediction Under Uncertainty
 
 :::: {.columns}
@@ -388,6 +437,68 @@ This slide answers the question Section II otherwise skips: why did *this* kind 
 Point at the map for what that bet cost us: the same animal ends up in the Arctic and the Kalahari with no specialised instinct for either, paying for a big brain and a childhood far longer than any other ape's. Then the handaxe — this is the slide's best moment, so slow down. Making one means modelling a cause you cannot see, separating means from ends, planning for a need that hasn't arrived, and carrying a technique onto unfamiliar material. Those are exactly the operations a novel problem demands, which is why a worked lump of flint counts as evidence of a mind. Say plainly that this is the standard adaptive account, not a settled one — same hedge as the Messi story.
 
 Close by naming the three capacities and telling them to hold onto the names: world-modelling, transmission, practice. Self-supervised, supervised and reinforcement learning are their machine analogues a few slides from here, and I'll call back to this list at the Unifying View.
+:::
+
+---
+
+## Humans: Data-Processing Machines
+
+:::: {.columns}
+::: {.column style="width:36%; font-size:0.72em;"}
+- **Sensors in, model out** — every sense is a **transducer**
+- Not five senses: **five classic, ~nine measured**
+- Each stream is a **tensor over time**: sight ≈ H×W×C×T
+- Cortex **stacks, convolves, attends** — layers of tensor ops
+- Bandwidth in: **~10⁹ bits/s**
+- The brain **compresses and predicts**
+:::
+::: {.column width="40%"}
+<svg viewBox="0 0 420 300" style="width:100%;border-radius:10px;background:#1c1c1c;display:block;" role="img" aria-label="Nine human senses as sensor chips, each labelled with its tensor shape: five classic senses highlighted in orange (sight, hearing, touch, taste, smell) and four additional ones (balance, body position, temperature and pain, internal state) in grey, all feeding a brain box.">
+  <g font-family="sans-serif" font-size="13" text-anchor="middle">
+    <g fill="none" stroke="#f0a868" stroke-width="1.5">
+      <rect x="10" y="12" width="120" height="44" rx="8"/><rect x="150" y="12" width="120" height="44" rx="8"/><rect x="290" y="12" width="120" height="44" rx="8"/>
+      <rect x="80" y="68" width="120" height="44" rx="8"/><rect x="220" y="68" width="120" height="44" rx="8"/>
+    </g>
+    <g fill="#f0a868">
+      <text x="70" y="32">Sight</text><text x="210" y="32">Hearing</text><text x="350" y="32">Touch</text>
+      <text x="140" y="88">Taste</text><text x="280" y="88">Smell</text>
+    </g>
+    <g fill="#f0a868" font-size="10" opacity=".7">
+      <text x="70" y="48">H × W × C × T</text><text x="210" y="48">freq × T</text><text x="350" y="48">skin sites × T</text>
+      <text x="140" y="104">taste receptors</text><text x="280" y="104">~400 receptor types</text>
+    </g>
+    <g fill="none" stroke="#888" stroke-width="1.2" stroke-dasharray="4 3">
+      <rect x="10" y="124" width="95" height="44" rx="8"/><rect x="113" y="124" width="95" height="44" rx="8"/><rect x="216" y="124" width="95" height="44" rx="8"/><rect x="319" y="124" width="91" height="44" rx="8"/>
+    </g>
+    <g fill="#aaa" font-size="12">
+      <text x="57" y="143">Balance</text><text x="160" y="143">Body position</text><text x="263" y="143">Temp / pain</text><text x="364" y="143">Internal state</text>
+    </g>
+    <g fill="#888" font-size="10">
+      <text x="57" y="158">3-axis × T</text><text x="160" y="158">joints × T</text><text x="263" y="158">sites × T</text><text x="364" y="158">organs × T</text>
+    </g>
+    <path d="M210 176 V204 M205 198 L210 206 L215 198" stroke="#f0a868" stroke-width="2" fill="none"/>
+    <rect x="90" y="210" width="240" height="46" rx="10" fill="#f0a868"/>
+    <text x="210" y="230" fill="#1c1c1c" font-size="14" font-weight="bold">Tensors in → latent → prediction</text>
+    <text x="210" y="247" fill="#1c1c1c" font-size="11">~10⁹ bits/s in · ~10 bits/s out</text>
+    <text x="210" y="283" fill="#888" font-size="10">Orange = classic five · dashed = the rest · T = time</text>
+  </g>
+</svg>
+:::
+::: {.column width="24%"}
+<a href="https://commons.wikimedia.org/wiki/File:Sensory_Homunculus-en.svg" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/sensory-homunculus.png" alt="Cross-section of the somatosensory cortex with a distorted body drawn over it: oversized hand, lips, tongue and face, small trunk and legs." style="width:100%;border-radius:10px;display:block;background:#f6ece2;padding:4px;box-sizing:border-box;"/></a>
+
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">The sensory homunculus — cortex is allocated by data density, not body size</div>
+:::
+::::
+
+::: {.notes}
+This is the "you are already a machine learner" slide — place it right before the properties list so the audience feels the framing before the vocabulary. Open with the question: how many senses do we have? Take a show of hands. Everyone says five; land the correction gently — five is Aristotle's count, and it is a convention, not a measurement.
+
+Give the honest answer: it depends on how you count. Add balance, body position (proprioception), temperature and pain, and internal state (interoception) and you reach about nine; some textbooks list twenty or more by splitting touch and taste into receptor types. So "six" — the usual pop answer, balance or proprioception — is just as arbitrary. Hedge that this is a definitional question, not a settled one.
+
+Then the tensor framing — say this is a modelling lens, not a claim that neurons store arrays. Vision is roughly height × width × colour channels × time (the retina is not a uniform grid, so hedge); hearing is a frequency × time map, much like a spectrogram; touch is a patch of skin sites × time; smell is a vector over roughly 400 receptor types. Every stream is a tensor indexed by time, which is exactly the input format of the models later in the deck, and cortex looks like stacked layers of local filtering (convolution-like) plus attention. The one line: same data type, different substrate.
+
+The point to land: each sense is a transducer turning a physical signal into spikes, and the brain's job is to compress that flood into a model and predict what comes next — this is the Friston slide, and the self-supervised learning slide to come. The bandwidth figures are order-of-magnitude (Zimmermann's sensory estimates, and Zheng and Meister's 2024 "unbearable slowness of being" for ~10 bits/s of behaviour) — say "roughly" and move on. Point at the homunculus for the compute-allocation angle: cortical area tracks sensor density, not body size, so hands, lips and tongue get the lion's share while the back gets almost none — a hardware budget spent where the data is richest. Hedge that the classic drawing is a caricature of a smooth, overlapping map. The one line: a billion bits in, ten bits out, so intelligence is largely the art of throwing the right data away.
 :::
 
 ---
@@ -494,26 +605,13 @@ This is the one that unlocked the LLM era, so give it weight. The trick: hide pa
 - Human parallel: noticing categories no one named
 :::
 ::: {.column width="44%"}
-<svg viewBox="0 0 240 200" width="100%" style="max-width:320px" font-family="sans-serif">
-  <ellipse cx="62" cy="60" rx="42" ry="34" fill="#f0a868" opacity="0.08" stroke="#f0a868" stroke-dasharray="4 3"/>
-  <ellipse cx="170" cy="70" rx="40" ry="32" fill="#63b3a6" opacity="0.08" stroke="#63b3a6" stroke-dasharray="4 3"/>
-  <ellipse cx="110" cy="150" rx="46" ry="32" fill="#7aa0e0" opacity="0.08" stroke="#7aa0e0" stroke-dasharray="4 3"/>
-  <g fill="#f0a868">
-    <circle cx="48" cy="52" r="4"/><circle cx="70" cy="46" r="4"/><circle cx="60" cy="66" r="4"/><circle cx="78" cy="70" r="4"/><circle cx="52" cy="74" r="4"/><circle cx="66" cy="58" r="4"/>
-  </g>
-  <g fill="#63b3a6">
-    <circle cx="158" cy="62" r="4"/><circle cx="178" cy="58" r="4"/><circle cx="170" cy="76" r="4"/><circle cx="186" cy="74" r="4"/><circle cx="162" cy="82" r="4"/><circle cx="182" cy="66" r="4"/>
-  </g>
-  <g fill="#7aa0e0">
-    <circle cx="96" cy="144" r="4"/><circle cx="116" cy="140" r="4"/><circle cx="108" cy="158" r="4"/><circle cx="126" cy="156" r="4"/><circle cx="100" cy="162" r="4"/><circle cx="120" cy="148" r="4"/>
-  </g>
-  <text x="120" y="192" fill="#b9bdc6" font-size="10" text-anchor="middle">clusters emerge — no labels given</text>
-</svg>
+<canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: grey points are assigned to three coloured centroids by k-means, which settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">k-means, step by step — assign, then move the centroids. No labels given</div>
 :::
 ::::
 
 ::: {.notes}
-Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. Don't dwell; the modern action is in self-supervised and RL.
+Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. The 3D scene is real k-means on a synthetic cloud: grey points are unlabelled, each step assigns every point to its nearest centroid, then moves the centroids to the middle of their points, and it settles in a few rounds. It restarts from random centroids, so occasionally it settles differently — that is the algorithm, not a glitch. Don't dwell; the modern action is in self-supervised and RL.
 :::
 
 ---
@@ -889,9 +987,9 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 - EXAMPLE: Making DNA viral capsids
 :::
 ::: {.column width="34%"}
-<a href="https://en.wikipedia.org/wiki/Neuron" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/neuron.gif" style="width:100%;background:#fff;border-radius:8px;display:block;margin:0 auto 0.15em auto;"/></a>
+<canvas class="viz3d" data-scene="network" role="img" aria-label="Animated 3D neural network: an orange pulse travels forward through four layers of connected units." style="width:100%;aspect-ratio:4/3;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 
-<div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Dendrites in, axon out — the unit they copied</div>
+<div style="font-size:0.28em;opacity:.55;line-height:1.2;text-align:center;margin-bottom:0.4em;">Signals flowing forward, layer by layer — the 1943 cartoon, stacked</div>
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.25em 0.5em; justify-items:center;">
   <figure style="margin:0; text-align:center;">
@@ -916,7 +1014,7 @@ Let the tree animation loop and use it for the third bullet — it is the tribe'
 ::::
 
 ::: {.notes}
-The tribe that won — for now. Point at the neuron loop for one beat before you start: dendrites collect, the soma sums, the axon fires — that is the whole biological unit, and the 1943 model is a shameless cartoon of exactly it. Everything since is that cartoon, stacked. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
+The tribe that won — for now. Point at the pulse for one beat before you start: each unit collects, sums, and fires forward — that is the whole biological neuron, and the 1943 model is a shameless cartoon of exactly it. Everything since is that cartoon, stacked into layers, which is what the 3D network is showing; the rotation is only there so you can see the depth. Inspiration is the brain: McCulloch–Pitts neurons in 1943, Rosenblatt's perceptron in 1958, then backpropagation in 1986 unlocked deep nets → CNNs → transformers. The engine is stochastic gradient descent. Why it dominates: it scales with data and compute, which is Sutton's bitter lesson made flesh. The capsid example: neural nets designing viral protein shells for gene therapy — learning the sequence-to-structure map no human could hand-code. This connects straight to the LLMs from Section IV.
 :::
 
 ---
@@ -962,8 +1060,8 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
     <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">An evolved gait — most of the population falls over</figcaption>
   </figure>
   <figure style="margin:0;text-align:center;">
-    <a href="https://en.wikipedia.org/wiki/Simulated_annealing" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/simulated-annealing.gif" style="width:100%;border-radius:6px;display:block;"/></a>
-    <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Simulated annealing — escaping local optima</figcaption>
+    <canvas class="viz3d" data-scene="landscape" role="img" aria-label="Animated 3D fitness landscape with a population of orange dots climbing towards its peaks over successive generations." style="width:88%;aspect-ratio:16/9;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+    <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Selection on a fitness landscape — a population climbs, some get stuck</figcaption>
   </figure>
 </div>
 :::
@@ -1022,8 +1120,8 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 <img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
 </div>
 <div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
-<a href="https://en.wikipedia.org/wiki/Support_vector_machine" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/svm-margin.gif" style="width:100%;max-width:288px;background:#fff;border-radius:8px;display:block;"/></a>
-<div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The margin, widened until it cannot be</div>
+<canvas class="viz3d" data-scene="kernel" role="img" aria-label="Animated 3D scene: tangled teal and orange points on a plane are lifted into three dimensions, where a flat blue plane separates them." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The kernel trick — lift to a space where a flat plane separates them</div>
 </div>
 :::
 ::::
@@ -1033,7 +1131,7 @@ The fifth tribe: reason by similarity to past cases rather than by rules or mode
 
 The flag is a callback to Dartmouth, and worth thirty seconds. Vapnik and Chervonenkis built statistical learning theory — VC dimension, the margin, eventually the SVM — in Moscow through the 1960s and 70s, at an institute for control sciences, under the disciplinary banner of *cybernetics*. That is the very word McCarthy picked "artificial intelligence" to avoid. So the same intellectual territory got two names on two sides of the Iron Curtain, and the Western half spent decades not reading the Eastern half: VC theory only really landed here after Vapnik came to Bell Labs around 1990. The point for the ambiguity thread: the name a field carries is an accident of politics, and it determines who reads you.
 
-The animation is the tribe's actual idea: two classes, and infinitely many lines that separate them — the SVM picks the one that sits as far from both as possible. Widen the margin until it jams. Say that the margin is not a detail, it is the whole theory: Vapnik's claim was that the widest gap is the one that generalises, and he had the proof, not just the intuition.
+The animation shows the kernel trick, the tribe's other big idea. On the flat floor, teal sits inside an orange ring — no straight line separates them. Lift each point by its squared distance from the centre and a flat plane now cuts between the classes; projected back down, that plane is the circle. Say that the real trick is that kernels let you compute in the lifted space without ever building it. Then the margin: among all separating planes, the SVM picks the one that sits as far from both classes as possible. Say that the margin is not a detail, it is the whole theory: Vapnik's claim was that the widest gap is the one that generalises, and he had the proof, not just the intuition.
 :::
 
 ---
@@ -1272,6 +1370,8 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Russell, S. & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach* (4th ed.)
 - Kahneman, D. (2011). *Thinking, Fast and Slow*.
 - Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*.
+- Murray, J. et al. (2014). A hierarchy of intrinsic timescales across primate cortex. *Nature Neuroscience*.
+- Northoff, G. & Huang, Z. (2017). How do the brain's time and space mediate consciousness and its different dimensions? *Neurosci. Biobehav. Rev.*
 
 ---
 
@@ -1330,11 +1430,12 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - A. Turing — Elliott & Fry, public domain
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
+- Sensory homunculus — OpenStax College (derivative: Popadius), CC BY 3.0
+- 3D visuals — three.js (mrdoob and contributors), MIT
 - Early human migrations map — Dbachmann, CC BY-SA 4.0
 - Acheulean handaxe (Saint-Acheul) — Didier Descouens, CC BY-SA 4.0
 :::
 ::: {.column style="width:50%; font-size:0.42em; opacity:0.75; line-height:1.32;"}
-- Simulated annealing — Kingpin13, CC0
 - Map boundaries — Natural Earth, public domain
 - J. Holland, V. Vapnik, J. Tenenbaum, K. Friston — no free licence identified; used under fair dealing for education
 - Portrait with sculpture — personal photograph, used with permission
@@ -1342,9 +1443,7 @@ The emotional close — slow right down, make eye contact, let the last line bre
 - Diffusion denoising animation — via Towards Data Science
 - Decision tree animation — via Medium
 - *Inside Out* emotions clip — © Disney/Pixar, via Medium; used under fair dealing for education
-- Biological neuron animation — via Telefónica Tech
 - Evolved walker animation — via kottke.org
-- SVM margin animation — via Medium
 - ANI/AGI/ASI illustration — via Medium
 - AI history timeline — via LinkedIn
 - Unitree G1 robot animation — via roboticgizmos.com
