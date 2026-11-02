@@ -10,7 +10,7 @@
 
   <!-- ============ Panel A: Observe ============ -->
   <g>
-    <text x="150" y="24" text-anchor="middle" fill="#9aa0aa" font-size="17" font-style="italic">Observe · P(wet | sprinkler)</text>
+    <text x="150" y="24" text-anchor="middle" fill="#9aa0aa" font-size="17" font-style="italic">Observe · P(slippery | sprinkler)</text>
 
     <!-- edges -->
     <g stroke="#9ab4dd" stroke-width="2.4" fill="none" marker-end="url(#ah)">
@@ -41,7 +41,7 @@
 
   <!-- ============ Panel B: Intervene ============ -->
   <g transform="translate(340,0)">
-    <text x="150" y="24" text-anchor="middle" fill="#f0a868" font-size="17" font-style="italic">Intervene · P(wet | do(sprinkler))</text>
+    <text x="150" y="24" text-anchor="middle" fill="#f0a868" font-size="17" font-style="italic">Intervene · P(slippery | do(sprinkler))</text>
 
     <!-- severed edge Season -> Sprinkler -->
     <g stroke="#e06c75" stroke-width="2.2" opacity="0.6" stroke-dasharray="5 4">
