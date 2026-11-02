@@ -531,12 +531,12 @@ This list is doing double duty — tell the audience to remember it, because in 
 :::
 ::: {.column width="44%"}
 <canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with three orange balls rolling downhill by gradient descent." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Gradient descent — each ball is a model sliding down the error surface</div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Error is measured against the labels — each ball is a model sliding down it</div>
 :::
 ::::
 
 ::: {.notes}
-The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the three starts are random, so some runs end in different valleys — that is the local-minimum caveat in one image, and if they all land in one valley just say it depends on where you start. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
+The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
 :::
 
 ---
@@ -610,7 +610,7 @@ Keep this short — it's the setup for the "unifying view" two slides on. No lab
 :::
 ::: {.column width="44%"}
 <canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, and tiles rise towards the teal goal tile as value spreads back from the reward." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Q-learning on a grid — tiles rise toward the reward as the agent learns</div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">The agent acts, the grid returns state + reward — tiles rise toward the reward</div>
 :::
 ::::
 
