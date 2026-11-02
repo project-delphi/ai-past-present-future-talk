@@ -1209,16 +1209,21 @@ to { opacity: 1; transform: translateY(0) scale(1); }
 .reveal .whyrand .formula .b { color: #9ab4dd; } .reveal .whyrand .formula .o { color: #f0a868; }
 .reveal .whyrand .formula span { opacity: 0.6; font-style: italic; }
 
-.reveal .bayes { font-size: 0.56em; line-height: 1.3; }
+.reveal .bayes { font-size: 0.5em; line-height: 1.25; }
 .reveal .bayes p { margin: 0; }
-.reveal .bayes .column:first-child { padding-right: 0.9em; box-sizing: border-box; }
-.reveal .bayes .column:last-child { padding-left: 0.9em; box-sizing: border-box; }
+.reveal .bayes .bgrid { display: grid; grid-template-columns: max-content 1fr 1fr; column-gap: 1.5em; }
 .reveal .bayes .who { font-weight: 700; font-size: 1.12em; }
 .reveal .bayes .who span { font-weight: 400; font-size: 0.8em; opacity: 0.6; margin-left: 0.4em; }
 .reveal .bayes .see { color: #9ab4dd; } .reveal .bayes .do { color: #f0a868; }
-.reveal .bayes .mosaic { width: 100%; height: auto; display: block; margin: 0.2em 0 0.4em; }
-.reveal .bayes .eq { color: #e3e6ec; } .reveal .bayes .eq b { color: #fff; }
-.reveal .bayes .note { opacity: 0.65; font-style: italic; margin-bottom: 0.25em; }
+.reveal .bayes .mosaic { width: 100%; height: auto; display: block; margin: 0.15em 0 0.3em; }
+.reveal .bayes .term, .reveal .bayes .cell { border-top: 1px solid #3a3f47; padding: 0.2em 0; }
+.reveal .bayes .term { font-weight: 700; text-align: right; white-space: nowrap; }
+.reveal .bayes .term span { font-weight: 400; color: #cfd4dc; margin-left: 0.25em; }
+.reveal .bayes .pri { color: #7aa0e0; } .reveal .bayes .lik { color: #63b3a6; } .reveal .bayes .evi { color: #9aa0aa; }
+.reveal .bayes .pos { color: #f0a868; } .reveal .bayes .sli { color: #f2cc3d; }
+.reveal .bayes .cell { color: #e3e6ec; } .reveal .bayes .cell b { color: #fff; }
+.reveal .bayes .cell i { opacity: 0.6; margin-left: 0.35em; }
+.reveal .bayes .area { align-self: center; text-align: right; font-style: italic; opacity: 0.55; }
 </style>
 </head>
 <body class="quarto-dark">
@@ -2564,11 +2569,11 @@ display:block!important;
 </div>
 <div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.4em;">
 <a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><svg id="garden-dag" viewbox="0 0 680 400" role="img" aria-label="Two causal diagrams that light up with each day of the garden. See: Season drives the Gardener, who sets the Sprinkler; Season also drives Rain; Sprinkler and Rain wet the grass; wet grass is slippery. Do, at random: Randomization sets the Sprinkler, and the arrow from Season is cut." style="height:270px;width:459px;display:block;" font-family="-apple-system, Helvetica, Arial, sans-serif"><defs><marker id="gdag-ah" markerwidth="9" markerheight="9" refx="7" refy="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#9ab4dd" /></marker><marker id="gdag-aho" markerwidth="9" markerheight="9" refx="7" refy="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#f0a868" /></marker></defs><g data-p="see"><text x="150" y="24" text-anchor="middle" fill="#9aa0aa" font-size="17" font-style="italic">See · P(slippery | sprinkler)</text><g data-e="season-decider"><line x1="128.2" y1="79.3" x2="94.8" y2="111.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="decider-sprinkler"><line x1="66.3" y1="162.0" x2="64.1" y2="192.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="season-rain"><line x1="165.4" y1="80.6" x2="221.4" y2="162.7" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="sprinkler-wet"><line x1="88.6" y1="242.6" x2="117.5" y2="264.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="rain-wet"><line x1="220.8" y1="211.4" x2="174.7" y2="262.6" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="wet-slip"><line x1="150.0" y1="315.0" x2="150.0" y2="333.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-n="season"><ellipse cx="150" cy="58" rx="48" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="63" fill="#fff" font-size="15" text-anchor="middle">Season</text></g><g data-n="rain"><ellipse cx="240" cy="190" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="240" y="195" fill="#fff" font-size="15" text-anchor="middle">Rain</text></g><g data-n="sprinkler"><ellipse cx="62" cy="222" rx="54" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="62" y="227" fill="#fff" font-size="15" text-anchor="middle">Sprinkler</text></g><g data-n="wet"><ellipse cx="150" cy="290" rx="56" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="295" fill="#fff" font-size="15" text-anchor="middle">Grass wet</text></g><g data-n="slip"><ellipse cx="150" cy="364" rx="66" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="369" fill="#fff" font-size="14" text-anchor="middle">Grass slippery</text></g><g data-n="decider"><ellipse cx="68" cy="138" rx="62" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="68" y="143" fill="#fff" font-size="15" text-anchor="middle">Gardener</text></g></g><line x1="340" y1="12" x2="340" y2="388" stroke="#3a3f47" stroke-width="1.5" stroke-dasharray="4 5"></line><g data-p="do" transform="translate(340,0)"><text x="150" y="24" text-anchor="middle" fill="#f0a868" font-size="17" font-style="italic">Do, at random · P(slippery | do(sprinkler))</text><g stroke="#e06c75" stroke-width="2.2" opacity="0.6" stroke-dasharray="5 4"><line x1="128.2" y1="79.3" x2="115.0" y2="92.1"></line><line x1="103.7" y1="103.2" x2="90.5" y2="116.1"></line></g><text x="109.3" y="103.7" text-anchor="middle" fill="#e06c75" font-size="17" font-weight="bold">✕</text><g data-e="decider-sprinkler"><line x1="66.3" y1="162.0" x2="64.1" y2="192.0" stroke="#f0a868" stroke-width="2.6" marker-end="url(#gdag-aho)"></line></g><g data-e="season-rain"><line x1="165.4" y1="80.6" x2="221.4" y2="162.7" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="sprinkler-wet"><line x1="88.6" y1="242.6" x2="117.5" y2="264.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="rain-wet"><line x1="220.8" y1="211.4" x2="174.7" y2="262.6" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-e="wet-slip"><line x1="150.0" y1="315.0" x2="150.0" y2="333.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#gdag-ah)"></line></g><g data-n="season"><ellipse cx="150" cy="58" rx="48" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="63" fill="#fff" font-size="15" text-anchor="middle">Season</text></g><g data-n="rain"><ellipse cx="240" cy="190" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="240" y="195" fill="#fff" font-size="15" text-anchor="middle">Rain</text></g><g data-n="sprinkler"><ellipse cx="62" cy="222" rx="54" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="62" y="227" fill="#fff" font-size="15" text-anchor="middle">Sprinkler</text></g><g data-n="wet"><ellipse cx="150" cy="290" rx="56" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="295" fill="#fff" font-size="15" text-anchor="middle">Grass wet</text></g><g data-n="slip"><ellipse cx="150" cy="364" rx="66" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"></ellipse><text x="150" y="369" fill="#fff" font-size="14" text-anchor="middle">Grass slippery</text></g><g data-n="decider"><ellipse cx="68" cy="138" rx="62" ry="21" fill="#f0a868" stroke="#f6c89a" stroke-width="1.5"></ellipse><text x="68" y="143" fill="#1a1a1a" font-size="14" text-anchor="middle" font-weight="700">Randomization</text></g></g></svg></a>
-<div style="flex:0 1 620px;min-width:0;height:270px;"><canvas class="viz3d" data-scene="garden" data-dag="garden-dag" role="img" aria-label="Animated 3D garden in Mumbai, one real day at a time, beside a causal diagram that lights up with each day: the season, then the gardener’s decision and the rain, then wet grass, then slippery. The garden shows sun or monsoon cloud, the sprinkler, that day’s real rain, grass that darkens when wet, and a yellow caution sign when the grass is slippery. First we see: a gardener decides by the season, watering most dry-season days and few monsoon days. Then we do, at random: randomization sets the sprinkler, whatever the season. A data table fills in, one tile per day, by sprinkler on or off and by dry season or monsoon. Seeing, the sprinkler’s on days are mostly dry-season days and its off days mostly monsoon days: slippery 100% versus 50%. With randomization, both rows get the same seasons: 100% versus 25%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+<div style="flex:0 1 620px;min-width:0;height:270px;"><canvas class="viz3d" data-scene="garden" data-dag="garden-dag" role="img" aria-label="Animated 3D garden in Mumbai, one real day at a time, beside a causal diagram that lights up with each day: the season, then the gardener’s decision and the rain, then wet grass, then slippery. The garden shows sun or monsoon cloud, the sprinkler, that day’s real rain, grass that darkens when wet, and a yellow caution sign when the grass is slippery. Each phase walks one year, a day from every month. First we see: a gardener decides by the season, watering most dry-season days and few monsoon days. Then we do, at random: randomization sets the sprinkler, whatever the season. A data table fills in, one tile per day, by sprinkler on or off and by dry season or monsoon. Seeing, the sprinkler’s on days are mostly dry-season days and its off days mostly monsoon days: slippery 100% versus 40%. With randomization, both rows get the same seasons: 100% versus 17%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
 </div>
 <aside class="notes">
 <p>The unification. An experiment is literally an intervention — do(x) is what you are doing when you randomise. The diagram on the left now shows the mechanism that Pearl’s single arrow hides: the season drives the <em>gardener</em>, the gardener sets the sprinkler, and the season also drives the rain; sprinkler and rain both wet the grass, and wet grass is slippery. On the See side, seeing the sprinkler on also tells you the gardener’s reason — the season — and the season told the rain: the correlation is contaminated. On the Do side, randomization sets the sprinkler and the arrow from Season is cut, so nothing upstream explains it away, and what flows down to the wet — and slippery — grass is pure cause.</p>
-<p>Then let the garden play — one real Mumbai day at a time — and the diagram lights up with it, in causal order: the season first, then the gardener’s decision and the rain, then wet grass, then slippery. Name the mapping once: sun or monsoon cloud is Season, the spray is Sprinkler, the streaks are Rain, the darkening grass is Grass wet, the yellow sign and node are Grass slippery. The rain is real — what fell at Santacruz on each date in the caption, 1987–88 — but the gardener’s choices and the random draws are made up. The loop runs about 33 seconds and restarts when you land on the slide. First we <em>see</em>. The captions say <em>so</em> when the gardener follows the season and <em>but</em> when they don’t — that is the hidden mechanism in words. The moment to point at is 23 July: monsoon, the gardener skips, and 32 mm falls — Season lights up <em>both</em> the gardener’s “off” and the rain. That fork is why seeing misleads. (21 July is worth a glance first: monsoon, but no rain — Rain is its own node, not the season.) The panel is the data table: every day drops a tile into its row, sprinkler on or off, and its column, dry or monsoon. Seeing, the sprinkler adds 50 points — but the on row is mostly dry days and the off row mostly monsoon days, so you are comparing seasons as much as sprinklers. Then the orange phase: <em>do</em>, at random — a random draw sets the sprinkler, blind to the sky, and on the diagram the cut arrow means the season can no longer reach it. Now both rows get the same seasons and the gap widens. Point at the do(off) row’s dry column: dry grass, no sign — the days that seeing almost never showed you. Same city, same seasons; only who decides changed. Sixteen days are noisy — randomization’s +75 overshoots — so don’t defend the number; the next slides do it with thirty years.</p>
+<p>Then let the garden play — one real Mumbai day at a time — and the diagram lights up with it, in causal order: the season first, then the gardener’s decision and the rain, then wet grass, then slippery. Name the mapping once: sun or monsoon cloud is Season, the spray is Sprinkler, the streaks are Rain, the darkening grass is Grass wet, the yellow sign and node are Grass slippery. The rain is real — what fell at Santacruz on each date in the caption, 1987–88 — but the gardener’s choices and the random draws are made up. Each half walks one year, a day from every month (the 15th, or the nearest day that is clearly dry or clearly wet), so the monsoon is a third of the days, as on the calendar. The loop runs about 42 seconds and restarts when you land on the slide. First we <em>see</em>. The captions say <em>so</em> when the gardener follows the season and <em>but</em> when they don’t — that is the hidden mechanism in words. The moment to point at is 15 June: monsoon, the gardener skips, and 120 mm falls — Season lights up <em>both</em> the gardener’s “off” and the rain. That fork is why seeing misleads. (15 September is worth a glance too: monsoon, the gardener skips again, but no rain — Rain is its own node, not the season.) The panel is the data table: every day drops a tile into its row, sprinkler on or off, and its column, dry or monsoon. Seeing, the sprinkler adds 60 points — but the on row is mostly dry days and the off row mostly monsoon days, so you are comparing seasons as much as sprinklers. Then the orange phase: <em>do</em>, at random — a random draw sets the sprinkler, blind to the sky, and on the diagram the cut arrow means the season can no longer reach it. Now both rows get the same seasons and the gap widens. Point at the do(off) row’s dry column: dry grass, no sign — the days that seeing almost never showed you. Same city, same seasons; only who decides changed. Twenty-four days are noisy — randomization’s +83 overshoots the true +76 — so don’t defend the number; the next slides do it with thirty years.</p>
 <p>Land the third bullet: the verifier from <em>Reality Gets a Vote</em> and the ladder we have just walked are the same idea seen twice — reality only answers when you act on it. Then click on: the next two slides are why randomization works — first what Bayes’ rule says about it, then the three ways to the answer side by side.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
@@ -2588,20 +2593,15 @@ display:block!important;
 <p><span class="math display">\[\underset{\color{#f0a868}{\text{posterior}}}{\color{#f0a868}{P(\text{monsoon} \mid \text{off})}} \;=\; \frac{\underset{\color{#63b3a6}{\text{likelihood}}}{\color{#63b3a6}{P(\text{off} \mid \text{monsoon})}}\;\cdot\;\underset{\color{#7aa0e0}{\text{prior}}}{\color{#7aa0e0}{P(\text{monsoon})}}}{\underset{\color{#9aa0aa}{\text{evidence}}}{\color{#9aa0aa}{P(\text{off})}}}\]</span></p>
 </div>
 <div class="bayes">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p class="who see">See <span>the gardener decides, by the season</span></p>
-<svg viewbox="0 0 412 164" class="mosaic" role="img" aria-label="Mosaic, area is probability. See: the gardener decides. the dry season and the monsoon are half the days each; the sprinkler is off on a quarter of dry days and three quarters of monsoon days, so three quarters of the off area is monsoon. Rain falls on 0.9 percent of dry days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">½</tspan></text><rect x="0.0" y="24.0" width="201.0" height="99.0" rx="3" fill="#2a2f37" /><text x="8.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¾</tspan></text><rect x="0.0" y="127.0" width="201.0" height="33.0" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2" /><rect x="1.0" y="157.8" width="199.0" height="1.2" fill="#f2cc3d" opacity="0.92" /><text x="8.0" y="143.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¼</tspan></text><text x="193.0" y="143.0" fill="#f2cc3d" font-size="13" text-anchor="end">rain 0.9%</text><text x="213.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">½</tspan></text><rect x="211.0" y="24.0" width="201.0" height="33.0" rx="3" fill="#2a2f37" /><text x="219.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¼</tspan></text><rect x="211.0" y="61.0" width="201.0" height="99.0" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2" /><rect x="212.0" y="92.9" width="199.0" height="66.1" fill="#f2cc3d" opacity="0.92" /><text x="219.0" y="77.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¾</tspan></text><text x="311.5" y="130.9" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg>
-<p class="eq">P(monsoon | off) = ¾ · ½ ÷ ½ = <b>¾</b></p>
-<p class="note">likelihood ratio ¾ ÷ ¼ = 3: “off” triples the odds</p>
-<p class="eq">P(slippery | off) = ¼ · 0.9% + ¾ · 67% = <b>50%</b></p>
-</div><div class="column" style="width:50%;">
-<p class="who do">Do <span>at random: randomization decides</span></p>
-<svg viewbox="0 0 412 164" class="mosaic" role="img" aria-label="Mosaic, area is probability. Do, at random: randomization decides. the dry season and the monsoon are half the days each; the sprinkler is off on half the days in both, so half of the off area is monsoon, the same as before looking. Rain falls on 0.9 percent of dry days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">½</tspan></text><rect x="0.0" y="24.0" width="201.0" height="66.0" rx="3" fill="#2a2f37" /><text x="8.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="0.0" y="94.0" width="201.0" height="66.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2" /><rect x="1.0" y="157.8" width="199.0" height="1.2" fill="#f2cc3d" opacity="0.92" /><text x="8.0" y="110.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="193.0" y="110.0" fill="#f2cc3d" font-size="13" text-anchor="end">rain 0.9%</text><text x="213.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">½</tspan></text><rect x="211.0" y="24.0" width="201.0" height="66.0" rx="3" fill="#2a2f37" /><text x="219.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="211.0" y="94.0" width="201.0" height="66.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2" /><rect x="212.0" y="114.9" width="199.0" height="44.1" fill="#f2cc3d" opacity="0.92" /><text x="219.0" y="110.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="311.5" y="142.0" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg>
-<p class="eq">P(monsoon | off) = ½ · ½ ÷ ½ = <b>½</b></p>
-<p class="note">likelihood ratio ½ ÷ ½ = 1: no news</p>
-<p class="eq">P(slippery | do(off)) = ½ · 0.9% + ½ · 67% = <b>34%</b></p>
-</div></div>
+<div class="bgrid">
+<div></div><p class="who see">See <span>the gardener decides, by the season</span></p><p class="who do">Do <span>at random: randomization decides</span></p>
+<div class="area">area = probability</div><svg viewbox="0 0 412 140" class="mosaic" role="img" aria-label="Mosaic, area is probability. See: the gardener decides. The columns are the seasons over the whole year: the dry season, October to May, is two thirds of the days, the monsoon, June to September, one third. The gardener switches the sprinkler off on a quarter of dry days and three quarters of monsoon days, so three fifths of the off area is monsoon. Rain falls on 3 percent of dry-season days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">⅔</tspan></text><rect x="0.0" y="22.0" width="268.0" height="85.5" rx="3" fill="#2a2f37" /><text x="8.0" y="36.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¾</tspan></text><rect x="0.0" y="111.5" width="268.0" height="28.5" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2" /><rect x="1.0" y="138.1" width="266.0" height="0.9" fill="#f2cc3d" opacity="0.92" /><text x="8.0" y="125.5" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¼</tspan></text><text x="260.0" y="125.5" fill="#f2cc3d" font-size="13" text-anchor="end">rain 3%</text><text x="280.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">⅓</tspan></text><rect x="278.0" y="22.0" width="134.0" height="28.5" rx="3" fill="#2a2f37" /><text x="286.0" y="36.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¼</tspan></text><rect x="278.0" y="54.5" width="134.0" height="85.5" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2" /><rect x="279.0" y="81.9" width="132.0" height="57.1" fill="#f2cc3d" opacity="0.92" /><text x="286.0" y="68.5" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¾</tspan></text><text x="345.0" y="115.5" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg><svg viewbox="0 0 412 140" class="mosaic" role="img" aria-label="Mosaic, area is probability. Do, at random: randomization decides. The dry season is two thirds of the days, the monsoon one third. Randomization switches the sprinkler off on half the days in both, so one third of the off area is monsoon, the same as before looking. Rain falls on 3 percent of dry-season days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">⅔</tspan></text><rect x="0.0" y="22.0" width="268.0" height="57.0" rx="3" fill="#2a2f37" /><text x="8.0" y="36.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="0.0" y="83.0" width="268.0" height="57.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2" /><rect x="1.0" y="137.3" width="266.0" height="1.7" fill="#f2cc3d" opacity="0.92" /><text x="8.0" y="97.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="260.0" y="97.0" fill="#f2cc3d" font-size="13" text-anchor="end">rain 3%</text><text x="280.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">⅓</tspan></text><rect x="278.0" y="22.0" width="134.0" height="57.0" rx="3" fill="#2a2f37" /><text x="286.0" y="36.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="278.0" y="83.0" width="134.0" height="57.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2" /><rect x="279.0" y="100.9" width="132.0" height="38.1" fill="#f2cc3d" opacity="0.92" /><text x="286.0" y="97.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="345.0" y="125.0" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg>
+<div class="term pri fragment" data-fragment-index="0">prior <span>P(monsoon)</span></div><div class="cell fragment" data-fragment-index="0"><b>⅓</b> <i>Jun–Sep: 122 of 365 days</i></div><div class="cell fragment" data-fragment-index="0"><b>⅓</b> <i>the same calendar</i></div>
+<div class="term lik fragment" data-fragment-index="1">likelihood <span>P(off | season)</span></div><div class="cell fragment" data-fragment-index="1"><b>¾</b> monsoon, <b>¼</b> dry <i>the gardener · ratio 3</i></div><div class="cell fragment" data-fragment-index="1"><b>½</b> monsoon, <b>½</b> dry <i>randomized · ratio 1</i></div>
+<div class="term evi fragment" data-fragment-index="2">evidence <span>P(off)</span></div><div class="cell fragment" data-fragment-index="2">¾·⅓ + ¼·⅔ = <b>5⁄12</b></div><div class="cell fragment" data-fragment-index="2">P(do(off)) = ½·⅓ + ½·⅔ = <b>½</b></div>
+<div class="term pos fragment" data-fragment-index="3">posterior <span>P(monsoon | off)</span></div><div class="cell fragment" data-fragment-index="3">¾·⅓ ÷ 5⁄12 = <b>⅗</b> <i>“off” lifts ⅓ to ⅗</i></div><div class="cell fragment" data-fragment-index="3">½·⅓ ÷ ½ = <b>⅓</b> <i>the prior again</i></div>
+<div class="term sli fragment" data-fragment-index="4">so, slippery <span>P(slippery | off)</span></div><div class="cell fragment" data-fragment-index="4">⅗·67% + ⅖·3% = <b>41%</b></div><div class="cell fragment" data-fragment-index="4">P(slippery | do(off)) = ⅓·67% + ⅔·3% = <b>24%</b></div>
+</div>
 </div>
 <div class="fragment" style="font-size:0.72em;margin-top:0.2em;">
 <ul>
@@ -2610,8 +2610,8 @@ display:block!important;
 </ul>
 </div>
 <aside class="notes">
-<p>The engine under the garden, in the Bayes’ rule we met with the Bayesians — same colours on purpose. Ask the room one question: you walk past and see the sprinkler off; what have you just learned about the season? Then read the See mosaic, where every rectangle’s area is a probability. The widths are the seasons, half each — the prior. The heights are the gardener’s habit — off on a quarter of dry days, three-quarters of monsoon days — the likelihood: the hidden mechanism from the last slide, in numbers. So the off band is lopsided: three-quarters of its area is monsoon. That is Bayes’ rule done with rectangles — seeing “off” triples the odds of monsoon. And monsoon days come with rain, the yellow, so the gardener’s off days are half slippery for reasons that have nothing to do with the sprinkler. Under each mosaic, the last line is the law of total probability — the same “average over the hypotheses” as the Bayesians slide, with the seasons as the hypotheses and the posterior as the weights.</p>
-<p>Now the Do mosaic. Randomization switches the sprinkler off on half the days in both seasons: likelihood ratio one. The off band is level, the posterior is the prior, and the off days are a fair sample of the weather — 34%, written do(off) because randomization set it. Click, and land the two lines. First: inside each column the yellow share is identical in both mosaics — 0.9% and 67% — so seeing and doing agree about every season; they disagree only about the weights. That is why recording the season works. Second, the one to land: a random “off” tells you nothing about the season — or about anything else, including the causes nobody wrote down. That is what randomization buys. Then click on for the three ways side by side.</p>
+<p>The engine under the garden, in the Bayes’ rule we met with the Bayesians — same colours on purpose: each row under the mosaics is one term of the formula, coloured to match. Ask the room one question: you walk past and see the sprinkler off; what have you just learned about the season? Read the See mosaic first, where every rectangle’s area is a probability: the widths are the seasons over the whole year, the heights are the gardener’s habit, and the outlined cells are the off days. Then click through the rows, one term per click, See on the left and Do on the right. <em>Prior</em>, P(monsoon): a third on both sides, straight off the calendar — June to September is 122 of 365 days. <em>Likelihood</em>, P(off | season): this is where they part. The gardener switches off on three-quarters of monsoon days and a quarter of dry ones — the hidden mechanism from the last slide, in numbers — and that ratio of 3 is how much “off” says about the season. Randomization switches off on half the days whatever the season: ratio one, it says nothing. <em>Evidence</em>, P(off): every way of getting “off”, added up — the outlined area. Five-twelfths for the gardener; for randomization, P(do(off)) is simply a half. <em>Posterior</em>, P(monsoon | off): the monsoon’s share of that outlined area. The gardener’s “off” lifts a third to three-fifths — Bayes’ rule done with rectangles; a random “off” leaves it at a third, the prior again.</p>
+<p>The last row is the law of total probability — the same “average over the hypotheses” as the Bayesians slide, with the seasons as the hypotheses and the posterior as the weights. Monsoon days come with rain, the yellow, so 41% of the gardener’s off days are slippery for reasons that have nothing to do with the sprinkler; when randomization sets it — written do(off) for that reason — it is 24%, a fair sample of the weather. Click, and land the two lines. First: inside each column the yellow share is identical in both mosaics — 3% and 67% — so seeing and doing agree about every season; they disagree only about the weights. That is why recording the season works. Second, the one to land: a random “off” tells you nothing about the season — or about anything else, including the causes nobody wrote down. That is what randomization buys. If someone asks about April or October: they are in — the dry season here is all eight months outside the monsoon, which is why it rains on 3% of its days, not none. Then click on for the three ways side by side.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -2629,48 +2629,53 @@ display:block!important;
 <div class="whyrand">
 <div class="columns">
 <div class="column" style="width:48%;">
-<p class="lede">Every Mumbai day of both seasons, 1961–90 —<br>the probabilities, known</p>
+<p class="lede">Every Mumbai day, 1961–90: the true rates</p>
 
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">dry season<span>Dec–Mar</span></th>
+<th data-quarto-table-cell-role="th">dry season<span>Oct–May</span></th>
 <th data-quarto-table-cell-role="th">monsoon<span>Jun–Sep</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="src odd">
-<td>it rains <span>real record</span></td>
-<td>0.9%</td>
-<td>67%</td>
+<td>share of the year <span>calendar</span></td>
+<td>⅔</td>
+<td>⅓</td>
 </tr>
 <tr class="src even">
+<td>it rains <span>real record</span></td>
+<td>3%</td>
+<td>67%</td>
+</tr>
+<tr class="src odd">
 <td>gardener waters <span>assumed</span></td>
 <td>75%</td>
 <td>25%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>slippery if sprinkler on</td>
 <td>100%</td>
 <td>100%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>slippery if off</td>
-<td>0.9%</td>
+<td>3%</td>
 <td>67%</td>
 </tr>
-<tr class="eff odd">
+<tr class="eff even">
 <td>sprinkler’s effect</td>
-<td>+99 pts</td>
+<td>+97 pts</td>
 <td>+33 pts</td>
 </tr>
 </tbody>
 </table>
 </div><div class="column" style="width:52%;">
-<div class="way see fragment"><p class="t">See <span>season not recorded</span></p><p>P(monsoon | off) = ¾, by Bayes</p><p class="calc">100% − 50% = <b>+50 pts</b> <span class="no">✗</span></p><p class="why">thirty years of data didn’t fix it</p></div>
-<div class="way adj fragment"><p class="t">See + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">½·99 + ½·33 = <b>+66 pts</b> <span class="ok">✓</span></p><p class="why">only for causes you knew to record</p></div>
-<div class="way do fragment"><p class="t">Do <span>at random</span></p><p>P(monsoon | off) = ½, the prior</p><p class="calc">100% − 34% = <b>+66 pts</b> <span class="ok">✓</span></p><p class="why">balances causes nobody recorded</p></div>
+<div class="way see fragment"><p class="t">See <span>season not recorded</span></p><p>P(monsoon | off) = ⅗, by Bayes</p><p class="calc">100% − 41% = <b>+59 pts</b> <span class="no">✗</span></p><p class="why">thirty years of data didn’t fix it</p></div>
+<div class="way adj fragment"><p class="t">See + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">⅔·97 + ⅓·33 = <b>+76 pts</b> <span class="ok">✓</span></p><p class="why">only for causes you knew to record</p></div>
+<div class="way do fragment"><p class="t">Do <span>at random</span></p><p>P(monsoon | do(off)) = ⅓, the prior</p><p class="calc">100% − 24% = <b>+76 pts</b> <span class="ok">✓</span></p><p class="why">balances causes nobody recorded</p></div>
 </div></div>
 <p class="formula fragment">see  ∑<sub>s</sub> P(y | x, s) · <b class="b">P(s | x)</b>    do  ∑<sub>s</sub> P(y | x, s) · <b class="o">P(s)</b>    <span>seeing weights by the posterior, doing by the prior</span></p>
 </div>
@@ -2681,8 +2686,8 @@ display:block!important;
 </ul>
 </div>
 <aside class="notes">
-<p>The synthesis — the Bayes slide showed the mechanism; this puts the three ways to the answer side by side. Every number here comes from thirty years of real Mumbai rain (NOAA’s Santacruz station, 1961–90, a rain day being at least a millimetre), so these are probabilities, not a sample — the noise of the sixteen days is gone, which is the point. The only made-up row is the gardener’s habit, and the only assumption is that wet grass is slippery.</p>
-<p>Walk the table first. Inside a season, the sprinkler’s effect never changes: in the dry season it is the only water there is, +99; in the monsoon it mostly adds to rain that was coming anyway, +33. Then one click per card. <em>See</em>: Bayes said the gardener’s off days are three-quarters monsoon, so they look slippery anyway and the sprinkler seems worth only +50. Stress that thirty years of data did not fix that — more data shrinks noise, not bias. <em>See, and record the season</em>: now you can fix it on paper — compare inside each season, then weight by how common each season is, half and half: +66. That is Pearl’s adjustment formula, and it works — but only for the confounders you knew to write down. <em>Do, at random</em>: +66 without knowing anything about seasons. A random draw cannot see the sky, so on days and off days get the same mix of seasons — and of every other cause nobody thought to record.</p>
+<p>The synthesis — the Bayes slide showed the mechanism; this puts the three ways to the answer side by side. Every number here comes from thirty years of real Mumbai rain (NOAA’s Santacruz station, 1961–90, a rain day being at least a millimetre), so these are probabilities, not a sample — the noise of the twenty-four days is gone, which is the point. The whole year is in: the dry season is every month outside the monsoon, October to May, two-thirds of the days, and it rains on 3% of them — mostly October and November, the monsoon’s tail. The only made-up row is the gardener’s habit, and the only assumption is that wet grass is slippery.</p>
+<p>Walk the table first. Inside a season, the sprinkler’s effect never changes: in the dry season it is nearly the only water there is, +97; in the monsoon it mostly adds to rain that was coming anyway, +33. Then one click per card. <em>See</em>: Bayes said the gardener’s off days are three-fifths monsoon, though the monsoon is only a third of the year, so they look slippery anyway and the sprinkler seems worth only +59. Stress that thirty years of data did not fix that — more data shrinks noise, not bias. <em>See, and record the season</em>: now you can fix it on paper — compare inside each season, then weight by how common each season is, two-thirds and a third: +76. That is Pearl’s adjustment formula, and it works — but only for the confounders you knew to write down. <em>Do, at random</em>: +76 without knowing anything about seasons. A random draw cannot see the sky, so on days and off days get the same mix of seasons — and of every other cause nobody thought to record.</p>
 <p>The formula line is the last slide in one row: seeing weights each season by the posterior P(s | x), doing by the prior P(s); randomization makes them equal, adjustment swaps them by hand. If someone asks why not just set the sprinkler by hand: you can, but if you choose by looking at the sky you are just a second gardener — randomization is what guarantees the choice is blind. Then land the last bullet slowly; it is the hinge of the back half — you cannot randomize what you cannot reach. That is why Section VIII turns to bodies.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
@@ -4945,31 +4950,35 @@ window.QuartoSupport = function () {
   //    see why the answers differ -- seeing compares mostly-dry days with mostly-monsoon ones; randomization gives
   //    both rows the same seasons. If the canvas names a diagram (data-dag), its nodes and edges light up with
   //    each day's mechanism, in causal order: season, then the decision and the rain, then wet, then slippery.
-  //    Rain is real: NOAA GHCN-Daily, Bombay/Santacruz (IN012070800), rain = at least 1 mm that day. The
-  //    gardener's choices and the random draws are made up, in exact proportion (checked below). Wet grass is
-  //    always slippery. Over every dry-season and monsoon day 1961-1990 (rain on 0.9% and 66.8% of them),
-  //    P(slippery | off) = 50% seeing but P(slippery | do(off)) = 34%: the next slides work that through.
+  //    Rain is real: NOAA GHCN-Daily, Bombay/Santacruz (IN012070800), rain = at least 1 mm that day. Each phase
+  //    walks one year, the 15th of every month (or the nearest clear-cut day), so the monsoon (Jun-Sep) is a third of
+  //    the days, as on the calendar. The gardener's choices and the random draws are made up, in exact proportion
+  //    (checked below). Wet grass is always slippery. Over every day of 1961-1990 (rain on 3.0% of Oct-May days and
+  //    66.8% of Jun-Sep days), P(slippery | off) = 41% seeing but P(slippery | do(off)) = 24%: the next slides work
+  //    that through.
   scenes.garden = function (scene, camera, canvas) {
     function pct(x) { return Math.round(x * 100); }
     // [phase, monsoon?, sprinkler on?, rain that day in mm (real), date], in the order shown. Every day is clear-cut:
     // 0.0 mm or at least 5 mm, so no day hangs on the 1 mm rain-day threshold. Rain is the PRCP column (tenths of a
-    // mm, so 351 = 35.1 mm) of https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/IN012070800.csv
-    // for those dates, all with blank quality flags. The 1961-90 rates on the next slide come from the same file:
-    // rain >= 1 mm on 26 of 2905 Dec-Mar days and 1992 of 2983 Jun-Sep days, again skipping quality-flagged rows.
+    // mm, so 1199 = 119.9 mm) of https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/IN012070800.csv
+    // for those dates, all with blank quality flags. The 1961-90 rates on the next slides come from the same file:
+    // rain >= 1 mm on 174 of 5824 Oct-May days and 1992 of 2983 Jun-Sep days, again skipping quality-flagged rows.
     var DAYS = [
-      ['see', 0, 1, 0, '12 Jan 1987'], ['see', 0, 1, 0, '13 Jan 1987'], ['see', 0, 0, 0, '14 Jan 1987'], ['see', 0, 1, 0, '15 Jan 1987'],
-      ['see', 1, 0, 0, '21 Jul 1987'], ['see', 1, 1, 35.1, '22 Jul 1987'], ['see', 1, 0, 32.0, '23 Jul 1987'], ['see', 1, 0, 7.9, '24 Jul 1987'],
-      ['do', 0, 1, 0, '9 Feb 1988'], ['do', 0, 0, 0, '10 Feb 1988'], ['do', 0, 0, 0, '11 Feb 1988'], ['do', 0, 1, 0, '12 Feb 1988'],
-      ['do', 1, 0, 56.9, '14 Jul 1988'], ['do', 1, 1, 32.0, '15 Jul 1988'], ['do', 1, 1, 93.0, '16 Jul 1988'], ['do', 1, 0, 0, '17 Jul 1988']
+      ['see', 0, 1, 0, '15 Jan 1987'], ['see', 0, 1, 0, '15 Feb 1987'], ['see', 0, 0, 0, '15 Mar 1987'], ['see', 0, 1, 0, '15 Apr 1987'],
+      ['see', 0, 1, 0, '15 May 1987'], ['see', 1, 0, 119.9, '15 Jun 1987'], ['see', 1, 1, 35.1, '15 Jul 1987'], ['see', 1, 0, 16.0, '15 Aug 1987'],
+      ['see', 1, 0, 0, '15 Sep 1987'], ['see', 0, 1, 0, '15 Oct 1987'], ['see', 0, 0, 0, '15 Nov 1987'], ['see', 0, 1, 0, '15 Dec 1987'],
+      ['do', 0, 0, 0, '15 Jan 1988'], ['do', 0, 1, 0, '15 Feb 1988'], ['do', 0, 1, 0, '15 Mar 1988'], ['do', 0, 0, 0, '15 Apr 1988'],
+      ['do', 0, 0, 0, '15 May 1988'], ['do', 1, 0, 0, '15 Jun 1988'], ['do', 1, 1, 32.0, '15 Jul 1988'], ['do', 1, 0, 9.9, '14 Aug 1988'],
+      ['do', 1, 1, 24.9, '17 Sep 1988'], ['do', 0, 1, 0, '15 Oct 1988'], ['do', 0, 0, 0, '15 Nov 1988'], ['do', 0, 1, 0, '15 Dec 1988']
     ];
-    var M = { pDry: 0.5, gardener: [0.75, 0.25], random: 0.5 };   // gardener: P(on | dry season), P(on | monsoon)
+    var M = { pMonsoon: 1 / 3, gardener: [0.75, 0.25], random: 0.5 };   // gardener: P(on | dry season), P(on | monsoon)
     function rained(d) { return d[3] >= 1; }                      // a rain day: at least 1 mm
     function slippery(d) { return !!(d[2] || rained(d)); }       // wet from the sprinkler or the rain, and wet grass is slippery
     ['see', 'do'].forEach(function (ph) {
       var days = DAYS.filter(function (d) { return d[0] === ph; });
       [0, 1].forEach(function (mon) {
         [0, 1].forEach(function (on) {
-          var pOn = ph === 'see' ? M.gardener[mon] : M.random, want = (mon ? 1 - M.pDry : M.pDry) * (on ? pOn : 1 - pOn);
+          var pOn = ph === 'see' ? M.gardener[mon] : M.random, want = (mon ? M.pMonsoon : 1 - M.pMonsoon) * (on ? pOn : 1 - pOn);
           var got = days.filter(function (d) { return d[1] === mon && d[2] === on; }).length / days.length;
           if (Math.abs(got - want) > 1e-9) console.warn('garden: DAYS no longer split the seasons as the gardener / randomization would', ph, mon ? 'monsoon' : 'dry', on ? 'on' : 'off', got, want);
         });
@@ -4985,15 +4994,15 @@ window.QuartoSupport = function () {
       });
       return { n: n, p: slip / n };
     });
-    // The slide's aria-label and speaker notes quote these shares (100% vs 50% seeing, 100% vs 25% under randomization)
-    var QUOTED = [1, 0.5, 1, 0.25];
+    // The slide's aria-label and speaker notes quote these shares (100% vs 40% seeing, 100% vs 17% under randomization)
+    var QUOTED = [1, 0.4, 1, 1 / 6];
     ROWS.forEach(function (row, ri) {
       if (Math.abs(row.p - QUOTED[ri]) > 1e-9) console.warn('garden: row ' + ri + ' now shows ' + pct(row.p) + '%, but the slide text quotes ' + pct(QUOTED[ri]) + '%');
     });
 
     // ---- timeline: a short lead-in, the See days, a pause to switch, the Do days, a hold ----
     var NSEE = DAYS.filter(function (d) { return d[0] === 'see'; }).length;
-    var D = 1.7, VU = 0.95, DRAW = 0.45, LEAD = 0.25, SWITCH = 1.8, HOLD = 3.6;   // VU: when the day's verdict lands
+    var D = 1.5, VU = 0.85, DRAW = 0.4, LEAD = 0.25, SWITCH = 1.8, HOLD = 3.6;   // VU: when the day's verdict lands
     function dayStart(k) { return LEAD + k * D + (k >= NSEE ? SWITCH : 0); }
     var L = dayStart(DAYS.length) + HOLD, LAST = DAYS.length - 1;
     function at(T) {
@@ -5017,19 +5026,20 @@ window.QuartoSupport = function () {
     }
 
     // ---- HTML overlay: night dimmer, verdict tag, caption (bottom-left), data-table panel (right) ----
-    var el = overlay(canvas), PANEL_W = 206, YEL = '#f2cc3d', GREY = '#6b727d';
+    var el = overlay(canvas), PANEL_W = 234, YEL = '#f2cc3d', GREY = '#6b727d';
     var night = el('div', 'position:absolute;left:0;top:0;right:0;bottom:0;border-radius:8px;background:#000;opacity:0;pointer-events:none;');
     var tag = el('div', 'position:absolute;left:0;top:0;transform:translate(-50%,-100%);font-size:12.5px;font-weight:700;padding:1px 7px;' +
       'border-radius:4px;white-space:nowrap;pointer-events:none;opacity:0;');
     // on Do days a random draw, not a person, sets the sprinkler: this badge flickers ON / OFF above it, then settles
     var draw = el('div', 'position:absolute;left:0;top:0;transform:translate(-50%,-100%);font-size:13px;font-weight:700;padding:1px 9px 2px;' +
       'border-radius:5px;white-space:nowrap;pointer-events:none;opacity:0;background:#f0a868;color:#1a1a1a;text-align:center;line-height:1.1;');
-    var cap = el('div', CAPTION + 'max-width:56%;top:auto;bottom:7px;');
+    // the caption stops short of the panel: left 10px + 16px of padding + a 14px gap
+    var cap = el('div', CAPTION + 'max-width:calc(100% - ' + (PANEL_W + 40) + 'px);top:auto;bottom:7px;');
     var panel = el('div', 'position:absolute;right:7px;top:7px;bottom:7px;width:' + PANEL_W + 'px;box-sizing:border-box;padding:6px 10px;' +
       'background:rgba(20,22,26,0.84);border-radius:6px;font-size:12.5px;line-height:1.22;color:#cfd4dc;pointer-events:none;');
     var TILE = 'display:inline-block;width:9px;height:9px;border-radius:2px;box-sizing:border-box;vertical-align:-1px;';
     var TROW = 'display:flex;align-items:center;margin:2px 0;', LAB = 'width:44px;white-space:nowrap;',
-      DRY = 'width:40px;display:flex;gap:3px;', RAINY = 'width:44px;display:flex;gap:3px;padding-left:6px;border-left:1px solid #3a404a;',
+      DRY = 'width:70px;display:flex;gap:2px;', RAINY = 'width:44px;display:flex;gap:2px;padding-left:5px;border-left:1px solid #3a404a;',
       VAL = 'margin-left:auto;font-variant-numeric:tabular-nums;font-weight:600;color:#fff;';
     el('div', 'font-weight:700;color:#fff;font-size:13.5px;', 'P(grass slippery)', panel);
     el('div', 'opacity:.62;font-size:11.5px;', 'one tile per day: <span style="' + TILE + 'background:' + YEL + ';"></span> slippery ' +
@@ -5200,7 +5210,9 @@ window.QuartoSupport = function () {
         if (T < prevT) { clearAll(); lastSW = -1; }   // loop wrap: start the next loop on a dry lawn, as the caption says
         prevT = T;
         // frame the garden in the part of the canvas the panel doesn't cover (first, so labels can be projected)
-        var cw = canvas.clientWidth || 1, ch = canvas.clientHeight || 1, frac = (PANEL_W + 10) / cw, el2 = 0.6, H = 1.7;
+        // H is the half-height in view; widen it if needed so the free part still spans 2.25 world units each side of the lawn's centre
+        var cw = canvas.clientWidth || 1, ch = canvas.clientHeight || 1, frac = (PANEL_W + 10) / cw, el2 = 0.6;
+        var H = Math.max(1.7, 2.25 / ((1 - frac) * camera.aspect));
         var dist = H / Math.tan(camera.fov * Math.PI / 360), shift = frac * H * camera.aspect;
         camera.position.set(shift, 0.7 + Math.sin(el2) * dist, 0.2 + Math.cos(el2) * dist);
         camera.lookAt(shift, 0.7, 0.2); camera.updateMatrixWorld();
