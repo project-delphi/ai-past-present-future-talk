@@ -25,7 +25,7 @@ Slide conventions — keep new slides consistent with these:
 - Terse bullet style: few bullets, bolded key terms.
 - Two-column layouts use Quarto's `:::: {.columns}` / `::: {.column width="…"}` divs, typically bullets on the left and a visual on the right.
 - Visuals are either raw `<img>` tags pointing into `images/` or small inline `<svg>` diagrams, both sized with inline styles (rounded corners via `border-radius`, side-by-side GIFs at a shared fixed height). No external image URLs on content slides — remote assets are downloaded into `images/` first.
-- Some visuals are live three.js scenes: a `<canvas class="viz3d" data-scene="…">` driven by `lib/viz3d.js` (scenes: `network`, `landscape`, `kernel`, `cluster`). `lib/three.min.js` is vendored (r149, MIT) and both are inlined via `include-after-body: lib/scripts.html`. A scene only animates while its slide is current. To add one, add a function to `scenes` in `viz3d.js`.
+- Some visuals are live three.js scenes: a `<canvas class="viz3d" data-scene="…">` driven by `lib/viz3d.js` (scenes: `network`, `landscape`, `kernel`, `cluster`). `lib/three.min.js` is vendored (r149, MIT) and both are inlined via `include-after-body` in the YAML front matter. A scene only animates while its slide is current. To add one, add a function to `scenes` in `viz3d.js`.
 - Every image added to `images/` needs an attribution line on the "Image Credits" slide (name — author, licence).
 - Nearly every content slide ends with a `::: {.notes}` speaker-notes block — write one for any new slide, in the existing style: delivery coaching for the speaker (what to emphasize, where to hedge, the one line to land), not a restatement of the bullets.
 

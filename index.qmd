@@ -7,7 +7,10 @@ format:
   revealjs:
     slide-number: true
     embed-resources: true
-    include-after-body: lib/scripts.html
+    include-after-body:
+      - text: |
+          <script src="lib/three.min.js"></script>
+          <script src="lib/viz3d.js"></script>
     chalkboard: false
     theme: dark
     title-slide-attributes:
