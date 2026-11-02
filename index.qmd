@@ -53,6 +53,30 @@ header-includes: |
     from { opacity: 0; transform: translateY(28px) scale(0.96); }
     to   { opacity: 1; transform: translateY(0) scale(1); }
   }
+  /* "Why the Coin Works": a probability table on the left, three ways to ask it on the right */
+  .reveal .coin { font-size: 0.56em; line-height: 1.3; }
+  .reveal .coin .coin-grid { display: grid; grid-template-columns: 45% 1fr; gap: 1.3em; align-items: start; margin-top: 0.4em; }
+  .reveal .coin p { margin: 0; }
+  .reveal .coin .lede { color: #cfd4dc; margin-bottom: 0.5em; }
+  .reveal .coin table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
+  .reveal .coin th, .reveal .coin td { padding: 0.28em 0.45em; border: none; border-bottom: 1px solid #3a3f47; text-align: right; vertical-align: bottom; }
+  .reveal .coin th:first-child, .reveal .coin td:first-child { text-align: left; }
+  .reveal .coin th { color: #fff; font-weight: 700; }
+  .reveal .coin th span, .reveal .coin td span { display: block; font-size: 0.78em; font-weight: 400; opacity: 0.6; }
+  .reveal .coin tr.src td { color: #aeb4be; }
+  .reveal .coin tr.eff td { color: #fff; font-weight: 700; border-bottom: none; }
+  .reveal .coin .way { border-left: 4px solid; padding: 0.3em 0.75em; margin-bottom: 0.5em; background: rgba(255,255,255,0.04); border-radius: 0 6px 6px 0; }
+  .reveal .coin .way .t { font-weight: 700; font-size: 1.12em; }
+  .reveal .coin .way .t span { font-weight: 400; font-size: 0.8em; opacity: 0.6; margin-left: 0.4em; }
+  .reveal .coin .see { border-color: #9ab4dd; } .reveal .coin .see .t { color: #9ab4dd; }
+  .reveal .coin .adj { border-color: #63b3a6; } .reveal .coin .adj .t { color: #63b3a6; }
+  .reveal .coin .do  { border-color: #f0a868; } .reveal .coin .do .t  { color: #f0a868; }
+  .reveal .coin .calc b { color: #fff; }
+  .reveal .coin .no { color: #e06c75; font-weight: 700; } .reveal .coin .ok { color: #63b3a6; font-weight: 700; }
+  .reveal .coin .why { opacity: 0.65; font-style: italic; }
+  .reveal .coin .formula { text-align: center; margin-top: 0.45em; font-size: 1.05em; color: #cfd4dc; }
+  .reveal .coin .formula .b { color: #9ab4dd; } .reveal .coin .formula .o { color: #f0a868; }
+  .reveal .coin .formula span { opacity: 0.6; font-style: italic; }
   </style>
 
 ---
@@ -1195,20 +1219,62 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 - **do(x)** — reach in, *set* x by hand, cutting its usual causes
 - That severed graph is what an experiment *is* — randomise, don't just watch
 - **Verifying and causing are one move**
-- To do experiments and find cause, you need a body
 :::
 
-<div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.25em;">
-<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><img src="images/do-intervention.svg" style="height:250px;width:auto;display:block;"/></a>
-<div style="flex:0 1 590px;min-width:0;height:250px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden, one day at a time, showing the five nodes of the diagram: sun or cloud for the season, the sprinkler, rain, grass that darkens when wet, and a yellow caution sign on days the grass is slippery. First the sprinkler follows the season and is only observed: on in the dry season, off in the rainy one. Then it is set on or off by hand in both seasons. A panel counts slippery days: observing, sprinkler on 50% versus off 50%; intervening, do(on) 50% versus do(off) 25%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+<div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.4em;">
+<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><img src="images/do-intervention.svg" style="height:270px;width:auto;display:block;"/></a>
+<div style="flex:0 1 620px;min-width:0;height:270px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden in Mumbai, one real day at a time, showing the five nodes of the diagram: sun or monsoon cloud for the season, the sprinkler, that day's real rain, grass that darkens when wet, and a yellow caution sign when the grass is slippery. First a gardener decides, watering most dry-season days and few monsoon days; then a tossed coin decides, whatever the season. A data table fills in, one tile per day, by sprinkler on or off and by dry season or monsoon. Observing, the sprinkler's on days are mostly dry-season days and its off days mostly monsoon days: slippery 100% versus 50%. With the coin, both rows get the same seasons: 100% versus 25%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
 </div>
 
 ::: {.notes}
-The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler on cuts the arrow from Season, so nothing upstream explains it away, and what flows down to the wet — and slippery — grass is pure cause. That severed edge is the whole idea of the do-operator.
+The unification. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler cuts the arrow from Season, so nothing upstream explains it away, and what flows down to the wet — and slippery — grass is pure cause. That severed edge is the whole idea of the do-operator.
 
-Then turn to the garden — the same five nodes, one day at a time. Name the mapping once: sun or cloud is Season, the spray is Sprinkler, the streaks are Rain, the grass darkening is Grass wet, and the yellow caution sign is Grass slippery. Each day sets all five nodes and drops one dot in the panel; yellow dots are slippery days. It runs a 31-second loop that restarts when you land on the slide. First we only *observe*: in the dry season the gardener runs the sprinkler; in the rainy season it rains and the sprinkler stays off. Wet grass is slippery about half the time, so the sign goes up on some wet days and not others — that is the Grass wet → Grass slippery arrow, and it is meant to look like a coin toss. Point at the panel: observing, the sprinkler looks harmless — half the sprinkler days slippery, half the no-sprinkler days too — because sprinkler days are dry days and no-sprinkler days are rainy ones. Season hides the sprinkler's effect. Then the orange phase: we set the sprinkler by hand, on and off, in *both* seasons. That is do(sprinkler). Now the gap opens — 50% against 25%: switching it on doubles the chance the grass is slippery. If the room is watching the lawn rather than the panel, point at the days observing never showed you: dry season, sprinkler set off by hand — dry grass, no sign. That is the sprinkler's effect, isolated. Same garden, same seasons; only the question changed. The model is a deliberately tiny probability table, and the sixteen days are hand-picked so their counts match it exactly — if someone asks why the shares are so round, that is why. Illustrative, not data — but that is exactly how confounding fools you in real data.
+Then turn to the garden — the same five nodes, one real day at a time, in Mumbai. Name the mapping once: sun or monsoon cloud is Season, the spray is Sprinkler, the streaks are Rain, the grass darkening is Grass wet, the yellow sign is Grass slippery. The rain is real — what actually fell at Santacruz on each date in the caption, 1987–88 — but the gardener and the coin are made up. The loop runs about 33 seconds and restarts when you land on the slide. First we *observe*: the gardener waters most dry-season days and few monsoon days. The panel is the data table: every day drops a tile into its row, sprinkler on or off, and its column, dry or monsoon. Watching, the sprinkler adds 50 points — then point at the columns: the on row is mostly dry days and the off row mostly monsoon days, so you are comparing seasons as much as sprinklers. Then the orange phase: a coin sets the sprinkler, blind to the sky. Now both rows get the same seasons and the gap widens. Point at the do(off) row's dry column: dry grass, no sign — the days that watching almost never showed you. Same city, same seasons; only who decides changed. Sixteen days are noisy — the coin's +75 overshoots — so don't defend the number; the next slide does it with thirty years.
 
-So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
+Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice — reality only answers when you act on it. Then click on: the next slide is why a coin, specifically.
+:::
+
+---
+
+## Why the Coin Works
+
+::: {.coin}
+```{=html}
+<div class="coin-grid">
+<div>
+<p class="lede">Every Mumbai day of both seasons, 1961–90 —<br>the probabilities, known</p>
+<table>
+<thead><tr><th></th><th>dry season<span>Dec–Mar</span></th><th>monsoon<span>Jun–Sep</span></th></tr></thead>
+<tbody>
+<tr class="src"><td>it rains <span>real record</span></td><td>0.9%</td><td>67%</td></tr>
+<tr class="src"><td>gardener waters <span>assumed</span></td><td>75%</td><td>25%</td></tr>
+<tr><td>slippery if sprinkler on</td><td>100%</td><td>100%</td></tr>
+<tr><td>slippery if off</td><td>0.9%</td><td>67%</td></tr>
+<tr class="eff"><td>sprinkler&#8217;s effect</td><td>+99 pts</td><td>+33 pts</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<div class="way see fragment"><p class="t">Watch <span>season not recorded</span></p><p>its off days are &frac34; monsoon</p><p class="calc">100% &minus; 50% = <b>+50 pts</b> <span class="no">&#10007;</span></p><p class="why">thirty years of data didn&#8217;t fix it</p></div>
+<div class="way adj fragment"><p class="t">Watch + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">&frac12;&middot;99 + &frac12;&middot;33 = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">only for causes you knew to record</p></div>
+<div class="way do fragment"><p class="t">Flip a coin <span>randomise</span></p><p>its off days are &frac12; monsoon, like its on days</p><p class="calc">100% &minus; 34% = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">balances causes nobody recorded</p></div>
+</div>
+</div>
+<p class="formula fragment">see &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="b">P(s | x)</b> &emsp;&emsp; do &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="o">P(s)</b> &emsp;&emsp; <span>a coin makes the two weights equal</span></p>
+```
+:::
+
+::: {.fragment style="font-size:0.72em;margin-top:0.3em;"}
+- **Adjusting** fixes the confounders you know; a **coin** fixes them all
+- To do experiments and find cause, you need a body
+:::
+
+::: {.notes}
+This slide answers "why a coin?" — take it slowly; it is the payoff for the garden. Every number here comes from thirty years of real Mumbai rain (NOAA's Santacruz station, 1961–90, a rain day being at least a millimetre), so these are probabilities, not a sample — the noise of the sixteen days is gone, which is the point. The only made-up row is the gardener's habit, and the only assumption is that wet grass is slippery.
+
+Walk the table first. Inside a season, the sprinkler's effect never changes: in the dry season it is the only water there is, +99; in the monsoon it mostly adds to rain that was coming anyway, +33. Then one click per card. *Watch*: the gardener's off days are three-quarters monsoon, so they look slippery anyway and the sprinkler seems worth only +50. Stress that thirty years of data did not fix that — more data shrinks noise, not bias. *Record the season*: now you can fix it on paper — compare inside each season, then weight by how common each season is, half and half: +66. That is Pearl's adjustment formula, and it works — but only for the confounders you knew to write down. *Flip a coin*: +66 without knowing anything about seasons. The coin cannot see the sky, so on days and off days get the same mix of seasons — and of every other cause nobody thought to record.
+
+The formula line is for the mathematicians in the room: seeing weights each season by P(s | x), doing by P(s); the coin makes them equal, adjustment swaps them by hand. If someone asks why not just set the sprinkler by hand: you can, but if you choose by looking at the sky you are just a second gardener — the coin is what guarantees the choice is blind. Then land the last bullet slowly; it is the hinge of the back half — a coin is no use if you cannot reach the tap. That is why Section VIII turns to bodies.
 :::
 
 ---
@@ -1297,6 +1363,18 @@ The recap — tie the spine threads together one last time so they leave with th
 
 ---
 
+## Thank You {.section-divider}
+
+**Questions?**
+
+[project-delphi.github.io/ai-past-present-future-talk](https://project-delphi.github.io/ai-past-present-future-talk/){style="font-size:0.5em;opacity:0.7;"}
+
+::: {.notes}
+Say thank you plainly — to the hosts, to the committee, and to the room for staying with a long argument — then stop talking. Leave this slide up through the questions: the link is there so anyone can find the deck, the references and the image credits afterwards. If the first question is slow to come, the garden is a good place to restart: ask the room what *they* would randomise in their own research if they could.
+:::
+
+---
+
 ## Key References I
 
 *Foundations & cognition*
@@ -1340,6 +1418,15 @@ The recap — tie the spine threads together one last time so they leave with th
 - Sutton, R. (2019). *The Bitter Lesson*.
 - Chollet, F. (2019). On the measure of intelligence. *arXiv:1911.01547*.
 - Domingos, P. (2015). *The Master Algorithm*.
+
+---
+
+## Key References V
+
+*Causality & data*
+
+- Pearl, J. & Mackenzie, D. (2018). *The Book of Why*.
+- Menne, M. et al. (2012). Global Historical Climatology Network – Daily (GHCN-Daily), v3. NOAA NCEI. Station IN012070800, Bombay/Santacruz.
 
 ---
 

@@ -17,7 +17,7 @@ Rendered output (`*.html`, `*_files/`, `.quarto/`) is gitignored — commits con
 
 ## Deck structure
 
-`index.qmd` is organized as eight Roman-numeraled sections, each opened by a section-divider slide (`## I. ...` through `## VIII. ...`) tagged with the `{.section-divider}` class, which is styled (centered layout, orange heading, entrance animation) by the custom CSS in the YAML `header-includes`. The deck has a spine of four recurring threads stated up front on the "Four Threads" slide (intelligence as task solving by learning, prediction, "AI" as an ambiguous term, sample-efficient novel task solving). After section VIII comes back-matter: Key References I–IV, Image Credits, and a closing Discussion slide.
+`index.qmd` is organized as eight Roman-numeraled sections, each opened by a section-divider slide (`## I. ...` through `## VIII. ...`) tagged with the `{.section-divider}` class, which is styled (centered layout, orange heading, entrance animation) by the custom CSS in the YAML `header-includes`. The deck has a spine of four recurring threads stated up front on the "Four Threads" slide (intelligence as task solving by learning, prediction, "AI" as an ambiguous term, sample-efficient novel task solving). Section VIII ends with Key Takeaways and a "Thank You / Questions?" slide (it borrows the `{.section-divider}` style), followed by back-matter: Key References I–V, Image Credits, and a closing Discussion slide.
 
 Slide conventions — keep new slides consistent with these:
 
