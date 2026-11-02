@@ -53,31 +53,42 @@ header-includes: |
     from { opacity: 0; transform: translateY(28px) scale(0.96); }
     to   { opacity: 1; transform: translateY(0) scale(1); }
   }
-  /* "Why the Coin Works": a probability table on the left, three ways to ask it on the right */
-  .reveal .coin { font-size: 0.56em; line-height: 1.3; }
-  .reveal .coin .columns { margin-top: 0.25em; }
-  .reveal .coin .column:first-child { padding-right: 1.3em; box-sizing: border-box; }
-  .reveal .coin p { margin: 0; }
-  .reveal .coin .lede { color: #cfd4dc; margin-bottom: 0.5em; }
-  .reveal .coin table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
-  .reveal .coin th, .reveal .coin td { padding: 0.28em 0.45em; border: none; border-bottom: 1px solid #3a3f47; text-align: right; vertical-align: bottom; }
-  .reveal .coin th:first-child, .reveal .coin td:first-child { text-align: left; }
-  .reveal .coin th { color: #fff; font-weight: 700; white-space: nowrap; }
-  .reveal .coin th span, .reveal .coin td span { display: block; font-size: 0.78em; font-weight: 400; opacity: 0.6; }
-  .reveal .coin tr.src td { color: #aeb4be; }
-  .reveal .coin tr.eff td { color: #fff; font-weight: 700; border-bottom: none; }
-  .reveal .coin .way { border-left: 4px solid; padding: 0.3em 0.75em; margin-bottom: 0.5em; background: rgba(255,255,255,0.04); border-radius: 0 6px 6px 0; }
-  .reveal .coin .way .t { font-weight: 700; font-size: 1.12em; }
-  .reveal .coin .way .t span { font-weight: 400; font-size: 0.8em; opacity: 0.6; margin-left: 0.4em; }
-  .reveal .coin .see { border-color: #9ab4dd; } .reveal .coin .see .t { color: #9ab4dd; }
-  .reveal .coin .adj { border-color: #63b3a6; } .reveal .coin .adj .t { color: #63b3a6; }
-  .reveal .coin .do  { border-color: #f0a868; } .reveal .coin .do .t  { color: #f0a868; }
-  .reveal .coin .calc b { color: #fff; }
-  .reveal .coin .no { color: #e06c75; font-weight: 700; } .reveal .coin .ok { color: #63b3a6; font-weight: 700; }
-  .reveal .coin .why { opacity: 0.65; font-style: italic; }
-  .reveal .coin .formula { text-align: center; margin-top: 0.3em; font-size: 1.05em; color: #cfd4dc; }
-  .reveal .coin .formula .b { color: #9ab4dd; } .reveal .coin .formula .o { color: #f0a868; }
-  .reveal .coin .formula span { opacity: 0.6; font-style: italic; }
+  /* "Why Randomization Works": a probability table on the left, three ways to ask it on the right */
+  .reveal .whyrand { font-size: 0.56em; line-height: 1.3; }
+  .reveal .whyrand .columns { margin-top: 0.25em; }
+  .reveal .whyrand .column:first-child { padding-right: 1.3em; box-sizing: border-box; }
+  .reveal .whyrand p { margin: 0; }
+  .reveal .whyrand .lede { color: #cfd4dc; margin-bottom: 0.5em; }
+  .reveal .whyrand table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
+  .reveal .whyrand th, .reveal .whyrand td { padding: 0.28em 0.45em; border: none; border-bottom: 1px solid #3a3f47; text-align: right; vertical-align: bottom; }
+  .reveal .whyrand th:first-child, .reveal .whyrand td:first-child { text-align: left; }
+  .reveal .whyrand th { color: #fff; font-weight: 700; white-space: nowrap; }
+  .reveal .whyrand th span, .reveal .whyrand td span { display: block; font-size: 0.78em; font-weight: 400; opacity: 0.6; }
+  .reveal .whyrand tr.src td { color: #aeb4be; }
+  .reveal .whyrand tr.eff td { color: #fff; font-weight: 700; border-bottom: none; }
+  .reveal .whyrand .way { border-left: 4px solid; padding: 0.3em 0.75em; margin-bottom: 0.5em; background: rgba(255,255,255,0.04); border-radius: 0 6px 6px 0; }
+  .reveal .whyrand .way .t { font-weight: 700; font-size: 1.12em; }
+  .reveal .whyrand .way .t span { font-weight: 400; font-size: 0.8em; opacity: 0.6; margin-left: 0.4em; }
+  .reveal .whyrand .see { border-color: #9ab4dd; } .reveal .whyrand .see .t { color: #9ab4dd; }
+  .reveal .whyrand .adj { border-color: #63b3a6; } .reveal .whyrand .adj .t { color: #63b3a6; }
+  .reveal .whyrand .do  { border-color: #f0a868; } .reveal .whyrand .do .t  { color: #f0a868; }
+  .reveal .whyrand .calc b { color: #fff; }
+  .reveal .whyrand .no { color: #e06c75; font-weight: 700; } .reveal .whyrand .ok { color: #63b3a6; font-weight: 700; }
+  .reveal .whyrand .why { opacity: 0.65; font-style: italic; }
+  .reveal .whyrand .formula { text-align: center; margin-top: 0.3em; font-size: 1.05em; color: #cfd4dc; }
+  .reveal .whyrand .formula .b { color: #9ab4dd; } .reveal .whyrand .formula .o { color: #f0a868; }
+  .reveal .whyrand .formula span { opacity: 0.6; font-style: italic; }
+  /* "What 'Off' Tells You": two mosaics, area = probability */
+  .reveal .bayes { font-size: 0.56em; line-height: 1.3; }
+  .reveal .bayes p { margin: 0; }
+  .reveal .bayes .column:first-child { padding-right: 0.9em; box-sizing: border-box; }
+  .reveal .bayes .column:last-child { padding-left: 0.9em; box-sizing: border-box; }
+  .reveal .bayes .who { font-weight: 700; font-size: 1.12em; }
+  .reveal .bayes .who span { font-weight: 400; font-size: 0.8em; opacity: 0.6; margin-left: 0.4em; }
+  .reveal .bayes .see { color: #9ab4dd; } .reveal .bayes .do { color: #f0a868; }
+  .reveal .bayes .mosaic { width: 100%; height: auto; display: block; margin: 0.2em 0 0.4em; }
+  .reveal .bayes .eq { color: #e3e6ec; } .reveal .bayes .eq b { color: #fff; }
+  .reveal .bayes .note { opacity: 0.65; font-style: italic; margin-bottom: 0.25em; }
   </style>
 
 ---
@@ -1222,24 +1233,68 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 - **Verifying and causing are one move**
 :::
 
+```{=html}
 <div style="display:flex;justify-content:center;align-items:center;gap:0.5em;margin-top:0.4em;">
-<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><img src="images/do-intervention.svg" style="height:270px;width:auto;display:block;"/></a>
-<div style="flex:0 1 620px;min-width:0;height:270px;"><canvas class="viz3d" data-scene="garden" role="img" aria-label="Animated 3D garden in Mumbai, one real day at a time, showing the five nodes of the diagram: sun or monsoon cloud for the season, the sprinkler, that day's real rain, grass that darkens when wet, and a yellow caution sign when the grass is slippery. First a gardener decides, watering most dry-season days and few monsoon days; then a tossed coin decides, whatever the season. A data table fills in, one tile per day, by sprinkler on or off and by dry season or monsoon. Observing, the sprinkler's on days are mostly dry-season days and its off days mostly monsoon days: slippery 100% versus 50%. With the coin, both rows get the same seasons: 100% versus 25%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
+<a href="https://en.wikipedia.org/wiki/Causal_inference" target="_blank" rel="noopener" style="text-decoration:none;flex:0 0 auto;"><svg id="garden-dag" viewBox="0 0 680 400" role="img" aria-label="Two causal diagrams that light up with each day of the garden. See: Season drives the Gardener, who sets the Sprinkler; Season also drives Rain; Sprinkler and Rain wet the grass; wet grass is slippery. Do, at random: Randomization sets the Sprinkler, and the arrow from Season is cut." style="height:270px;width:459px;display:block;" font-family="-apple-system, Helvetica, Arial, sans-serif"><defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#9ab4dd"/></marker><marker id="aho" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#f0a868"/></marker></defs><g data-p="see"><text x="150" y="24" text-anchor="middle" fill="#9aa0aa" font-size="17" font-style="italic">See &#183; P(slippery | sprinkler)</text><g data-e="season-decider"><line x1="128.2" y1="79.3" x2="94.8" y2="111.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="decider-sprinkler"><line x1="66.3" y1="162.0" x2="64.1" y2="192.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="season-rain"><line x1="165.4" y1="80.6" x2="221.4" y2="162.7" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="sprinkler-wet"><line x1="88.6" y1="242.6" x2="117.5" y2="264.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="rain-wet"><line x1="220.8" y1="211.4" x2="174.7" y2="262.6" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="wet-slip"><line x1="150.0" y1="315.0" x2="150.0" y2="333.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-n="season"><ellipse cx="150" cy="58" rx="48" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="63" fill="#fff" font-size="15" text-anchor="middle">Season</text></g><g data-n="rain"><ellipse cx="240" cy="190" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="240" y="195" fill="#fff" font-size="15" text-anchor="middle">Rain</text></g><g data-n="sprinkler"><ellipse cx="62" cy="222" rx="54" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="62" y="227" fill="#fff" font-size="15" text-anchor="middle">Sprinkler</text></g><g data-n="wet"><ellipse cx="150" cy="290" rx="56" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="295" fill="#fff" font-size="15" text-anchor="middle">Grass wet</text></g><g data-n="slip"><ellipse cx="150" cy="364" rx="66" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="369" fill="#fff" font-size="14" text-anchor="middle">Grass slippery</text></g><g data-n="decider"><ellipse cx="68" cy="138" rx="62" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="68" y="143" fill="#fff" font-size="15" text-anchor="middle">Gardener</text></g></g><line x1="340" y1="12" x2="340" y2="388" stroke="#3a3f47" stroke-width="1.5" stroke-dasharray="4 5"/><g data-p="do" transform="translate(340,0)"><text x="150" y="24" text-anchor="middle" fill="#f0a868" font-size="17" font-style="italic">Do, at random &#183; P(slippery | do(sprinkler))</text><g stroke="#e06c75" stroke-width="2.2" opacity="0.6" stroke-dasharray="5 4"><line x1="128.2" y1="79.3" x2="115.0" y2="92.1"/><line x1="103.7" y1="103.2" x2="90.5" y2="116.1"/></g><text x="109.3" y="103.7" text-anchor="middle" fill="#e06c75" font-size="17" font-weight="bold">&#10005;</text><g data-e="decider-sprinkler"><line x1="66.3" y1="162.0" x2="64.1" y2="192.0" stroke="#f0a868" stroke-width="2.6" marker-end="url(#aho)"/></g><g data-e="season-rain"><line x1="165.4" y1="80.6" x2="221.4" y2="162.7" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="sprinkler-wet"><line x1="88.6" y1="242.6" x2="117.5" y2="264.9" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="rain-wet"><line x1="220.8" y1="211.4" x2="174.7" y2="262.6" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-e="wet-slip"><line x1="150.0" y1="315.0" x2="150.0" y2="333.0" stroke="#9ab4dd" stroke-width="2.6" marker-end="url(#ah)"/></g><g data-n="season"><ellipse cx="150" cy="58" rx="48" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="63" fill="#fff" font-size="15" text-anchor="middle">Season</text></g><g data-n="rain"><ellipse cx="240" cy="190" rx="42" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="240" y="195" fill="#fff" font-size="15" text-anchor="middle">Rain</text></g><g data-n="sprinkler"><ellipse cx="62" cy="222" rx="54" ry="21" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="62" y="227" fill="#fff" font-size="15" text-anchor="middle">Sprinkler</text></g><g data-n="wet"><ellipse cx="150" cy="290" rx="56" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="295" fill="#fff" font-size="15" text-anchor="middle">Grass wet</text></g><g data-n="slip"><ellipse cx="150" cy="364" rx="66" ry="22" fill="#3f6aa0" stroke="#7aa0e0" stroke-width="1.5"/><text x="150" y="369" fill="#fff" font-size="14" text-anchor="middle">Grass slippery</text></g><g data-n="decider"><ellipse cx="68" cy="138" rx="62" ry="21" fill="#f0a868" stroke="#f6c89a" stroke-width="1.5"/><text x="68" y="143" fill="#1a1a1a" font-size="14" text-anchor="middle" font-weight="700">Randomization</text></g></g></svg></a>
+<div style="flex:0 1 620px;min-width:0;height:270px;"><canvas class="viz3d" data-scene="garden" data-dag="garden-dag" role="img" aria-label="Animated 3D garden in Mumbai, one real day at a time, beside a causal diagram that lights up with each day: the season, then the gardener&#8217;s decision and the rain, then wet grass, then slippery. The garden shows sun or monsoon cloud, the sprinkler, that day&#8217;s real rain, grass that darkens when wet, and a yellow caution sign when the grass is slippery. First we see: a gardener decides by the season, watering most dry-season days and few monsoon days. Then we do, at random: randomization sets the sprinkler, whatever the season. A data table fills in, one tile per day, by sprinkler on or off and by dry season or monsoon. Seeing, the sprinkler&#8217;s on days are mostly dry-season days and its off days mostly monsoon days: slippery 100% versus 50%. With randomization, both rows get the same seasons: 100% versus 25%." style="width:100%;height:100%;border-radius:8px;background:#1c1c1c;display:block;"></canvas></div>
 </div>
+```
 
 ::: {.notes}
-The unification. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler cuts the arrow from Season, so nothing upstream explains it away, and what flows down to the wet — and slippery — grass is pure cause. That severed edge is the whole idea of the do-operator.
+The unification. An experiment is literally an intervention — do(x) is what you are doing when you randomise. The diagram on the left now shows the mechanism that Pearl's single arrow hides: the season drives the *gardener*, the gardener sets the sprinkler, and the season also drives the rain; sprinkler and rain both wet the grass, and wet grass is slippery. On the See side, seeing the sprinkler on also tells you the gardener's reason — the season — and the season told the rain: the correlation is contaminated. On the Do side, randomization sets the sprinkler and the arrow from Season is cut, so nothing upstream explains it away, and what flows down to the wet — and slippery — grass is pure cause.
 
-Then turn to the garden — the same five nodes, one real day at a time, in Mumbai. Name the mapping once: sun or monsoon cloud is Season, the spray is Sprinkler, the streaks are Rain, the grass darkening is Grass wet, the yellow sign is Grass slippery. The rain is real — what actually fell at Santacruz on each date in the caption, 1987–88 — but the gardener and the coin are made up. The loop runs about 33 seconds and restarts when you land on the slide. First we *observe*: the gardener waters most dry-season days and few monsoon days. The panel is the data table: every day drops a tile into its row, sprinkler on or off, and its column, dry or monsoon. Watching, the sprinkler adds 50 points — then point at the columns: the on row is mostly dry days and the off row mostly monsoon days, so you are comparing seasons as much as sprinklers. Then the orange phase: a coin sets the sprinkler, blind to the sky. Now both rows get the same seasons and the gap widens. Point at the do(off) row's dry column: dry grass, no sign — the days that watching almost never showed you. Same city, same seasons; only who decides changed. Sixteen days are noisy — the coin's +75 overshoots — so don't defend the number; the next slide does it with thirty years.
+Then let the garden play — one real Mumbai day at a time — and the diagram lights up with it, in causal order: the season first, then the gardener's decision and the rain, then wet grass, then slippery. Name the mapping once: sun or monsoon cloud is Season, the spray is Sprinkler, the streaks are Rain, the darkening grass is Grass wet, the yellow sign and node are Grass slippery. The rain is real — what fell at Santacruz on each date in the caption, 1987–88 — but the gardener's choices and the random draws are made up. The loop runs about 33 seconds and restarts when you land on the slide. First we *see*. The captions say *so* when the gardener follows the season and *but* when they don't — that is the hidden mechanism in words. The moment to point at is a monsoon day the gardener skips: Season lights up *both* the gardener's "off" and the rain. That fork is why seeing misleads. The panel is the data table: every day drops a tile into its row, sprinkler on or off, and its column, dry or monsoon. Seeing, the sprinkler adds 50 points — but the on row is mostly dry days and the off row mostly monsoon days, so you are comparing seasons as much as sprinklers. Then the orange phase: *do*, at random — a random draw sets the sprinkler, blind to the sky, and on the diagram the cut arrow means the season can no longer reach it. Now both rows get the same seasons and the gap widens. Point at the do(off) row's dry column: dry grass, no sign — the days that seeing almost never showed you. Same city, same seasons; only who decides changed. Sixteen days are noisy — randomization's +75 overshoots — so don't defend the number; the next slides do it with thirty years.
 
-Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice — reality only answers when you act on it. Then click on: the next slide is why a coin, specifically.
+Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice — reality only answers when you act on it. Then click on: the next two slides are why randomization works — first what Bayes' rule says about it, then the three ways to the answer side by side.
 :::
 
 ---
 
-## Why the Coin Works
+## What "Off" Tells You
 
-::: {.coin}
+:::: {style="font-size:0.5em; margin-top:0.05em;"}
+$$\underset{\color{#f0a868}{\text{posterior}}}{\color{#f0a868}{P(\text{monsoon} \mid \text{off})}} \;=\; \frac{\underset{\color{#63b3a6}{\text{likelihood}}}{\color{#63b3a6}{P(\text{off} \mid \text{monsoon})}}\;\cdot\;\underset{\color{#7aa0e0}{\text{prior}}}{\color{#7aa0e0}{P(\text{monsoon})}}}{\underset{\color{#9aa0aa}{\text{evidence}}}{\color{#9aa0aa}{P(\text{off})}}}$$
+::::
+
+::: {.bayes}
+:::: {.columns}
+::: {.column width="50%"}
+```{=html}
+<p class="who see">See <span>the gardener decides, by the season</span></p>
+<svg viewBox="0 0 412 164" class="mosaic" role="img" aria-label="Mosaic, area is probability. See: the gardener decides. the dry season and the monsoon are half the days each; the sprinkler is off on a quarter of dry days and three quarters of monsoon days, so three quarters of the off area is monsoon. Rain falls on 0.9 percent of dry days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">½</tspan></text><rect x="0.0" y="24.0" width="201.0" height="99.0" rx="3" fill="#2a2f37"/><text x="8.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¾</tspan></text><rect x="0.0" y="127.0" width="201.0" height="33.0" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2"/><rect x="1.0" y="157.8" width="199.0" height="1.2" fill="#f2cc3d" opacity="0.92"/><text x="8.0" y="143.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¼</tspan></text><text x="193.0" y="143.0" fill="#f2cc3d" font-size="13" text-anchor="end">rain 0.9%</text><text x="213.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">½</tspan></text><rect x="211.0" y="24.0" width="201.0" height="33.0" rx="3" fill="#2a2f37"/><text x="219.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">¼</tspan></text><rect x="211.0" y="61.0" width="201.0" height="99.0" rx="3" fill="#1d2127" stroke="#9ab4dd" stroke-width="2"/><rect x="212.0" y="92.9" width="199.0" height="66.1" fill="#f2cc3d" opacity="0.92"/><text x="219.0" y="77.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">¾</tspan></text><text x="311.5" y="130.9" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg>
+<p class="eq">P(monsoon | off) = ¾ · ½ ÷ ½ = <b>¾</b></p>
+<p class="note">likelihood ratio ¾ ÷ ¼ = 3: &#8220;off&#8221; triples the odds</p>
+<p class="eq">P(slippery | off) = ¼ · 0.9% + ¾ · 67% = <b>50%</b></p>
+```
+:::
+::: {.column width="50%"}
+```{=html}
+<p class="who do">Do <span>at random: randomization decides</span></p>
+<svg viewBox="0 0 412 164" class="mosaic" role="img" aria-label="Mosaic, area is probability. Do, at random: randomization decides. the dry season and the monsoon are half the days each; the sprinkler is off on half the days in both, so half of the off area is monsoon, the same as before looking. Rain falls on 0.9 percent of dry days and 67 percent of monsoon days."><text x="2.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">dry season <tspan fill="#7aa0e0">½</tspan></text><rect x="0.0" y="24.0" width="201.0" height="66.0" rx="3" fill="#2a2f37"/><text x="8.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="0.0" y="94.0" width="201.0" height="66.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2"/><rect x="1.0" y="157.8" width="199.0" height="1.2" fill="#f2cc3d" opacity="0.92"/><text x="8.0" y="110.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="193.0" y="110.0" fill="#f2cc3d" font-size="13" text-anchor="end">rain 0.9%</text><text x="213.0" y="15" fill="#cfd4dc" font-size="13.5" font-weight="700">monsoon <tspan fill="#7aa0e0">½</tspan></text><rect x="211.0" y="24.0" width="201.0" height="66.0" rx="3" fill="#2a2f37"/><text x="219.0" y="40.0" fill="#8b919a" font-size="13">on <tspan fill="#63b3a6">½</tspan></text><rect x="211.0" y="94.0" width="201.0" height="66.0" rx="3" fill="#1d2127" stroke="#f0a868" stroke-width="2"/><rect x="212.0" y="114.9" width="199.0" height="44.1" fill="#f2cc3d" opacity="0.92"/><text x="219.0" y="110.0" fill="#fff" font-size="13" font-weight="700">off <tspan fill="#63b3a6">½</tspan></text><text x="311.5" y="142.0" fill="#1a1a1a" font-size="13" font-weight="700" text-anchor="middle">rain 67%</text></svg>
+<p class="eq">P(monsoon | off) = ½ · ½ ÷ ½ = <b>½</b></p>
+<p class="note">likelihood ratio ½ ÷ ½ = 1: no news</p>
+<p class="eq">P(slippery | off) = ½ · 0.9% + ½ · 67% = <b>34%</b></p>
+```
+:::
+::::
+:::
+
+::: {.fragment style="font-size:0.72em;margin-top:0.2em;"}
+- Inside each season the panels agree; only the **weights**, P(season | off), differ
+- Randomization's likelihood ratio is 1: **posterior = prior**, even for unrecorded causes
+:::
+
+::: {.notes}
+The engine under the garden, in the Bayes' rule we met with the Bayesians — same colours on purpose. Ask the room one question: you walk past and see the sprinkler off; what have you just learned about the season? Then read the See mosaic, where every rectangle's area is a probability. The widths are the seasons, half each — the prior. The heights are the gardener's habit — off on a quarter of dry days, three-quarters of monsoon days — the likelihood: the hidden mechanism from the last slide, in numbers. So the off band is lopsided: three-quarters of its area is monsoon. That is Bayes' rule done with rectangles — seeing "off" triples the odds of monsoon. And monsoon days come with rain, the yellow, so the gardener's off days are half slippery for reasons that have nothing to do with the sprinkler. Under each mosaic, the second line is the law of total probability — the same "average over the hypotheses" as the Bayesians slide, with the seasons as the hypotheses and the posterior as the weights.
+
+Now the Do mosaic. Randomization switches the sprinkler off on half the days in both seasons: likelihood ratio one. The off band is level, the posterior is the prior, and the off days are a fair sample of the weather — 34%. Click, and land the two lines. First: inside each column the yellow share is identical in both mosaics — 0.9% and 67% — so seeing and doing agree about every season; they disagree only about the weights. That is why recording the season works. Second, the one to land: a random "off" tells you nothing about the season — or about anything else, including the causes nobody wrote down. That is what randomization buys. Then click on for the three ways side by side.
+:::
+
+---
+
+## Why Randomization Works
+
+::: {.whyrand}
 :::: {.columns}
 ::: {.column width="48%"}
 ```{=html}
@@ -1258,28 +1313,28 @@ Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we
 :::
 ::: {.column width="52%"}
 ```{=html}
-<div class="way see fragment"><p class="t">Watch <span>season not recorded</span></p><p>its off days are &frac34; monsoon</p><p class="calc">100% &minus; 50% = <b>+50 pts</b> <span class="no">&#10007;</span></p><p class="why">thirty years of data didn&#8217;t fix it</p></div>
-<div class="way adj fragment"><p class="t">Watch + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">&frac12;&middot;99 + &frac12;&middot;33 = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">only for causes you knew to record</p></div>
-<div class="way do fragment"><p class="t">Flip a coin <span>randomise</span></p><p>its off days are &frac12; monsoon, like its on days</p><p class="calc">100% &minus; 34% = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">balances causes nobody recorded</p></div>
+<div class="way see fragment"><p class="t">See <span>season not recorded</span></p><p>P(monsoon | off) = &frac34;, by Bayes</p><p class="calc">100% &minus; 50% = <b>+50 pts</b> <span class="no">&#10007;</span></p><p class="why">thirty years of data didn&#8217;t fix it</p></div>
+<div class="way adj fragment"><p class="t">See + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">&frac12;&middot;99 + &frac12;&middot;33 = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">only for causes you knew to record</p></div>
+<div class="way do fragment"><p class="t">Do <span>at random</span></p><p>P(monsoon | off) = &frac12;, the prior</p><p class="calc">100% &minus; 34% = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">balances causes nobody recorded</p></div>
 ```
 :::
 ::::
 ```{=html}
-<p class="formula fragment">see &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="b">P(s | x)</b> &emsp;&emsp; do &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="o">P(s)</b> &emsp;&emsp; <span>a coin makes the two weights equal</span></p>
+<p class="formula fragment">see &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="b">P(s | x)</b> &emsp;&emsp; do &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="o">P(s)</b> &emsp;&emsp; <span>seeing weights by the posterior, doing by the prior</span></p>
 ```
 :::
 
 ::: {.fragment style="font-size:0.72em;margin-top:0.15em;"}
-- **Adjusting** fixes the confounders you know; a **coin** fixes them all
+- **Adjusting** fixes the confounders you know; **randomization** fixes them all
 - To do experiments and find cause, you need a body
 :::
 
 ::: {.notes}
-This slide answers "why a coin?" — take it slowly; it is the payoff for the garden. Every number here comes from thirty years of real Mumbai rain (NOAA's Santacruz station, 1961–90, a rain day being at least a millimetre), so these are probabilities, not a sample — the noise of the sixteen days is gone, which is the point. The only made-up row is the gardener's habit, and the only assumption is that wet grass is slippery.
+The synthesis — the Bayes slide showed the mechanism; this puts the three ways to the answer side by side. Every number here comes from thirty years of real Mumbai rain (NOAA's Santacruz station, 1961–90, a rain day being at least a millimetre), so these are probabilities, not a sample — the noise of the sixteen days is gone, which is the point. The only made-up row is the gardener's habit, and the only assumption is that wet grass is slippery.
 
-Walk the table first. Inside a season, the sprinkler's effect never changes: in the dry season it is the only water there is, +99; in the monsoon it mostly adds to rain that was coming anyway, +33. Then one click per card. *Watch*: the gardener's off days are three-quarters monsoon, so they look slippery anyway and the sprinkler seems worth only +50. Stress that thirty years of data did not fix that — more data shrinks noise, not bias. *Record the season*: now you can fix it on paper — compare inside each season, then weight by how common each season is, half and half: +66. That is Pearl's adjustment formula, and it works — but only for the confounders you knew to write down. *Flip a coin*: +66 without knowing anything about seasons. The coin cannot see the sky, so on days and off days get the same mix of seasons — and of every other cause nobody thought to record.
+Walk the table first. Inside a season, the sprinkler's effect never changes: in the dry season it is the only water there is, +99; in the monsoon it mostly adds to rain that was coming anyway, +33. Then one click per card. *See*: Bayes said the gardener's off days are three-quarters monsoon, so they look slippery anyway and the sprinkler seems worth only +50. Stress that thirty years of data did not fix that — more data shrinks noise, not bias. *See, and record the season*: now you can fix it on paper — compare inside each season, then weight by how common each season is, half and half: +66. That is Pearl's adjustment formula, and it works — but only for the confounders you knew to write down. *Do, at random*: +66 without knowing anything about seasons. A random draw cannot see the sky, so on days and off days get the same mix of seasons — and of every other cause nobody thought to record.
 
-The formula line is for the mathematicians in the room: seeing weights each season by P(s | x), doing by P(s); the coin makes them equal, adjustment swaps them by hand. If someone asks why not just set the sprinkler by hand: you can, but if you choose by looking at the sky you are just a second gardener — the coin is what guarantees the choice is blind. Then land the last bullet slowly; it is the hinge of the back half — a coin is no use if you cannot reach the tap. That is why Section VIII turns to bodies.
+The formula line is the last slide in one row: seeing weights each season by the posterior P(s | x), doing by the prior P(s); randomization makes them equal, adjustment swaps them by hand. If someone asks why not just set the sprinkler by hand: you can, but if you choose by looking at the sky you are just a second gardener — randomization is what guarantees the choice is blind. Then land the last bullet slowly; it is the hinge of the back half — you cannot randomize what you cannot reach. That is why Section VIII turns to bodies.
 :::
 
 ---
