@@ -807,7 +807,7 @@ A fourth new source, over the last 50 years:
 - **Computers** — synthesis at scale
 :::
 ::: {.column width="42%"}
-<canvas class="viz3d" data-scene="roll" role="img" aria-label="Animated 3D point cloud: a rolled-up sheet of points unrolls into a flat strip, showing that three coordinates per point hide a two-dimensional structure." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="roll" role="img" aria-label="Animated 3D scene: points on a faint, colour-graded rolled-up sheet, seen from above; the sheet unrolls into a flat strip facing the viewer, showing that three coordinates per point hide a two-dimensional structure." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Compression is finding the structure — 3 numbers per point, 2 that matter</div>
 :::
 ::::
@@ -1002,7 +1002,7 @@ The five on the map are the Bolivarian nations — Venezuela, Colombia, Ecuador,
     <figcaption style="font-size:0.32em;opacity:.55;margin:0.15em 0 0 0;line-height:1.2;">John H. Holland</figcaption>
   </figure>
   <figure style="margin:0;text-align:center;width:100%;">
-    <canvas class="viz3d" data-scene="landscape" role="img" aria-label="Animated 3D fitness landscape with a population of orange dots climbing towards its peaks over successive generations." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+    <canvas class="viz3d" data-scene="landscape" role="img" aria-label="Animated 3D fitness landscape with a population of orange dots climbing towards its peaks over successive generations; pale dots are elites carried over unchanged, and a white ring marks the best point found so far." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
     <figcaption style="font-size:0.3em;opacity:.55;margin:0.12em 0 0 0;line-height:1.2;">Selection on a fitness landscape — a population climbs, some get stuck</figcaption>
   </figure>
 </div>
@@ -1062,7 +1062,7 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 <img src="images/ussr-flag.svg" style="width:74px;border-radius:3px;display:inline-block;vertical-align:middle;margin-left:0.7em;opacity:0.9;"/>
 </div>
 <div style="font-size:0.32em;opacity:.55;line-height:1.2;text-align:center;">Vladimir Vapnik — co-inventor of the SVM</div>
-<canvas class="viz3d" data-scene="kernel" role="img" aria-label="Animated 3D scene: tangled teal and orange points on a plane are lifted into three dimensions, where a flat blue plane separates them." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<canvas class="viz3d" data-scene="kernel" role="img" aria-label="Animated 3D scene: tangled teal and orange points on a plane are lifted into three dimensions on thin stems, where a flat blue plane separates them." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
 <div style="font-size:0.3em; opacity:.55; line-height:1.3; text-align:center;">The kernel trick — lift to a space where a flat plane separates them</div>
 </div>
 :::
@@ -1206,7 +1206,7 @@ The photo is Pearl at NeurIPS, standing at his own poster — the notation behin
 ::: {.notes}
 The unification, and the bridge out of this section. An experiment is literally an intervention — do(x) is what you are doing when you randomise. Walk the two graphs: on the left you only *observe* the sprinkler, so seeing it on also tells you the season, and the season told the rain — the correlation is contaminated. On the right you *do* it: forcing the sprinkler on cuts the arrow from Season, so nothing upstream explains it away, and what reaches the wet grass is pure cause. That severed edge is the whole idea of the do-operator.
 
-Then turn to the garden — the same graph with weather in it. It runs a 28-second loop that restarts when you land on the slide. First we only *watch*: in the dry season the gardener runs the hose and the patch around the sprinkler gets wet; in the rainy season it rains everywhere and the hose stays off. Some walkers slip on the wet grass. Point at the panel: watching, the hose looks harmless — about a third of people slip whether it is on or off, a one-point difference — because hose days are dry days and no-hose days are rainy ones. Season hides the hose's effect. Then the orange phase: we set the hose by hand, on and off, in *both* seasons. That is do(hose). Now the gap opens — 39% against 23%, sixteen points. Same garden, same weather; only the question changed. The numbers come from one small probability table, so they are illustrative, not data — but that is exactly how confounding fools you in real data.
+Then turn to the garden — the same graph with weather in it. It runs a 28-second loop that restarts when you land on the slide. First we only *watch*: in the dry season the gardener runs the hose and the patch around the sprinkler gets wet; in the rainy season it rains everywhere and the hose stays off. Some walkers slip on the wet grass. Point at the panel: watching, the hose looks harmless — about a third of people slip whether it is on or off, a one-point difference — because hose days are dry days and no-hose days are rainy ones. Season hides the hose's effect. Then the orange phase: we set the hose by hand, on and off, in *both* seasons. That is do(hose). Now the gap opens — 39% against 23%, sixteen points. If the room is watching the lawn rather than the panel, point at the one stretch where nobody falls: dry season, hose set off by hand. That is the hose's effect, isolated. Same garden, same weather; only the question changed. The numbers come from one small probability table, so they are illustrative, not data — but that is exactly how confounding fools you in real data.
 
 So the verifier from *Reality Gets a Vote* and the ladder we have just walked are the same idea seen twice: reality only answers when you act on it. That is why Section VIII turns to bodies. Land the last bullet slowly; it is the hinge of the back half.
 :::
