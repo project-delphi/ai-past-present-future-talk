@@ -530,33 +530,13 @@ This list is doing double duty — tell the audience to remember it, because in 
 - Human parallel: a student with an answer key
 :::
 ::: {.column width="44%"}
-<svg viewBox="0 0 260 200" width="100%" style="max-width:340px" font-family="sans-serif">
-  <defs>
-    <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
-    </marker>
-  </defs>
-  <rect x="14" y="40" width="58" height="34" rx="6" fill="#2b2f36" stroke="#b9bdc6"/>
-  <text x="43" y="61" fill="#e6e6e9" font-size="11" text-anchor="middle">input x</text>
-  <rect x="100" y="40" width="60" height="34" rx="6" fill="#2b2f36" stroke="#f0a868"/>
-  <text x="130" y="61" fill="#f0a868" font-size="11" text-anchor="middle">model</text>
-  <rect x="188" y="40" width="58" height="34" rx="6" fill="#2b2f36" stroke="#b9bdc6"/>
-  <text x="217" y="61" fill="#e6e6e9" font-size="11" text-anchor="middle">ŷ</text>
-  <line x1="72" y1="57" x2="98" y2="57" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
-  <line x1="160" y1="57" x2="186" y2="57" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="188" y="120" width="58" height="34" rx="6" fill="#2b2f36" stroke="#63b3a6"/>
-  <text x="217" y="141" fill="#63b3a6" font-size="11" text-anchor="middle">label y</text>
-  <line x1="217" y1="120" x2="217" y2="76" stroke="#9aa0aa" stroke-width="1.5" marker-end="url(#ar)"/>
-  <text x="235" y="100" fill="#b9bdc6" font-size="9">error</text>
-  <path d="M188,137 C120,137 120,80 132,76" fill="none" stroke="#e06c75" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#ar)"/>
-  <text x="120" y="120" fill="#b9bdc6" font-size="9" text-anchor="middle">adjust</text>
-  <text x="130" y="185" fill="#b9bdc6" font-size="9" text-anchor="middle">the answer key supervises</text>
-</svg>
+<canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with three orange balls rolling downhill by gradient descent." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Error is measured against the labels — each ball is a model sliding down it</div>
 :::
 ::::
 
 ::: {.notes}
-The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
+The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
 :::
 
 ---
@@ -629,27 +609,13 @@ Keep this short — it's the setup for the "unifying view" two slides on. No lab
 - Human parallel: a child learning by trial, reward, and consequence
 :::
 ::: {.column width="44%"}
-<svg viewBox="0 0 300 200" width="100%" style="max-width:340px" font-family="sans-serif">
-  <defs>
-    <marker id="ar3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa0aa"/>
-    </marker>
-  </defs>
-  <rect x="90" y="24" width="120" height="38" rx="8" fill="#2b2f36" stroke="#f0a868" stroke-width="2"/>
-  <text x="150" y="48" fill="#f0a868" font-size="12" text-anchor="middle">Agent</text>
-  <rect x="90" y="138" width="120" height="38" rx="8" fill="#2b2f36" stroke="#b9bdc6"/>
-  <text x="150" y="162" fill="#e6e6e9" font-size="12" text-anchor="middle">Environment</text>
-  <path d="M206,62 C246,80 246,120 206,138" fill="none" stroke="#9aa0aa" stroke-width="1.6" marker-end="url(#ar3)"/>
-  <text x="268" y="103" fill="#b9bdc6" font-size="10" text-anchor="middle">action</text>
-  <path d="M94,138 C54,120 54,80 94,62" fill="none" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#ar3)"/>
-  <text x="28" y="98" fill="#63b3a6" font-size="10" text-anchor="middle">state</text>
-  <text x="28" y="111" fill="#63b3a6" font-size="10" text-anchor="middle">+ reward</text>
-</svg>
+<canvas class="viz3d" data-scene="gridworld" role="img" aria-label="Animated 3D grid world: an agent learns by Q-learning, and tiles rise towards the teal goal tile as value spreads back from the reward." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">The agent acts, the grid returns state + reward — tiles rise toward the reward</div>
 :::
 ::::
 
 ::: {.notes}
-No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
+No fixed dataset — the agent acts, gets reward or penalty, and generates its own training signal. The 3D grid is real Q-learning: the teal tile is the reward, the red tiles are penalties, and tile height is how valuable the agent currently thinks each square is. Watch the value spread backwards from the goal over the first ten or so seconds, then the path stabilises; it resets and relearns every forty seconds. This is what beat the world at Go and, more to the point, it's the "RLHF" tuning that turned a raw next-token predictor into a helpful chatbot. Flag the connection: this is the second half of the recipe I'm about to name. A child learning a hot stove is the whole idea in one image.
 :::
 
 ---
@@ -849,6 +815,8 @@ Walk the pipeline slowly, it's the backbone of the section: raw data, compress o
 
 ## Knowledge as Compression
 
+:::: {.columns}
+::: {.column style="width:58%; font-size:0.82em;"}
 Three traditional sources of knowledge:
 
 - **Genes** — survival encoded by evolution
@@ -858,9 +826,15 @@ Three traditional sources of knowledge:
 A fourth new source, over the last 50 years:
 
 - **Computers** — synthesis at scale
+:::
+::: {.column width="42%"}
+<canvas class="viz3d" data-scene="roll" role="img" aria-label="Animated 3D point cloud: a rolled-up sheet of points unrolls into a flat strip, showing that three coordinates per point hide a two-dimensional structure." style="width:100%;aspect-ratio:1/1;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Compression is finding the structure — 3 numbers per point, 2 that matter</div>
+:::
+::::
 
 ::: {.notes}
-Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
+The 3D scene is the idea in miniature: every point is stored with three coordinates, but they all lie on a rolled-up sheet, so two numbers are enough once you know the roll. Finding that sheet is compression, and it is what every learner does; say the roll is a stand-in for any hidden regularity. Four substrates that all run the same compression algorithm on different timescales: genes compress survival over evolutionary time, experience over a lifetime, culture across generations, and computers now do it at planetary scale in months. The through-line: each is prediction encoded into a different medium. Computers are just the newest, fastest substrate for an ancient process — which reframes LLMs as continuous with biology, not alien to it.
 :::
 
 ---
