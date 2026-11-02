@@ -55,13 +55,14 @@ header-includes: |
   }
   /* "Why the Coin Works": a probability table on the left, three ways to ask it on the right */
   .reveal .coin { font-size: 0.56em; line-height: 1.3; }
-  .reveal .coin .coin-grid { display: grid; grid-template-columns: 45% 1fr; gap: 1.3em; align-items: start; margin-top: 0.4em; }
+  .reveal .coin .columns { margin-top: 0.25em; }
+  .reveal .coin .column:first-child { padding-right: 1.3em; box-sizing: border-box; }
   .reveal .coin p { margin: 0; }
   .reveal .coin .lede { color: #cfd4dc; margin-bottom: 0.5em; }
   .reveal .coin table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
   .reveal .coin th, .reveal .coin td { padding: 0.28em 0.45em; border: none; border-bottom: 1px solid #3a3f47; text-align: right; vertical-align: bottom; }
   .reveal .coin th:first-child, .reveal .coin td:first-child { text-align: left; }
-  .reveal .coin th { color: #fff; font-weight: 700; }
+  .reveal .coin th { color: #fff; font-weight: 700; white-space: nowrap; }
   .reveal .coin th span, .reveal .coin td span { display: block; font-size: 0.78em; font-weight: 400; opacity: 0.6; }
   .reveal .coin tr.src td { color: #aeb4be; }
   .reveal .coin tr.eff td { color: #fff; font-weight: 700; border-bottom: none; }
@@ -74,7 +75,7 @@ header-includes: |
   .reveal .coin .calc b { color: #fff; }
   .reveal .coin .no { color: #e06c75; font-weight: 700; } .reveal .coin .ok { color: #63b3a6; font-weight: 700; }
   .reveal .coin .why { opacity: 0.65; font-style: italic; }
-  .reveal .coin .formula { text-align: center; margin-top: 0.45em; font-size: 1.05em; color: #cfd4dc; }
+  .reveal .coin .formula { text-align: center; margin-top: 0.3em; font-size: 1.05em; color: #cfd4dc; }
   .reveal .coin .formula .b { color: #9ab4dd; } .reveal .coin .formula .o { color: #f0a868; }
   .reveal .coin .formula span { opacity: 0.6; font-style: italic; }
   </style>
@@ -1239,9 +1240,9 @@ Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we
 ## Why the Coin Works
 
 ::: {.coin}
+:::: {.columns}
+::: {.column width="48%"}
 ```{=html}
-<div class="coin-grid">
-<div>
 <p class="lede">Every Mumbai day of both seasons, 1961–90 —<br>the probabilities, known</p>
 <table>
 <thead><tr><th></th><th>dry season<span>Dec–Mar</span></th><th>monsoon<span>Jun–Sep</span></th></tr></thead>
@@ -1253,18 +1254,22 @@ Land the third bullet: the verifier from *Reality Gets a Vote* and the ladder we
 <tr class="eff"><td>sprinkler&#8217;s effect</td><td>+99 pts</td><td>+33 pts</td></tr>
 </tbody>
 </table>
-</div>
-<div>
+```
+:::
+::: {.column width="52%"}
+```{=html}
 <div class="way see fragment"><p class="t">Watch <span>season not recorded</span></p><p>its off days are &frac34; monsoon</p><p class="calc">100% &minus; 50% = <b>+50 pts</b> <span class="no">&#10007;</span></p><p class="why">thirty years of data didn&#8217;t fix it</p></div>
 <div class="way adj fragment"><p class="t">Watch + record the season <span>adjust</span></p><p>compare inside each season, weight by its share</p><p class="calc">&frac12;&middot;99 + &frac12;&middot;33 = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">only for causes you knew to record</p></div>
 <div class="way do fragment"><p class="t">Flip a coin <span>randomise</span></p><p>its off days are &frac12; monsoon, like its on days</p><p class="calc">100% &minus; 34% = <b>+66 pts</b> <span class="ok">&#10003;</span></p><p class="why">balances causes nobody recorded</p></div>
-</div>
-</div>
+```
+:::
+::::
+```{=html}
 <p class="formula fragment">see &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="b">P(s | x)</b> &emsp;&emsp; do &nbsp;&sum;<sub>s</sub> P(y | x, s) &middot; <b class="o">P(s)</b> &emsp;&emsp; <span>a coin makes the two weights equal</span></p>
 ```
 :::
 
-::: {.fragment style="font-size:0.72em;margin-top:0.3em;"}
+::: {.fragment style="font-size:0.72em;margin-top:0.15em;"}
 - **Adjusting** fixes the confounders you know; a **coin** fixes them all
 - To do experiments and find cause, you need a body
 :::
@@ -1358,7 +1363,7 @@ Handle with humility — say out loud that this is outside my expertise, because
 - The open gaps — reasoning, memory, grounding, alignment — are the agenda
 
 ::: {.notes}
-The recap — tie the spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide — let the fourth bullet be the closing line, then go straight to discussion.
+The recap — tie the spine threads together one last time so they leave with them. "AI" is ambiguous and today means LLMs; minds run on prediction, from octopus to cortex to transformer; human intelligence is the ML task list written first in biology. Then land the fourth bullet as the handoff: the open gaps aren't failures of the field, they're the research agenda — reasoning, memory, grounding, alignment. Slow down; this is the last content slide — let the fourth bullet be the closing line, then click once to the Thank You slide and open the floor there.
 :::
 
 ---
@@ -1370,7 +1375,7 @@ The recap — tie the spine threads together one last time so they leave with th
 [project-delphi.github.io/ai-past-present-future-talk](https://project-delphi.github.io/ai-past-present-future-talk/){style="font-size:0.5em;opacity:0.7;"}
 
 ::: {.notes}
-Say thank you plainly — to the hosts, to the committee, and to the room for staying with a long argument — then stop talking. Leave this slide up through the questions: the link is there so anyone can find the deck, the references and the image credits afterwards. If the first question is slow to come, the garden is a good place to restart: ask the room what *they* would randomise in their own research if they could.
+This is where you thank people and open the floor — the only place; the Discussion slide at the very end is a fallback, not a second ending. Say thank you plainly — to the hosts, to the committee, and to the room for staying with a long argument — then ask for questions and wait; count to ten in silence if you have to, the first question is always the slowest. Leave this slide up through the questions: the link is there so anyone can find the deck, the references and the image credits afterwards. If the questions dry up early, jump to the Discussion slide for its prompt.
 :::
 
 ---
@@ -1487,5 +1492,5 @@ Back-matter — don't present this, just let it exist. It's here so the CC BY an
 *What is the most important open problem in AI — and how will you spend the next five years on it?*
 
 ::: {.notes}
-Open the floor and then wait — count to ten in silence if you have to; the first question is always the slowest. This prompt is deliberately personal and forward-looking to pull answers from the candidates rather than abstract debate. Have two or three seed questions ready in case the room is quiet, and be willing to say "I don't know" — modelling intellectual honesty is the whole point of the evening. Thank the audience and the hosts before closing.
+Fallback only — you have already thanked the room and opened the floor on the Thank You slide, so don't do either again here. Jump here if the questions dry up early: the prompt is deliberately personal and forward-looking, to pull answers from the candidates rather than abstract debate. Have two or three seed questions ready, and be willing to say "I don't know" — modelling intellectual honesty is the whole point of the evening.
 :::
