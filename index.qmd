@@ -501,7 +501,7 @@ Close by naming the three capacities and telling them to hold onto the names: wo
 <text x="52" y="134" fill="#ddd" font-size="11" text-anchor="end">Smell</text><rect x="58" y="120" width="130" height="20" rx="3" fill="#f0a868"/><text x="193" y="134" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">5</tspan></text>
 <text x="52" y="162" fill="#ddd" font-size="11" text-anchor="end">Taste</text><rect x="58" y="148" width="78" height="20" rx="3" fill="#f0a868"/><text x="141" y="162" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">3</tspan></text>
 <line x1="30" y1="178" x2="240" y2="178" stroke="#555" stroke-dasharray="3 3"/>
-<text x="52" y="200" fill="#ddd" font-size="11" text-anchor="end">Behaviour</text><rect x="58" y="186" width="26" height="20" rx="3" fill="#63b3a6"/><text x="89" y="200" fill="#63b3a6" font-size="10">~10</text>
+<text x="52" y="200" fill="#ddd" font-size="11" text-anchor="end">Output</text><rect x="58" y="186" width="26" height="20" rx="3" fill="#63b3a6"/><text x="89" y="200" fill="#63b3a6" font-size="10">~10</text>
 <text x="130" y="238" fill="#8b919a" font-size="8.5" text-anchor="middle">log scale · order of magnitude · Zimmermann; Zheng &amp; Meister</text></svg>
 
 <div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">Millions of bits in, about ten out — intelligence is the art of throwing the right data away</div>
