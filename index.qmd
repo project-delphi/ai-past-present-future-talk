@@ -116,16 +116,10 @@ Open cold, before any slide content: speak the prompt aloud to the assistant on 
 
 ## Objective
 
-- **Which definition of AI?** Trace what the word has meant, past → present → future
-- **Where each one comes from:** biology, but also **mathematics, statistics, physics, information theory and engineering**
-- **Who argues for it:** the academic **tribes** building AI, and where they clash
-
-<img src="images/ai-timeline.jpg" style="width:74%;max-width:760px;border-radius:10px;display:block;margin:0.7em auto 0 auto;"/>
-
-<div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.3em;">Seventy-five years of moving the goalposts — most of these names recur tonight</div>
+<p style="font-size:1.5em;line-height:1.35;text-align:center;margin-top:1.2em;"><b>“AI” has meant many things — here is where each one comes from, and who fights for it.</b></p>
 
 ::: {.notes}
-State the aim in one breath: I am not going to give you the definition of AI, I am going to show you why there are several, and where each one was born. Land the correction early — it is tempting to hear "intelligence" and assume biology is the whole story. It is not: the ideas that matter tonight come just as much from mathematics (Bayes, optimisation), statistics, physics (free energy), information theory (compression) and engineering (control, feedback). Biology is one source among several, and often the metaphor rather than the mechanism. Then flag the tribes as the human side of the same story: each school of AI carries a definition that suits its home discipline, which is why they talk past each other. Point at the timeline and promise that most of these names will come back.
+State the aim in one breath: I am not going to give you the definition of AI, I am going to show you why there are several, and where each one was born. Land the correction early — it is tempting to hear "intelligence" and assume biology is the whole story. It is not: the ideas that matter tonight come just as much from mathematics (Bayes, optimisation), statistics, physics (free energy), information theory (compression) and engineering (control, feedback). Biology is one source among several, and often the metaphor rather than the mechanism. Then flag the tribes as the human side of the same story: each school of AI carries a definition that suits its home discipline, which is why they talk past each other. Let the sentence sit for a beat; the names behind it will come back through the evening.
 :::
 
 ---
