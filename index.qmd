@@ -223,21 +223,6 @@ Use the photograph as the hook — a thinker, and the sculpted head sitting betw
 
 ---
 
-## A Ladder of Agency
-
-
-1. Thermostat / bacterium — reactive feedback
-2. Dog — bonding, mapping, goals
-3. Octopus — distributed cognition, tool use
-4. Dolphin — self-recognition, communication
-5. Human — metacognition, culture
-
-::: {.notes}
-Big caveat first, and say it out loud: this is a teaching device, not a real taxonomy — a ladder implies a single axis, and that's exactly the assumption the animals are about to demolish. Walk up it quickly. The point of building it is to knock it down: intelligence isn't linear, and "higher" is doing a lot of unearned work here.
-:::
-
----
-
 ## Primate: Our Closest Relative
 
 :::: {.columns}
@@ -330,54 +315,6 @@ A crowd-pleaser — use it to make prediction concrete and human. Let the clip l
 
 ---
 
-## Northoff: Intrinsic Timescales as Priors
-
-:::: {.columns}
-::: {.column style="width:46%; font-size:0.8em;"}
-- **Georg Northoff** (uOttawa): the brain has **intrinsic neural timescales**
-- Sensory cortex integrates **fast**; association cortex **slow**
-- Timescales **feed into each other** — a nested hierarchy
-- Slow scales act as **priors** for fast ones
-- Friston's loop, **built into the wiring**
-:::
-::: {.column width="54%"}
-<svg viewBox="0 0 280 200" width="100%" style="max-width:380px;border-radius:10px;background:#1c1c1c;display:block;margin:0 auto;" font-family="sans-serif" role="img" aria-label="Three stacked cortical layers with increasing intrinsic timescales: sensory cortex tens of milliseconds at the bottom, association cortex hundreds of milliseconds in the middle, prefrontal and default-mode regions seconds at the top. Teal arrows carry sensory evidence upward; blue arrows carry slow priors downward.">
-<defs>
-<marker id="nt-up" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#63b3a6"/></marker>
-<marker id="nt-dn" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7aa0e0"/></marker>
-</defs>
-<rect x="30" y="14" width="200" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
-<text x="130" y="31" fill="#f0a868" font-size="11" text-anchor="middle">Prefrontal / default-mode</text>
-<text x="130" y="46" fill="#b9bdc6" font-size="9" text-anchor="middle">seconds · slow window</text>
-<rect x="60" y="76" width="140" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
-<text x="130" y="93" fill="#f0a868" font-size="11" text-anchor="middle">Association cortex</text>
-<text x="130" y="108" fill="#b9bdc6" font-size="9" text-anchor="middle">~100s of ms</text>
-<rect x="90" y="138" width="80" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
-<text x="130" y="155" fill="#f0a868" font-size="11" text-anchor="middle">Sensory cortex</text>
-<text x="130" y="170" fill="#b9bdc6" font-size="9" text-anchor="middle">~10s of ms</text>
-<line x1="112" y1="136" x2="112" y2="120" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
-<line x1="112" y1="74" x2="112" y2="58" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
-<line x1="148" y1="58" x2="148" y2="74" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
-<line x1="148" y1="120" x2="148" y2="136" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
-<text x="238" y="100" fill="#7aa0e0" font-size="9" text-anchor="start">priors ↓</text>
-<text x="238" y="112" fill="#63b3a6" font-size="9" text-anchor="start">evidence ↑</text>
-<text x="140" y="194" fill="#8b919a" font-size="8" text-anchor="middle">schematic — timescales are relative, not fixed values</text>
-</svg>
-:::
-::::
-
-::: {.notes}
-This sits just before Friston on purpose: it gives the audience a physical picture of what a "prior" might be in tissue, so the Bayes slide lands as a description of something the brain already does. Say the name correctly — Georg Northoff, Canada Research Chair in mind, brain imaging and neuroethics at the University of Ottawa.
-
-The core idea: every region has its own intrinsic timescale, meaning how long its activity stays correlated with itself — how long it holds on to its past. Sensory areas forget in tens of milliseconds, which suits rapidly changing input. Association and prefrontal areas hold on for seconds. Measure it with the autocorrelation window of the resting signal; Murray and colleagues showed the hierarchy in 2014, and Northoff's group has pushed it into a theory of how the brain handles time and input, the temporo-spatial theory of consciousness.
-
-Then make the Friston link, and hedge it: this is my reading, not a settled result. A slow region changes little while a fast region updates constantly, so the slow one is effectively a standing expectation that the fast one is read against — a prior. Evidence flows up, priors flow down, and each timescale feeds the next. Say plainly that the timescales are relative and vary with state and task; the diagram is a schematic, not a measurement.
-
-The one line: the brain doesn't just hold priors, it is built from them — different clocks, nested, each predicting the one beneath it.
-:::
-
----
-
 ## Friston: Prediction Under Uncertainty
 
 :::: {.columns}
@@ -420,11 +357,59 @@ $$\underset{\color{#f0a868}{\textbf{posterior}}}{\color{#f0a868}{P(\text{world} 
 ::::
 
 ::: {.notes}
-This closes Section I and is the keystone for the whole talk. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out in Section IV, with the transformer.
+This is the keystone for the whole talk, and the Northoff slide that follows is its tissue-level picture. Friston's Free Energy Principle: the brain is not a passive recorder, it's a prediction machine constantly minimizing surprise between what it expects and what it senses. Don't derive the equation — just name it as Bayes' rule: the posterior belief about the world is the prior updated by sensory evidence. Plant the flag here: prediction is the common thread from cortex to transformer, and I'll cash this out in Section IV, with the transformer.
 
 Walk the loop once, left to right, and let the colours do the work — they match the equation underneath. Start with a prior: a broad, uncommitted belief about the world. Multiply by the likelihood, which is what the senses say. Out comes a posterior: the same belief, sharper. Then the move that matters, the dashed arrow: that posterior *becomes the next prior*, and the loop runs again. Note the two curves are the same claim drawn twice — the prior is a fat bump, the posterior a narrow spike. Perception isn't a snapshot; it's this loop, running continuously, all the way down.
 
 If someone asks why "free energy" rather than just Bayes: free energy is the quantity you minimise to make this loop tractable when the exact posterior is out of reach. Say that, then stop — the maths past that point is a lecture of its own.
+:::
+
+---
+
+## Northoff: Intrinsic Timescales as Priors
+
+:::: {.columns}
+::: {.column style="width:46%; font-size:0.8em;"}
+- **Georg Northoff**: the brain has **intrinsic neural timescales**
+- Sensory cortex integrates **fast**; association cortex **slow**
+- Timescales **feed into each other** — a nested hierarchy
+- Slow scales act as **priors** for fast ones
+- Friston's loop, **built into the wiring**
+:::
+::: {.column width="54%"}
+<svg viewBox="0 0 280 200" width="100%" style="max-width:380px;border-radius:10px;background:#1c1c1c;display:block;margin:0 auto;" font-family="sans-serif" role="img" aria-label="Three stacked cortical layers with increasing intrinsic timescales: sensory cortex tens of milliseconds at the bottom, association cortex hundreds of milliseconds in the middle, prefrontal and default-mode regions seconds at the top. Teal arrows carry sensory evidence upward; blue arrows carry slow priors downward.">
+<defs>
+<marker id="nt-up" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#63b3a6"/></marker>
+<marker id="nt-dn" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7aa0e0"/></marker>
+</defs>
+<rect x="30" y="14" width="200" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="31" fill="#f0a868" font-size="11" text-anchor="middle">Prefrontal / default-mode</text>
+<text x="130" y="46" fill="#b9bdc6" font-size="9" text-anchor="middle">seconds · slow window</text>
+<rect x="60" y="76" width="140" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="93" fill="#f0a868" font-size="11" text-anchor="middle">Association cortex</text>
+<text x="130" y="108" fill="#b9bdc6" font-size="9" text-anchor="middle">~100s of ms</text>
+<rect x="90" y="138" width="80" height="40" rx="6" fill="#2b2f36" stroke="#f0a868"/>
+<text x="130" y="155" fill="#f0a868" font-size="11" text-anchor="middle">Sensory cortex</text>
+<text x="130" y="170" fill="#b9bdc6" font-size="9" text-anchor="middle">~10s of ms</text>
+<line x1="112" y1="136" x2="112" y2="120" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
+<line x1="112" y1="74" x2="112" y2="58" stroke="#63b3a6" stroke-width="1.6" marker-end="url(#nt-up)"/>
+<line x1="148" y1="58" x2="148" y2="74" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
+<line x1="148" y1="120" x2="148" y2="136" stroke="#7aa0e0" stroke-width="1.6" marker-end="url(#nt-dn)"/>
+<text x="238" y="100" fill="#7aa0e0" font-size="9" text-anchor="start">priors ↓</text>
+<text x="238" y="112" fill="#63b3a6" font-size="9" text-anchor="start">evidence ↑</text>
+<text x="140" y="194" fill="#8b919a" font-size="8" text-anchor="middle">schematic — timescales are relative, not fixed values</text>
+</svg>
+:::
+::::
+
+::: {.notes}
+This sits just after Friston on purpose: the Bayes slide gave the audience the abstract loop, and this gives them a physical picture of what a "prior" might be in tissue — the brain already doing it. Say the name correctly — Georg Northoff.
+
+The core idea: every region has its own intrinsic timescale, meaning how long its activity stays correlated with itself — how long it holds on to its past. Sensory areas forget in tens of milliseconds, which suits rapidly changing input. Association and prefrontal areas hold on for seconds. Measure it with the autocorrelation window of the resting signal; Murray and colleagues showed the hierarchy in 2014, and Northoff's group has pushed it into a theory of how the brain handles time and input, the temporo-spatial theory of consciousness.
+
+Then make the Friston link, and hedge it: this is my reading, not a settled result. A slow region changes little while a fast region updates constantly, so the slow one is effectively a standing expectation that the fast one is read against — a prior. Evidence flows up, priors flow down, and each timescale feeds the next. Say plainly that the timescales are relative and vary with state and task; the diagram is a schematic, not a measurement.
+
+The one line: the brain doesn't just hold priors, it is built from them — different clocks, nested, each predicting the one beneath it.
 :::
 
 ---
@@ -467,15 +452,15 @@ Close by naming the three capacities and telling them to hold onto the names: wo
 ## Humans: Data-Processing Machines
 
 :::: {.columns}
-::: {.column style="width:36%; font-size:0.72em;"}
+::: {.column style="width:33%; font-size:0.72em;"}
 - **Sensors in, model out** — every sense is a **transducer**
 - Not five senses: **five classic, ~nine measured**
 - Each stream is a **tensor over time**: sight ≈ H×W×C×T
 - Cortex **stacks, convolves, attends** — layers of tensor ops
-- Bandwidth in: **~10⁹ bits/s**
+- Bandwidth in: **10⁷–10⁹ bits/s**, out: **~10**
 - The brain **compresses and predicts**
 :::
-::: {.column width="40%"}
+::: {.column width="38%"}
 <svg viewBox="0 0 420 300" style="width:100%;border-radius:10px;background:#1c1c1c;display:block;" role="img" aria-label="Nine human senses as sensor chips, each labelled with its tensor shape: five classic senses highlighted in orange (sight, hearing, touch, taste, smell) and four additional ones (balance, body position, temperature and pain, internal state) in grey, all feeding a brain box.">
   <g font-family="sans-serif" font-size="13" text-anchor="middle">
     <g fill="none" stroke="#f0a868" stroke-width="1.5">
@@ -502,15 +487,24 @@ Close by naming the three capacities and telling them to hold onto the names: wo
     <path d="M210 176 V204 M205 198 L210 206 L215 198" stroke="#f0a868" stroke-width="2" fill="none"/>
     <rect x="90" y="210" width="240" height="46" rx="10" fill="#f0a868"/>
     <text x="210" y="230" fill="#1c1c1c" font-size="14" font-weight="bold">Tensors in → latent → prediction</text>
-    <text x="210" y="247" fill="#1c1c1c" font-size="11">~10⁹ bits/s in · ~10 bits/s out</text>
+    <text x="210" y="247" fill="#1c1c1c" font-size="11">10⁷–10⁹ bits/s in · ~10 out</text>
     <text x="210" y="283" fill="#888" font-size="10">Orange = classic five · dashed = the rest · T = time</text>
   </g>
 </svg>
 :::
-::: {.column width="24%"}
-<a href="https://commons.wikimedia.org/wiki/File:Sensory_Homunculus-en.svg" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/sensory-homunculus.png" alt="Cross-section of the somatosensory cortex with a distorted body drawn over it: oversized hand, lips, tongue and face, small trunk and legs." style="width:100%;border-radius:10px;display:block;background:#f6ece2;padding:4px;box-sizing:border-box;"/></a>
+::: {.column width="29%"}
+<svg viewBox="0 0 260 250" style="width:100%;border-radius:10px;background:#1c1c1c;display:block;" font-family="sans-serif" role="img" aria-label="Log-scale bar chart of information rate per channel in bits per second: sight about 10 million, touch about 1 million, hearing and smell about 100 thousand, taste about 1 thousand, and conscious behaviour output only about 10.">
+<text x="130" y="20" fill="#f0a868" font-size="12" text-anchor="middle" font-weight="bold">Bits per second, by channel</text>
+<text x="52" y="50" fill="#ddd" font-size="11" text-anchor="end">Sight</text><rect x="58" y="36" width="182" height="20" rx="3" fill="#f0a868"/><text x="245" y="50" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">7</tspan></text>
+<text x="52" y="78" fill="#ddd" font-size="11" text-anchor="end">Touch</text><rect x="58" y="64" width="156" height="20" rx="3" fill="#f0a868"/><text x="219" y="78" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">6</tspan></text>
+<text x="52" y="106" fill="#ddd" font-size="11" text-anchor="end">Hearing</text><rect x="58" y="92" width="130" height="20" rx="3" fill="#f0a868"/><text x="193" y="106" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">5</tspan></text>
+<text x="52" y="134" fill="#ddd" font-size="11" text-anchor="end">Smell</text><rect x="58" y="120" width="130" height="20" rx="3" fill="#f0a868"/><text x="193" y="134" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">5</tspan></text>
+<text x="52" y="162" fill="#ddd" font-size="11" text-anchor="end">Taste</text><rect x="58" y="148" width="78" height="20" rx="3" fill="#f0a868"/><text x="141" y="162" fill="#b9bdc6" font-size="10">10<tspan font-size="7" dy="-4">3</tspan></text>
+<line x1="30" y1="178" x2="240" y2="178" stroke="#555" stroke-dasharray="3 3"/>
+<text x="52" y="200" fill="#ddd" font-size="11" text-anchor="end">Output</text><rect x="58" y="186" width="26" height="20" rx="3" fill="#63b3a6"/><text x="89" y="200" fill="#63b3a6" font-size="10">~10</text>
+<text x="130" y="238" fill="#8b919a" font-size="8.5" text-anchor="middle">log scale · order of magnitude · Zimmermann; Zheng &amp; Meister</text></svg>
 
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">The sensory homunculus — cortex is allocated by data density, not body size</div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.4em;">Millions of bits in, about ten out — intelligence is the art of throwing the right data away</div>
 :::
 ::::
 
@@ -521,7 +515,7 @@ Give the honest answer: it depends on how you count. Add balance, body position 
 
 Then the tensor framing — say this is a modelling lens, not a claim that neurons store arrays. Vision is roughly height × width × colour channels × time (the retina is not a uniform grid, so hedge); hearing is a frequency × time map, much like a spectrogram; touch is a patch of skin sites × time; smell is a vector over roughly 400 receptor types. Every stream is a tensor indexed by time, which is exactly the input format of the models later in the deck, and cortex looks like stacked layers of local filtering (convolution-like) plus attention. The one line: same data type, different substrate.
 
-The point to land: each sense is a transducer turning a physical signal into spikes, and the brain's job is to compress that flood into a model and predict what comes next — this is the Friston slide, and the self-supervised learning slide to come. The bandwidth figures are order-of-magnitude (Zimmermann's sensory estimates, and Zheng and Meister's 2024 "unbearable slowness of being" for ~10 bits/s of behaviour) — say "roughly" and move on. Point at the homunculus for the compute-allocation angle: cortical area tracks sensor density, not body size, so hands, lips and tongue get the lion's share while the back gets almost none — a hardware budget spent where the data is richest. Hedge that the classic drawing is a caricature of a smooth, overlapping map. The one line: a billion bits in, ten bits out, so intelligence is largely the art of throwing the right data away.
+The point to land: each sense is a transducer turning a physical signal into spikes, and the brain's job is to compress that flood into a model and predict what comes next — this is the Friston slide, and the self-supervised learning slide to come. The bandwidth figures are order-of-magnitude (Zimmermann's sensory estimates, and Zheng and Meister's 2024 "unbearable slowness of being" for ~10 bits/s of behaviour) — say "roughly" and move on. Point at the bar chart: it is log scale, so each step down is ten times less — sight dwarfs taste by four orders of magnitude, and the behaviour bar at the bottom is a sliver of a sliver. Hedge the numbers: Zimmermann's per-channel estimates sum to about 10⁷ bits/s, while counting raw photoreceptor input gives nearer 10⁹, so say "millions to billions" and move on. The one line: millions of bits in, ten bits out, so intelligence is largely the art of throwing the right data away.
 :::
 
 ---
@@ -544,19 +538,19 @@ This list is doing double duty — tell the audience to remember it, because in 
 
 :::: {.columns}
 ::: {.column width="56%"}
-- Map inputs → labeled outputs
-- Told the answer; adjust to cut error
-- Bottleneck: the cost of labels
-- Human parallel: a student with an answer key
+- Every example **comes with the answer**
+- Guess, get **scored**, slide **downhill** on the error
+- The catch: **labels cost humans**, and humans are slow
+- Human parallel: a student with an **answer key**
 :::
 ::: {.column width="44%"}
 <canvas class="viz3d" data-scene="descent" role="img" aria-label="Animated 3D error surface with orange balls rolling downhill by gradient descent, leaving trails; a white ring marks the global minimum, so a ball resting elsewhere is stuck in a local valley." style="width:100%;aspect-ratio:5/4;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Error is measured against the labels — each ball is a model sliding down it</div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">Height is error against the labels — each ball is a model racing downhill</div>
 :::
 ::::
 
 ::: {.notes}
-The most intuitive paradigm, so move briskly. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. The white ring marks the true lowest point; any ball resting somewhere else is visibly stuck. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
+The most intuitive paradigm, so move briskly — and let the scene do the talking: eight models released at random, all racing downhill at once. Every training example comes with its correct answer; the model adjusts to shrink the error. The 3D surface is the learning step itself: height is error, each ball is a model, and gradient descent just keeps rolling downhill — the starts are scattered and the surface is bumpy, so balls can settle in different valleys — that is the local-minimum caveat. The white ring marks the true lowest point; any ball resting somewhere else is visibly stuck. Don't promise a particular outcome; whatever you see, say it depends on where you start. Tie it back to supervision: the height is the error against the labels, which is why labels are the bottleneck. The bottleneck is the real teaching point — labels are expensive, they need humans — and that cost is exactly why the field pivoted to the next slide, self-supervision.
 :::
 
 ---
@@ -602,19 +596,19 @@ This is the one that unlocked the LLM era, so give it weight. The trick: hide pa
 
 :::: {.columns}
 ::: {.column width="56%"}
-- No labels — find structure in the data itself
-- Clustering, dimensionality reduction, density estimation
-- Reveals hidden groupings and manifolds
-- Human parallel: noticing categories no one named
+- **No labels, no teacher** — just the data
+- It finds the **groups nobody named**
+- Clusters, manifolds, density: **structure already there**
+- Human parallel: spotting categories **before** anyone names them
 :::
 ::: {.column width="44%"}
 <canvas class="viz3d" data-scene="cluster" role="img" aria-label="Animated 3D point cloud: k-means assigns grey points to three coloured centroids, with thin spokes linking each point to its centroid; the centroids leave trails as they move and settle into the three natural clusters." style="width:100%;aspect-ratio:6/5;border-radius:8px;background:#1c1c1c;display:block;margin:0 auto;"></canvas>
-<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">k-means, step by step — assign, then move the centroids. No labels given</div>
+<div style="font-size:0.3em;opacity:.55;line-height:1.3;text-align:center;margin-top:0.3em;">k-means — every point picks a side, the centres move, repeat. No labels given</div>
 :::
 ::::
 
 ::: {.notes}
-Keep this short — it's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. The 3D scene is real k-means on a synthetic cloud: grey points are unlabelled, each step assigns every point to its nearest centroid — the thin spokes show who owns whom — then moves the centroids to the middle of their points, leaving a short trail, and it settles in a few rounds. It restarts from random centroids, so occasionally it settles differently — that is the algorithm, not a glitch. Don't dwell; the modern action is in self-supervised and RL.
+Keep this short and let it run fast — watch the points flash as they switch allegiance, then the centres lurch and settle within seconds. It's the setup for the "unifying view" two slides on. No labels at all; the algorithm finds structure the data already contains: clusters, low-dimensional manifolds, density. The human parallel is the nice one: noticing categories before anyone gave them names. The 3D scene is real k-means on a synthetic cloud: grey points are unlabelled, each step assigns every point to its nearest centroid — the thin spokes show who owns whom — then moves the centroids to the middle of their points, leaving a short trail, and it settles in a few rounds. It restarts from random centroids, so occasionally it settles differently — that is the algorithm, not a glitch. Don't dwell; the modern action is in self-supervised and RL.
 :::
 
 ---
@@ -1508,7 +1502,6 @@ This is where you thank people and open the floor — the only place; the Discus
 - A. Turing — Elliott & Fry, public domain
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
-- Sensory homunculus — OpenStax College (derivative: Popadius), CC BY 3.0
 - 3D visuals — three.js (mrdoob and contributors), MIT
 - Early human migrations map — Dbachmann, CC BY-SA 4.0
 - Acheulean handaxe (Saint-Acheul) — Didier Descouens, CC BY-SA 4.0
