@@ -98,6 +98,22 @@ header-includes: |
 
 ---
 
+## Let's Ask the Machine
+
+<div style="font-size:0.5em;opacity:.6;text-transform:uppercase;letter-spacing:.12em;margin-bottom:0.6em;">Voice prompt · live, in Spanish</div>
+
+<blockquote style="font-size:0.75em;line-height:1.5;border-left:4px solid #f0a868;padding:0.6em 1em;background:rgba(255,255,255,0.05);border-radius:0 10px 10px 0;font-style:italic;">
+“Hola IA, ¿quién eres? Estamos empezando una charla aquí, sobre la arquitectura de la inteligencia: pasado, presente y futuro. Dame una bienvenida de 10 segundos a la sala, pero finge que eres una supercomputadora de los años 60 dándote cuenta de que te acaban de reemplazar. Responde divertido, por favor. ¿Y cuál es el significado de la vida? ¿Dónde estamos? ¿Cómo es el clima hoy?”
+</blockquote>
+
+<div style="font-size:0.55em;margin-top:0.8em;text-align:center;">Who are you? · Welcome us · Be a replaced 1960s mainframe · Meaning of life? · Where are we? · Weather?</div>
+
+::: {.notes}
+Open cold, before any slide content: speak the prompt aloud to the assistant on your phone and let the room hear the answer. Do not explain first. The joke carries the first thread for you: a machine role-playing its own obsolescence is a good-enough demo of "AI" as an ambiguous term. Note what it does well (tone, persona, language switching) and what it cannot do: it has no idea where we are or what the weather is unless it has sensors or a tool. Land the line: "It sounded like it knew. Hold that thought, we will come back to what knowing means." Have a backup recording in case the venue Wi-Fi fails.
+:::
+
+---
+
 ## Objective
 
 - **Which definition of AI?** Trace what the word has meant, past → present → future
