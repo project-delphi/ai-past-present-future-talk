@@ -98,18 +98,28 @@ header-includes: |
 
 ---
 
-## Objective
+## Let's Ask the Machine
 
-- **Which definition of AI?** Trace what the word has meant, past → present → future
-- **Where each one comes from:** biology, but also **mathematics, statistics, physics, information theory and engineering**
-- **Who argues for it:** the academic **tribes** building AI, and where they clash
+<div style="font-size:0.5em;opacity:.6;text-transform:uppercase;letter-spacing:.12em;margin-bottom:0.6em;">Voice prompt · live, in Spanish</div>
 
-<img src="images/ai-timeline.jpg" style="width:74%;max-width:760px;border-radius:10px;display:block;margin:0.7em auto 0 auto;"/>
+<blockquote style="font-size:0.75em;line-height:1.5;border-left:4px solid #f0a868;padding:0.6em 1em;background:rgba(255,255,255,0.05);border-radius:0 10px 10px 0;font-style:italic;">
+“Hola IA, ¿quién eres? Estamos empezando una charla aquí, sobre la arquitectura de la inteligencia: pasado, presente y futuro. Dame una bienvenida de 10 segundos a la sala, pero finge que eres una supercomputadora de los años 60 dándote cuenta de que te acaban de reemplazar. Responde divertido, por favor. ¿Y cuál es el significado de la vida? ¿Dónde estamos? ¿Cómo es el clima hoy?”
+</blockquote>
 
-<div style="font-size:0.3em;opacity:.5;line-height:1.2;text-align:center;margin-top:0.3em;">Seventy-five years of moving the goalposts — most of these names recur tonight</div>
+<div style="font-size:0.55em;margin-top:0.8em;text-align:center;">Who are you? · Welcome us · Be a replaced 1960s mainframe · Meaning of life? · Where are we? · Weather?</div>
 
 ::: {.notes}
-State the aim in one breath: I am not going to give you the definition of AI, I am going to show you why there are several, and where each one was born. Land the correction early — it is tempting to hear "intelligence" and assume biology is the whole story. It is not: the ideas that matter tonight come just as much from mathematics (Bayes, optimisation), statistics, physics (free energy), information theory (compression) and engineering (control, feedback). Biology is one source among several, and often the metaphor rather than the mechanism. Then flag the tribes as the human side of the same story: each school of AI carries a definition that suits its home discipline, which is why they talk past each other. Point at the timeline and promise that most of these names will come back.
+Open cold, before any slide content: speak the prompt aloud to the assistant on your phone and let the room hear the answer. Do not explain first. The joke carries the first thread for you: a machine role-playing its own obsolescence is a good-enough demo of "AI" as an ambiguous term. Note what it does well (tone, persona, language switching) and what it cannot do: it has no idea where we are or what the weather is unless it has sensors or a tool. Land the line: "It sounded like it knew. Hold that thought, we will come back to what knowing means." Have a backup recording in case the venue Wi-Fi fails.
+:::
+
+---
+
+## Objective
+
+<p style="font-size:1.5em;line-height:1.35;text-align:center;margin-top:1.2em;"><b>“AI” has meant many things — here is where each one comes from, and who fights for it.</b></p>
+
+::: {.notes}
+State the aim in one breath: I am not going to give you the definition of AI, I am going to show you why there are several, and where each one was born. Land the correction early — it is tempting to hear "intelligence" and assume biology is the whole story. It is not: the ideas that matter tonight come just as much from mathematics (Bayes, optimisation), statistics, physics (free energy), information theory (compression) and engineering (control, feedback). Biology is one source among several, and often the metaphor rather than the mechanism. Then flag the tribes as the human side of the same story: each school of AI carries a definition that suits its home discipline, which is why they talk past each other. Let the sentence sit for a beat; the names behind it will come back through the evening.
 :::
 
 ---
