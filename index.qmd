@@ -1155,35 +1155,35 @@ The animation shows the kernel trick, the tribe's other big idea. On the flat fl
 <thead><tr><th class="name">Name</th><th>Received Wisdom</th><th>Breiman&#8217;s Point</th><th class="nn">Neural Nets</th></tr></thead>
 <tbody>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:92px;border-radius:8px;"/></a>Rashomon</td>
-  <td class="recv">One true model</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:88px;border-radius:8px;"/></a>Rashomon</td>
+  <td class="recv">There is one true model</td>
   <td>Many models fit equally well</td>
-  <td class="nn">100 runs: 32 minima, about equal test error</td>
+  <td class="nn">Small net, 100 runs: 32 minima, about equal test error</td>
 </tr>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window" style="height:92px;border-radius:8px;"/></a>Occam</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window" style="height:88px;border-radius:8px;"/></a>Occam</td>
   <td class="recv">Simpler is better</td>
   <td>Simpler often costs accuracy</td>
-  <td class="nn">Usually more accurate, far harder to read</td>
+  <td class="nn">Usually beat linear regression, far harder to read</td>
 </tr>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout" style="height:92px;border-radius:8px;"/></a>Bellman</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout" style="height:88px;border-radius:8px;"/></a>Bellman</td>
   <td class="recv">Many variables are a curse</td>
   <td>Many variables can help</td>
   <td class="nn">Raw pixels in, features learned</td>
 </tr>
 </tbody>
 </table>
-<p class="whose">Bellman net example: my reading, not Breiman&#8217;s.</p>
+<p class="whose">Rashomon and Occam nets: Breiman&#8217;s examples. Bellman: my reading.</p>
 ```
 :::
 
 ::: {.notes}
 A statistician telling his own field it had the wrong habits, after thirteen years as a consultant before he joined Berkeley. Three lessons named after three names, each overturning something the room was taught. Read across the rows.
 
-The line to land: neural nets are a live case of all three. For two of them the evidence is his own. Rashomon: he ran a small net 100 times on simple three-dimensional data, changing only the initial weights, and found 32 distinct minima, each giving a different picture, with about equal test error. Thirty-two stories, one score. Occam: his first example is linear regression losing to "the less interpretable neural nets."
+The line to land: neural nets are a live case of all three. For two of them the evidence is his own. Rashomon: he ran a small net 100 times on simple three-dimensional data, changing only the initial weights, and found 32 distinct minima, each giving a different picture, with about equal test error. Thirty-two stories, one score, so don't over-read any one of them. Occam: his first example is linear regression losing to "the less interpretable neural nets." So simplicity is a trade-off against accuracy.
 
-Be straight about Bellman: that orange cell is your reading, not his. The small print says so; say it aloud too. His examples there are forests and support vector machines, a clean callback to the kernel lift on the last slide, and he writes that SVMs are "beginning to supplant the use of neural nets." That call aged badly; the principle aged well. Nets take raw pixels and tokens with no hand-picked features, the opposite of the old recipe he was attacking. Enjoy the irony: in his rejoinder to the same paper he says he went to NIPS in 1992 in "grim skepticism" and "came away a believer."
+Be straight about Bellman: that orange cell is your reading, not his. The small print says so; say it aloud too. His own claim is conditional: many variables help if the method can use them. His examples there are forests and support vector machines, a clean callback to the kernel lift on the last slide, and he writes that SVMs are "beginning to supplant the use of neural nets." That call aged badly; the principle aged well. Nets take raw pixels and tokens with no hand-picked features, the opposite of the old recipe he was attacking. Enjoy the irony: in his rejoinder to the same paper he says he went to NIPS in 1992 in "grim skepticism" and "came away a believer."
 
 On the pictures, one breath: the three men are under the ruined gate in Kurosawa's film, Breiman's own metaphor for the same facts and incompatible stories, and Bellman, whose phrase "the curse of dimensionality" gave the row its name, is holding a printout.
 
