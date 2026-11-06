@@ -97,17 +97,17 @@ header-includes: |
   /* "Breiman: Three Received Wisdoms": portrait over a table, one image per name */
   .reveal .breiman { font-size: 0.56em; line-height: 1.28; }
   .reveal .breiman p { margin: 0; }
-  .reveal .breiman img { margin: 0; border-radius: 8px; }
+  .reveal .breiman img { margin: 0; display: block; }
   .reveal .breiman .who { display: flex; align-items: center; gap: 0.8em; margin-bottom: 0.35em; }
-  .reveal .breiman .who img { display: block; }
   .reveal .breiman table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
   .reveal .breiman th, .reveal .breiman td { padding: 0.32em 0.6em; border: none; border-bottom: 1px solid #3a3f47; text-align: left; vertical-align: middle; }
   .reveal .breiman tbody tr:last-child td { border-bottom: none; }
   .reveal .breiman th { color: #fff; font-weight: 700; white-space: nowrap; }
   .reveal .breiman .name { width: 8em; text-align: center; font-weight: 700; color: #fff; }
-  .reveal .breiman .name img { display: block; margin: 0 auto 0.15em; }
+  .reveal .breiman .name img { margin: 0 auto 0.15em; }
   .reveal .breiman .recv { color: #aeb4be; }
   .reveal .breiman .nn { color: #f0a868; }
+  .reveal .breiman .whose { margin-top: 0.3em; font-size: 0.7em; opacity: 0.6; text-align: right; }
   </style>
 
 ---
@@ -1148,32 +1148,33 @@ The animation shows the kernel trick, the tribe's other big idea. On the flat fl
 ::: {.breiman}
 ```{=html}
 <div class="who">
-  <a href="https://en.wikipedia.org/wiki/Leo_Breiman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/breiman.jpg" alt="Leo Breiman lecturing" style="height:96px;"/></a>
+  <a href="https://en.wikipedia.org/wiki/Leo_Breiman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/breiman.jpg" alt="Leo Breiman lecturing" style="height:96px;border-radius:8px;"/></a>
   <p><b>Leo Breiman</b>, <em>Statistical Modeling: The Two Cultures</em> (2001)</p>
 </div>
 <table>
 <thead><tr><th class="name">Name</th><th>Received wisdom</th><th>Breiman&#8217;s point</th><th class="nn">Neural nets</th></tr></thead>
 <tbody>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:92px;"/></a>Rashomon</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:92px;border-radius:8px;"/></a>Rashomon</td>
   <td class="recv">There is one true model to find</td>
   <td>Many models fit equally well, so don&#8217;t over-interpret any one of them</td>
   <td class="nn">Breiman ran a small net 100 times: 32 distinct minima, about equal test error</td>
 </tr>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window" style="height:92px;"/></a>Occam</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window" style="height:92px;border-radius:8px;"/></a>Occam</td>
   <td class="recv">Simpler is better</td>
   <td>Simpler often costs accuracy, so it&#8217;s a trade-off</td>
   <td class="nn">Usually more accurate than linear regression, and far harder to read</td>
 </tr>
 <tr>
-  <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout" style="height:92px;"/></a>Bellman</td>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout" style="height:92px;border-radius:8px;"/></a>Bellman</td>
   <td class="recv">Many variables are a curse</td>
   <td>Many variables can help if the method can use them</td>
   <td class="nn">Raw pixels and tokens go in; the layers learn which features matter</td>
 </tr>
 </tbody>
 </table>
+<p class="whose">Rashomon and Occam net examples are Breiman&#8217;s own; the Bellman row is my reading.</p>
 ```
 :::
 
@@ -1182,13 +1183,13 @@ A statistician telling his own field it had the wrong habits, after thirteen yea
 
 The line to land: neural nets are a live case of all three. For two of them the evidence is his own. Rashomon: he ran a small net 100 times on simple three-dimensional data, changing only the initial weights, and found 32 distinct minima, each giving a different picture, with about equal test error. Thirty-two stories, one score. Occam: his first example is linear regression losing to "the less interpretable neural nets."
 
-Be straight about Bellman: that orange cell is your reading, not his, so say so. His examples there are forests and support vector machines, a clean callback to the kernel lift on the last slide, and he writes that SVMs are "beginning to supplant the use of neural nets." That call aged badly; the principle aged well. Nets take raw pixels and tokens with no hand-picked features, the opposite of the old recipe he was attacking. Enjoy the irony: in his rejoinder to the same paper he says he went to NIPS in 1992 in "grim skepticism" and "came away a believer."
+Be straight about Bellman: that orange cell is your reading, not his. The small print says so; say it aloud too. His examples there are forests and support vector machines, a clean callback to the kernel lift on the last slide, and he writes that SVMs are "beginning to supplant the use of neural nets." That call aged badly; the principle aged well. Nets take raw pixels and tokens with no hand-picked features, the opposite of the old recipe he was attacking. Enjoy the irony: in his rejoinder to the same paper he says he went to NIPS in 1992 in "grim skepticism" and "came away a believer."
 
 On the pictures, one breath: the three men are under the ruined gate in Kurosawa's film, Breiman's own metaphor for the same facts and incompatible stories, and Bellman, whose phrase "the curse of dimensionality" gave the row its name, is holding a printout.
 
 Only if a specialist pushes, and then concede rather than defend. Rudin (2025) argues the Occam dilemma is not generally true: algorithmic models need not be complex to be accurate. On tabular data, forests and boosted trees often still beat nets. And against Knowledge as Compression: compression is what a model captures, while Breiman's simplicity is how easily a person can read it.
 
-Bridge out: the Bayesians averaged over every hypothesis and Breiman built forests. Both refuse to bet on one model, and that refusal is the next slide: no production system is one tribe.
+Bridge out from Rashomon: if rival tribes can fit the same data about equally well, there is little reason to pledge to one. That is the next slide: no production system is one tribe.
 :::
 
 ---
@@ -1554,7 +1555,7 @@ This is where you thank people and open the floor — the only place; the Discus
 
 ## Key References V
 
-*Causality & data*
+*Models, causality & data*
 
 - Breiman, L. (2001). Statistical modeling: the two cultures. *Statistical Science*.
 - Rudin, C. (2025). Leo Breiman, the Rashomon effect, and the Occam dilemma. *arXiv:2507.03884*.
@@ -1602,7 +1603,7 @@ This is where you thank people and open the floor — the only place; the Discus
 - ARC-AGI task animation & ARC-AGI-3 leaderboard — © ARC Prize Foundation, via arcprize.org
 - M. Tyson quote poster — rights holder unidentified; used under fair dealing for education
 - William of Ockham (stained glass, Surrey; cropped) — Moscarlop, CC BY-SA 3.0
-- *Rashomon* (1950) press photo — Daiei Studios, public domain in the US (published 1952, not renewed)
+- *Rashomon* (1950) press photo — Daiei Studios; tagged public domain on Commons (US, not renewed), status not independently confirmed
 - L. Breiman (SAMSI, via Wikipedia), R. Bellman (© IEEE, via ETHW) — no free licence identified; used under fair dealing for education
 :::
 ::::
@@ -1612,7 +1613,7 @@ Photographs from Wikimedia Commons unless noted. Titled slide image: Piedras del
 :::
 
 ::: {.notes}
-Back-matter — don't present this, just let it exist. It's here so the CC BY and CC BY-SA images are properly attributed without cluttering the slides they appear on, which is the normal convention for a talk. The fair-dealing lines are the honest ones: six portraits (Holland, Vapnik, Tenenbaum, Friston, Breiman, Bellman) have no freely-licensed photograph I could find, and they're used under an educational rationale. If that ever becomes a problem, those six are the ones to pull, along with the Tyson poster and the Messi clip, whose rights holders are unidentified.
+Back-matter — don't present this, just let it exist. It's here so the CC BY and CC BY-SA images are properly attributed without cluttering the slides they appear on, which is the normal convention for a talk. The fair-dealing lines are the honest ones: six portraits (Holland, Vapnik, Tenenbaum, Friston, Breiman, Bellman) have no freely-licensed photograph I could find, and they're used under an educational rationale. If that ever becomes a problem, start with those six, the Tyson poster and the Messi clip (rights holders unidentified), the *Rashomon* still (its Commons tag may not account for restored US copyright on Japanese films), and the images credited only "via" another site, which name no rights holder.
 :::
 
 ---
