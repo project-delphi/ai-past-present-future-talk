@@ -95,7 +95,7 @@ header-includes: |
   .reveal .bayes .cell i { opacity: 0.6; margin-left: 0.35em; }
   .reveal .bayes .area { align-self: center; text-align: right; font-style: italic; opacity: 0.55; }
   /* "Breiman: Three Received Wisdoms": portrait over a table, one image per name */
-  .reveal .breiman { font-size: 0.56em; line-height: 1.28; }
+  .reveal .breiman { font-size: 0.64em; line-height: 1.28; }
   .reveal .breiman p { margin: 0; }
   .reveal .breiman img { margin: 0; display: block; }
   .reveal .breiman .who { display: flex; align-items: center; gap: 0.8em; margin-bottom: 0.35em; }
@@ -1152,29 +1152,29 @@ The animation shows the kernel trick, the tribe's other big idea. On the flat fl
   <p><b>Leo Breiman</b>, <em>Statistical Modeling: The Two Cultures</em> (2001)</p>
 </div>
 <table>
-<thead><tr><th class="name">Name</th><th>Received wisdom</th><th>Breiman&#8217;s point</th><th class="nn">Neural nets</th></tr></thead>
+<thead><tr><th class="name">Name</th><th>Received Wisdom</th><th>Breiman&#8217;s Point</th><th class="nn">Neural Nets</th></tr></thead>
 <tbody>
 <tr>
   <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:92px;border-radius:8px;"/></a>Rashomon</td>
-  <td class="recv">There is one true model to find</td>
-  <td>Many models fit equally well, so don&#8217;t over-interpret any one of them</td>
-  <td class="nn">Breiman ran a small net 100 times: 32 distinct minima, about equal test error</td>
+  <td class="recv">One true model</td>
+  <td>Many models fit equally well</td>
+  <td class="nn">100 runs: 32 minima, about equal test error</td>
 </tr>
 <tr>
   <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window" style="height:92px;border-radius:8px;"/></a>Occam</td>
   <td class="recv">Simpler is better</td>
-  <td>Simpler often costs accuracy, so it&#8217;s a trade-off</td>
-  <td class="nn">Usually more accurate than linear regression, and far harder to read</td>
+  <td>Simpler often costs accuracy</td>
+  <td class="nn">Usually more accurate, far harder to read</td>
 </tr>
 <tr>
   <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout" style="height:92px;border-radius:8px;"/></a>Bellman</td>
   <td class="recv">Many variables are a curse</td>
-  <td>Many variables can help if the method can use them</td>
-  <td class="nn">Raw pixels and tokens go in; the layers learn which features matter</td>
+  <td>Many variables can help</td>
+  <td class="nn">Raw pixels in, features learned</td>
 </tr>
 </tbody>
 </table>
-<p class="whose">Rashomon and Occam net examples are Breiman&#8217;s own; the Bellman row is my reading.</p>
+<p class="whose">Bellman net example: my reading, not Breiman&#8217;s.</p>
 ```
 :::
 
