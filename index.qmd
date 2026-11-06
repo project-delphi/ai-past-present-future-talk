@@ -103,10 +103,10 @@ header-includes: |
   .reveal .breiman th, .reveal .breiman td { padding: 0.32em 0.6em; border: none; border-bottom: 1px solid #3a3f47; text-align: left; vertical-align: middle; }
   .reveal .breiman tbody tr:last-child td { border-bottom: none; }
   .reveal .breiman th { color: #fff; font-weight: 700; white-space: nowrap; }
-  .reveal .breiman .name { width: 8em; text-align: center; font-weight: 700; color: #fff; }
+  .reveal .breiman .name { width: 6em; text-align: center; font-weight: 700; color: #fff; }
   .reveal .breiman .name img { margin: 0 auto 0.15em; }
   .reveal .breiman .recv { color: #aeb4be; }
-  .reveal .breiman .nn { color: #f0a868; }
+  .reveal .breiman .nn { color: #f0a868; width: 36%; }
   .reveal .breiman .whose { margin-top: 0.3em; font-size: 0.7em; opacity: 0.6; text-align: right; }
   </style>
 
@@ -1157,7 +1157,7 @@ The animation shows the kernel trick, the tribe's other big idea. On the flat fl
 <tr>
   <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon" style="height:88px;border-radius:8px;"/></a>Rashomon</td>
   <td class="recv">There is one true model</td>
-  <td>Many models fit equally well</td>
+  <td>Many models fit about equally well</td>
   <td class="nn">Small net, 100 runs: 32 minima, about equal test error</td>
 </tr>
 <tr>
@@ -1174,7 +1174,7 @@ The animation shows the kernel trick, the tribe's other big idea. On the flat fl
 </tr>
 </tbody>
 </table>
-<p class="whose">Rashomon and Occam nets: Breiman&#8217;s examples. Bellman: my reading.</p>
+<p class="whose">Rashomon and Occam nets: Breiman&#8217;s examples. Bellman net: my reading.</p>
 ```
 :::
 
