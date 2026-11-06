@@ -94,6 +94,20 @@ header-includes: |
   .reveal .bayes .cell { color: #e3e6ec; } .reveal .bayes .cell b { color: #fff; }
   .reveal .bayes .cell i { opacity: 0.6; margin-left: 0.35em; }
   .reveal .bayes .area { align-self: center; text-align: right; font-style: italic; opacity: 0.55; }
+  /* "Breiman: Three Received Wisdoms": portrait over a table, one image per name */
+  .reveal .breiman { font-size: 0.56em; line-height: 1.28; }
+  .reveal .breiman p { margin: 0; }
+  .reveal .breiman img { margin: 0; border-radius: 8px; }
+  .reveal .breiman .who { display: flex; align-items: center; gap: 0.8em; margin-bottom: 0.35em; }
+  .reveal .breiman .who img { height: 96px; display: block; }
+  .reveal .breiman table { width: 100%; margin: 0; border-collapse: collapse; font-size: 1em; }
+  .reveal .breiman th, .reveal .breiman td { padding: 0.32em 0.6em; border: none; border-bottom: 1px solid #3a3f47; text-align: left; vertical-align: middle; }
+  .reveal .breiman tbody tr:last-child td { border-bottom: none; }
+  .reveal .breiman th { color: #fff; font-weight: 700; white-space: nowrap; }
+  .reveal .breiman .name { width: 8em; text-align: center; font-weight: 700; color: #fff; }
+  .reveal .breiman .name img { height: 92px; display: block; margin: 0 auto 0.15em; }
+  .reveal .breiman .recv { color: #aeb4be; }
+  .reveal .breiman .nn { color: #f0a868; }
   </style>
 
 ---
@@ -1120,11 +1134,61 @@ The tribe that takes uncertainty seriously. Roots in Bayes (1763) and Laplace: l
 ::::
 
 ::: {.notes}
-The fifth tribe: reason by similarity to past cases rather than by rules or models. Roots in psychology; the workhorses are k-nearest neighbours and SVMs, whose kernel trick measures similarity in high-dimensional space. The legacy is everywhere — recommendation systems ("people like you"), and few-shot learning via embeddings, which is how modern LLMs retrieve. The stock example: pairs trading, finding two stocks that historically move together and betting on the gap when they diverge — pure reasoning from analogous past behaviour. Set up the synthesis slide next: today's systems quietly use all five.
+The fifth tribe: reason by similarity to past cases rather than by rules or models. Roots in psychology; the workhorses are k-nearest neighbours and SVMs, whose kernel trick measures similarity in high-dimensional space. The legacy is everywhere — recommendation systems ("people like you"), and few-shot learning via embeddings, which is how modern LLMs retrieve. The stock example: pairs trading, finding two stocks that historically move together and betting on the gap when they diverge — pure reasoning from analogous past behaviour. Set up what comes next: a statistician's verdict that cuts across all five, then the synthesis, because today's systems quietly use all five.
 
 The flag is a callback to Dartmouth, and worth thirty seconds. Vapnik and Chervonenkis built statistical learning theory — VC dimension, the margin, eventually the SVM — in Moscow through the 1960s and 70s, at an institute for control sciences, under the disciplinary banner of *cybernetics*. That is the very word McCarthy picked "artificial intelligence" to avoid. So the same intellectual territory got two names on two sides of the Iron Curtain, and the Western half spent decades not reading the Eastern half: VC theory only really landed here after Vapnik came to Bell Labs around 1990. The point for the ambiguity thread: the name a field carries is an accident of politics, and it determines who reads you.
 
 The animation shows the kernel trick, the tribe's other big idea. On the flat floor, teal sits inside an orange ring — no straight line separates them. Lift each point by its squared distance from the centre and a flat plane now cuts between the classes; projected back down, that plane is the circle. Say that the real trick is that kernels let you compute in the lifted space without ever building it. Then the margin: among all separating planes, the SVM picks the one that sits as far from both classes as possible. Say that the margin is not a detail, it is the whole theory: Vapnik's claim was that the widest gap is the one that generalises, and he had the proof, not just the intuition.
+:::
+
+---
+
+## Breiman: Three Received Wisdoms
+
+::: {.breiman}
+```{=html}
+<div class="who">
+  <a href="https://en.wikipedia.org/wiki/Leo_Breiman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/breiman.jpg" alt="Leo Breiman lecturing"/></a>
+  <p><b>Leo Breiman</b>, <em>Statistical Modeling: The Two Cultures</em> (2001)</p>
+</div>
+<table>
+<thead><tr><th class="name">Name</th><th>Received wisdom</th><th>Breiman&#8217;s point</th><th class="nn">Neural nets</th></tr></thead>
+<tbody>
+<tr>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Rashomon" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/rashomon.jpg" alt="Three men sheltering under the gate in Kurosawa's film Rashomon"/></a>Rashomon</td>
+  <td class="recv">There is one true model to find</td>
+  <td>Many models fit equally well, so don&#8217;t over-interpret any one of them</td>
+  <td class="nn">Breiman ran a small net 100 times: 32 distinct minima, about equal test error</td>
+</tr>
+<tr>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/William_of_Ockham" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/ockham.jpg" alt="William of Ockham in a stained glass window"/></a>Occam</td>
+  <td class="recv">Simpler is better</td>
+  <td>Simpler often costs accuracy, so it&#8217;s a trade-off</td>
+  <td class="nn">Usually more accurate than linear regression, and far harder to read</td>
+</tr>
+<tr>
+  <td class="name"><a href="https://en.wikipedia.org/wiki/Richard_E._Bellman" target="_blank" rel="noopener" style="text-decoration:none;"><img src="images/bellman.jpg" alt="Richard Bellman holding a computer printout"/></a>Bellman</td>
+  <td class="recv">Many variables are a curse</td>
+  <td>Many variables can help if the method can use them</td>
+  <td class="nn">Raw pixels and tokens go in; the layers learn which features matter</td>
+</tr>
+</tbody>
+</table>
+```
+:::
+
+::: {.notes}
+Step outside the tribes for a minute: this is a statistician telling his own field it had the wrong habits. Breiman spent thirteen years as a consultant before he joined Berkeley, and it shows: his 2001 paper splits the world into people who assume a model of how the data was made and people who just ask what predicts. He names three lessons after three names, and each one overturns something the room was taught. Read across the rows. Say out loud that the first three columns are his and the orange one is your reading, so nobody thinks he wrote it.
+
+The line to land: neural nets are a live case of all three. And for two of them you don't have to take my word, because he uses nets himself. Rashomon: he ran a small net 100 times on simple three-dimensional data, changing only the initial weights, and found 32 distinct minima, each giving a different picture, with about equal test error. Thirty-two stories, one score. So when a model seems to explain itself, remember that a differently seeded twin would have told you another story. Occam: his very first example is linear regression losing to "the less interpretable neural nets," and then forests, A+ on prediction and F on interpretability.
+
+Be straight about Bellman, because that one he did not say. His examples there are forests and support vector machines, which makes the kernel lift on the last slide a clean callback, and he writes that SVMs are "beginning to supplant the use of neural nets." That call aged badly; the principle aged well. The nets that came back take raw pixels and tokens with no hand-picked features, which is exactly the old recipe he was attacking. Enjoy the irony: in his reply at the end of the same paper he says he went to NIPS in 1992 in "grim skepticism" and "came away a believer," because nets "delivered on the bottom line."
+
+The pictures earn thirty seconds. The three men are the priest, the commoner and the woodcutter under the ruined gate in Kurosawa's 1950 film, which is Breiman's own metaphor: witnesses with the same facts and incompatible stories. The text behind Ockham in the window is part of the razor itself, "should not be multiplied," too small to read from the room, so tell them. Bellman is the man who coined "the curse of dimensionality," and he is holding a printout, which is about right.
+
+If a specialist pushes, concede rather than defend. The Occam row is contested: Cynthia Rudin argued in 2025 that the dilemma is not generally true, since algorithmic models need not be complex to be accurate, and that the Rashomon effect is what helps prove it, because with many good models some may be simple. Tabular data is the other concession: forests and boosted trees often still beat nets there, so "many variables can help" is not a licence for nets everywhere. And if someone catches the tension with Knowledge as Compression: compression is about what a model captures, while Breiman's simplicity is about how easily a person can read it. A net can compress well and still be unreadable.
+
+Bridge out with Rashomon: the Bayesians' answer was to average over every hypothesis, and Breiman's was the forest, a vote of many trees. Both refuse to bet on one model. That refusal is the next slide: no production system is one tribe.
 :::
 
 ---
@@ -1492,6 +1556,7 @@ This is where you thank people and open the floor — the only place; the Discus
 
 *Causality & data*
 
+- Breiman, L. (2001). Statistical modeling: the two cultures. *Statistical Science*.
 - Pearl, J. & Mackenzie, D. (2018). *The Book of Why*.
 - Menne, M. et al. (2012). Global Historical Climatology Network – Daily (GHCN-Daily), v3. NOAA NCEI. Station IN012070800, Bombay/Santacruz.
 
@@ -1535,6 +1600,9 @@ This is where you thank people and open the floor — the only place; the Discus
 - Coffee-making robot animation — via Mothership
 - ARC-AGI task animation & ARC-AGI-3 leaderboard — © ARC Prize Foundation, via arcprize.org
 - M. Tyson quote poster — rights holder unidentified; used under fair dealing for education
+- William of Ockham (stained glass, Surrey) — Moscarlop, CC BY-SA 3.0
+- *Rashomon* (1950) press photo — Daiei Studios, public domain
+- L. Breiman (SAMSI, via Wikipedia), R. Bellman (© IEEE, via ETHW) — no free licence identified; used under fair dealing for education
 :::
 ::::
 
@@ -1543,7 +1611,7 @@ Photographs from Wikimedia Commons unless noted. Titled slide image: Piedras del
 :::
 
 ::: {.notes}
-Back-matter — don't present this, just let it exist. It's here so the CC BY and CC BY-SA images are properly attributed without cluttering the slides they appear on, which is the normal convention for a talk. The last line is the honest one: three portraits have no freely-licensed photograph in existence, and they're used under an educational rationale. If that ever becomes a problem, those three are the ones to pull.
+Back-matter — don't present this, just let it exist. It's here so the CC BY and CC BY-SA images are properly attributed without cluttering the slides they appear on, which is the normal convention for a talk. The fair-dealing lines are the honest ones: six portraits (Holland, Vapnik, Tenenbaum, Friston, Breiman, Bellman) have no freely-licensed photograph I could find, and they're used under an educational rationale. If that ever becomes a problem, those six are the ones to pull.
 :::
 
 ---
