@@ -29,6 +29,18 @@ header-includes: |
     font-style: italic;
     opacity: 0.9;
   }
+  /* QR to the published deck. Regenerate if the Pages URL changes:
+     segno.make("https://project-delphi.github.io/ai-past-present-future-talk/", error="m")
+       .save("images/qr-code.svg", scale=1, border=4), then swap width/height for a viewBox */
+  #title-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 0.6em;
+    left: 0.8em;
+    width: 5.5em;
+    height: 5.5em;
+    background: url("images/qr-code.svg") center / contain no-repeat;
+  }
   .reveal .slides section.section-divider {
     height: 100%;
     display: flex !important;
@@ -1586,6 +1598,7 @@ This is where you thank people and open the floor — the only place; the Discus
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
 - 3D visuals — three.js (mrdoob and contributors), MIT
+- QR code (link to these slides) — generated with segno, no rights claimed
 - Early human migrations map — Dbachmann, CC BY-SA 4.0
 - Acheulean handaxe (Saint-Acheul) — Didier Descouens, CC BY-SA 4.0
 :::
