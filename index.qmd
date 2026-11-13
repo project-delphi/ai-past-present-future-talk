@@ -29,6 +29,17 @@ header-includes: |
     font-style: italic;
     opacity: 0.9;
   }
+  #title-slide::before {
+    content: "";
+    position: absolute;
+    bottom: 0.6em;
+    left: 0.8em;
+    width: 4.2em;
+    height: 4.2em;
+    background: url("images/qr-code.svg") center / contain no-repeat;
+    border-radius: 6px;
+    opacity: 0.95;
+  }
   .reveal .slides section.section-divider {
     height: 100%;
     display: flex !important;
@@ -1586,6 +1597,7 @@ This is where you thank people and open the floor — the only place; the Discus
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
 - 3D visuals — three.js (mrdoob and contributors), MIT
+- QR code (link to these slides) — generated with segno, no rights claimed
 - Early human migrations map — Dbachmann, CC BY-SA 4.0
 - Acheulean handaxe (Saint-Acheul) — Didier Descouens, CC BY-SA 4.0
 :::
