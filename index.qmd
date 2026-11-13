@@ -29,8 +29,8 @@ header-includes: |
     font-style: italic;
     opacity: 0.9;
   }
-  /* QR to the published deck. Regenerate if the Pages URL changes:
-     segno.make("https://project-delphi.github.io/ai-past-present-future-talk/", error="m")
+  /* QR to https://tinyurl.com/AI-past (redirects to the published deck); also on the Thank You slide.
+     Regenerate (segno boosts this to version 3, error level Q): segno.make("https://tinyurl.com/AI-past", error="m")
        .save("images/qr-code.svg", scale=1, border=4), then swap width/height for a viewBox */
   #title-slide::before {
     content: "";
@@ -1511,10 +1511,13 @@ The recap — tie the spine threads together one last time so they leave with th
 
 **Questions?**
 
-[project-delphi.github.io/ai-past-present-future-talk](https://project-delphi.github.io/ai-past-present-future-talk/){style="font-size:0.5em;opacity:0.7;"}
+<img src="images/qr-code.svg" alt="QR code linking to these slides at tinyurl.com/AI-past" style="width:280px; height:280px; margin:0.3em 0 0;">
+
+[tinyurl.com/AI-past](https://tinyurl.com/AI-past){style="font-size:0.6em;opacity:0.8;"}\
+[project-delphi.github.io/ai-past-present-future-talk](https://project-delphi.github.io/ai-past-present-future-talk/){style="font-size:0.4em;opacity:0.55;"}
 
 ::: {.notes}
-This is where you thank people and open the floor — the only place; the Discussion slide at the very end is a fallback, not a second ending. Say thank you plainly — to the hosts, to the committee, and to the room for staying with a long argument — then ask for questions and wait; count to ten in silence if you have to, the first question is always the slowest. Leave this slide up through the questions: the link is there so anyone can find the deck, the references and the image credits afterwards. If the questions dry up early, jump to the Discussion slide for its prompt.
+This is where you thank people and open the floor — the only place; the Discussion slide at the very end is a fallback, not a second ending. Say thank you plainly — to the hosts, to the committee, and to the room for staying with a long argument — then ask for questions and wait; count to ten in silence if you have to, the first question is always the slowest. Leave this slide up through the questions: the QR and the short link are there so anyone can find the deck, the references and the image credits afterwards. Read the link out once — "tinyurl dot com slash AI dash past" — for anyone without a camera handy. If the questions dry up early, jump to the Discussion slide for its prompt.
 :::
 
 ---
@@ -1598,7 +1601,7 @@ This is where you thank people and open the floor — the only place; the Discus
 - T. Bayes — public domain (attribution disputed)
 - Soviet flag — public domain
 - 3D visuals — three.js (mrdoob and contributors), MIT
-- QR code (link to these slides) — generated with segno, no rights claimed
+- QR codes (tinyurl.com/AI-past, link to these slides) — generated with segno, no rights claimed
 - Early human migrations map — Dbachmann, CC BY-SA 4.0
 - Acheulean handaxe (Saint-Acheul) — Didier Descouens, CC BY-SA 4.0
 :::
