@@ -29,16 +29,17 @@ header-includes: |
     font-style: italic;
     opacity: 0.9;
   }
+  /* QR to the published deck. Regenerate if the Pages URL changes:
+     segno.make("https://project-delphi.github.io/ai-past-present-future-talk/", error="m")
+       .save("images/qr-code.svg", scale=1, border=4), then swap width/height for a viewBox */
   #title-slide::before {
     content: "";
     position: absolute;
     bottom: 0.6em;
     left: 0.8em;
-    width: 4.2em;
-    height: 4.2em;
+    width: 5.5em;
+    height: 5.5em;
     background: url("images/qr-code.svg") center / contain no-repeat;
-    border-radius: 6px;
-    opacity: 0.95;
   }
   .reveal .slides section.section-divider {
     height: 100%;
