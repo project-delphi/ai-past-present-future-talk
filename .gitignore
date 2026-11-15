@@ -2,4 +2,4 @@
 *_files/
 *.html
 
-**/*.quarto_ipynb
+*.quarto_ipynb*
