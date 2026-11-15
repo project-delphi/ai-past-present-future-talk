@@ -45,8 +45,8 @@ header-includes: |
     content: "tinyurl.com/AI-past";
     display: block;
     margin-top: 0.4em;
-    font-size: 0.5em;
-    opacity: 0.9;
+    font-size: 0.6em;  /* 24px, same as the Thank You slide's link */
+    opacity: 0.8;
   }
   .reveal .slides section.section-divider {
     height: 100%;
