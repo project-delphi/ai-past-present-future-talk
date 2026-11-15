@@ -41,6 +41,13 @@ header-includes: |
     height: 5.5em;
     background: url("images/qr-code.svg") center / contain no-repeat;
   }
+  #title-slide .date::after {
+    content: "tinyurl.com/AI-past";
+    display: block;
+    margin-top: 0.4em;
+    font-size: 0.5em;
+    opacity: 0.9;
+  }
   .reveal .slides section.section-divider {
     height: 100%;
     display: flex !important;
